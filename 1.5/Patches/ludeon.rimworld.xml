@@ -1,0 +1,250 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!--Allows Devilstrand and Corn in hydroponics basin-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Plant_Devilstrand" or
+				defName="Plant_Corn"]/plant/sowTags</xpath>
+				<value>
+					<li>Hydroponic</li>
+				</value>
+			</li>
+			<!--Allows deconstruction of ancient ruins-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/deconstructible</xpath>
+				<value>
+					<deconstructible>true</deconstructible>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/claimable</xpath>
+				<value>
+					<claimable>true</claimable>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/statBases</xpath>
+				<value>
+					<WorkToBuild>5000</WorkToBuild>
+				</value>
+			</li>
+			<!--Boomalopes bleed chemfuel-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Boomalope"]/race</xpath>
+				<value>
+					<bloodDef>Filth_Fuel</bloodDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Boomrat"]/race</xpath>
+				<value>
+					<bloodDef>Filth_Fuel</bloodDef>
+				</value>
+			</li>
+			<!--Adjusts melanin commonality-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/GeneDef[defName="Skin_Melanin4" or
+				defName="Skin_Melanin5" or
+				defName="Skin_Melanin6" or
+				defName="Skin_Melanin7" or
+				defName="Skin_Melanin8" or
+				defName="Skin_Melanin9"]</xpath>
+			</li>
+			<!--Incident pawns stats are now visible-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/QuestScriptDef/root/nodes/li[@Class="QuestNode_AddPawnReward"]/rewardDetailsHidden</xpath>
+				<value>
+					<rewardDetailsHidden>false</rewardDetailsHidden>
+				</value>
+			</li>
+			<!--Increases Gold and Silver beauty: -4 -> 4-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Gold" or defName="Silver"]/statBases</xpath>
+				<value>
+					<Beauty>4</Beauty>
+				</value>
+			</li>
+			<!--Increases Plasteel durability: 2.8 -> 3-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Plasteel"]/stuffProps/statFactors/MaxHitPoints</xpath>
+				<value>
+					<MaxHitPoints>3</MaxHitPoints>
+				</value>
+			</li>
+			<!--Increases Steel durability: 1 -> 2-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Steel"]/stuffProps/statFactors/MaxHitPoints</xpath>
+				<value>
+					<MaxHitPoints>2</MaxHitPoints>
+				</value>
+			</li>
+			<!--Increases pregnancy duration from 18 days to 45 days-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Human"]/race/gestationPeriodDays</xpath>
+				<value>
+					<gestationPeriodDays>45</gestationPeriodDays>
+				</value>
+			</li>
+			<!--Metal is no longer flammable-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Gold" or
+				defName="Plasteel" or
+				defName="Silver" or
+				defName="Steel"]/stuffProps/statFactors/Flammability</xpath>
+				<value>
+					<Flammability>0.0</Flammability>
+				</value>
+			</li>
+			<!--Nerfs the cost of spike traps-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TrapSpike"]/statBases/WorkToBuild</xpath>
+				<value>
+					<WorkToBuild>2400</WorkToBuild>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TrapSpike"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+			<!--Permanent enemies no longer flee-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[permanentEnemy="true" and not(autoFlee="false")]</xpath>
+				<value>
+					<autoFlee>false</autoFlee>
+				</value>
+			</li>
+			<!--Prepatches tribal facions to allow for custom xenotypes-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[@Name="TribeBase"]</xpath>
+				<value>
+					<xenotypeSet>
+						<xenotypeChances></xenotypeChances>
+					</xenotypeSet>
+				</value>
+			</li>
+			<!--Removes breach raids-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RaidStrategyDef[@Name="BreachingBase"]/selectionWeightPerPointsCurve/points</xpath>
+				<value>
+					<points>
+						<li>(700, 0)</li>
+						<li>(2000, 0)</li>
+					</points>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RaidStrategyDef[@Name="BreachingBase"]/selectionWeightCurvesPerFaction</xpath>
+				<value>
+					<selectionWeightCurvesPerFaction>
+						<li>
+							<faction>Mechanoid</faction>
+							<selectionWeightPerPointsCurve>
+								<points>
+									<li>(700, 0)</li>
+									<li>(1000, 0)</li>
+								</points>
+							</selectionWeightPerPointsCurve>
+						</li>
+					</selectionWeightCurvesPerFaction>
+				</value>
+			</li>
+			<!--Removes drop pod raids-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RaidStrategyDef/arriveModes/li[text()="EdgeDrop" or
+				text()="CenterDrop" or
+				text()="RandomDrop" or
+				text()="EdgeDropGroups"]</xpath>
+			</li>
+			<!--Removes sapper and siege raids-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RaidStrategyDef[defName="ImmediateAttackSappers" or
+				defName="Siege"]/selectionWeightPerPointsCurve/points</xpath>
+				<value>
+					<points>
+						<li>(700, 0)</li>
+						<li>(1000, 0)</li>
+					</points>
+				</value>
+			</li>
+			<!--Removes breakdowns for electrical buildings-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef/comps[not(*)]</xpath>
+			</li>
+			<!--Removes mineable Components from map generation-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MineableComponentsIndustrial"]/building/mineableScatterCommonality</xpath>
+				<value>
+					<mineableScatterCommonality>0</mineableScatterCommonality>
+				</value>
+			</li>
+			<!--Removes narrow pawn heads-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/HeadTypeDef[defName="Male_NarrowNormal" or
+				defName="Male_NarrowPointy" or
+				defName="Male_NarrowWide" or
+				defName="Female_NarrowNormal" or
+				defName="Female_NarrowPointy" or
+				defName="Female_NarrowWide"]</xpath>
+			</li>
+			<!--Removes tribal faction requirement for headdress and war mask-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress" or
+				defName="Apparel_WarMask"]/recipeMaker/factionPrerequisiteTags</xpath>
+			</li>
+			<!--Removes work disablers for slaves-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/WorkTypeDef[disabledForSlaves="true" and
+				not(defName="Warden")]/disabledForSlaves</xpath>
+			</li>
+			<!--Renames Healroot to Xerigium-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Plant_Healroot"]/label</xpath>
+				<value>
+					<label>Xerigium</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Plant_HealrootWild"]/label</xpath>
+				<value>
+					<label>Wild Xerigium</label>
+				</value>
+			</li>
+			<!--Renames Megasloth to Megatherium-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Megasloth"]/label</xpath>
+				<value>
+					<label>megatherium</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="WoolMegasloth"]/label</xpath>
+				<value>
+					<label>megatherium wool</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="WoolMegasloth"]/description</xpath>
+				<value>
+					<description>While somewhat coarse, megatherium wool's long fibers make it very strong. It is exceptionally warm.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Megasloth"]/description</xpath>
+				<value>
+					<description>A giant, solitary herbivore with two giant claws for warding off threats. Long extinct after being wiped out by the natives of Earth's American continent, the megatherium was later brought back using advanced cloning and artificial gestators. Its thick hide is exceptionally strong and insulating, and makes a great leather for cold-weather clothing. It is peaceful if left alone, but will shred anyone who disturbs it with its giant claws.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Megasloth"]/label</xpath>
+				<value>
+					<label>megatherium</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

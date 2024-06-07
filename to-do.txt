@@ -1,0 +1,26 @@
+- add a "rugged" meme
+-- rough living: welcomed
+-- temperature: tough
+-- comfort: ignored
+-- fungus: don't care
+-- start with research: pemmican
+-- autonomous weapons: despised
+--- mood debuffs for using autonomous weapons
+--- -6 mood "we shouldn't rest on our laurels" or something
+-- medium impact
+
+- redux individualist meme
+-- art quality: +25%
+-- mood: +5
+
+- redux supremacist meme
+-- charity: abhorrent
+-- mood buffs for ignoring others
+--- mood debuffs for helping others
+
+- redux loyalist meme
+-- charity: disapproved
+--- mood debuffs for helping others
+
+- redux gender supremacy memes
+-- suborinate genders can now be specialists but cannot be leader or moral guide

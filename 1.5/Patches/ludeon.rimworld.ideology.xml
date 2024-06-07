@@ -1,0 +1,163 @@
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!--Adds Highmates to the empire-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+					<value>
+						<Highmate>0.025</Highmate>
+					</value>
+				</li>
+				<!--Allows nutrient paste to be used with any meme except Flesh Purity, Rancher, and Cannibal-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/MemeDef[defName="FleshPurity" or
+					defName="Rancher" or
+					defName="Cannibal"]/requireOne</xpath>
+					<value>
+						<li>
+							<li>NutrientPasteEating_Disgusting</li>
+						</li>
+					</value>
+				</li>
+				<!--Disables preferred apparel when ideologions are generated-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/MemeDef/selectOneOrNone/noneChance</xpath>
+					<value>
+						<noneChance>1</noneChance>
+					</value>
+				</li>
+				<!--Increases tree pruning speed: 0.01 -> 0.02-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/connectionStrengthGainPerHourPruningBase</xpath>
+					<value>
+						<connectionStrengthGainPerHourPruningBase>0.02</connectionStrengthGainPerHourPruningBase>
+					</value>
+				</li>
+				<!--Reduces Biosculpter times-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays</xpath>
+					<value>
+						<durationDays>5</durationDays>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_RegenerationCycle"]/durationDays</xpath>
+					<value>
+						<durationDays>10</durationDays>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_MedicCycle"]/durationDays</xpath>
+					<value>
+						<durationDays>2</durationDays>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_PleasureCycle"]/durationDays</xpath>
+					<value>
+						<durationDays>2</durationDays>
+					</value>
+				</li>
+				<!--Reduces Neural Supercharger charge time: 24 hours -> 8 hours-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="NeuralSupercharger"]/comps/li[@Class="CompProperties_NeuralSupercharger"]/ticksToRecharge</xpath>
+					<value>
+						<ticksToRecharge>20000</ticksToRecharge>
+					</value>
+				</li>
+				<!--Removes Trees: Desired precept from Gauranlen Connection meme-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/MemeDef[defName="TreeConnection"]/requireOne/li[li="Trees_Desired"]</xpath>
+				</li>
+				<!--Removes tribal faction requirement for headdress and war mask-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress" or
+					defName="Apparel_WarMask"]/apparel/ideoDesireAllowedFactionCategoryTags</xpath>
+				</li>
+				<!--Removes xenotypes from faction generation-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/FactionDef[defName="Beggars" or
+					defName="Pilgrims"]/xenotypeSet/xenotypeChances/Neanderthal</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/FactionDef[defName="Beggars" or
+					defName="Pilgrims"]/xenotypeSet/xenotypeChances/Hussar</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/FactionDef[defName="Beggars" or
+					defName="Pilgrims"]/xenotypeSet/xenotypeChances/Pigskin</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/FactionDef[defName="Beggars" or
+					defName="Pilgrims"]/xenotypeSet/xenotypeChances/Yttakin</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/FactionDef[defName="Beggars" or
+					defName="Pilgrims"]/xenotypeSet/xenotypeChances/Genie</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/FactionDef[defName="Beggars" or
+					defName="Pilgrims"]/xenotypeSet/xenotypeChances/Dirtmole</xpath>
+				</li>
+				<!--Moves Proselytizer to low impact-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/MemeDef[defName="Proselytizer"]/impact</xpath>
+					<value>
+						<impact>1</impact>
+					</value>
+				</li>
+				<!--Overhauls Individualist-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PreceptDef[defName="DrugUse_Prohibited"]/conflictingMemes</xpath>
+					<value>
+						<li>Individualist</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PreceptDef[defName="Lovin_Prohibited" or
+					defName="Lovin_Horrible" or
+					defName="Lovin_SpouseOnly_Strict" or
+					defName="Lovin_SpouseOnly_Moderate"]</xpath>
+					<value>
+						<conflictingMemes>
+							<li>Individualist</li>
+						</conflictingMemes>
+					</value>
+				</li>
+				<!--Overhauls Loyalist-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/MemeDef[defName="Loyalist"]</xpath>
+					<value>
+						<requireOne>
+							<li>
+								<li>Apostasy_Abhorrent</li>
+								<li>Apostasy_Horrible</li>
+							</li>
+						</requireOne>
+					</value>
+				</li>
+				<!--Renames Tree connection meme to Gauranlen connection-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/MemeDef[defName="TreeConnection"]/label</xpath>
+					<value>
+						<label>gauranlen connection</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/MemeDef[defName="TreeConnection"]/description</xpath>
+					<value>
+						<description>Gauranlen trees are the essence of life, and we must be near them.</description>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[b] Patches</name>
+	<author>boomer</author>
+	<packageId>boomer.patches</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<modDependencies />
+	<loadAfter>
+		<li>ludeon.rimworld.royalty</li>
+		<li>ludeon.rimworld.ideology</li>
+		<li>ludeon.rimworld.biotech</li>
+		<li>ludeon.rimworld.anomaly</li>
+		<li>vanillaexpanded.vieat</li>
+		<li>regrowth.botr.core</li>
+		<li>ceteam.combatextended</li>
+		<li>rimsenal.spacer</li>
+		<li>jintuzilamian.gene.xenocosmetic</li>
+		<li>rearden.maleandfemaleonlygenes</li>
+	</loadAfter>
+	<description>Core:
+- Adjusts melanin commonality
+- Allows Devilstrand and Corn in hydroponics basin
+- Allows deconstruction of ancient ruins
+- Boomalopes bleed chemfuel
+- Incident pawns stats are now visible
+- Increases Gold and Silver beauty: -4 -> 4
+- Increases Plasteel durability: 2.8 -> 3
+- Increases Steel durability: 1 -> 2
+- Increases pregnancy duration from 18 days to 45 days
+- Metal is no longer flammable
+- Nerfs the cost of spike traps
+- Permanent enemies no longer flee
+- Prepatches tribal facions to allow for custom xenotypes
+- Removes breach raids
+- Removes breakdowns for electrical buildings
+- Removes drop pod raids
+- Removes mineable Components from map generation
+- Removes narrow pawn heads
+- Removes sapper and siege raids
+- Removes tribal faction requirement for headdress and war mask
+- Removes work disablers for slaves
+- Renames Healroot to Xerigium
+- Renames Megasloth to Megatherium
+Royalty:
+- Removes undesired Biotech xenotypes from faction generation
+Ideology:
+- Adds Highmates to the empire
+- Allows nutrient paste to be used with any meme except Flesh Purity, Rancher, and Cannibal
+- Disables preferred apparel when ideologions are generated
+- Increases tree pruning speed: 0.01 -> 0.02
+- Moves Proselytizer to low impact
+- Overhauls Individualist
+- Overhauls Loyalist
+- Reduces Biosculpter times
+- Reduces Neural Supercharger charge time: 24 hours -> 8 hours
+- Removes Trees: Desired precept from Gauranlen Connection meme
+- Removes tribal faction requirement for headdress and war mask
+- Removes xenotypes from faction generation
+- Renames Tree connection meme to Gauranlen connection
+Biotech:
+- Allows deconstruction of ancient ruins
+- Gives Sanguophage red eyes
+- Increases child learning rate: 1 -> 2
+- Limits Impid tribe settlements to warm biomes
+- Lowers impid combat power to reflect changes
+- Makes Highmate genes uninheritable
+- Reduces Impid tribe commonality on the world map: 1 -> 0.5
+- Removes undesired Biotech xenotypes from faction generation
+- Removes Sanguophage double-xenos
+- Removes narrow furskin heads
+- Removes other xenotypes from Waster faction
+- Removes unused Rulepacks
+- Removes unwanted xeno factions
+- Removes xeno-specific pawnkinddefs
+- Replaces Highmate genepool
+- Replaces impid genepool
+- Replaces waster genepool</description>
+</ModMetaData>
