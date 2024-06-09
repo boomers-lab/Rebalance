@@ -174,7 +174,7 @@
 					<xpath>Defs/XenotypeDef[defName="Impid"]</xpath>
 					<value>
 						<doubleXenotypeChances>
-							<boomer_GreaterImpid>0.02</boomer_GreaterImpid>
+							<GreaterImpid>0.02</GreaterImpid>
 						</doubleXenotypeChances>
 					</value>
 				</li>
