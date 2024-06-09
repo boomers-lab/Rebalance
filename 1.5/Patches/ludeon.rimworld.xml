@@ -245,6 +245,17 @@
 				<xpath>Defs/WorkTypeDef[disabledForSlaves="true" and
 				not(defName="Warden")]/disabledForSlaves</xpath>
 			</li>
+			<!--Remove fat body types and hulking females from backstories-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BackstoryDef[bodyTypeFemale="Fat" or 
+				bodyTypeFemale="Hulk"]/bodyTypeFemale</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BackstoryDef[bodyTypeGlobal="Fat"]/bodyTypeGlobal</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BackstoryDef[bodyTypeMale="Fat"]/bodyTypeMale</xpath>
+			</li>
 		</operations>
 	</Operation>
 </Patch>
