@@ -45,10 +45,7 @@
 				</li>
 				<!--Remove unused Rulepacks-->
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/RulePackDef[defName="NeanderthalUtility" or
-					defName="NamerFactionTribalNeanderthal" or
-					defName="NamerSettlementTribalNeaderthal" or
-					defName="YttakinUtility" or
+					<xpath>Defs/RulePackDef[defName="YttakinUtility" or
 					defName="NamerFactionPirateYttakin" or
 					defName="NamerSettlementPirateYttakin" or
 					defName="NamerFactionOutlanderPig" or
@@ -185,7 +182,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/FactionDef[defName="TribeSavageImpid"]</xpath>
 					<value>
-						<settlementGenerationWeight Inherit="False">0.7</settlementGenerationWeight>
+						<settlementGenerationWeight Inherit="False">0.8</settlementGenerationWeight>
 					</value>
 				</li>
 				<!--Remove Impid earliest raid date since they're not OP anymore-->
