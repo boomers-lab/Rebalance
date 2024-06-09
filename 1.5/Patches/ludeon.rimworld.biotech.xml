@@ -4,6 +4,7 @@
 			<li>Biotech</li>
 		</mods>
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
 			<!--Xenotype rework-->
 				<!--Replace Highmate genepool-->
