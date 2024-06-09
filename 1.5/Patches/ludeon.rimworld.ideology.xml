@@ -4,22 +4,7 @@
 			<li>Ideology</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
 			<operations>
-				<!--Allow Nutrient Paste to be eaten with any meme except Flesh Purity, Rancher, and Cannibal-->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/MemeDef[defName="FleshPurity" or
-					defName="Rancher" or
-					defName="Cannibal"]/requireOne</xpath>
-					<value>
-						<li>
-							<li>NutrientPasteEating_Disgusting</li>
-						</li>
-					</value>
-				</li>
 				<!--Disable preferred apparel when ideologions are generated-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/MemeDef/selectOneOrNone/noneChance</xpath>
@@ -66,20 +51,38 @@
 						<ticksToRecharge>20000</ticksToRecharge>
 					</value>
 				</li>
-				<!--Remove Trees: Desired precept from Gauranlen Connection meme-->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/MemeDef[defName="TreeConnection"]/requireOne/li[li="Trees_Desired"]</xpath>
-				</li>
-				<!--Remove tribal faction requirement for Headdress and War Mask-->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress" or
-					defName="Apparel_WarMask"]/apparel/ideoDesireAllowedFactionCategoryTags</xpath>
-				</li>
 				<!--Move Proselytizer to low impact-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/MemeDef[defName="Proselytizer"]/impact</xpath>
 					<value>
 						<impact>1</impact>
+					</value>
+				</li>
+				<!--Rename Tree connection meme to Gauranlen connection-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/MemeDef[defName="TreeConnection"]/label</xpath>
+					<value>
+						<label>gauranlen connection</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/MemeDef[defName="TreeConnection"]/description</xpath>
+					<value>
+						<description>Gauranlen trees are the essence of life, and we must be near them.</description>
+					</value>
+				</li>
+				<!--Allow Nutrient Paste to be eaten with any meme except Flesh Purity, Rancher, and Cannibal-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/MemeDef[defName="FleshPurity" or
+					defName="Rancher" or
+					defName="Cannibal"]/requireOne</xpath>
+					<value>
+						<li>
+							<li>NutrientPasteEating_Disgusting</li>
+						</li>
 					</value>
 				</li>
 				<!--Overhaul Individualist-->
@@ -112,18 +115,14 @@
 						</requireOne>
 					</value>
 				</li>
-				<!--Rename Tree connection meme to Gauranlen connection-->
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/MemeDef[defName="TreeConnection"]/label</xpath>
-					<value>
-						<label>gauranlen connection</label>
-					</value>
+				<!--Remove Trees: Desired precept requirement from Gauranlen Connection meme-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/MemeDef[defName="TreeConnection"]/requireOne/li[li="Trees_Desired"]</xpath>
 				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/MemeDef[defName="TreeConnection"]/description</xpath>
-					<value>
-						<description>Gauranlen trees are the essence of life, and we must be near them.</description>
-					</value>
+				<!--Remove tribal faction requirement for Headdress and War Mask-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress" or
+					defName="Apparel_WarMask"]/apparel/ideoDesireAllowedFactionCategoryTags</xpath>
 				</li>
 			</operations>
 		</match>

@@ -1,14 +1,6 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<!--Allows Devilstrand and Corn in hydroponics basin-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Plant_Devilstrand" or
-				defName="Plant_Corn"]/plant/sowTags</xpath>
-				<value>
-					<li>Hydroponic</li>
-				</value>
-			</li>
 			<!--Allow deconstruction of ancient ruins-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/deconstructible</xpath>
@@ -22,46 +14,11 @@
 					<claimable>true</claimable>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/statBases</xpath>
-				<value>
-					<WorkToBuild>5000</WorkToBuild>
-				</value>
-			</li>
-			<!--Boomalope bleed chemfuel-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Boomalope"]/race</xpath>
-				<value>
-					<bloodDef>Filth_Fuel</bloodDef>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Boomrat"]/race</xpath>
-				<value>
-					<bloodDef>Filth_Fuel</bloodDef>
-				</value>
-			</li>
-			<!--Adjust melanin commonality-->
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/GeneDef[defName="Skin_Melanin4" or
-				defName="Skin_Melanin5" or
-				defName="Skin_Melanin6" or
-				defName="Skin_Melanin7" or
-				defName="Skin_Melanin8" or
-				defName="Skin_Melanin9"]</xpath>
-			</li>
 			<!--Make incident pawn stats visible-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/QuestScriptDef/root/nodes/li[@Class="QuestNode_AddPawnReward"]/rewardDetailsHidden</xpath>
 				<value>
 					<rewardDetailsHidden>false</rewardDetailsHidden>
-				</value>
-			</li>
-			<!--Increase Gold and Silver beauty: -4 -> 4-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Gold" or defName="Silver"]/statBases</xpath>
-				<value>
-					<Beauty>4</Beauty>
 				</value>
 			</li>
 			<!--Increase Plasteel durability: 2.8 -> 3-->
@@ -108,22 +65,6 @@
 					<costStuffCount>15</costStuffCount>
 				</value>
 			</li>
-			<!--Permanent enemies no longer flee-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/FactionDef[permanentEnemy="true" and not(autoFlee="false")]</xpath>
-				<value>
-					<autoFlee>false</autoFlee>
-				</value>
-			</li>
-			<!--Prepatch tribal facions to allow for custom xenotypes-->
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/FactionDef[@Name="TribeBase"]</xpath>
-				<value>
-					<xenotypeSet>
-						<xenotypeChances></xenotypeChances>
-					</xenotypeSet>
-				</value>
-			</li>
 			<!--Remove breach raids-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RaidStrategyDef[@Name="BreachingBase"]/selectionWeightPerPointsCurve/points</xpath>
@@ -150,13 +91,6 @@
 					</selectionWeightCurvesPerFaction>
 				</value>
 			</li>
-			<!--Remove drop pod raids-->
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/RaidStrategyDef/arriveModes/li[text()="EdgeDrop" or
-				text()="CenterDrop" or
-				text()="RandomDrop" or
-				text()="EdgeDropGroups"]</xpath>
-			</li>
 			<!--Remove sapper and siege raids-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RaidStrategyDef[defName="ImmediateAttackSappers" or
@@ -168,38 +102,12 @@
 					</points>
 				</value>
 			</li>
-			<!--Remove breakdowns for electrical buildings-->
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
-			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef/comps[not(*)]</xpath>
-			</li>
 			<!--Remove mineable Components from map generation-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="MineableComponentsIndustrial"]/building/mineableScatterCommonality</xpath>
 				<value>
 					<mineableScatterCommonality>0</mineableScatterCommonality>
 				</value>
-			</li>
-			<!--Remove narrow pawn heads-->
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/HeadTypeDef[defName="Male_NarrowNormal" or
-				defName="Male_NarrowPointy" or
-				defName="Male_NarrowWide" or
-				defName="Female_NarrowNormal" or
-				defName="Female_NarrowPointy" or
-				defName="Female_NarrowWide"]</xpath>
-			</li>
-			<!--Remove tribal faction requirement for headdress and war mask-->
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress" or
-				defName="Apparel_WarMask"]/recipeMaker/factionPrerequisiteTags</xpath>
-			</li>
-			<!--Remove work disablers for slaves-->
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/WorkTypeDef[disabledForSlaves="true" and
-				not(defName="Warden")]/disabledForSlaves</xpath>
 			</li>
 			<!--Rename Healroot to Xerigium-->
 			<li Class="PatchOperationReplace">
@@ -244,6 +152,98 @@
 				<value>
 					<label>megatherium</label>
 				</value>
+			</li>
+			<!--Allows Devilstrand and Corn in hydroponics basin-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Plant_Devilstrand" or
+				defName="Plant_Corn"]/plant/sowTags</xpath>
+				<value>
+					<li>Hydroponic</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/statBases</xpath>
+				<value>
+					<WorkToBuild>5000</WorkToBuild>
+				</value>
+			</li>
+			<!--Boomalope bleed chemfuel-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Boomalope"]/race</xpath>
+				<value>
+					<bloodDef>Filth_Fuel</bloodDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Boomrat"]/race</xpath>
+				<value>
+					<bloodDef>Filth_Fuel</bloodDef>
+				</value>
+			</li>
+			<!--Increase Gold and Silver beauty: -4 -> 4-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Gold" or defName="Silver"]/statBases</xpath>
+				<value>
+					<Beauty>4</Beauty>
+				</value>
+			</li>
+			<!--Permanent enemies no longer flee-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[permanentEnemy="true" and not(autoFlee="false")]</xpath>
+				<value>
+					<autoFlee>false</autoFlee>
+				</value>
+			</li>
+			<!--Prepatch tribal facions to allow for custom xenotypes-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/FactionDef[@Name="TribeBase"]</xpath>
+				<value>
+					<xenotypeSet>
+						<xenotypeChances></xenotypeChances>
+					</xenotypeSet>
+				</value>
+			</li>
+			<!--Adjust melanin commonality-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/GeneDef[defName="Skin_Melanin4" or
+				defName="Skin_Melanin5" or
+				defName="Skin_Melanin6" or
+				defName="Skin_Melanin7" or
+				defName="Skin_Melanin8" or
+				defName="Skin_Melanin9"]</xpath>
+			</li>
+			<!--Remove drop pod raids-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RaidStrategyDef/arriveModes/li[text()="EdgeDrop" or
+				text()="CenterDrop" or
+				text()="RandomDrop" or
+				text()="EdgeDropGroups"]</xpath>
+			</li>
+			<!--Remove breakdowns for electrical buildings-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef/comps[not(*)]</xpath>
+			</li>
+			<!--Remove narrow pawn heads-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/HeadTypeDef[defName="Male_NarrowNormal" or
+				defName="Male_NarrowPointy" or
+				defName="Male_NarrowWide" or
+				defName="Female_NarrowNormal" or
+				defName="Female_NarrowPointy" or
+				defName="Female_NarrowWide"]</xpath>
+			</li>
+			<!--Remove tribal faction requirement for headdress and war mask-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Apparel_TribalHeaddress" or
+				defName="Apparel_WarMask"]/recipeMaker/factionPrerequisiteTags</xpath>
+			</li>
+			<!--Remove work disablers for slaves-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/WorkTypeDef[disabledForSlaves="true" and
+				not(defName="Warden")]/disabledForSlaves</xpath>
 			</li>
 		</operations>
 	</Operation>
