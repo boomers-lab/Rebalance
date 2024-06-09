@@ -52,21 +52,6 @@
 						<defaultBaseValue>2</defaultBaseValue>
 					</value>
 				</li>
-				<!--Limits Impid tribe settlements to warm biomes-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/FactionDef[defName="TribeSavageImpid"]</xpath>
-					<value>
-						<minSettlementTemperatureChanceCurve>
-							<points>
-								<li>(0, 0.00001)</li>
-								<li>(6, 0.7)</li>
-								<li>(12,0.9)</li>
-								<li>(18,0.95)</li>
-								<li>(24,1)</li>
-							</points>
-						</minSettlementTemperatureChanceCurve>
-					</value>
-				</li>
 				<!--Reduces Impid tribe commonality on the world map: 1 -> 0.5-->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/FactionDef[defName="TribeSavageImpid"]</xpath>
@@ -249,6 +234,15 @@
 				<xpath>Defs/XenotypeDef[defName="Impid"]/combatPowerFactor</xpath>
 				<value>
 					<combatPowerFactor>1</combatPowerFactor>
+				</value>
+			</li>
+			<!--Adds greater impids-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/XenotypeDef[defName="Impid"]</xpath>
+				<value>
+					<doubleXenotypeChances>
+						<boomer_GreaterImpid>0.02</boomer_GreaterImpid>
+					</doubleXenotypeChances>
 				</value>
 			</li>
 			<!--Gives sanguophage red eyes-->
