@@ -12,13 +12,6 @@
 						<noneChance>1</noneChance>
 					</value>
 				</li>
-				<!--Increases tree pruning speed: 0.01 -> 0.02-->
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/connectionStrengthGainPerHourPruningBase</xpath>
-					<value>
-						<connectionStrengthGainPerHourPruningBase>0.02</connectionStrengthGainPerHourPruningBase>
-					</value>
-				</li>
 				<!--Reduce Biosculpter times-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays</xpath>
@@ -50,74 +43,6 @@
 					<value>
 						<ticksToRecharge>20000</ticksToRecharge>
 					</value>
-				</li>
-				<!--Move Proselytizer to low impact-->
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/MemeDef[defName="Proselytizer"]/impact</xpath>
-					<value>
-						<impact>1</impact>
-					</value>
-				</li>
-				<!--Rename Tree connection meme to Gauranlen connection-->
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/MemeDef[defName="TreeConnection"]/label</xpath>
-					<value>
-						<label>gauranlen connection</label>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/MemeDef[defName="TreeConnection"]/description</xpath>
-					<value>
-						<description>Gauranlen trees are the essence of life, and we must be near them.</description>
-					</value>
-				</li>
-				<!--Allow Nutrient Paste to be eaten with any meme except Flesh Purity, Rancher, and Cannibal-->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/MemeDef[defName="FleshPurity" or
-					defName="Rancher" or
-					defName="Cannibal"]/requireOne</xpath>
-					<value>
-						<li>
-							<li>NutrientPasteEating_Disgusting</li>
-						</li>
-					</value>
-				</li>
-				<!--Overhaul Individualist-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/PreceptDef[defName="DrugUse_Prohibited"]/conflictingMemes</xpath>
-					<value>
-						<li>Individualist</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/PreceptDef[defName="Lovin_Prohibited" or
-					defName="Lovin_Horrible" or
-					defName="Lovin_SpouseOnly_Strict" or
-					defName="Lovin_SpouseOnly_Moderate"]</xpath>
-					<value>
-						<conflictingMemes>
-							<li>Individualist</li>
-						</conflictingMemes>
-					</value>
-				</li>
-				<!--Overhaul Loyalist-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/MemeDef[defName="Loyalist"]</xpath>
-					<value>
-						<requireOne>
-							<li>
-								<li>Apostasy_Abhorrent</li>
-								<li>Apostasy_Horrible</li>
-							</li>
-						</requireOne>
-					</value>
-				</li>
-				<!--Remove Trees: Desired precept requirement from Gauranlen Connection meme-->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/MemeDef[defName="TreeConnection"]/requireOne/li[li="Trees_Desired"]</xpath>
 				</li>
 				<!--Remove tribal faction requirement for Headdress and War Mask-->
 				<li Class="PatchOperationRemove">
