@@ -7,7 +7,7 @@
 			<Operation Class="PatchOperationAdd">
 				<xpath>Defs/FactionDef[naturalEnemy="true" and not(autoFlee="false")]</xpath>
 				<value>
-					<autoFlee>true</autoFlee>
+					<autoFlee>false</autoFlee>
 				</value>
 			</Operation>
 		</caseTrue>
@@ -20,7 +20,7 @@
 			<Operation Class="PatchOperationAdd">
 				<xpath>Defs/FactionDef[permanentEnemy="true" and not(autoFlee="false")]</xpath>
 				<value>
-					<autoFlee>true</autoFlee>
+					<autoFlee>false</autoFlee>
 				</value>
 			</Operation>
 		</caseTrue>
