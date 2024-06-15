@@ -1,0 +1,12 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>RemoveWorkDisabler</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
+				<xpath>Defs/WorkTypeDef[disabledForSlaves="true" and not(defName="Warden")]/disabledForSlaves</xpath>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

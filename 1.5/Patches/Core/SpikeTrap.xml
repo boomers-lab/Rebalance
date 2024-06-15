@@ -1,0 +1,28 @@
+<Patch>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>friedrice</modId>
+		<key>SpikeTrapCost</key>
+		<defaultValue>15</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TrapSpike"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>{SpikeTrapCost}</costStuffCount>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>friedrice</modId>
+		<key>SpikeTrapWork</key>
+		<defaultValue>2400</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TrapSpike"]/statBases/WorkToBuild</xpath>
+				<value>
+					<WorkToBuild>{SpikeTrapWork}</WorkToBuild>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+</Patch>

@@ -3,30 +3,11 @@
 	<packageId>boomer.patches</packageId>
 	<name>fried rice</name>
 	<author>boomer</author>
-	<description>Core:
-- Adjusts melanin commonality
-- Allows Devilstrand and Corn in hydroponics basin
-- Allows deconstruction of ancient ruins
-- Boomalopes bleed chemfuel
-- Incident pawns stats are now visible
-- Increases Gold and Silver beauty: -4 -> 4
-- Increases Plasteel durability: 2.8 -> 3
-- Increases Steel durability: 1 -> 2
-- Increases pregnancy duration from 18 days to 45 days
-- Metal is no longer flammable
-- Nerfs the cost of spike traps
-- Permanent enemies no longer flee
-- Prepatches tribal facions to allow for custom xenotypes
-- Removes breach raids
-- Removes breakdowns for electrical buildings
-- Removes drop pod raids
-- Removes mineable Components from map generation
-- Removes narrow pawn heads
-- Removes sapper and siege raids
-- Removes tribal faction requirement for headdress and war mask
-- Removes work disablers for slaves
-- Renames Healroot to Xerigium
-- Renames Megasloth to Megatherium</description>
+	<description>Xenotype changes:
+- Removes aptitudes from vanilla xenotypes
+- Makes Highmate genes uninheritable
+- Makes fire-breathing Impids way less common
+- Makes Wasters gray</description>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>

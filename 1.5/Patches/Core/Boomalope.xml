@@ -1,0 +1,15 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>BoomalopeBleedFuel</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Boomalope" or defName="Boomrat"]/race</xpath>
+				<value>
+					<bloodDef>Filth_Fuel</bloodDef>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

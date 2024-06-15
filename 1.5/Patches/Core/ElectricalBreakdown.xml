@@ -1,0 +1,12 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>RemoveBreakdown</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

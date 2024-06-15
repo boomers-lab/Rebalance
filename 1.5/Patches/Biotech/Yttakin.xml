@@ -25,15 +25,7 @@
 				defName="NamerSettlementPirateYttakin"]</xpath>
 			</Operation>
 			<Operation Class="PatchOperationRemove">
-				<xpath>Defs/PawnKindDef[defName="Pirate_Yttakin" or
-				defName="Scavenger_Yttakin" or
-				defName="Drifter_Yttakin" or
-				defName="Thrasher_Yttakin" or
-				defName="Mercenary_Gunner_Yttakin" or
-				defName="Mercenary_Heavy_Yttakin" or
-				defName="Mercenary_Slasher_Yttakin" or
-				defName="Mercenary_Sniper_Yttakin" or
-				defName="Mercenary_Elite_Yttakin"]</xpath>
+				<xpath>Defs/PawnKindDef[defName="Pirate_Yttakin" or defName="Scavenger_Yttakin" or defName="Drifter_Yttakin" or defName="Thrasher_Yttakin" or defName="Mercenary_Gunner_Yttakin" or defName="Mercenary_Heavy_Yttakin" or defName="Mercenary_Slasher_Yttakin" or defName="Mercenary_Sniper_Yttakin" or defName="Mercenary_Elite_Yttakin"]</xpath>
 			</Operation>
 		</caseTrue>
 	</Operation>

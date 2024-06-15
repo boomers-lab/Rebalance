@@ -1,0 +1,15 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>IncidentPawn</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationReplace"> <!--Make incident pawn stats visible-->
+				<xpath>Defs/QuestScriptDef/root/nodes/li[@Class="QuestNode_AddPawnReward"]/rewardDetailsHidden</xpath>
+				<value>
+					<rewardDetailsHidden>false</rewardDetailsHidden>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

@@ -1,0 +1,12 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>RemoveFactionRequirement</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef/recipeMaker/factionPrerequisiteTags</xpath>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

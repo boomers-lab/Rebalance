@@ -1,0 +1,60 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>DeconstructRuins</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationReplace"> <!--Allow deconstruction of ancient ruins-->
+				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/deconstructible</xpath>
+				<value>
+					<deconstructible>true</deconstructible>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/statBases</xpath>
+				<value>
+					<WorkToBuild>5000</WorkToBuild>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/claimable</xpath>
+				<value>
+					<claimable>true</claimable>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AncientExostriderHead" or defName="AncientMechGestator" or defName="AncientBasicRecharger" or defName="AncientStandardRecharger" or defName="AncientBandNode"]</xpath>
+				<value>
+					<costList>
+						<ChunkSlagSteel>4</ChunkSlagSteel>
+					</costList>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AncientExostriderLeg" or defName="AncientToxifierGenerator"]</xpath>
+				<value>
+					<costList>
+						<ChunkSlagSteel>3</ChunkSlagSteel>
+					</costList>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AncientLargeMechGestator"]</xpath>
+				<value>
+					<costList>
+						<ChunkSlagSteel>5</ChunkSlagSteel>
+					</costList>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AncientExostriderRemains"]</xpath>
+				<value>
+					<costList>
+						<ChunkSlagSteel>6</ChunkSlagSteel>
+						<MechanoidTransponder>1</MechanoidTransponder>
+					</costList>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
