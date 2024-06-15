@@ -1,0 +1,15 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>tribalFactionRequirement</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationReplace"> <!--Disable preferred apparel when ideologions are generated-->
+					<xpath>Defs/MemeDef/selectOneOrNone/noneChance</xpath>
+					<value>
+						<noneChance>1</noneChance>
+					</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

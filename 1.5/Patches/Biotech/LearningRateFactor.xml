@@ -1,0 +1,15 @@
+<Patch>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>friedrice</modId>
+		<key>LearningRateFactor</key>
+		<defaultValue>2</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>Defs/StatDef[defName="LearningRateFactor"]/defaultBaseValue</xpath>
+				<value>
+					<defaultBaseValue>{LearningRateFactor}</defaultBaseValue>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+</Patch>

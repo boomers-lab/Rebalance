@@ -1,0 +1,12 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>tribalFactionRequirement</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove"> <!--Disable tribal faction requirement for apparel-->
+				<xpath>Defs/ThingDef/apparel/ideoDesireAllowedFactionCategoryTags</xpath>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

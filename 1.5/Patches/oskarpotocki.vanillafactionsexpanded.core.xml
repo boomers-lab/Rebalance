@@ -22,8 +22,8 @@
 				</li>
 			</operations>
 		</match>
-        <nomatch Class="PatchOperationSequence">
-            <operations>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
 				<!--Limits Impids to the equator-->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/FactionDef[defName="TribeSavageImpid"]</xpath>
@@ -39,7 +39,7 @@
 						</minSettlementTemperatureChanceCurve>
 					</value>
 				</li>
-            </operations>
-        </nomatch>
+			</operations>
+		</nomatch>
 	</Operation>
 </Patch>

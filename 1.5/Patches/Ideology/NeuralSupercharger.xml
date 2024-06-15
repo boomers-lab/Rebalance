@@ -1,0 +1,15 @@
+<Patch>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>friedrice</modId>
+		<key>NeuralSupercharger</key>
+		<defaultValue>20000</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace"> <!--Neural supercharger charge time vanilla: 24 hours-->
+				<xpath>Defs/ThingDef[defName="NeuralSupercharger"]/comps/li[@Class="CompProperties_NeuralSupercharger"]/ticksToRecharge</xpath>
+				<value>
+					<ticksToRecharge>{NeuralSupercharger}</ticksToRecharge>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+</Patch>

@@ -1,0 +1,15 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>EmpireHighmates</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd"> <!--Add Highmates to the Empire-->
+				<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+				<value>
+					<Highmate>0.025</Highmate>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

@@ -1,0 +1,19 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>FurskinNarrowHeadNuke</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
+				<xpath>Defs/HeadTypeDef[defName="Furskin_Narrow1" or
+				defName="Furskin_Narrow2" or
+				defName="Furskin_Narrow3"]</xpath>
+			</Operation>
+			<Operation Class="PatchOperationRemove">
+				<xpath>Defs/GeneDef[defName="Furskin"]/forcedHeadTypes/li[text()="Furskin_Narrow1" or
+				text()="Furskin_Narrow2" or
+				text()="Furskin_Narrow3"]</xpath>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

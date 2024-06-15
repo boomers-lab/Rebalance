@@ -1,0 +1,47 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>deconstructMechanoids</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AncientExostriderHead" or
+				defName="AncientMechGestator" or
+				defName="AncientBasicRecharger" or
+				defName="AncientStandardRecharger" or
+				defName="AncientBandNode"]</xpath>
+				<value>
+					<costList>
+						<ChunkSlagSteel>4</ChunkSlagSteel>
+					</costList>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AncientExostriderLeg" or
+				defName="AncientToxifierGenerator"]</xpath>
+				<value>
+					<costList>
+						<ChunkSlagSteel>3</ChunkSlagSteel>
+					</costList>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AncientLargeMechGestator"]</xpath>
+				<value>
+					<costList>
+						<ChunkSlagSteel>5</ChunkSlagSteel>
+					</costList>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AncientExostriderRemains"]</xpath>
+				<value>
+					<costList>
+						<ChunkSlagSteel>6</ChunkSlagSteel>
+						<MechanoidTransponder>1</MechanoidTransponder>
+					</costList>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

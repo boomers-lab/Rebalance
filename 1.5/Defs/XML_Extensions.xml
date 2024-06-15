@@ -1,0 +1,208 @@
+<Defs>
+	<XmlExtensions.SettingsMenuDef>
+		<defName>friedrice</defName>
+		<modId>friedrice</modId>
+		<label>fried rice</label>
+		<settings>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>All changes require a restart.</text>
+				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap"/>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Royalty</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>EmpireHighmates</key>
+				<label>Add Highmates to the Empire</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Ideology</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Biosculpter pod cycle days</text>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>10</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Slider">
+				<key>AgeReversalCycle</key>
+				<label>Age reversal (Vanilla: 8): {AgeReversalCycle}</label>
+				<min>1</min>
+				<max>25</max>
+				<decimals>0</decimals>
+			</li>
+			<li Class="XmlExtensions.Setting.Slider">
+				<key>RegenerationCycle</key>
+				<label>Bioregeneration (Vanilla: 25): {RegenerationCycle}</label>
+				<min>1</min>
+				<max>25</max>
+				<decimals>0</decimals>
+			</li>
+			<li Class="XmlExtensions.Setting.Slider">
+				<key>MedicCycle</key>
+				<label>Medic (Vanilla: 6): {MedicCycle}</label>
+				<min>1</min>
+				<max>25</max>
+				<decimals>0</decimals>
+			</li>
+			<li Class="XmlExtensions.Setting.Slider">
+				<key>PleasureCycle</key>
+				<label>Pleasure (Vanilla: 4): {PleasureCycle}</label>
+				<min>1</min>
+				<max>25</max>
+				<decimals>0</decimals>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>preferredApparel</key>
+				<label>Disable preferred apparel when ideologions are generated</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>tribalFactionRequirement</key>
+				<label>Disable tribal faction requirement for Headdress and War mask</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Numeric">
+				<key>NeuralSupercharger</key>
+				<label>Neural supercharger time (Vanilla: 60000 ticks = 24 hours)</label>
+				<min>1</min>
+				<max>60000</max>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Biotech</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>deconstructMechanoids</key>
+				<label>Allow deconstruction of ancient mechanoid remains</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Slider">
+				<key>LearningRateFactor</key>
+				<label>Child learning rate (Vanilla: 1): {LearningRateFactor}</label>
+				<min>0.1</min>
+				<max>10</max>
+				<decimals>1</decimals>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>FurskinNarrowHeadNuke</key>
+				<label>Remove narrow furskin heads</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Xenotypes</text>
+				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>removeDirtmole</key>
+				<label>Remove Dirtmole</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>removeGenie</key>
+				<label>Remove Genie</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>removeHussar</key>
+				<label>Remove Hussar</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>removeNeanderthal</key>
+				<label>Remove Neanderthal</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>removePigskin</key>
+				<label>Remove Pigskin</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>removeYttakin</key>
+				<label>Remove Yttakin</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>reworkHighmate</key>
+				<label>Rework Highmate</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>reworkImpid</key>
+				<label>Rework Impid</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>reworkWaster</key>
+				<label>Rework Waster</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>SanguophageEyes</key>
+				<label>Sanguophage have red eyes</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			<li Class="XmlExtensions.Setting.ResetSettings">
+				<label>Reset to Defaults</label>
+				<confirm>false</confirm>
+			</li>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+</Defs>

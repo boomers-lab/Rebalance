@@ -1,0 +1,15 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>SanguophageEyes</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd"> <!--Give Sanguophage red eyes-->
+				<xpath>Defs/XenotypeDef[defName="Sanguophage"]/genes</xpath>
+				<value>
+					<li>Eyes_Red</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
