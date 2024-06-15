@@ -4,7 +4,7 @@
 		<key>tribalFactionRequirement</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationRemove"> <!--Disable tribal faction requirement for apparel-->
+			<Operation Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef/apparel/ideoDesireAllowedFactionCategoryTags</xpath>
 			</Operation>
 		</caseTrue>

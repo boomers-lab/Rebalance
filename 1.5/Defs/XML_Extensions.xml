@@ -5,9 +5,10 @@
 		<label>fried rice</label>
 		<settings>
 			<li Class="XmlExtensions.Setting.Text">
-				<text>All changes require a restart.</text>
+				<text>All changes require a restart</text>
 				<anchor>Middle</anchor>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap"/>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Core</text>
 				<font>Medium</font>
@@ -17,22 +18,37 @@
 				<key>DeconstructMechanoids</key>
 				<label>Allow deconstruction of ancient ruins</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>BoomalopeBleedFuel</key>
-				<label>Boomalopes and Boomrats bleed Chemfuel</label>
+				<label>Boomalopes and boomrats bleed chemfuel</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>HydroponicCorn</key>
-				<label>Grow Corn in Hydroponics Basin</label>
+				<label>Grow corn in hydroponics basin</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>HydroponicDevilstrand</key>
-				<label>Grow Devilstrand in Hydroponics Basin</label>
+				<label>Grow devilstrand in hydroponics basin</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>IncidentPawn</key>
 				<label>Make incident pawn stats visible</label>
 				<tooltip>This currently only makes pawn stats visible in a few specific instances</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Slider">
 				<key>PregnancyDuration</key>
@@ -41,35 +57,59 @@
 				<max>60</max>
 				<decimals>0</decimals>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveBreakdown</key>
 				<label>Remove breakdowns for electrical buildings</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveFactionRequirement</key>
 				<label>Remove faction requirement for crafting bills</label>
 				<tooltip>Removes the tribal faction requirement for Headdress and War Mask as well as any modded item that uses factionPrerequisiteTags</tooltip>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveWorkDisabler</key>
 				<label>Remove work disablers for slaves</label>
 				<tooltip>Removes work disablers for everything except Wardening</tooltip>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RenameSpacerComponent</key>
-				<label>Rename Advanced Component to Spacer Component</label>
+				<label>Rename advanced component to spacer component</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RenameComponent</key>
-				<label>Rename Component to Industrial Component</label>
+				<label>Rename component to industrial component</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RenameHealroot</key>
-				<label>Rename Healroot to Xerigium</label>
+				<label>Rename healroot to xerigium</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RenameMegasloth</key>
-				<label>Rename Megasloth to Megatherium</label>
+				<label>Rename megasloth to megatherium</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Slider">
 				<key>SpikeTrapCost</key>
@@ -78,34 +118,55 @@
 				<max>60</max>
 				<decimals>0</decimals>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Numeric">
 				<key>SpikeTrapWork</key>
 				<label>Spike trap work to build (Vanilla: 3200)</label>
 				<min>1</min>
 				<max>4000</max>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Metal</text>
 				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>MetalFlammable</key>
 				<label>Make metal fireproof</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveCompactedMachinery</key>
 				<label>Remove mineable components</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveCompactedPlasteel</key>
 				<label>Remove mineable plasteel</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Slider">
 				<key>GoldSilverBeauty</key>
-				<label>Gold and Silver beauty (Vanilla: -4): {GoldSilverBeauty}</label>
+				<label>Gold and silver beauty (Vanilla: -4): {GoldSilverBeauty}</label>
 				<min>-4</min>
 				<max>4</max>
 				<decimals>0</decimals>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Slider">
 				<key>SteelDurability</key>
@@ -114,12 +175,18 @@
 				<max>5</max>
 				<decimals>1</decimals>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Slider">
 				<key>UraniumDurability</key>
 				<label>Uranium durability (Vanilla: 2.5): {UraniumDurability}</label>
 				<min>1</min>
 				<max>5</max>
 				<decimals>1</decimals>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Slider">
 				<key>PlasteelDurability</key>
@@ -128,57 +195,97 @@
 				<max>5</max>
 				<decimals>1</decimals>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Pawn Generation</text>
 				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveDarkMelanin</key>
 				<label>Remove dark melanin</label>
 				<tooltip>Removes dark shades of melanin from the game entirely so that all baseliners are white</tooltip>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveFat</key>
 				<label>Remove fat bodies from backstories</label>
 				<tooltip>Keeps compatibility with other mods intact while removing most fat pawns from generation</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveHulk</key>
 				<label>Remove hulking females from backstories</label>
 				<tooltip>Keeps compatibility with other mods intact while removing most hulking female pawns from generation</tooltip>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveNarrow</key>
 				<label>Remove narrow heads</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Raids</text>
 				<anchor>Middle</anchor>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>NaturalEnemyFlee</key>
 				<label>Natural enemies do not flee</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>PermanentEnemyFlee</key>
 				<label>Permanent enemies do not flee</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveBreach</key>
-				<label>Remove Breach raids</label>
+				<label>Remove breach raids</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveDropPodRaid</key>
-				<label>Remove Drop Pod raids</label>
+				<label>Remove drop pod raids</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveSapper</key>
-				<label>Remove Sapper raids</label>
+				<label>Remove sapper raids</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveSeige</key>
-				<label>Remove Seige raids</label>
+				<label>Remove seige raids</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap"/>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Royalty</text>
 				<font>Medium</font>
@@ -186,8 +293,13 @@
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>EmpireHighmates</key>
-				<label>Add Highmates to the Empire</label>
+				<label>Add highmates to the empire</label>
+				<tooltip>2.5% chance</tooltip>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap"/>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Ideology</text>
 				<font>Medium</font>
@@ -197,19 +309,31 @@
 				<key>preferredApparel</key>
 				<label>Disable preferred apparel when ideologions are generated</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>tribalFactionRequirement</key>
-				<label>Disable tribal faction requirement for Headdress and War mask</label>
+				<label>Disable tribal faction requirement for preferred apparel</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Numeric">
 				<key>NeuralSupercharger</key>
-				<label>Neural supercharger time (Vanilla: 60000 ticks = 24 hours)</label>
+				<label>Time to charge neural supercharger (Vanilla: 60000 ticks = 24 hours)</label>
 				<min>1</min>
 				<max>60000</max>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Biosculpter pod cycle days</text>
 				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Slider">
 				<key>AgeReversalCycle</key>
@@ -218,12 +342,18 @@
 				<max>25</max>
 				<decimals>0</decimals>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Slider">
 				<key>RegenerationCycle</key>
 				<label>Bioregeneration (Vanilla: 25): {RegenerationCycle}</label>
 				<min>1</min>
 				<max>25</max>
 				<decimals>0</decimals>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Slider">
 				<key>MedicCycle</key>
@@ -232,6 +362,9 @@
 				<max>25</max>
 				<decimals>0</decimals>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Slider">
 				<key>PleasureCycle</key>
 				<label>Pleasure (Vanilla: 4): {PleasureCycle}</label>
@@ -239,6 +372,10 @@
 				<max>25</max>
 				<decimals>0</decimals>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap"/>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Biotech</text>
 				<font>Medium</font>
@@ -251,53 +388,92 @@
 				<max>10</max>
 				<decimals>1</decimals>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Xenotypes</text>
 				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>removeDirtmole</key>
 				<label>Remove Dirtmole</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>removeGenie</key>
 				<label>Remove Genie</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>removeHussar</key>
 				<label>Remove Hussar</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>removeNeanderthal</key>
 				<label>Remove Neanderthal</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>removePigskin</key>
 				<label>Remove Pigskin</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>removeYttakin</key>
 				<label>Remove Yttakin</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>reworkHighmate</key>
 				<label>Rework Highmate</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>reworkImpid</key>
 				<label>Rework Impid</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>reworkWaster</key>
 				<label>Rework Waster</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>SanguophageEyes</key>
 				<label>Sanguophage have red eyes</label>
 			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.ResetSettings">
 				<label>Reset All to Defaults</label>
 				<confirm>false</confirm>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
 			</li>
 		</settings>
 	</XmlExtensions.SettingsMenuDef>

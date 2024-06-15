@@ -2,12 +2,12 @@
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>friedrice</modId>
 		<key>NaturalEnemyFlee</key>
-		<defaultValue>false</defaultValue>
+		<defaultValue>true</defaultValue>
 		<caseTrue>
 			<Operation Class="PatchOperationAdd">
 				<xpath>Defs/FactionDef[naturalEnemy="true" and not(autoFlee="false")]</xpath>
 				<value>
-					<autoFlee>false</autoFlee>
+					<autoFlee>true</autoFlee>
 				</value>
 			</Operation>
 		</caseTrue>
