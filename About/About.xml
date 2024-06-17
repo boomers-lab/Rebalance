@@ -3,11 +3,12 @@
 	<packageId>boomer.patches</packageId>
 	<name>fried rice</name>
 	<author>boomer</author>
-	<description>Xenotype changes:
+	<description>Configurable patches.
+Xenotype reworks:
 - Removes aptitudes from vanilla xenotypes
-- Makes Highmate genes uninheritable
-- Makes fire-breathing Impids way less common
-- Makes Wasters gray</description>
+- Highmate genes are uninheritable
+- Fire-breathing Impids are way less common
+- Wasters are gray</description>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
