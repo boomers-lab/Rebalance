@@ -1,0 +1,32 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>reworkMechanitor</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationReplace"><!--chain shotgun and heavy smg-->
+				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/weaponTags</xpath>
+				<value>
+					<weaponTags>
+						<li>IndustrialGunAdvanced</li>
+					</weaponTags>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationReplace"><!--accommodate new weapons-->
+				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>500~900</weaponMoney>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationAdd"><!--crafting required-->
+				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/requiredWorkTags</xpath>
+				<value>
+					<li>Crafting</li>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationRemove"><!--remove recluse-->
+				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/forcedTraits/Recluse</xpath>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

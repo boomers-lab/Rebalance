@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>friedrice</modId>
-		<key>tribalFactionRequirement</key>
+		<key>preferredApparel</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
 			<Operation Class="PatchOperationReplace"> <!--Disable preferred apparel when ideologions are generated-->

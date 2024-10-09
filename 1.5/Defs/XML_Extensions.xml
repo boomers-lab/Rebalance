@@ -15,7 +15,7 @@
 				<anchor>Middle</anchor>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
-				<key>DeconstructMechanoids</key>
+				<key>DeconstructRuins</key>
 				<label>Allow deconstruction of ancient ruins</label>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap">
@@ -285,6 +285,13 @@
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
 			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>UnbogBoreal</key>
+				<label>Reduce Boreal marsh commonality</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Gap"/>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Royalty</text>
@@ -304,6 +311,10 @@
 				<text>Ideology</text>
 				<font>Medium</font>
 				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>SpecialistsDumbLabor</key>
+				<label>Production and research specialists can do dumb labor</label>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>preferredApparel</key>
@@ -464,6 +475,13 @@
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>SanguophageEyes</key>
 				<label>Sanguophage have red eyes</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>reworkMechanitor</key>
+				<label>Rework Mechanitor pawnkind</label>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
