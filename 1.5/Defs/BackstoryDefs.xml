@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Ghost -->
+	<BackstoryDef ParentName="Solid">
+		<defName>GhostCustomChildhood</defName>
+		<slot>Childhood</slot>
+		<title>shadow initiate</title>
+		<titleShort>initiate</titleShort>
+		<description>[PAWN_nameDef] was groomed for military service by an interstellar shadow government. [PAWN_pronoun] spent most of [PAWN_possessive] youth in deep space practicing combat simulations aboard a mothership.</description>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>2</Melee>
+			<Cooking>-2</Cooking>
+			<Plants>-2</Plants>
+			<Animals>-2</Animals>
+			<Medicine>2</Medicine>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Artistic</li>
+		</workDisables>
+	</BackstoryDef>
+
+	<BackstoryDef ParentName="Solid">
+		<defName>GhostCustomAdulthood</defName>
+		<slot>Adulthood</slot>
+		<title>shadow marine</title>
+		<titleShort>shadow marine</titleShort>
+		<description>After graduating at the top of [PAWN_possessive] class, [PAWN_nameDef] was given a special task force and deployed throughout deep space. [PAWN_possessive] squad carried out coups, political assassinations, and false flag terrorist attacks to weaken local governments.\n\nAfter a lifetime of loyal service to the shadow government, [PAWN_nameDef] was deemed a liability and left for dead aboard a decrepit startstation.</description>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<skillGains>
+			<Shooting>7</Shooting>
+			<Melee>3</Melee>
+			<Cooking>-3</Cooking>
+			<Plants>-3</Plants>
+			<Animals>-3</Animals>
+			<Crafting>4</Crafting>
+			<Medicine>3</Medicine>
+			<Social>4</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+	<!-- Rei -->
+	<BackstoryDef ParentName="Solid">
+		<defName>ReiCustomChildhood</defName>
+		<slot>Childhood</slot>
+		<title>vatgrown chemist</title>
+		<titleShort>chemist</titleShort>
+		<description>[PAWN_nameDef] was grown to be a perfect chemist, with a mind perfectly tuned for creating illicit drugs. [PAWN_possessive] creators planned to use [PAWN_objective] to create an interstellar drug cartel, but [PAWN_pronoun] managed to sneak away on an outbound cargo ship.</description>
+		<skillGains>
+			<Cooking>3</Cooking>
+			<Medicine>3</Medicine>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+</Defs>

@@ -1,3 +1,3 @@
 git add .
-git commit -m "automated commit"
+git commit -m "automated"
 git push

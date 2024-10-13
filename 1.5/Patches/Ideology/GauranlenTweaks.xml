@@ -1,0 +1,44 @@
+<Patch>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>friedrice</modId>
+		<key>GauranlenPruningSpeed</key>
+		<defaultValue>0.2</defaultValue>
+		<apply>
+			<Operation Class="PatchOperationReplace"> <!--Increases tree pruning speed: 0.01 -> 0.02-->
+				<xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/connectionStrengthGainPerHourPruningBase</xpath>
+				<value>
+					<connectionStrengthGainPerHourPruningBase>{GauranlenPruningSpeed}</connectionStrengthGainPerHourPruningBase>
+				</value>
+			</Operation>
+		</apply>
+	</Operation>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>renameTreeConnection</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationReplace"> <!--Rename Tree connection meme to Gauranlen connection-->
+					<xpath>Defs/MemeDef[defName="TreeConnection"]/label</xpath>
+					<value>
+						<label>gauranlen connection</label>
+					</value>
+			</Operation>
+			<Operation Class="PatchOperationReplace">
+				<xpath>Defs/MemeDef[defName="TreeConnection"]/description</xpath>
+				<value>
+					<description>Gauranlen trees are the essence of life, and we must be near them.</description>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>removeTreesDesired</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove"> <!--Remove Trees: Desired precept requirement from Gauranlen/Tree Connection meme-->
+				<xpath>Defs/MemeDef[defName="TreeConnection"]/requireOne/li[li="Trees_Desired"]</xpath>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

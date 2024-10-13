@@ -1,0 +1,26 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>overhaulIndividualist</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd"> <!--Overhaul Individualist-->
+				<xpath>Defs/PreceptDef[defName="DrugUse_Prohibited"]/conflictingMemes</xpath>
+				<value>
+					<li>Individualist</li>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PreceptDef[defName="Lovin_Prohibited" or
+				defName="Lovin_Horrible" or
+				defName="Lovin_SpouseOnly_Strict" or
+				defName="Lovin_SpouseOnly_Moderate"]</xpath>
+				<value>
+					<conflictingMemes>
+						<li>Individualist</li>
+					</conflictingMemes>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

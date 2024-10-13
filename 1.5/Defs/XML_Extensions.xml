@@ -4,6 +4,7 @@
 		<modId>friedrice</modId>
 		<label>fried rice</label>
 		<settings>
+		<!--Core-->
 			<li Class="XmlExtensions.Setting.Text">
 				<text>All changes require a restart</text>
 				<anchor>Middle</anchor>
@@ -287,12 +288,14 @@
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>UnbogBoreal</key>
-				<label>Reduce Boreal marsh commonality</label>
+				<label>Reduce boreal marsh commonality</label>
+				<tooltip>Boreal marshes now have similar commonality to temperate forest</tooltip>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap"/>
+		<!--Royalty-->
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Royalty</text>
 				<font>Medium</font>
@@ -307,14 +310,11 @@
 				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap"/>
+		<!--Ideology-->
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Ideology</text>
 				<font>Medium</font>
 				<anchor>Middle</anchor>
-			</li>
-			<li Class="XmlExtensions.Setting.Checkbox">
-				<key>SpecialistsDumbLabor</key>
-				<label>Production and research specialists can do dumb labor</label>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>preferredApparel</key>
@@ -330,11 +330,70 @@
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
 			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>SpecialistsDumbLabor</key>
+				<label>Production and research specialists can do dumb labor</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Numeric">
 				<key>NeuralSupercharger</key>
-				<label>Time to charge neural supercharger (Vanilla: 60000 ticks = 24 hours)</label>
+				<label>Time to charge neural supercharger (Vanilla: 60000)</label>
 				<min>1</min>
 				<max>60000</max>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Meme/precept overhauls</text>
+				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>allowNutrientPaste</key>
+				<label>Allow Nutrient Paste: Don't Care with more memes</label>
+				<tooltip>Only forced on Flesh Purity, Rancher, and Cannibal</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>moveProselytizer</key>
+				<label>Lower Proselytizer meme impact to 1 (Vanilla: 2)</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>overhaulIndividualist</key>
+				<label>Overhaul individualist</label>
+				<tooltip>Makes Drug Use: Prohibited and various Lovin restrictions a conflicting meme</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>overhaulLoyalist</key>
+				<label>Overhaul Loyalist</label>
+				<tooltip>Requires Apostasy: Horrible or Abhorrent</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>renameTreeConnection</key>
+				<label>Rename Tree connection meme to Gauranlen connection</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>removeTreesDesired</key>
+				<label>Remove Trees: Desired from Gauranlen/Tree connection meme</label>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
@@ -386,7 +445,18 @@
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
 			</li>
+			<li Class="XmlExtensions.Setting.Slider">
+				<key>GauranlenPruningSpeed</key>
+				<label>Increase tree pruning speed (Vanilla: 0.1): {GauranlenPruningSpeed}</label>
+				<min>0.1</min>
+				<max>1</max>
+				<decimals>1</decimals>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Gap"/>
+		<!--Biotech-->
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Biotech</text>
 				<font>Medium</font>
@@ -402,9 +472,39 @@
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
 			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>FlattenGeneComplexity</key>
+				<label>Flatten metabolic efficiency</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>FlattenMetabolicEfficiency</key>
+				<label>Flatten metabolic efficiency</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>reworkMechanitor</key>
+				<label>Rework Mechanitor pawnkind</label>
+				<tooltip>Changes default weapon to chain shotgun or heavy SMG, forces crafting as a required work tag, removes recluse trait requirement</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Xenotypes</text>
 				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>AnimalGenes</key>
+				<label>Animals trust animal genes</label>
+				<tooltip>Xenohumans with animal genes get a slight boost to tame, train, and bonding factors</tooltip>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
@@ -475,13 +575,6 @@
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>SanguophageEyes</key>
 				<label>Sanguophage have red eyes</label>
-			</li>
-			<li Class="XmlExtensions.Setting.Gap">
-				<spacing>4</spacing>
-			</li>
-			<li Class="XmlExtensions.Setting.Checkbox">
-				<key>reworkMechanitor</key>
-				<label>Rework Mechanitor pawnkind</label>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>

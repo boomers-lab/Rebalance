@@ -1,0 +1,20 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>overhaulLoyalist</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd"> <!--Overhaul Loyalist-->
+				<xpath>Defs/MemeDef[defName="Loyalist"]</xpath>
+				<value>
+					<requireOne>
+						<li>
+							<li>Apostasy_Abhorrent</li>
+							<li>Apostasy_Horrible</li>
+						</li>
+					</requireOne>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

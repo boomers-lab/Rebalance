@@ -1,0 +1,22 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>allowNutrientPaste</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove"> <!--Allow Nutrient Paste to be eaten with any meme except Flesh Purity, Rancher, and Cannibal-->
+				<xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
+			</Operation>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/MemeDef[defName="FleshPurity" or
+				defName="Rancher" or
+				defName="Cannibal"]/requireOne</xpath>
+				<value>
+					<li>
+						<li>NutrientPasteEating_Disgusting</li>
+					</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

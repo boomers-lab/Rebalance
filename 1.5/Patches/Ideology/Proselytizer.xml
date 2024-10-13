@@ -1,0 +1,15 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>moveProselytizer</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationReplace"> <!--Move Proselytizer to low impact-->
+				<xpath>Defs/MemeDef[defName="Proselytizer"]/impact</xpath>
+				<value>
+					<impact>1</impact>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TraitDef>
+		<defName>DrugCooker</defName>
+		<commonality>0.2</commonality>
+		<degreeDatas>
+			<li>
+				<label>narco</label>
+				<description>{PAWN_nameDef} is a naturally gifted chemist. {PAWN_pronoun} cooks and synthesizes drugs quickly, and knows not to binge on {PAWN_possessive} own supply.</description>
+				<statOffsets>
+					<DrugSynthesisSpeed>0.20</DrugSynthesisSpeed>
+					<DrugCookingSpeed>0.20</DrugCookingSpeed>
+				</statOffsets>
+				<statFactors />
+				<possessions />
+				<disallowedMentalStates>
+					<li>Binging_DrugExtreme</li>
+					<li>Binging_DrugMajor</li>
+				</disallowedMentalStates>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>DrugDesire</li>
+		</conflictingTraits>
+		<requiredWorkTags>
+			<li>Cooking</li>
+			<li>Intellectual</li>
+		</requiredWorkTags>
+	</TraitDef>
+
+</Defs>
