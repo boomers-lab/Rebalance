@@ -33,6 +33,7 @@ Xenotype reworks:
 		<li>regrowth.botr.core</li>
 		<li>ceteam.combatextended</li>
 		<li>imranfish.xmlextensions</li>
+		<li>vanillaexpanded.vappe</li>
 	</loadAfter>
 	<incompatibleWith />
 </ModMetaData>
