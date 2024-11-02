@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Archon</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<!--removes shit genes-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/XenotypeDef[defName="VRE_Archon"]/genes/li[text()="VRE_Aggression_ExtremelyAggressive" or text()="VRE_LongPregnancy"]</xpath>
+				</li>
+            <!--compensate for metabolism gain-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="VRE_Archon"]/genes</xpath>
+                    <value>
+                        <li>ArchiteMetabolism</li>
+                    </value>
+				</li>
+            <!--the ears are enough, fuck these ugly ass heads-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/forcedHeadTypes</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

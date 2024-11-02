@@ -16,4 +16,35 @@
 			</li>
 		</operations>
 	</Operation>
+	<!--Temporary-->
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef[defName = "CryptosleepCasket"]/statBases</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsMisc</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef[defName = "CryptosleepCasket"]/statBases/Flammability</xpath>
+		<value>
+			<Mass>75</Mass>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef[defName = "AncientCryptosleepCasket"]/statBases</xpath>
+		<value>
+			<minifiedDef>MinifiedThing</minifiedDef>
+			<thingCategories>
+				<li>BuildingsMisc</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef[defName = "AncientCryptosleepCasket"]/statBases/Flammability</xpath>
+		<value>
+			<Mass>75</Mass>
+		</value>
+	</Operation>
 </Patch>

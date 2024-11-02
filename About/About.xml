@@ -3,12 +3,7 @@
 	<packageId>boomer.patches</packageId>
 	<name>fried rice</name>
 	<author>boomer</author>
-	<description>Configurable patches.
-Xenotype reworks:
-- Removes aptitudes from vanilla xenotypes
-- Highmate genes are uninheritable
-- Fire-breathing Impids are way less common
-- Wasters are gray</description>
+	<description>Configurable patches.</description>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
@@ -34,6 +29,7 @@ Xenotype reworks:
 		<li>ceteam.combatextended</li>
 		<li>imranfish.xmlextensions</li>
 		<li>vanillaexpanded.vappe</li>
+		<li>moistestwhale.gitscyberbrains</li>
 	</loadAfter>
 	<incompatibleWith />
 </ModMetaData>

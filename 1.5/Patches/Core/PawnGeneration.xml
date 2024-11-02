@@ -60,4 +60,14 @@
 			</Operation>
 		</caseTrue>
 	</Operation>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>RemoveFemaleWide</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
+				<xpath>Defs/HeadTypeDef[defName="Female_AverageWide"]</xpath>
+			</Operation>
+		</caseTrue>
+	</Operation>
 </Patch>

@@ -25,4 +25,17 @@
 			</Operation>
 		</caseTrue>
 	</Operation>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>HydroponicHaygrass</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Plant_Haygrass"]/plant/sowTags</xpath>
+				<value>
+					<li>Hydroponic</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
 </Patch>

@@ -44,6 +44,13 @@
 				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>HydroponicHaygrass</key>
+				<label>Grow haygrass in hydroponics basin</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>IncidentPawn</key>
 				<label>Make incident pawn stats visible</label>
 				<tooltip>This currently only makes pawn stats visible in a few specific instances</tooltip>
@@ -207,6 +214,14 @@
 				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>RemoveBeards</key>
+				<label>Remove beards</label>
+				<tooltip>Aggressively removes all beard defs from the game except for NoBeard</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveDarkMelanin</key>
 				<label>Remove dark melanin</label>
 				<tooltip>Removes dark shades of melanin from the game entirely so that all baseliners are white</tooltip>
@@ -233,6 +248,13 @@
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>RemoveNarrow</key>
 				<label>Remove narrow heads</label>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>RemoveFemaleWide</key>
+				<label>Remove wide female heads</label>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
