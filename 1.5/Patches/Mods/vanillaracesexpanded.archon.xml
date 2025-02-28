@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--removes shit genes-->
+			<!--removes bad genes-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="VRE_Archon"]/genes/li[text()="VRE_Aggression_ExtremelyAggressive" or text()="VRE_LongPregnancy"]</xpath>
 				</li>
@@ -17,7 +17,7 @@
                         <li>ArchiteMetabolism</li>
                     </value>
 				</li>
-            <!--the ears are enough, fuck these ugly ass heads-->
+            <!--ugly heads lol-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/forcedHeadTypes</xpath>
 				</li>

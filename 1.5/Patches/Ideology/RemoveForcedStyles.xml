@@ -1,0 +1,23 @@
+<Patch>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>friedrice</modId>
+		<key>removeStyles</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationReplace"> <!--remove styles from memes-->
+				<xpath>Defs/MemeDef/thingStyleCategories</xpath>
+				<value>
+                    <thingStyleCategories>
+                    </thingStyleCategories>
+				</value>
+			</Operation>
+			<Operation Class="PatchOperationReplace"> <!--remove styles from cultures-->
+				<xpath>Defs/CultureDef/thingStyleCategories</xpath>
+				<value>
+                    <thingStyleCategories>
+                    </thingStyleCategories>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

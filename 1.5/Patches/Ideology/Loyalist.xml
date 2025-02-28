@@ -4,16 +4,28 @@
 		<key>overhaulLoyalist</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationAdd"> <!--Overhaul Loyalist-->
-				<xpath>Defs/MemeDef[defName="Loyalist"]</xpath>
-				<value>
-					<requireOne>
+			<Operation Class="PatchOperationConditional">
+				<xpath>Defs/MemeDef[defName="Loyalist"]/requireOne</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/MemeDef[defName="Loyalist"]</xpath>
+					<value>
+						<requireOne>
+							<li>
+								<li>Apostasy_Abhorrent</li>
+								<li>Apostasy_Horrible</li>
+							</li>
+						</requireOne>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>Defs/MemeDef[defName="Loyalist"]/requireOne</xpath>
+					<value>
 						<li>
 							<li>Apostasy_Abhorrent</li>
 							<li>Apostasy_Horrible</li>
 						</li>
-					</requireOne>
-				</value>
+					</value>
+				</match>
 			</Operation>
 		</caseTrue>
 	</Operation>

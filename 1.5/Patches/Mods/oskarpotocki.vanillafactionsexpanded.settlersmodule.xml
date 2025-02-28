@@ -12,10 +12,8 @@
 					and not(defName="VFES_Gun_HuntingRifle")
 					and not(defName="VFES_Headgear_Bandana")
 					and not(defName="VFES_Headgear_Sombrero")
-					and not(defName="VFES_Headgear_FlatCap")]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="VFES_Headgear_Bandana"
+					and not(defName="VFES_Headgear_FlatCap")]
+					| Defs/ThingDef[defName="VFES_Headgear_Bandana"
                     or defName="VFES_Headgear_Sombrero"
                     or defName="VFES_Headgear_FlatCap"]/apparel/tags/li[text()="Outlander"]</xpath>
 				</li>

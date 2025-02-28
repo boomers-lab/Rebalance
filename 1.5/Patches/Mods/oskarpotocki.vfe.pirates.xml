@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<!--renames rum because this ain't rum-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="VFEP_RumAsIngredient"]/label</xpath>
+					<value>
+						<label>drank pruno based cocktail</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="VFEP_RumAsIngredient"]/description</xpath>
+					<value>
+						<description>This colonist drank a cocktail that had pruno as one of its ingredients. Reduces hunger rate by 15%.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="VFEP_SweatFermentation"]/description</xpath>
+					<value>
+						<description>Craft suits which combine alcohol distillation and nutrient paste synthesis to produce pruno from recycled human waste.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="VFEP_SweatFermentation"]/generalRules/rulesStrings</xpath>
+					<value>
+					<rulesStrings>
+						<li>subject->biochemical ingenuity</li>
+						<li>subject_story->turned the cycle of waste into a source of sustenance and spirit, crafting pruno from the sweat of toil</li>
+						<li>subject_story->blurred the lines between distillation and desperation, finding innovation in the unconventional</li>
+						<li>subject_story->created a self-sustaining cycle of work, waste, and whiskey, fueling both body and morale</li>
+						<li>subject_gerund->brewing resilience from refuse</li>
+					</rulesStrings>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VFEP_Rum"]/label</xpath>
+					<value>
+						<label>pruno</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VFEP_Rum"]/description</xpath>
+					<value>
+						<description>A highly alcoholic beverage made from the recycled bodily fluids of those wearing rumsuits.\n\nAn ingenious way of not only improving morale but also allowing crew to operate longer without needing to resupply for food or dispose of human waste. Pruno is very thick to drink - much like a protein shake - and the alcohol helps mask the otherwise unpleasant taste from repurposed nutrient paste dispenser technology.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VFEP_Apparel_Rumsuit"]/description</xpath>
+					<value>
+						<description>A large, bulky suit that allows the wearer to passively produce Pruno once every 10 days. However, it is not very pleasant to wear as it feels like wearing damp, humid clothes from excessive sweating.\n\nThe suit includes a high-efficiency filter, heat-exchange filaments and salt precipitators. Urine and feces are processed in thigh pads and throughout the design are tubes that link to different catchpockets. Reprocessed bodily fluids are distilled into an alcoholic derivative of nutrient paste which can be drained when all the pockets are filled.\n\nRemoving the suit causes the accumulated liquid to evaporate, and it takes a long time to put on and properly adjust to the wearer. Due to the design, it can only be worn with an undersuit and the lack of head covering, while reducing efficiency, is purposefully done so it can be worn with head protection.</description>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThoughtDef[defName="VFEP_RumAsIngredient"]/stages/li/label</xpath>
+					<value>
+						<label>Drank pruno-based cocktail</label>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

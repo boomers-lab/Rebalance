@@ -4,6 +4,8 @@
 		<modId>friedrice</modId>
 		<label>fried rice</label>
 		<settings>
+		<!--lots of busy work to switch this over to VEF toggleable patches but it needs to happen
+		https://github.com/Vanilla-Expanded/VanillaExpandedFramework/wiki/Toggable-patches-->
 		<!--Core-->
 			<li Class="XmlExtensions.Setting.Text">
 				<text>All changes require a restart</text>
@@ -371,6 +373,13 @@
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Meme/precept overhauls</text>
 				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Gap">
+				<spacing>4</spacing>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>removeStyles</key>
+				<label>Remove forced styles for memes and cultures</label>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>

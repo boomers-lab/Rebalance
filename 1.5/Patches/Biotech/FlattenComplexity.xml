@@ -8,7 +8,7 @@
                 <xpath>//biostatCpx</xpath>
             </Operation>
 			<Operation Class="PatchOperationAdd">
-                <xpath>/Defs/GeneDef</xpath>
+                <xpath>Defs/GeneDef</xpath>
 				<value>
 					<biostatCpx>0</biostatCpx>
 				</value>
@@ -24,7 +24,7 @@
                 <xpath>//biostatMet</xpath>
             </Operation>
 			<Operation Class="PatchOperationAdd">
-                <xpath>/Defs/GeneDef</xpath>
+                <xpath>Defs/GeneDef</xpath>
 				<value>
 					<biostatMet>0</biostatMet>
 				</value>
