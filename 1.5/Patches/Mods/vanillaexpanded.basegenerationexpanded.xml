@@ -2,13 +2,13 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Combat Extended</li>
+			<li>Vanilla Base Generation Expanded</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--remove industrial basic tags from backpacks because literally every pawn has one lol-->
+			<!--remove unused turrets from VFE - Security-->
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[@ParentName="ApparelCarryGearBase"]/apparel/tags/li[text()="IndustrialBasic" or text()="Neolithic"]</xpath>
+					<xpath>Defs/KCSG.SettlementLayoutDef/defenseOptions/allowedTurretsDefs/li[@MayRequire="VanillaExpanded.VFESecurity"]</xpath>
 				</li>
 			</operations>
 		</match>

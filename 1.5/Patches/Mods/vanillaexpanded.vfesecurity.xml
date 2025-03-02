@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Security</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			<!--hard removes most of the mod lol-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[starts-with(defName, "VFES_")
+					and not(defName="VFES_Turret_Artillery")
+					and not(defName="VFES_Artillery_Weapon")
+					and not(defName="VFES_Turret_Decoy")
+					and not(defName="VFES_Gun_None")
+					and not(defName="VFES_Bullet_Invisible")
+					and not(defName="VFES_AmmoCrate")
+					and not(defName="VFES_ShieldGenerator_Small")
+					and not(defName="VFES_ShieldGenerator_Large")
+					and not(defName="VFES_ShieldGenerator_Archotech")
+					and not(defName="VFES_ArtilleryStrikeIncoming")
+					and not(defName="VFES_ArtilleryStrikeLeaving")
+					and not(defName="VFES_ActiveArtilleryStrike")
+					and not(defName="VFES_Turret_EMPTurret")
+					and not(defName="VFES_Gun_EMPTurret")
+					and not(defName="VFES_Bullet_EMPCannon")]</xpath>
+				</li>
+            <!--change research prerequisite for decoy before I kill its researchprojectdef-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFES_Turret_Decoy"]/researchPrerequisites/li[text()="VWE_TrenchWarfare"]</xpath>
+                    <value>
+                        <li>ComplexFurniture</li>
+                    </value>
+                </li>
+            <!--kill unused research project defs-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[starts-with(defName, "VFES_")
+                    and not(defName="VFES_Artillery")
+                    and not(defName="VFES_EMPCannon")
+                    and not(defName="VFES_RepulsorTechnology")]
+                    | Defs/ResearchProjectDef[defName="VWE_TrenchWarfare"]</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

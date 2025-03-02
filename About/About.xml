@@ -3,7 +3,7 @@
 	<packageId>boomer.patches</packageId>
 	<name>fried rice</name>
 	<author>boomer</author>
-	<description>Configurable patches.</description>
+	<description>Fried rice is a versatile, flavorful dish that transforms leftover rice into a quick and satisfying meal. Traditionally made with day-old rice, which is drier and less sticky than fresh rice, it absorbs sauces and seasonings better while developing a perfect, slightly crispy texture when stir-fried. It’s the ultimate "kitchen sink" recipe, allowing for endless variations with whatever ingredients are on hand—vegetables, eggs, meats, seafood, or tofu—seasoned with soy sauce, garlic, ginger, or any preferred spices. Whether kept simple or loaded with mix-ins, fried rice is a delicious and resourceful way to repurpose leftovers into something fresh and comforting.</description>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
@@ -35,10 +35,13 @@
 		<li>oskarpotocki.vfe.pirates</li>
 		<li>regrowth.botr.core</li>
 		<li>sarg.alphamemes</li>
+		<li>vanillaexpanded.basegenerationexpanded</li>
 		<li>vanillaexpanded.vappe</li>
+		<li>vanillaexpanded.vfesecurity</li>
 		<li>vanillaexpanded.vpsycastse</li>
 		<li>vanillaexpanded.vwec</li>
 		<li>vanillaracesexpanded.archon</li>
+		<li>vanillaracesexpanded.phytokin</li>
 	</loadAfter>
 	<incompatibleWith />
 </ModMetaData>

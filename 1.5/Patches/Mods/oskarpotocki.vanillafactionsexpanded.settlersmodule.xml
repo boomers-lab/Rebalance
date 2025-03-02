@@ -17,11 +17,11 @@
                     or defName="VFES_Headgear_Sombrero"
                     or defName="VFES_Headgear_FlatCap"]/apparel/tags/li[text()="Outlander"]</xpath>
 				</li>
-			<!--removes the scenario-->
+			<!--remove the scenario-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ScenarioDef[defName="VFES_Bandits"]</xpath>
 				</li>
-			<!--removes thing bloat-->
+			<!--remove thing bloat-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName="ChemBoiler"
                     or defName="Chemlamp"
@@ -45,10 +45,10 @@
                         <requiredCountAtGameStart>1</requiredCountAtGameStart>
                     </value>
 				</li>
-            <!--remove impids-->
+            <!--remove impids
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/FactionDef[starts-with(defName, "Settler")]/xenotypeSet/xenotypeChances/Impid</xpath>
-				</li>
+				</li> should be fine with the impid rework-->
 			</operations>
 		</match>
 	</Operation>

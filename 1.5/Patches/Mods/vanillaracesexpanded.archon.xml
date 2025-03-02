@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--removes bad genes-->
+			<!--remove bad genes-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="VRE_Archon"]/genes/li[text()="VRE_Aggression_ExtremelyAggressive" or text()="VRE_LongPregnancy"]</xpath>
 				</li>
