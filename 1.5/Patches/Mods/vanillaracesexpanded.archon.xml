@@ -6,18 +6,18 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--remove bad genes-->
+				<!--remove bad genes-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="VRE_Archon"]/genes/li[text()="VRE_Aggression_ExtremelyAggressive" or text()="VRE_LongPregnancy"]</xpath>
 				</li>
-            <!--compensate for metabolism gain-->
+				<!--compensate for metabolism gain-->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/XenotypeDef[defName="VRE_Archon"]/genes</xpath>
-                    <value>
-                        <li>ArchiteMetabolism</li>
-                    </value>
+					<value>
+						<li>ArchiteMetabolism</li>
+					</value>
 				</li>
-            <!--ugly heads lol-->
+				<!--ugly heads lol-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/GeneDef[defName="VRE_Leatherskin"]/forcedHeadTypes</xpath>
 				</li>

@@ -20,8 +20,7 @@
 				<xpath>Defs/FactionDef[defName="OutlanderRoughPig"]</xpath>
 			</Operation>
 			<Operation Class="PatchOperationRemove">
-				<xpath>Defs/RulePackDef[defName="NamerFactionOutlanderPig" or
-				defName="NamerSettlementOutlanderPig"]</xpath>
+				<xpath>Defs/RulePackDef[defName="NamerFactionOutlanderPig" or defName="NamerSettlementOutlanderPig"]</xpath>
 			</Operation>
 			<Operation Class="PatchOperationRemove">
 				<xpath>Defs/PawnKindDef[defName="Villager_Pig" or defName="Villager_Child_Pig" or defName="Town_Guard_Pig" or defName="Town_Councilman_Pig" or defName="Town_Trader_Pig" or defName="Mercenary_Gunner_Pig" or defName="Mercenary_Elite_Pig"]</xpath>

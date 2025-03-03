@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--remove abilities because these brains are already OP-->
+				<!--remove abilities because these brains are already OP-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/HediffDef[@ParentName="gitsAddedCyberbrainBase"
 					or @ParentName="gitsAddedCyberbrainBasicBase"

@@ -4,7 +4,8 @@
 		<key>IncidentPawn</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationReplace"> <!--Make incident pawn stats visible-->
+			<!--Make incident pawn stats visible-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/QuestScriptDef/root/nodes/li[@Class="QuestNode_AddPawnReward"]/rewardDetailsHidden</xpath>
 				<value>
 					<rewardDetailsHidden>false</rewardDetailsHidden>

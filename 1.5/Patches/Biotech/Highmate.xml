@@ -4,7 +4,8 @@
 		<key>reworkHighmate</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationReplace"> <!--Replace Highmate genepool-->
+			<!--Replace Highmate genepool-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/XenotypeDef[defName="Highmate"]/genes</xpath>
 				<value>
 					<genes>
@@ -26,7 +27,8 @@
 					</genes>
 				</value>
 			</Operation>
-			<Operation Class="PatchOperationAdd"> <!--Make Highmate genes uninheritable-->
+			<!--Make Highmate genes uninheritable-->
+			<Operation Class="PatchOperationAdd">
 				<xpath>Defs/XenotypeDef[defName="Highmate"]</xpath>
 				<value>
 					<inheritable>false</inheritable>

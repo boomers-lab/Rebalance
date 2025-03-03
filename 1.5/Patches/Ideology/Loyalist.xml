@@ -18,7 +18,7 @@
 					</value>
 				</nomatch>
 				<match Class="PatchOperationAdd">
-				<xpath>Defs/MemeDef[defName="Loyalist"]/requireOne</xpath>
+					<xpath>Defs/MemeDef[defName="Loyalist"]/requireOne</xpath>
 					<value>
 						<li>
 							<li>Apostasy_Abhorrent</li>

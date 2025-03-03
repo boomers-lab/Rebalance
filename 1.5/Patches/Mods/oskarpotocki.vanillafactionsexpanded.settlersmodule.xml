@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--aggressively removes most weapons and apparel-->
+				<!--aggressively removes most weapons and apparel-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[starts-with(defName, "VFES_")
 					and not(defName="VFES_Gun_HuntingRifle")
@@ -17,11 +17,11 @@
                     or defName="VFES_Headgear_Sombrero"
                     or defName="VFES_Headgear_FlatCap"]/apparel/tags/li[text()="Outlander"]</xpath>
 				</li>
-			<!--remove the scenario-->
+				<!--remove the scenario-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ScenarioDef[defName="VFES_Bandits"]</xpath>
 				</li>
-			<!--remove thing bloat-->
+				<!--remove thing bloat-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[defName="ChemBoiler"
                     or defName="Chemlamp"
@@ -32,20 +32,20 @@
                     or defName="TableCircular"
                     or defName="Windmill"]</xpath>
 				</li>
-            <!--thanks but I don't need three factions-->
+				<!--thanks but I don't need three factions-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/FactionDef[@Name="SettlerFactionBase"]/requiredCountAtGameStart</xpath>
-                    <value>
-                        <requiredCountAtGameStart>0</requiredCountAtGameStart>
-                    </value>
+					<value>
+						<requiredCountAtGameStart>0</requiredCountAtGameStart>
+					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/FactionDef[defName="SettlerSavage"]</xpath>
-                    <value>
-                        <requiredCountAtGameStart>1</requiredCountAtGameStart>
-                    </value>
+					<value>
+						<requiredCountAtGameStart>1</requiredCountAtGameStart>
+					</value>
 				</li>
-            <!--remove impids
+				<!--remove impids
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/FactionDef[starts-with(defName, "Settler")]/xenotypeSet/xenotypeChances/Impid</xpath>
 				</li> should be fine with the impid rework-->

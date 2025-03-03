@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--hard removes most of the mod lol-->
+				<!--hard removes most of the mod lol-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[starts-with(defName, "VFES_")
 					and not(defName="VFES_Turret_Artillery")
@@ -25,20 +25,27 @@
 					and not(defName="VFES_Gun_EMPTurret")
 					and not(defName="VFES_Bullet_EMPCannon")]</xpath>
 				</li>
-            <!--change research prerequisite for decoy before I kill its researchprojectdef-->
-                <li Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="VFES_Turret_Decoy"]/researchPrerequisites/li[text()="VWE_TrenchWarfare"]</xpath>
-                    <value>
-                        <li>ComplexFurniture</li>
-                    </value>
-                </li>
-            <!--kill unused research project defs-->
+				<!--change research prerequisite for decoy before I kill its researchprojectdef-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VFES_Turret_Decoy"]/researchPrerequisites/li[text()="VWE_TrenchWarfare"]</xpath>
+					<value>
+						<li>ComplexFurniture</li>
+					</value>
+				</li>
+				<!--kill unused research project defs-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ResearchProjectDef[starts-with(defName, "VFES_")
                     and not(defName="VFES_Artillery")
                     and not(defName="VFES_EMPCannon")
                     and not(defName="VFES_RepulsorTechnology")]
                     | Defs/ResearchProjectDef[defName="VWE_TrenchWarfare"]</xpath>
+				</li>
+				<!--you must fully understand microelectronics, multi-analyzer technology and space-age fabrication before you can build a metal crate lol-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VFES_AmmoCrate"]/researchPrerequisites/li[text()="Fabrication"]</xpath>
+					<value>
+						<li>ComplexFurniture</li>
+					</value>
 				</li>
 			</operations>
 		</match>

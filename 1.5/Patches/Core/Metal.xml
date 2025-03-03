@@ -4,7 +4,8 @@
 		<key>MetalFlammable</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationReplace"> <!--Metal flammability-->
+			<!--Metal flammability-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="Gold" or defName="Plasteel" or defName="Silver" or defName="Steel"]/stuffProps/statFactors/Flammability</xpath>
 				<value>
 					<Flammability>0.0</Flammability>

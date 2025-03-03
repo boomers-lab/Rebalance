@@ -4,7 +4,8 @@
 		<key>reworkWaster</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationReplace"> <!--Replace Waster genepool-->
+			<!--Replace Waster genepool-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/XenotypeDef[defName="Waster"]/genes</xpath>
 				<value>
 					<genes>
@@ -24,7 +25,8 @@
 					</genes>
 				</value>
 			</Operation>
-			<Operation Class="PatchOperationReplace"> <!--Make PirateWaster a Waster-only faction-->
+			<!--Make PirateWaster a Waster-only faction-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances/Waster</xpath>
 				<value>
 					<Waster>1</Waster>

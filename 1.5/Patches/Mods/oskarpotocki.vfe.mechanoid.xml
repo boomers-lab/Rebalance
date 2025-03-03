@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--aggressively remove all drones-->
+				<!--aggressively remove all drones-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[@ParentName="BaseVFEMachine"
 					or contains(defName, "VFE_Mechanoids_AutocleanerBase")
@@ -24,18 +24,18 @@
 					or contains(defName, "VFE_Mechanoids_PyroBase")]
 					| Defs/PawnKindDef[@ParentName="VFEMachineBase"]</xpath>
 				</li>
-			<!--remove unused research defs and update prerequisites-->
+				<!--remove unused research defs and update prerequisites-->
 				<li Class="PatchOperationRemove">
-    				<xpath>Defs/ResearchProjectDef[defName="VFE_BasicDroneAssembly" or defName="VFE_AdvancedDroneAssembly"]
+					<xpath>Defs/ResearchProjectDef[defName="VFE_BasicDroneAssembly" or defName="VFE_AdvancedDroneAssembly"]
     				| Defs/ResearchProjectDef/prerequisites/li[text()="VFE_AdvancedDroneAssembly"]</xpath>
 				</li>
 				<li Class="PatchOperationReplace">
-				    <xpath>Defs/ResearchProjectDef/prerequisites/li[text()="VFE_BasicDroneAssembly"]
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="VFE_BasicDroneAssembly"]
 				    | Defs/ThingDef/researchPrerequisites/li[text()="VFE_BasicDroneAssembly"]
 				    | Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_BasicDroneAssembly"]</xpath>
-				    <value>
-				        <li>BasicMechtech</li>
-				    </value>
+					<value>
+						<li>BasicMechtech</li>
+					</value>
 				</li>
 			</operations>
 		</match>

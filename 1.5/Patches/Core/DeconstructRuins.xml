@@ -4,7 +4,8 @@
 		<key>DeconstructRuins</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationReplace"> <!--Allow deconstruction of ancient ruins-->
+			<!--Allow deconstruction of ancient ruins-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/deconstructible</xpath>
 				<value>
 					<deconstructible>true</deconstructible>

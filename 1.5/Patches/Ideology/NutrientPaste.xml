@@ -4,18 +4,17 @@
 		<key>allowNutrientPaste</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
+			<!--Allow Nutrient Paste to be eaten with any meme except Flesh Purity, Rancher, and Cannibal-->
 			<Operation Class="PatchOperationConditional">
 				<xpath>Defs/PreceptDef[defName="AM_NutrientPasteEating_Indifferent"]</xpath>
-				<nomatch Class="PatchOperationRemove"> <!--Allow Nutrient Paste to be eaten with any meme except Flesh Purity, Rancher, and Cannibal-->
+				<nomatch Class="PatchOperationRemove">
 					<xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
 				</nomatch>
 			</Operation>
 			<Operation Class="PatchOperationConditional">
 				<xpath>Defs/PreceptDef[defName="AM_NutrientPasteEating_Indifferent"]</xpath>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>Defs/MemeDef[defName="FleshPurity" or
-					defName="Rancher" or
-					defName="Cannibal"]/requireOne</xpath>
+					<xpath>Defs/MemeDef[defName="FleshPurity" or defName="Rancher" or defName="Cannibal"]/requireOne</xpath>
 					<value>
 						<li>
 							<li>NutrientPasteEating_Disgusting</li>
@@ -23,9 +22,7 @@
 					</value>
 				</nomatch>
 				<match Class="PatchOperationAdd">
-					<xpath>Defs/MemeDef[defName="FleshPurity" or
-					defName="Rancher" or
-					defName="Cannibal"]/requireOne</xpath>
+					<xpath>Defs/MemeDef[defName="FleshPurity" or defName="Rancher" or defName="Cannibal"]/requireOne</xpath>
 					<value>
 						<li>
 							<li>NutrientPasteEating_Disgusting</li>

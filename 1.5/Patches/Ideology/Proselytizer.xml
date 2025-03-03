@@ -4,7 +4,8 @@
 		<key>moveProselytizer</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationReplace"> <!--Move Proselytizer to low impact-->
+			<!--Move Proselytizer to low impact-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/MemeDef[defName="Proselytizer"]/impact</xpath>
 				<value>
 					<impact>1</impact>

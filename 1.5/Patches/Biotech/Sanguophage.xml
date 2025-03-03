@@ -4,7 +4,8 @@
 		<key>SanguophageEyes</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationAdd"> <!--Give Sanguophage red eyes-->
+			<!--Give Sanguophage red eyes-->
+			<Operation Class="PatchOperationAdd">
 				<xpath>Defs/XenotypeDef[defName="Sanguophage"]/genes</xpath>
 				<value>
 					<li>Eyes_Red</li>

@@ -4,7 +4,8 @@
 		<key>reworkImpid</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationReplace"><!--Replace Impid genepool-->
+			<!--Replace Impid genepool-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/XenotypeDef[defName="Impid"]/genes</xpath>
 				<value>
 					<genes>
@@ -24,13 +25,15 @@
 					</genes>
 				</value>
 			</Operation>
-			<Operation Class="PatchOperationReplace"> <!--Lower Impid combat power to reflect changes-->
+			<!--Lower Impid combat power to reflect changes-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/XenotypeDef[defName="Impid"]/combatPowerFactor</xpath>
 				<value>
 					<combatPowerFactor>1</combatPowerFactor>
 				</value>
 			</Operation>
-			<Operation Class="PatchOperationAdd"> <!--Add greater Impids-->
+			<!--Add greater Impids-->
+			<Operation Class="PatchOperationAdd">
 				<xpath>Defs</xpath>
 				<value>
 					<XenotypeDef>
@@ -74,24 +77,29 @@
 					</doubleXenotypeChances>
 				</value>
 			</Operation>
-			<Operation Class="PatchOperationAdd"> <!--Reduce commonality of Impid settlements-->
+			<!--Reduce commonality of Impid settlements-->
+			<Operation Class="PatchOperationAdd">
 				<xpath>Defs/FactionDef[defName="TribeSavageImpid"]</xpath>
 				<value>
 					<settlementGenerationWeight Inherit="False">0.8</settlementGenerationWeight>
 				</value>
 			</Operation>
-			<Operation Class="PatchOperationRemove"> <!--Remove Impids from Waster faction-->
+			<!--Remove Impids from Waster faction-->
+			<Operation Class="PatchOperationRemove">
 				<xpath>Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances/Impid</xpath>
 			</Operation>
-			<Operation Class="PatchOperationRemove"> <!--Remove Impid earliest raid date since they're not OP anymore-->
+			<!--Remove Impid earliest raid date since they're not OP anymore-->
+			<Operation Class="PatchOperationRemove">
 				<xpath>Defs/FactionDef[defName="TribeSavageImpid"]/earliestRaidDays</xpath>
-			</Operation><Operation Class="PatchOperationFindMod">
+			</Operation>
+			<Operation Class="PatchOperationFindMod">
 				<mods>
 					<li>Vanilla Expanded Framework</li>
 				</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
-						<li Class="PatchOperationAdd"> <!--limits impids to desert biomes-->
+						<!--limits impids to desert biomes-->
+						<li Class="PatchOperationAdd">
 							<xpath>Defs/FactionDef[defName="TribeSavageImpid"]</xpath>
 							<value>
 								<modExtensions>
@@ -109,7 +117,8 @@
 				</match>
 				<nomatch Class="PatchOperationSequence">
 					<operations>
-						<li Class="PatchOperationAdd"> <!--Limits Impids to the equator-->
+						<!--Limits Impids to the equator-->
+						<li Class="PatchOperationAdd">
 							<xpath>Defs/FactionDef[defName="TribeSavageImpid"]</xpath>
 							<value>
 								<minSettlementTemperatureChanceCurve>

@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--remove unused turrets from VFE - Security-->
+				<!--remove unused turrets from VFE - Security-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/KCSG.SettlementLayoutDef/defenseOptions/allowedTurretsDefs/li[@MayRequire="VanillaExpanded.VFESecurity"]</xpath>
 				</li>

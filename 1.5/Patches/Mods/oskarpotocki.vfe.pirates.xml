@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--renames rum because this ain't rum-->
+				<!--renames rum because this ain't rum-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/HediffDef[defName="VFEP_RumAsIngredient"]/label</xpath>
 					<value>
@@ -28,13 +28,13 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ResearchProjectDef[defName="VFEP_SweatFermentation"]/generalRules/rulesStrings</xpath>
 					<value>
-					<rulesStrings>
-						<li>subject->biochemical ingenuity</li>
-						<li>subject_story->turned the cycle of waste into a source of sustenance and spirit, crafting pruno from the sweat of toil</li>
-						<li>subject_story->blurred the lines between distillation and desperation, finding innovation in the unconventional</li>
-						<li>subject_story->created a self-sustaining cycle of work, waste, and whiskey, fueling both body and morale</li>
-						<li>subject_gerund->brewing resilience from refuse</li>
-					</rulesStrings>
+						<rulesStrings>
+							<li>subject->biochemical ingenuity</li>
+							<li>subject_story->turned the cycle of waste into a source of sustenance and spirit, crafting pruno from the sweat of toil</li>
+							<li>subject_story->blurred the lines between distillation and desperation, finding innovation in the unconventional</li>
+							<li>subject_story->created a self-sustaining cycle of work, waste, and whiskey, fueling both body and morale</li>
+							<li>subject_gerund->brewing resilience from refuse</li>
+						</rulesStrings>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">

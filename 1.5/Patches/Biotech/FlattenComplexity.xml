@@ -5,14 +5,14 @@
 		<defaultValue>false</defaultValue>
 		<caseTrue>
 			<Operation Class="PatchOperationRemove">
-                <xpath>//biostatCpx</xpath>
-            </Operation>
+				<xpath>//biostatCpx</xpath>
+			</Operation>
 			<Operation Class="PatchOperationAdd">
-                <xpath>Defs/GeneDef</xpath>
+				<xpath>Defs/GeneDef</xpath>
 				<value>
 					<biostatCpx>0</biostatCpx>
 				</value>
-            </Operation>
+			</Operation>
 		</caseTrue>
 	</Operation>
 	<Operation Class="XmlExtensions.OptionalPatch">
@@ -21,14 +21,14 @@
 		<defaultValue>false</defaultValue>
 		<caseTrue>
 			<Operation Class="PatchOperationRemove">
-                <xpath>//biostatMet</xpath>
-            </Operation>
+				<xpath>//biostatMet</xpath>
+			</Operation>
 			<Operation Class="PatchOperationAdd">
-                <xpath>Defs/GeneDef</xpath>
+				<xpath>Defs/GeneDef</xpath>
 				<value>
 					<biostatMet>0</biostatMet>
 				</value>
-            </Operation>
+			</Operation>
 		</caseTrue>
 	</Operation>
 </Patch>

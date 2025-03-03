@@ -4,11 +4,12 @@
 		<key>preferredApparel</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationReplace"> <!--Disable preferred apparel when ideologions are generated-->
-					<xpath>Defs/MemeDef/selectOneOrNone/noneChance</xpath>
-					<value>
-						<noneChance>1</noneChance>
-					</value>
+			<!--Disable preferred apparel when ideologions are generated-->
+			<Operation Class="PatchOperationReplace">
+				<xpath>Defs/MemeDef/selectOneOrNone/noneChance</xpath>
+				<value>
+					<noneChance>1</noneChance>
+				</value>
 			</Operation>
 		</caseTrue>
 	</Operation>

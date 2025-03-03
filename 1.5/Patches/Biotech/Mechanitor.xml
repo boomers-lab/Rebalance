@@ -4,7 +4,8 @@
 		<key>reworkMechanitor</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationReplace"><!--chain shotgun and heavy smg-->
+			<!--chain shotgun and heavy smg-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/weaponTags</xpath>
 				<value>
 					<weaponTags>
@@ -12,19 +13,22 @@
 					</weaponTags>
 				</value>
 			</Operation>
-			<Operation Class="PatchOperationReplace"><!--accommodate new weapons-->
+			<!--accommodate new weapons-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/weaponMoney</xpath>
 				<value>
 					<weaponMoney>500~900</weaponMoney>
 				</value>
 			</Operation>
-			<Operation Class="PatchOperationAdd"><!--crafting required-->
+			<!--crafting required-->
+			<Operation Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/requiredWorkTags</xpath>
 				<value>
 					<li>Crafting</li>
 				</value>
 			</Operation>
-			<Operation Class="PatchOperationRemove"><!--remove recluse-->
+			<!--remove recluse-->
+			<Operation Class="PatchOperationRemove">
 				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/forcedTraits/Recluse</xpath>
 			</Operation>
 		</caseTrue>

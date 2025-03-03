@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--remove aptitudes-->
+				<!--remove aptitudes-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/XenotypeDef[defName="VRE_Animakin"
                     or defName="VRE_Gauranlenkin"
@@ -15,14 +15,14 @@
 					or text()="AptitudeTerrible_Construction"
 					or text()="AptitudeRemarkable_Plants"]</xpath>
 				</li>
-            <!--compensate for metabolism-->
+				<!--compensate for metabolism-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/GeneDef[defName="VRE_Photosynthesis"]/biostatMet</xpath>
-                    <value>
-                        <biostatMet>3</biostatMet>
-                    </value>
+					<value>
+						<biostatMet>3</biostatMet>
+					</value>
 				</li>
-            <!--vanilla head-->
+				<!--vanilla head-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/GeneDef[defName="VRE_BarkSkin"]/forcedHeadTypes</xpath>
 				</li>

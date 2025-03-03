@@ -4,18 +4,20 @@
 		<key>removeStyles</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationReplace"> <!--remove styles from memes-->
+			<!--remove styles from memes-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/MemeDef/thingStyleCategories</xpath>
 				<value>
-                    <thingStyleCategories>
-                    </thingStyleCategories>
+					<thingStyleCategories>
+					</thingStyleCategories>
 				</value>
 			</Operation>
-			<Operation Class="PatchOperationReplace"> <!--remove styles from cultures-->
+			<!--remove styles from cultures-->
+			<Operation Class="PatchOperationReplace">
 				<xpath>Defs/CultureDef/thingStyleCategories</xpath>
 				<value>
-                    <thingStyleCategories>
-                    </thingStyleCategories>
+					<thingStyleCategories>
+					</thingStyleCategories>
 				</value>
 			</Operation>
 		</caseTrue>

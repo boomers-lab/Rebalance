@@ -4,7 +4,8 @@
 		<key>EmpireHighmates</key>
 		<defaultValue>true</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationAdd"> <!--Add Highmates to the Empire-->
+			<!--Add Highmates to the Empire-->
+			<Operation Class="PatchOperationAdd">
 				<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
 					<Highmate>0.025</Highmate>

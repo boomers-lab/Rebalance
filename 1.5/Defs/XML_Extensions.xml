@@ -4,9 +4,8 @@
 		<modId>friedrice</modId>
 		<label>fried rice</label>
 		<settings>
-		<!--lots of busy work to switch this over to VEF toggleable patches but it needs to happen
-		https://github.com/Vanilla-Expanded/VanillaExpandedFramework/wiki/Toggable-patches-->
-		<!--Core-->
+			<!--https://github.com/Vanilla-Expanded/VanillaExpandedFramework/wiki/Toggable-patches-->
+			<!--Core-->
 			<li Class="XmlExtensions.Setting.Text">
 				<text>All changes require a restart</text>
 				<anchor>Middle</anchor>
@@ -319,7 +318,7 @@
 				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap"/>
-		<!--Royalty-->
+			<!--Royalty-->
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Royalty</text>
 				<font>Medium</font>
@@ -334,7 +333,7 @@
 				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap"/>
-		<!--Ideology-->
+			<!--Ideology-->
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Ideology</text>
 				<font>Medium</font>
@@ -487,7 +486,7 @@
 				<spacing>4</spacing>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap"/>
-		<!--Biotech-->
+			<!--Biotech-->
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Biotech</text>
 				<font>Medium</font>

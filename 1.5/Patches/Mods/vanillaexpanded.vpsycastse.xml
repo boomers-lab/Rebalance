@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			<!--remove psycaster raids to prevent spacer armor raiders from attacking my day 20 colony-->
+				<!--remove psycaster raids to prevent spacer armor raiders from attacking my day 20 colony-->
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/RaidStrategyDef[defName="VPE_ImmediateAttack_Psycasters"]</xpath>
 				</li>
