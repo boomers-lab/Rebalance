@@ -4,7 +4,7 @@
 		<label>remove beards</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/BeardDef[not(defName="NoBeard")]</xpath>
+				<xpath>//BeardDef[not(defName="NoBeard")]</xpath>
 			</li>
 		</operations>
 	</Operation>

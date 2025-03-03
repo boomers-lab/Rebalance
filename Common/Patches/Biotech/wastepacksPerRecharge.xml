@@ -4,7 +4,7 @@
 		<label>reduce wastepacks per mechanoid recharge</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[@Name="BaseMechanoid"]/statBases/WastepacksPerRecharge</xpath>
+				<xpath>//ThingDef[@Name="BaseMechanoid"]/statBases/WastepacksPerRecharge</xpath>
 				<value>
 					<WastepacksPerRecharge MayRequire="Ludeon.RimWorld.Biotech">1</WastepacksPerRecharge>
 				</value>

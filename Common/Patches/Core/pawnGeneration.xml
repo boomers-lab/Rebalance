@@ -4,7 +4,7 @@
 		<label>white melanin only</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/GeneDef[defName="Skin_Melanin4" or defName="Skin_Melanin5" or defName="Skin_Melanin6" or defName="Skin_Melanin7" or defName="Skin_Melanin8" or defName="Skin_Melanin9"]</xpath>
+				<xpath>//GeneDef[defName="Skin_Melanin4" or defName="Skin_Melanin5" or defName="Skin_Melanin6" or defName="Skin_Melanin7" or defName="Skin_Melanin8" or defName="Skin_Melanin9"]</xpath>
 			</li>
 		</operations>
 	</Operation>
@@ -13,13 +13,13 @@
 		<label>remove fat bodies</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/BackstoryDef[bodyTypeFemale="Fat"]/bodyTypeFemale</xpath>
+				<xpath>//BackstoryDef[bodyTypeFemale="Fat"]/bodyTypeFemale</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/BackstoryDef[bodyTypeGlobal="Fat"]/bodyTypeGlobal</xpath>
+				<xpath>//BackstoryDef[bodyTypeGlobal="Fat"]/bodyTypeGlobal</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/BackstoryDef[bodyTypeMale="Fat"]/bodyTypeMale</xpath>
+				<xpath>//BackstoryDef[bodyTypeMale="Fat"]/bodyTypeMale</xpath>
 			</li>
 		</operations>
 	</Operation>
@@ -28,7 +28,7 @@
 		<label>remove female hulks</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/BackstoryDef[bodyTypeFemale="Hulk"]/bodyTypeFemale</xpath>
+				<xpath>//BackstoryDef[bodyTypeFemale="Hulk"]/bodyTypeFemale</xpath>
 			</li>
 		</operations>
 	</Operation>
@@ -37,7 +37,7 @@
 		<label>remove narrow heads</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/HeadTypeDef[defName="Male_NarrowNormal" or defName="Male_NarrowPointy" or defName="Male_NarrowWide" or defName="Female_NarrowNormal" or defName="Female_NarrowPointy" or defName="Female_NarrowWide"]</xpath>
+				<xpath>//HeadTypeDef[defName="Male_NarrowNormal" or defName="Male_NarrowPointy" or defName="Male_NarrowWide" or defName="Female_NarrowNormal" or defName="Female_NarrowPointy" or defName="Female_NarrowWide"]</xpath>
 			</li>
 			<li Class="PatchOperationFindMod">
 				<mods>
@@ -46,10 +46,10 @@
 				<match Class="PatchOperationSequence">
 					<operations>
 						<li Class="PatchOperationRemove">
-							<xpath>Defs/HeadTypeDef[defName="Furskin_Narrow1" or defName="Furskin_Narrow2" or defName="Furskin_Narrow3"]</xpath>
+							<xpath>//HeadTypeDef[defName="Furskin_Narrow1" or defName="Furskin_Narrow2" or defName="Furskin_Narrow3"]</xpath>
 						</li>
 						<li Class="PatchOperationRemove">
-							<xpath>Defs/GeneDef[defName="Furskin"]/forcedHeadTypes/li[text()="Furskin_Narrow1" or text()="Furskin_Narrow2" or text()="Furskin_Narrow3"]</xpath>
+							<xpath>//GeneDef[defName="Furskin"]/forcedHeadTypes/li[text()="Furskin_Narrow1" or text()="Furskin_Narrow2" or text()="Furskin_Narrow3"]</xpath>
 						</li>
 					</operations>
 				</match>
@@ -61,7 +61,7 @@
 		<label>remove wide female heads</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/HeadTypeDef[defName="Female_AverageWide"]</xpath>
+				<xpath>//HeadTypeDef[defName="Female_AverageWide"]</xpath>
 			</li>
 		</operations>
 	</Operation>

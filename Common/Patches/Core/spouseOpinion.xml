@@ -4,7 +4,7 @@
 		<label>buff spouse opinion</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/PawnRelationDef[defName="Spouse"]/opinionOffset</xpath>
+				<xpath>//PawnRelationDef[defName="Spouse"]/opinionOffset</xpath>
 				<value>
 					<opinionOffset>100</opinionOffset>
 				</value>

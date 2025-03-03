@@ -4,7 +4,7 @@
 		<label>remove work disabler for slaves</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/WorkTypeDef[disabledForSlaves="true" and not(defName="Warden")]/disabledForSlaves</xpath>
+				<xpath>//WorkTypeDef[disabledForSlaves="true" and not(defName="Warden")]/disabledForSlaves</xpath>
 			</li>
 		</operations>
 	</Operation>

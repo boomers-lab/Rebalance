@@ -4,7 +4,7 @@
 		<label>natural enemies do not flee</label>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/FactionDef[naturalEnemy="true" and not(autoFlee="false")]</xpath>
+				<xpath>//FactionDef[naturalEnemy="true" and not(autoFlee="false")]</xpath>
 				<value>
 					<autoFlee>false</autoFlee>
 				</value>
@@ -16,7 +16,7 @@
 		<label>permanent enemies do not flee</label>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/FactionDef[permanentEnemy="true" and not(autoFlee="false")]</xpath>
+				<xpath>//FactionDef[permanentEnemy="true" and not(autoFlee="false")]</xpath>
 				<value>
 					<autoFlee>false</autoFlee>
 				</value>
@@ -28,7 +28,7 @@
 		<label>no breacher raids</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RaidStrategyDef[@Name="BreachingBase"]/selectionWeightPerPointsCurve/points</xpath>
+				<xpath>//RaidStrategyDef[@Name="BreachingBase"]/selectionWeightPerPointsCurve/points</xpath>
 				<value>
 					<points>
 						<li>(700, 0)</li>
@@ -37,7 +37,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RaidStrategyDef[@Name="BreachingBase"]/selectionWeightCurvesPerFaction</xpath>
+				<xpath>//RaidStrategyDef[@Name="BreachingBase"]/selectionWeightCurvesPerFaction</xpath>
 				<value>
 					<selectionWeightCurvesPerFaction>
 						<li>
@@ -59,7 +59,7 @@
 		<label>no drop pod raids</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/RaidStrategyDef/arriveModes/li[text()="EdgeDrop" or text()="CenterDrop" or text()="RandomDrop" or text()="EdgeDropGroups"]</xpath>
+				<xpath>//RaidStrategyDef/arriveModes/li[text()="EdgeDrop" or text()="CenterDrop" or text()="RandomDrop" or text()="EdgeDropGroups"]</xpath>
 			</li>
 		</operations>
 	</Operation>
@@ -68,7 +68,7 @@
 		<label>no sapper raids</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RaidStrategyDef[defName="ImmediateAttackSappers"]/selectionWeightPerPointsCurve/points</xpath>
+				<xpath>//RaidStrategyDef[defName="ImmediateAttackSappers"]/selectionWeightPerPointsCurve/points</xpath>
 				<value>
 					<points>
 						<li>(700, 0)</li>
@@ -83,7 +83,7 @@
 		<label>no siege raids</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/RaidStrategyDef[defName="Siege"]/selectionWeightPerPointsCurve/points</xpath>
+				<xpath>//RaidStrategyDef[defName="Siege"]/selectionWeightPerPointsCurve/points</xpath>
 				<value>
 					<points>
 						<li>(700, 0)</li>

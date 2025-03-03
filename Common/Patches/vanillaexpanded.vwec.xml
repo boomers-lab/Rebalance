@@ -8,7 +8,7 @@
 			<operations>
 				<!--no enemies spawning with coilguns-->
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[starts-with(defName, "VWE_Gun_Gauss")]/weaponTags/li[text()="SpacerGun"]</xpath>
+					<xpath>//ThingDef[starts-with(defName, "VWE_Gun_Gauss")]/weaponTags/li[text()="SpacerGun"]</xpath>
 				</li>
 			</operations>
 		</match>

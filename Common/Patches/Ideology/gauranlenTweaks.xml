@@ -4,7 +4,7 @@
 		<label>double gauranlen pruning speed</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/connectionStrengthGainPerHourPruningBase</xpath>
+				<xpath>//ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/connectionStrengthGainPerHourPruningBase</xpath>
 				<value>
 					<connectionStrengthGainPerHourPruningBase>0.2</connectionStrengthGainPerHourPruningBase>
 				</value>

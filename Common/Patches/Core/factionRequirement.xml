@@ -4,7 +4,7 @@
 		<label>remove faction requirement for crafting recipes</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef/recipeMaker/factionPrerequisiteTags</xpath>
+				<xpath>//ThingDef/recipeMaker/factionPrerequisiteTags</xpath>
 			</li>
 		</operations>
 	</Operation>

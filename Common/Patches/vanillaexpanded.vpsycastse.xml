@@ -8,7 +8,7 @@
 			<operations>
 				<!--remove psycaster raids to prevent spacer armor raiders from attacking my day 20 colony-->
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/RaidStrategyDef[defName="VPE_ImmediateAttack_Psycasters"]</xpath>
+					<xpath>//RaidStrategyDef[defName="VPE_ImmediateAttack_Psycasters"]</xpath>
 				</li>
 			</operations>
 		</match>

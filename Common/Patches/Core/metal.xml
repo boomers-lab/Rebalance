@@ -4,7 +4,7 @@
 		<label>metal doesn't burn</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Gold" or defName="Plasteel" or defName="Silver" or defName="Steel"]/stuffProps/statFactors/Flammability</xpath>
+				<xpath>//ThingDef[defName="Gold" or defName="Plasteel" or defName="Silver" or defName="Steel"]/stuffProps/statFactors/Flammability</xpath>
 				<value>
 					<Flammability>0.0</Flammability>
 				</value>
@@ -16,7 +16,7 @@
 		<label>gold and silver are beautiful</label>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Gold" or defName="Silver"]/statBases</xpath>
+				<xpath>//ThingDef[defName="Gold" or defName="Silver"]/statBases</xpath>
 				<value>
 					<Beauty>4</Beauty>
 				</value>
@@ -28,7 +28,7 @@
 		<label>increase steel durability</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Steel"]/stuffProps/statFactors/MaxHitPoints</xpath>
+				<xpath>//ThingDef[defName="Steel"]/stuffProps/statFactors/MaxHitPoints</xpath>
 				<value>
 					<MaxHitPoints>2</MaxHitPoints>
 				</value>
@@ -40,7 +40,7 @@
 		<label>increase uranium durability</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Uranium"]/stuffProps/statFactors/MaxHitPoints</xpath>
+				<xpath>//ThingDef[defName="Uranium"]/stuffProps/statFactors/MaxHitPoints</xpath>
 				<value>
 					<MaxHitPoints>2.6</MaxHitPoints>
 				</value>
@@ -52,7 +52,7 @@
 		<label>increase plasteel durability</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Plasteel"]/stuffProps/statFactors/MaxHitPoints</xpath>
+				<xpath>//ThingDef[defName="Plasteel"]/stuffProps/statFactors/MaxHitPoints</xpath>
 				<value>
 					<MaxHitPoints>3</MaxHitPoints>
 				</value>

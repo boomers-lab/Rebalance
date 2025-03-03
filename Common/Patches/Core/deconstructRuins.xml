@@ -5,25 +5,25 @@
 		<operations>
 			<!--allow deconstruction of ancient ruins-->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/deconstructible</xpath>
+				<xpath>//ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/deconstructible</xpath>
 				<value>
 					<deconstructible>true</deconstructible>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/statBases</xpath>
+				<xpath>//ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/statBases</xpath>
 				<value>
 					<WorkToBuild>5000</WorkToBuild>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/claimable</xpath>
+				<xpath>//ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/claimable</xpath>
 				<value>
 					<claimable>true</claimable>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="AncientExostriderHead" or defName="AncientMechGestator" or defName="AncientBasicRecharger" or defName="AncientStandardRecharger" or defName="AncientBandNode"]</xpath>
+				<xpath>//ThingDef[defName="AncientExostriderHead" or defName="AncientMechGestator" or defName="AncientBasicRecharger" or defName="AncientStandardRecharger" or defName="AncientBandNode"]</xpath>
 				<value>
 					<costList>
 						<ChunkSlagSteel>4</ChunkSlagSteel>
@@ -31,7 +31,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="AncientExostriderLeg" or defName="AncientToxifierGenerator"]</xpath>
+				<xpath>//ThingDef[defName="AncientExostriderLeg" or defName="AncientToxifierGenerator"]</xpath>
 				<value>
 					<costList>
 						<ChunkSlagSteel>3</ChunkSlagSteel>
@@ -39,7 +39,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="AncientLargeMechGestator"]</xpath>
+				<xpath>//ThingDef[defName="AncientLargeMechGestator"]</xpath>
 				<value>
 					<costList>
 						<ChunkSlagSteel>5</ChunkSlagSteel>
@@ -47,7 +47,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="AncientExostriderRemains"]</xpath>
+				<xpath>//ThingDef[defName="AncientExostriderRemains"]</xpath>
 				<value>
 					<costList>
 						<ChunkSlagSteel>6</ChunkSlagSteel>

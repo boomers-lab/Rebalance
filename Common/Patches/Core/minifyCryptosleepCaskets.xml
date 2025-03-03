@@ -4,7 +4,7 @@
         <label>minify cryptosleep caskets</label>
         <operations>
             <li Class="PatchOperationInsert">
-                <xpath>Defs/ThingDef[defName="CryptosleepCasket"]/statBases</xpath>
+                <xpath>//ThingDef[defName="CryptosleepCasket"]/statBases</xpath>
                 <value>
                     <minifiedDef>MinifiedThing</minifiedDef>
                     <thingCategories>
@@ -13,13 +13,13 @@
                 </value>
             </li>
             <li Class="PatchOperationInsert">
-                <xpath>Defs/ThingDef[defName="CryptosleepCasket"]/statBases/Flammability</xpath>
+                <xpath>//ThingDef[defName="CryptosleepCasket"]/statBases/Flammability</xpath>
                 <value>
                     <Mass>75</Mass>
                 </value>
             </li>
             <li Class="PatchOperationInsert">
-                <xpath>Defs/ThingDef[defName="AncientCryptosleepCasket"]/statBases</xpath>
+                <xpath>//ThingDef[defName="AncientCryptosleepCasket"]/statBases</xpath>
                 <value>
                     <minifiedDef>MinifiedThing</minifiedDef>
                     <thingCategories>
@@ -28,7 +28,7 @@
                 </value>
             </li>
             <li Class="PatchOperationInsert">
-                <xpath>Defs/ThingDef[defName="AncientCryptosleepCasket"]/statBases/Flammability</xpath>
+                <xpath>//ThingDef[defName="AncientCryptosleepCasket"]/statBases/Flammability</xpath>
                 <value>
                     <Mass>75</Mass>
                 </value>

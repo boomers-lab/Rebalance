@@ -4,7 +4,7 @@
 		<label>no more breakdowns</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
+				<xpath>//ThingDef/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
 			</li>
 		</operations>
 	</Operation>

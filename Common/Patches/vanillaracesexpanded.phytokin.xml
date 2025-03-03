@@ -8,14 +8,14 @@
 			<operations>
 				<!--compensate for metabolism-->
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/GeneDef[defName="VRE_Photosynthesis"]/biostatMet</xpath>
+					<xpath>//GeneDef[defName="VRE_Photosynthesis"]/biostatMet</xpath>
 					<value>
 						<biostatMet>3</biostatMet>
 					</value>
 				</li>
 				<!--vanilla head-->
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/GeneDef[defName="VRE_BarkSkin"]/forcedHeadTypes</xpath>
+					<xpath>//GeneDef[defName="VRE_BarkSkin"]/forcedHeadTypes</xpath>
 				</li>
 			</operations>
 		</match>

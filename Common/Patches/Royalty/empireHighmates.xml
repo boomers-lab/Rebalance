@@ -4,7 +4,7 @@
 		<label>add highmates to the empire</label>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+				<xpath>//FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
 					<Highmate>0.025</Highmate>
 				</value>

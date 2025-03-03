@@ -4,7 +4,7 @@
 		<label>make boreal forests less marshy</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/BiomeDef[defName="BorealForest"]/terrainPatchMakers</xpath>
+				<xpath>//BiomeDef[defName="BorealForest"]/terrainPatchMakers</xpath>
 				<value>
 					<terrainPatchMakers>
 						<li>
@@ -42,13 +42,13 @@
 		<label>remove compacted machinery</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="MineableComponentsIndustrial"]/building/mineableScatterCommonality</xpath>
+				<xpath>//ThingDef[defName="MineableComponentsIndustrial"]/building/mineableScatterCommonality</xpath>
 				<value>
 					<mineableScatterCommonality>0</mineableScatterCommonality>
 				</value>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/GenStepDef/genStep/mineables/li[text()="MineableComponentsIndustrial"]</xpath>
+				<xpath>//GenStepDef/genStep/mineables/li[text()="MineableComponentsIndustrial"]</xpath>
 			</li>
 		</operations>
 	</Operation>
@@ -57,25 +57,25 @@
 		<label>remove compacted plasteel</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="MineablePlasteel"]/building/mineableScatterCommonality</xpath>
+				<xpath>//ThingDef[defName="MineablePlasteel"]/building/mineableScatterCommonality</xpath>
 				<value>
 					<mineableScatterCommonality>0</mineableScatterCommonality>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Plasteel"]/deepCommonality</xpath>
+				<xpath>//ThingDef[defName="Plasteel"]/deepCommonality</xpath>
 				<value>
 					<deepCommonality />
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Plasteel"]/deepLumpSizeRange</xpath>
+				<xpath>//ThingDef[defName="Plasteel"]/deepLumpSizeRange</xpath>
 				<value>
 					<deepLumpSizeRange />
 				</value>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/GenStepDef/genStep/mineables/li[text()="MineablePlasteel"]</xpath>
+				<xpath>//GenStepDef/genStep/mineables/li[text()="MineablePlasteel"]</xpath>
 			</li>
 		</operations>
 	</Operation>
