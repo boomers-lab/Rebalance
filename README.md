@@ -8,7 +8,7 @@ Scope of this mod:
 This mod should **never** add content to the game. New defs should **always** be added in a separate mod. For example, adding an existing recipe to an existing workbench **is within** the scope of this mod. However, creating a new recipe to add to an existing workbench **is not within** the scope of this mod.
 
 ## Supported Mods
-Mod patches are balanced around the default value for toggable patches because I'm not writing a million lines of patch logic for every toggle. For example, this mod removes genetic aptitudes by default and the VRE Phytokins patch compensates for that metabolism loss. If aptitudes are toggled back on, Phytokin will have +1 metabolism.
+Mod patches are balanced around the default value for toggable patches because I'm not writing a million lines of patch logic for every toggle. For example, [gene expansion](https://github.com/boomersama/boomer.genes) removes genetic aptitudes by default and the VRE Phytokins patch compensates for that metabolism loss. If aptitudes are toggled back on, Phytokin will have +1 metabolism.
 
 ### Combat Extended
 - Prevents backpacks from spawning on non-player pawns
@@ -26,6 +26,7 @@ Mod patches are balanced around the default value for toggable patches because I
 - Renames rum to pruno (toilet wine)
 ### Vanilla Furniture Expanded - Security
 - Removes everything but ammo crates, artillery, decoys, EMP cannons, and shield generators
+- - Note: C# assemblies call for removed defs which results in harmless red errors
 - Allows the player to build ammo crates without researching fabrication
 ### Vanilla Psycasts Expanded
 - Removes psycaster raids to prevent spacer armor raids (mainly from VFE - Deserters) on my day 20 colony
@@ -39,8 +40,6 @@ Mod patches are balanced around the default value for toggable patches because I
 - Prevents coilguns from spawning on non-player pawns
 
 ## To-do:
-- Implement [Floors Are (Almost) Worthless](https://steamcommunity.com/sharedfiles/filedetails/?id=2960126462)
-- Implement [原版服饰渲染层修复](https://steamcommunity.com/sharedfiles/filedetails/?id=3236976580) (weishanmaowei.waitaofix)
 - Debloat [RimThunder Functional Furniture Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=3430151040)
 - Debloat [Vanilla Factions Expanded Settlers](https://steamcommunity.com/sharedfiles/filedetails/?id=2052918119)
 - Remove skill buff from Brawler trait
