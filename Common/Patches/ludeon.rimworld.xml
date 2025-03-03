@@ -1,7 +1,7 @@
 <Patch>
 	<!--prepatch tribal facions to allow for custom xenotypes-->
 	<Operation Class="PatchOperationConditional">
-			<xpath>Defs/FactionDef[@Name="TribeBase"]/xenotypeChances</xpath>
+		<xpath>Defs/FactionDef[@ParentName="TribeBase"]/xenotypeChances</xpath>
 		<nomatch Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[@Name="TribeBase"]</xpath>
 			<value>

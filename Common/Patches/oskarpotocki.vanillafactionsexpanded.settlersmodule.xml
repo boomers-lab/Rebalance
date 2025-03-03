@@ -8,14 +8,7 @@
 			<operations>
 				<!--aggressively removes most weapons and apparel-->
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[starts-with(defName, "VFES_")
-					and not(defName="VFES_Gun_HuntingRifle")
-					and not(defName="VFES_Headgear_Bandana")
-					and not(defName="VFES_Headgear_Sombrero")
-					and not(defName="VFES_Headgear_FlatCap")]
-					| Defs/ThingDef[defName="VFES_Headgear_Bandana"
-                    or defName="VFES_Headgear_Sombrero"
-                    or defName="VFES_Headgear_FlatCap"]/apparel/tags/li[text()="Outlander"]</xpath>
+					<xpath>Defs/ThingDef[starts-with(defName, "VFES_") and not(defName="VFES_Gun_HuntingRifle") and not(defName="VFES_Headgear_Bandana") and not(defName="VFES_Headgear_Sombrero") and not(defName="VFES_Headgear_FlatCap")] | Defs/ThingDef[defName="VFES_Headgear_Bandana" or defName="VFES_Headgear_Sombrero" or defName="VFES_Headgear_FlatCap"]/apparel/tags/li[text()="Outlander"]</xpath>
 				</li>
 				<!--remove the scenario-->
 				<li Class="PatchOperationRemove">
@@ -23,14 +16,7 @@
 				</li>
 				<!--remove thing bloat-->
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="ChemBoiler"
-                    or defName="Chemlamp"
-                    or defName="ChemlampPost"
-                    or defName="DoorSaloon"
-                    or defName="Post"
-                    or defName="StoolBar"
-                    or defName="TableCircular"
-                    or defName="Windmill"]</xpath>
+					<xpath>Defs/ThingDef[defName="ChemBoiler" or defName="Chemlamp" or defName="ChemlampPost" or defName="DoorSaloon" or defName="Post" or defName="StoolBar" or defName="TableCircular" or defName="Windmill"]</xpath>
 				</li>
 				<!--thanks but I don't need three factions-->
 				<li Class="PatchOperationReplace">

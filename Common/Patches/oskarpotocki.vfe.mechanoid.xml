@@ -8,31 +8,14 @@
 			<operations>
 				<!--aggressively remove all drones-->
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[@ParentName="BaseVFEMachine"
-					or contains(defName, "VFE_Mechanoids_AutocleanerBase")
-					or contains(defName, "VFE_Mechanoids_AutohaulerBase")
-					or contains(defName, "VFE_Mechanoids_AutominerBase")
-					or contains(defName, "VFE_Mechanoids_CombatBase")
-					or contains(defName, "VFE_Mechanoids_RiotBase")
-					or contains(defName, "VFE_Mechanoids_TurretBase")
-					or contains(defName, "VFE_Mechanoids_Autosower")
-					or contains(defName, "VFE_Mechanoids_Autoharvester")
-					or contains(defName, "VFE_Mechanoids_AutostriderBase")
-					or contains(defName, "VFE_Mechanoids_AutoMedicBase")
-					or contains(defName, "VFE_Mechanoids_RaiderBase")
-					or contains(defName, "VFE_Mechanoids_AutobroadcasterBase")
-					or contains(defName, "VFE_Mechanoids_PyroBase")]
-					| Defs/PawnKindDef[@ParentName="VFEMachineBase"]</xpath>
+					<xpath>Defs/ThingDef[@ParentName="BaseVFEMachine" or contains(defName, "VFE_Mechanoids_AutocleanerBase") or contains(defName, "VFE_Mechanoids_AutohaulerBase") or contains(defName, "VFE_Mechanoids_AutominerBase") or contains(defName, "VFE_Mechanoids_CombatBase") or contains(defName, "VFE_Mechanoids_RiotBase") or contains(defName, "VFE_Mechanoids_TurretBase") or contains(defName, "VFE_Mechanoids_Autosower") or contains(defName, "VFE_Mechanoids_Autoharvester") or contains(defName, "VFE_Mechanoids_AutostriderBase") or contains(defName, "VFE_Mechanoids_AutoMedicBase") or contains(defName, "VFE_Mechanoids_RaiderBase") or contains(defName, "VFE_Mechanoids_AutobroadcasterBase") or contains(defName, "VFE_Mechanoids_PyroBase")] | Defs/PawnKindDef[@ParentName="VFEMachineBase"]</xpath>
 				</li>
 				<!--remove unused research defs and update prerequisites-->
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/ResearchProjectDef[defName="VFE_BasicDroneAssembly" or defName="VFE_AdvancedDroneAssembly"]
-    				| Defs/ResearchProjectDef/prerequisites/li[text()="VFE_AdvancedDroneAssembly"]</xpath>
+					<xpath>Defs/ResearchProjectDef[defName="VFE_BasicDroneAssembly" or defName="VFE_AdvancedDroneAssembly"] | Defs/ResearchProjectDef/prerequisites/li[text()="VFE_AdvancedDroneAssembly"]</xpath>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="VFE_BasicDroneAssembly"]
-				    | Defs/ThingDef/researchPrerequisites/li[text()="VFE_BasicDroneAssembly"]
-				    | Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_BasicDroneAssembly"]</xpath>
+					<xpath>Defs/ResearchProjectDef/prerequisites/li[text()="VFE_BasicDroneAssembly"] | Defs/ThingDef/researchPrerequisites/li[text()="VFE_BasicDroneAssembly"] | Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_BasicDroneAssembly"]</xpath>
 					<value>
 						<li>BasicMechtech</li>
 					</value>

@@ -1,0 +1,14 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>buff spouse opinion</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnRelationDef[defName="Spouse"]/opinionOffset</xpath>
+				<value>
+					<opinionOffset>100</opinionOffset>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

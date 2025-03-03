@@ -6,15 +6,6 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<!--remove aptitudes-->
-				<li Class="PatchOperationRemove">
-					<xpath>Defs/XenotypeDef[defName="VRE_Animakin"
-                    or defName="VRE_Gauranlenkin"
-                    or defName="VRE_Poluxkin"]/genes/li[text()="AptitudeTerrible_Melee"
-					or text()="AptitudeTerrible_Shooting"
-					or text()="AptitudeTerrible_Construction"
-					or text()="AptitudeRemarkable_Plants"]</xpath>
-				</li>
 				<!--compensate for metabolism-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/GeneDef[defName="VRE_Photosynthesis"]/biostatMet</xpath>

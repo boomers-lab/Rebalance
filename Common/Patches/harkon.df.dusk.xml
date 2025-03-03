@@ -7,8 +7,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[starts-with(defName, "DF_Dusk_")]/apparel/tags
-					| Defs/ThingDef[starts-with(defName, "DF_Dusk_")]/apparel/defaultOutfitTags</xpath>
+					<xpath>Defs/ThingDef[starts-with(defName, "DF_Dusk_")]/apparel/tags | Defs/ThingDef[starts-with(defName, "DF_Dusk_")]/apparel/defaultOutfitTags</xpath>
 				</li>
 			</operations>
 		</match>
