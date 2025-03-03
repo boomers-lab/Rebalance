@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--causes harmless red errors-->
 <Patch>
 	<Operation Class="PatchOperationFindMod">
@@ -20,7 +19,7 @@
 				</li>
 				<!--kill unused research project defs-->
 				<li Class="PatchOperationRemove">
-					<xpath>//ResearchProjectDef[starts-with(defName, "VFES_") and not(defName="VFES_Artillery") and not(defName="VFES_EMPCannon") and not(defName="VFES_RepulsorTechnology")] | Defs/ResearchProjectDef[defName="VWE_TrenchWarfare"]</xpath>
+					<xpath>//ResearchProjectDef[starts-with(defName, "VFES_") and not(defName="VFES_Artillery") and not(defName="VFES_EMPCannon") and not(defName="VFES_RepulsorTechnology")] | //ResearchProjectDef[defName="VWE_TrenchWarfare"]</xpath>
 				</li>
 				<!--you must fully understand microelectronics, multi-analyzer technology and space-age fabrication before you can build a metal crate lol-->
 				<li Class="PatchOperationReplace">

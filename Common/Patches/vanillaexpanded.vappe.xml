@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
@@ -8,7 +7,7 @@
 			<operations>
 				<!--hard removes most of the bloat-->
 				<li Class="PatchOperationRemove">
-					<xpath>//ThingDef[starts-with(defName, "VAE_Handwear_")] | Defs/ThingDef[starts-with(defName, "VAE_Headgear_") and not(defName="VAE_Headgear_Hardhat") and not(defName="VAE_Headgear_SurgicalMask") and not(defName="VAE_Headgear_Sunglasses") and not(defName="VAE_Headgear_ChefsToque")] | Defs/ThingDef[starts-with(defName, "VAE_Apparel_") and not(defName="VAE_Apparel_Hoodie") and not(defName="VAE_Apparel_Shorts") and not(defName="VAE_Apparel_Skirt") and not(defName="VAE_Apparel_Overalls") and not(defName="VAE_Apparel_FleeceShirt") and not(defName="VAE_Apparel_ChefsUniform") and not(defName="VAE_Apparel_MilitaryJacket") and not(defName="VAE_Apparel_MilitaryUniform") and not(defName="VAE_Apparel_BuildersJacket") and not(defName="VAE_Apparel_DoctorScrubs") and not(defName="VAE_Apparel_LabCoat") and not(defName="VAE_Apparel_TankTop") and not(defName="VAE_Apparel_Jumpsuit") and not(defName="VAE_Apparel_Blouse")]</xpath>
+					<xpath>//ThingDef[starts-with(defName, "VAE_Handwear_")] | //ThingDef[starts-with(defName, "VAE_Headgear_") and not(defName="VAE_Headgear_Hardhat") and not(defName="VAE_Headgear_SurgicalMask") and not(defName="VAE_Headgear_Sunglasses") and not(defName="VAE_Headgear_ChefsToque")] | //ThingDef[starts-with(defName, "VAE_Apparel_") and not(defName="VAE_Apparel_Hoodie") and not(defName="VAE_Apparel_Shorts") and not(defName="VAE_Apparel_Skirt") and not(defName="VAE_Apparel_Overalls") and not(defName="VAE_Apparel_FleeceShirt") and not(defName="VAE_Apparel_ChefsUniform") and not(defName="VAE_Apparel_MilitaryJacket") and not(defName="VAE_Apparel_MilitaryUniform") and not(defName="VAE_Apparel_BuildersJacket") and not(defName="VAE_Apparel_DoctorScrubs") and not(defName="VAE_Apparel_LabCoat") and not(defName="VAE_Apparel_TankTop") and not(defName="VAE_Apparel_Jumpsuit") and not(defName="VAE_Apparel_Blouse")]</xpath>
 				</li>
 				<!--remove the rest from spawning on pawns-->
 				<li Class="PatchOperationRemove">
@@ -31,7 +30,7 @@
 				</li>
 				<!--research requirement adjustments-->
 				<li Class="PatchOperationReplace">
-					<xpath>//ThingDef[starts-with(defName, "VAE_")]/recipeMaker/researchPrerequisite[text()="VAE_CasualWear"] | Defs/ThingDef[defName="VAE_Apparel_Skirt" or defName="VAE_Apparel_Jumpsuit"]/recipeMaker/researchPrerequisite</xpath>
+					<xpath>//ThingDef[starts-with(defName, "VAE_")]/recipeMaker/researchPrerequisite[text()="VAE_CasualWear"] | //ThingDef[defName="VAE_Apparel_Skirt" or defName="VAE_Apparel_Jumpsuit"]/recipeMaker/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisite>ComplexClothing</researchPrerequisite>
 					</value>
