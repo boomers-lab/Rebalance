@@ -1,0 +1,26 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>reduce spike trap cost</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TrapSpike"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>15</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>reduce work to build spike traps</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="TrapSpike"]/statBases/WorkToBuild</xpath>
+				<value>
+					<WorkToBuild>2400</WorkToBuild>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

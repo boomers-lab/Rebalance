@@ -1,0 +1,35 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>rework mechanitor pawnkind</label>
+		<operations>
+			<!--chain shotgun and heavy smg-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/weaponTags</xpath>
+				<value>
+					<weaponTags>
+						<li>IndustrialGunAdvanced</li>
+					</weaponTags>
+				</value>
+			</li>
+			<!--accommodate new weapons-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>500~900</weaponMoney>
+				</value>
+			</li>
+			<!--crafting required-->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/requiredWorkTags</xpath>
+				<value>
+					<li>Crafting</li>
+				</value>
+			</li>
+			<!--remove recluse-->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/PawnKindDef[defName="Mechanitor"]/forcedTraits/Recluse</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

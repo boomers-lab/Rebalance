@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Base Generation Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--remove unused turrets from VFE - Security-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/KCSG.SettlementLayoutDef/defenseOptions/allowedTurretsDefs/li[@MayRequire="VanillaExpanded.VFESecurity"]</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

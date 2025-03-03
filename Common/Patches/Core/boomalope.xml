@@ -1,0 +1,14 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>boomalopes bleed chemfuel</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Boomalope" or defName="Boomrat"]/race</xpath>
+				<value>
+					<bloodDef>Filth_Fuel</bloodDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

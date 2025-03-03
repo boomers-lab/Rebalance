@@ -1,0 +1,19 @@
+<Patch>
+	<!--prepatch tribal facions to allow for custom xenotypes-->
+	<Operation Class="PatchOperationConditional">
+			<xpath>Defs/FactionDef[@Name="TribeBase"]/xenotypeChances</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[@Name="TribeBase"]</xpath>
+			<value>
+				<xenotypeSet>
+					<xenotypeChances>
+					</xenotypeChances>
+				</xenotypeSet>
+			</value>
+		</nomatch>
+	</Operation>
+	<!--clean up empty nodes-->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef/comps[not(*)]</xpath>
+	</Operation>
+</Patch>

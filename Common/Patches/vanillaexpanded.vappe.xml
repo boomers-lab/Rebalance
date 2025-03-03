@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Apparel Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--hard removes most of the bloat-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[starts-with(defName, "VAE_Handwear_")]
+					| Defs/ThingDef[starts-with(defName, "VAE_Headgear_")
+					and not(defName="VAE_Headgear_Hardhat")
+					and not(defName="VAE_Headgear_SurgicalMask")
+					and not(defName="VAE_Headgear_Sunglasses")
+					and not(defName="VAE_Headgear_ChefsToque")]
+					| Defs/ThingDef[starts-with(defName, "VAE_Apparel_")
+					and not(defName="VAE_Apparel_Hoodie")
+					and not(defName="VAE_Apparel_Shorts")
+					and not(defName="VAE_Apparel_Skirt")
+					and not(defName="VAE_Apparel_Overalls")
+					and not(defName="VAE_Apparel_FleeceShirt")
+					and not(defName="VAE_Apparel_ChefsUniform")
+					and not(defName="VAE_Apparel_MilitaryJacket")
+					and not(defName="VAE_Apparel_MilitaryUniform")
+					and not(defName="VAE_Apparel_BuildersJacket")
+					and not(defName="VAE_Apparel_DoctorScrubs")
+					and not(defName="VAE_Apparel_LabCoat")
+					and not(defName="VAE_Apparel_TankTop")
+					and not(defName="VAE_Apparel_Jumpsuit")
+					and not(defName="VAE_Apparel_Blouse")]</xpath>
+				</li>
+				<!--remove the rest from spawning on pawns-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[starts-with(defName, "VAE_")
+					and not(defName="VAE_Footwear_Boots")
+					and not(defName="VAE_Footwear_Shoes")
+					and not(defName="VAE_Apparel_Hoodie")
+					and not(defName="VAE_Apparel_Shorts")
+					and not(defName="VAE_Apparel_MilitaryUniform")
+					and not(defName="VAE_Apparel_TankTop")
+					and not(defName="VAE_Apparel_Jumpsuit")]/apparel/tags</xpath>
+				</li>
+				<!--nerfs basic apparel-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="VAE_Apparel_Jumpsuit"
+					or defName="VAE_Apparel_Shorts"
+					or defName="VAE_Apparel_Skirt"
+					or defName="VAE_Apparel_TankTop"
+					or starts-with(defName, "VAE_Footwear_")]/equippedStatOffsets</xpath>
+				</li>
+				<!--remove military uniforms from non-combatant pawns because ???-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="VAE_Apparel_MilitaryUniform"]/apparel/tags/li[text()="IndustrialBasic"]</xpath>
+				</li>
+				<!--allows jumpsuits to spawn on pawns (lol military uniforms are fine but not jumpsuits?)-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VAE_Apparel_Jumpsuit"]/apparel/tags/li[text()="IndustrialAdvanced"]</xpath>
+					<value>
+						<li>IndustrialBasic</li>
+					</value>
+				</li>
+				<!--research requirement adjustments-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[starts-with(defName, "VAE_")]/recipeMaker/researchPrerequisite[text()="VAE_CasualWear"]
+					| Defs/ThingDef[defName="VAE_Apparel_Skirt"
+					or defName="VAE_Apparel_Jumpsuit"]/recipeMaker/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>ComplexClothing</researchPrerequisite>
+					</value>
+				</li>
+				<!--remove unused research projects-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[defName="VAE_CasualWear"
+					or defName="VAE_FormalWear"]</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

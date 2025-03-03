@@ -1,0 +1,14 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>disable preferred apparel when ideologions are generated</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/MemeDef/selectOneOrNone/noneChance</xpath>
+				<value>
+					<noneChance>1</noneChance>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

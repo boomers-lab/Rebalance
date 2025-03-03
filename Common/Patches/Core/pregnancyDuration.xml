@@ -1,0 +1,14 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>realistic human pregnancy duration</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Human"]/race/gestationPeriodDays</xpath>
+				<value>
+					<gestationPeriodDays>45</gestationPeriodDays>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

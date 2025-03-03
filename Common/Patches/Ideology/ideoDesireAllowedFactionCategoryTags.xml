@@ -1,0 +1,11 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>remove tribal faction requirement for ideology apparel</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef/apparel/ideoDesireAllowedFactionCategoryTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,33 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>allow nutrient paste to be eaten with almost any meme</label>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PreceptDef[defName="AM_NutrientPasteEating_Indifferent"]</xpath>
+				<nomatch Class="PatchOperationRemove">
+					<xpath>Defs/PreceptDef[defName="NutrientPasteEating_DontMind"]/requiredMemes</xpath>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PreceptDef[defName="AM_NutrientPasteEating_Indifferent"]</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/MemeDef[defName="FleshPurity" or defName="Rancher" or defName="Cannibal"]/requireOne</xpath>
+					<value>
+						<li>
+							<li>NutrientPasteEating_Disgusting</li>
+						</li>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/MemeDef[defName="FleshPurity" or defName="Rancher" or defName="Cannibal"]/requireOne</xpath>
+					<value>
+						<li>
+							<li>NutrientPasteEating_Disgusting</li>
+						</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,11 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>remove beards</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/BeardDef[not(defName="NoBeard")]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

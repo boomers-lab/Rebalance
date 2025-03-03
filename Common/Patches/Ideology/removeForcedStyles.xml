@@ -1,0 +1,14 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>remove forced styles from memes and cultures</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs//thingStyleCategories</xpath>
+				<value>
+					<thingStyleCategories />
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

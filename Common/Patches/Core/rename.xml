@@ -1,0 +1,80 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>rename industiral components</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ComponentIndustrial"]/label</xpath>
+				<value>
+					<label>industrial component</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>rename spacer components</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="ComponentSpacer"]/label</xpath>
+				<value>
+					<label>spacer component</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>rename xerigium</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Plant_Healroot"]/label</xpath>
+				<value>
+					<label>Xerigium</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Plant_HealrootWild"]/label</xpath>
+				<value>
+					<label>Wild Xerigium</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>rename megatherium</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Megasloth"]/label</xpath>
+				<value>
+					<label>megatherium</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="WoolMegasloth"]/label</xpath>
+				<value>
+					<label>megatherium wool</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="WoolMegasloth"]/description</xpath>
+				<value>
+					<description>While somewhat coarse, megatherium wool's long fibers make it very strong. It is exceptionally warm.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Megasloth"]/description</xpath>
+				<value>
+					<description>A giant, solitary herbivore with two giant claws for warding off threats. Long extinct after being wiped out by the natives of Earth's American continent, the megatherium was later brought back using advanced cloning and artificial gestators. Its thick hide is exceptionally strong and insulating, and makes a great leather for cold-weather clothing. It is peaceful if left alone, but will shred anyone who disturbs it with its giant claws.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Megasloth"]/label</xpath>
+				<value>
+					<label>megatherium</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

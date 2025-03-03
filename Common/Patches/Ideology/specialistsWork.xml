@@ -1,0 +1,11 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>specialists can do dumb labor</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/PreceptDef/roleDisabledWorkTags/li[text()="ManualDumb"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
