@@ -414,16 +414,8 @@
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
 			</li>
-			<li Class="XmlExtensions.Setting.Checkbox">
-				<key>renameTreeConnection</key>
-				<label>Rename Tree connection meme to Gauranlen connection</label>
-			</li>
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
-			</li>
-			<li Class="XmlExtensions.Setting.Checkbox">
-				<key>removeTreesDesired</key>
-				<label>Remove Trees: Desired from Gauranlen/Tree connection meme</label>
 			</li>
 			<li Class="XmlExtensions.Setting.Gap">
 				<spacing>4</spacing>
