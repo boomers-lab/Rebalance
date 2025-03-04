@@ -1,4 +1,6 @@
 # fried rice
+![](About/Preview.png)
+
 Scope of this mod:
 - Prepatching for my mods
 - Compatibility patches
@@ -99,7 +101,7 @@ Mod patches are balanced around the default value for toggable patches because I
 
 ### Vanilla Furniture Expanded - Security
 - Removes everything but ammo crates, artillery, decoys, EMP cannons, and shield generators
-- - Note: C# assemblies call for removed defs which results in harmless red errors
+- - Note: C# assemblies call for removed defs which results in harmless red errors at startup
 - Allows the player to build ammo crates without researching fabrication
 
 ### Vanilla Psycasts Expanded
