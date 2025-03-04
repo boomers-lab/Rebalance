@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>True</enabled>
-		<label>rename industiral components</label>
+		<label>rename industrial components</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="ComponentIndustrial"]/label</xpath>
