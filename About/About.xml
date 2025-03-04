@@ -20,26 +20,13 @@
 	<loadBefore />
 	<loadAfter>
 		<li>ceteam.combatextended</li>
-		<li>harkon.df.dusk</li>
-		<li>jintuzilamian.gene.xenocosmetic</li>
 		<li>ludeon.rimworld.anomaly</li>
 		<li>ludeon.rimworld.biotech</li>
 		<li>ludeon.rimworld.ideology</li>
 		<li>ludeon.rimworld.royalty</li>
-		<li>moistestwhale.gitscyberbrains</li>
-		<li>oskarpotocki.vanillafactionsexpanded.core</li>
-		<li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
-		<li>oskarpotocki.vfe.mechanoid</li>
-		<li>oskarpotocki.vfe.pirates</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>regrowth.botr.core</li>
 		<li>sarg.alphamemes</li>
-		<li>vanillaexpanded.basegenerationexpanded</li>
-		<li>vanillaexpanded.vappe</li>
-		<li>vanillaexpanded.vfesecurity</li>
-		<li>vanillaexpanded.vpsycastse</li>
-		<li>vanillaexpanded.vwec</li>
-		<li>vanillaracesexpanded.archon</li>
-		<li>vanillaracesexpanded.phytokin</li>
 	</loadAfter>
 	<incompatibleWith />
 </ModMetaData>
