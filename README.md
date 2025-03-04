@@ -5,9 +5,8 @@ Scope of this mod:
 - Prepatching for my mods
 - Compatibility patches
 - (re)Balance patches
-- Remove bloat from external mods
 
-This mod should **never** add content to the game. New defs should **always** be added in a separate mod. For example, adding an existing recipe to an existing workbench **is within** the scope of this mod. However, creating a new recipe to add to an existing workbench **is not within** the scope of this mod.
+This mod will **never** add new content to the game. If it goes in a `Defs` folder, it belongs in a different mod. Changes to external mods should be done in [mods debloated](https://github.com/friedriceworld/mods-debloated).
 
 ## Changes
 ### Core
