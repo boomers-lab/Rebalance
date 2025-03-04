@@ -1,5 +1,5 @@
 ﻿<ModMetaData>
-	<packageId>boomer.patches</packageId>
+	<packageId>friedrice.patches</packageId>
 	<name>fried rice</name>
 	<author>boomer</author>
 	<description>Fried rice is a versatile, flavorful dish that transforms leftover rice into a quick and satisfying meal. Traditionally made with day-old rice, which is drier and less sticky than fresh rice, it absorbs sauces and seasonings better while developing a perfect, slightly crispy texture when stir-fried. It’s the ultimate "kitchen sink" recipe, allowing for endless variations with whatever ingredients are on hand—vegetables, eggs, meats, seafood, or tofu—seasoned with soy sauce, garlic, ginger, or any preferred spices. Whether kept simple or loaded with mix-ins, fried rice is a delicious and resourceful way to repurpose leftovers into something fresh and comforting.</description>
@@ -8,7 +8,7 @@
 	</supportedVersions>
 	<modVersion>1.5.1</modVersion>
 	<modIconPath IgnoreIfNoMatchingField="True" />
-	<url>https://github.com/boomersama/boomer.patches</url>
+	<url>https://github.com/friedriceworld/fried-rice</url>
 	<modDependencies>
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>

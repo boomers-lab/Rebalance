@@ -78,7 +78,7 @@ This mod should **never** add content to the game. New defs should **always** be
 - Reduce wastepacks per mechanoid recharge
 
 ## Supported Mods
-Mod patches are balanced around the default value for toggable patches because I'm not writing a million lines of patch logic for every toggle. For example, [gene expansion](https://github.com/boomersama/boomer.genes) removes genetic aptitudes by default and the VRE Phytokins patch compensates for that metabolism loss. If aptitudes are toggled back on, Phytokin will have +1 metabolism.
+Mod patches are balanced around the default value for toggable patches because I'm not writing a million lines of patch logic for every toggle. For example, [gene expansion](https://github.com/friedriceworld/gene-expansion) removes genetic aptitudes by default and the VRE Phytokins patch compensates for that metabolism loss. If aptitudes are toggled back on, Phytokin will have +1 metabolism.
 
 ### Combat Extended
 - Prevents backpacks from spawning on non-player pawns
