@@ -52,6 +52,7 @@ This mod will **never** add new content to the game. If it goes in a `Defs` fold
 - Reduce spike trap cost
 - Reduce work to build spike traps
 - Buff spouse opinion
+- Remove skillgains from traits
 - Remove work disabler for slaves
 
 ### Royalty
@@ -75,11 +76,6 @@ This mod will **never** add new content to the game. If it goes in a `Defs` fold
 - Double child learning rate factor
 - Remove forced recluse trait from mechanitor
 - Reduce wastepacks per mechanoid recharge
-
-## To-do:
-- Remove skill buff from Brawler trait
-- Remove skill buff from Gourmand trait and replace with CookSpeed buff and/or FoodPoisonChance debuff
-- Remove skill buff from Sickly trait
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
