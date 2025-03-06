@@ -1,4 +1,4 @@
-<!--![GPLv3][badge-license]-->
+<!--[![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) -->
 [badge-license]: https://img.shields.io/badge/License-GPL--3.0-lightgray?style=for-the-badge
 <!--![C# Expansion][badge-c-expansion] expansions with C#-->
 [badge-c-expansion]: https://img.shields.io/badge/C%23-Expansion-blue?style=for-the-badge
@@ -20,7 +20,7 @@
 # fried rice
 ![](About/Preview.png)
 
-![GPLv3][badge-license] ![XML Patches][badge-xml-patches] ![Supports Royalty][badge-dlc-royalty] ![Supports Ideology][badge-dlc-ideology] ![Supports Biotech][badge-dlc-biotech]
+[![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![XML Patches][badge-xml-patches] ![Supports Royalty][badge-dlc-royalty] ![Supports Ideology][badge-dlc-ideology] ![Supports Biotech][badge-dlc-biotech]
 
 Scope of this mod:
 - Prepatching for my mods
