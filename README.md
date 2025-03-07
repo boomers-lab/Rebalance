@@ -9,7 +9,7 @@
 <!--![Supports Anomaly][badge-dlc-anomaly] supports Anomaly DLC-->
 [badge-dlc-anomaly]: https://img.shields.io/badge/DLC-Anomaly-darkseagreen
 
-# fried rice
+# [Core+] Rebalance
 ![](About/Preview.png)\
 [![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Royalty][badge-dlc-royalty] ![Supports Ideology][badge-dlc-ideology] ![Supports Biotech][badge-dlc-biotech]
 
@@ -18,7 +18,7 @@ Scope of this mod:
 - Compatibility patches
 - (re)Balance patches
 
-This mod will **never** add new content to the game. If it goes in a `Defs` folder, it belongs in a different mod. Changes to external mods should be done in [mods debloated](https://github.com/friedriceworld/mods-debloated).
+This mod will **never** add new content to the game. If it goes in a `Defs` folder, it belongs in a different mod. Changes to external mods should be done in [mods debloated](https://github.com/RimCorePlus/Mods-Debloated).
 
 > [!IMPORTANT]
 > Requires [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013).
