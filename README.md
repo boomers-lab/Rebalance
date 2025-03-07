@@ -92,7 +92,7 @@ This mod will **never** add new content to the game. If it goes in a `Defs` fold
 - Remove forced recluse trait from mechanitor
 - Reduce wastepacks per mechanoid recharge
 
-# Legal
+## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.
 
 Castle icon by Delapouite from [Game-icons.net](https://game-icons.net/) (CC BY 3.0)
