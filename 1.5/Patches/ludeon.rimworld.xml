@@ -1,5 +1,5 @@
 <Patch>
-	<!--prepatch tribal facions to allow for custom xenotypes-->
+	<!--moved to the mods that require it
 	<Operation Class="PatchOperationConditional">
 		<xpath>//FactionDef[@Name="TribeBase"]/xenotypeSet</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -17,5 +17,5 @@
 				<xenotypeChances />
 			</value>
 		</nomatch>
-	</Operation>
+	</Operation>-->
 </Patch>

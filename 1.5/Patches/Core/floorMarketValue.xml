@@ -1,15 +1,15 @@
 <Patch>
-    <!--prepatching: ensure all buildable floors have statbases-->
-    <Operation Class="PatchOperationAdd">
-        <xpath>//TerrainDef[not(boolean(statBases))] | //TerrainTemplateDef[not(boolean(statBases))]</xpath>
-        <value>
-            <statBases />
-        </value>
-    </Operation>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>True</enabled>
         <label>flatten floor market value</label>
         <operations>
+            <!--prepatching: ensure all buildable floors have statbases-->
+            <li Class="PatchOperationAdd">
+                <xpath>//TerrainDef[not(boolean(statBases))] | //TerrainTemplateDef[not(boolean(statBases))]</xpath>
+                <value>
+                    <statBases />
+                </value>
+            </li>
             <!--add marketvalue if it doesn't exist-->
             <li Class="PatchOperationAdd">
                 <xpath>//TerrainDef/statBases[not(boolean(MarketValue))] | //TerrainTemplateDef/statBases[not(boolean(MarketValue))]</xpath>

@@ -25,13 +25,10 @@ This mod will **never** add new content to the game. If it goes in a `Defs` fold
 
 ## Changes
 ### Core
-**Bold** items are not toggable.
-- **Prepatches tribal facions to allow for custom xenotypes**
 - Boomalopes bleed chemfuel
 - Allow deconstruction of ancient ruins
 - No more electrical breakdowns
 - Remove faction requirement from crafting recipes
-- **Ensure all buildable floors have statbases**
 - Flatten floor market value
 - Allow corn in hydroponics basin
 - Allow devilstrand in hydroponics basin
