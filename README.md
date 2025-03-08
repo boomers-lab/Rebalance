@@ -24,6 +24,7 @@ This mod will **never** add new content to the game. If it goes in a `Defs` fold
 > Requires [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013).
 
 ## Changes
+All patches are toggable.
 ### Core
 - Boomalopes bleed chemfuel
 - Allow deconstruction of ancient ruins
