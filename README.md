@@ -25,6 +25,7 @@ This mod will **never** add new content to the game. If it goes in a `Defs` fold
 
 ## Changes
 All patches are toggable.
+
 ### Core
 - Boomalopes bleed chemfuel
 - Allow deconstruction of ancient ruins
