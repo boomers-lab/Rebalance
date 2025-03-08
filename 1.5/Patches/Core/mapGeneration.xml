@@ -37,46 +37,4 @@
 			</li>
 		</operations>
 	</Operation>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
-		<label>remove compacted machinery</label>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="MineableComponentsIndustrial"]/building/mineableScatterCommonality</xpath>
-				<value>
-					<mineableScatterCommonality>0</mineableScatterCommonality>
-				</value>
-			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>//GenStepDef/genStep/mineables/li[text()="MineableComponentsIndustrial"]</xpath>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
-		<label>remove compacted plasteel</label>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="MineablePlasteel"]/building/mineableScatterCommonality</xpath>
-				<value>
-					<mineableScatterCommonality>0</mineableScatterCommonality>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="Plasteel"]/deepCommonality</xpath>
-				<value>
-					<deepCommonality />
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="Plasteel"]/deepLumpSizeRange</xpath>
-				<value>
-					<deepLumpSizeRange />
-				</value>
-			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>//GenStepDef/genStep/mineables/li[text()="MineablePlasteel"]</xpath>
-			</li>
-		</operations>
-	</Operation>
 </Patch>
