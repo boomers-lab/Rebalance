@@ -29,6 +29,7 @@ All patches are toggable.
 ### Core
 - Boomalopes bleed chemfuel
 - Allow deconstruction of ancient ruins
+- Disable exostrider remains in all scenarios
 - No more electrical breakdowns
 - Remove faction requirement from crafting recipes
 - Flatten floor market value
