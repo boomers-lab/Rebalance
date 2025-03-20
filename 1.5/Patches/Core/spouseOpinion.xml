@@ -9,6 +9,7 @@
 					<opinionOffset>100</opinionOffset>
 				</value>
 			</li>
+			<!--should be -100 am I right boys?-->
 		</operations>
 	</Operation>
 </Patch>
