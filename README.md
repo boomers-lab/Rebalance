@@ -33,6 +33,7 @@ All patches are toggable.
 - No more electrical breakdowns
 - Remove faction requirement from crafting recipes
 - Flatten floor market value
+- Remove consciousness debuff from food poisoning hediff
 - Allow corn in hydroponics basin
 - Allow devilstrand in hydroponics basin
 - Allow haygrass in hydroponics basin
@@ -65,6 +66,7 @@ All patches are toggable.
 
 ### Royalty
 - Add highmates to the empire
+- Buff aiming speed with gunlink
 
 ### Ideology
 - Decrease biosculpter age reversal cycle time
@@ -72,14 +74,18 @@ All patches are toggable.
 - Decrease biosculpter medic cycle time
 - Decrease biosculpter pleasure cycle time
 - Double gauranlen pruning speed
+- Add drug cooking speed buff to high life meme
 - Remove tribal faction requirement for ideology apparel
 - Reduce neural supercharger recharge time
 - Allow nutrient paste to be eaten with almost any meme
 - Disable preferred apparel when ideologions are generated
+- Drums provide recreation
 - Remove forced styles from memes and cultures
 - Specialists can do dumb labor
+- Transhumanist meme grants medical specialist
 
 ### Biotech
+- Allow lifters to do more hauling jobs
 - Impid settlements only appear in desert biomes
 - Double child learning rate factor
 - Remove forced recluse trait from mechanitor

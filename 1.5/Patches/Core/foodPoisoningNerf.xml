@@ -1,0 +1,11 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>remove consciousness debuff from food poisoning hediff</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//HediffDef[defName="FoodPoisoning"]/stages/li/capMods/li[capacity="Consciousness"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

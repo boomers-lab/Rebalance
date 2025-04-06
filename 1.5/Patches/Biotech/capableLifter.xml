@@ -1,0 +1,14 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>allow lifters to do more hauling jobs</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//WorkGiverDef[defName="HaulMechsToCharger" or defName="CarryToGeneExtractor" or defName="CarryToGrowthVat" or defName="FillFermentingBarrel" or defName="TakeBeerOutOfFermentingBarrel" or defName="Strip"]/canBeDoneByMechs</xpath>
+                <value>
+                    <canBeDoneByMechs>true</canBeDoneByMechs>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
