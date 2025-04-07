@@ -30,7 +30,7 @@
             </li>
             <!--make drum a gather spot-->
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="Drum"]/comps</xpath>
+                <xpath>//ThingDef[defName="Drum"]/comps</xpath>
                 <value>
                     <li>
                         <compClass>CompGatherSpot</compClass>
@@ -39,14 +39,14 @@
             </li>
             <!--add joy gain-->
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="Drum"]/statBases</xpath>
+                <xpath>//ThingDef[defName="Drum"]/statBases</xpath>
                 <value>
                     <JoyGainFactor>1</JoyGainFactor>
                 </value>
             </li>
             <!--set instrument AoE and new SoundDef-->
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="Drum"]</xpath>
+                <xpath>//ThingDef[defName="Drum"]</xpath>
                 <value>
                     <building>
                         <instrumentRange>12</instrumentRange>
@@ -56,7 +56,7 @@
             </li>
             <!--show drum area of effect-->
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="Drum"]/placeWorkers</xpath>
+                <xpath>//ThingDef[defName="Drum"]/placeWorkers</xpath>
                 <value>
                     <li>PlaceWorker_ShowInstrumentAoE</li>
                 </value>

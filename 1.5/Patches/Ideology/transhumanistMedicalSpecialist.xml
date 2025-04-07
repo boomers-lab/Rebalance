@@ -15,7 +15,7 @@
                     </nomatch>
                 </match>
                 <nomatch Class="PatchOperationAdd">
-                    <xpath>/Defs/PreceptDef[defName="IdeoRole_MedicalSpecialist"]</xpath>
+                    <xpath>//PreceptDef[defName="IdeoRole_MedicalSpecialist"]</xpath>
                     <value>
                         <requiredMemes>
                             <li>Transhumanist</li>

@@ -48,8 +48,12 @@
 						<li Class="PatchOperationRemove">
 							<xpath>//HeadTypeDef[defName="Furskin_Narrow1" or defName="Furskin_Narrow2" or defName="Furskin_Narrow3"]</xpath>
 						</li>
-						<li Class="PatchOperationRemove">
-							<xpath>//GeneDef[defName="Furskin"]/forcedHeadTypes/li[text()="Furskin_Narrow1" or text()="Furskin_Narrow2" or text()="Furskin_Narrow3"]</xpath>
+						<!--extremely destructive removal of all narrow forcedHeadTypes with case insensitive querying-->
+						<li Class="PatchOperationConditional">
+							<xpath>//GeneDef/forcedHeadTypes/li[contains(translate(., "N", "n"), "narrow")]</xpath>
+							<match Class="PatchOperationRemove">
+								<xpath>//GeneDef/forcedHeadTypes/li[contains(translate(., "N", "n"), "narrow")]</xpath>
+							</match>
 						</li>
 					</operations>
 				</match>
