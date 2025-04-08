@@ -37,7 +37,7 @@
 		<label>remove narrow heads</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>//HeadTypeDef[defName="Male_NarrowNormal" or defName="Male_NarrowPointy" or defName="Male_NarrowWide" or defName="Female_NarrowNormal" or defName="Female_NarrowPointy" or defName="Female_NarrowWide"]</xpath>
+				<xpath>//HeadTypeDef[contains(translate(., "NAROW", "narow"), "narrow")]</xpath>
 			</li>
 			<li Class="PatchOperationFindMod">
 				<mods>
@@ -45,17 +45,28 @@
 				</mods>
 				<match Class="PatchOperationSequence">
 					<operations>
-						<li Class="PatchOperationRemove">
-							<xpath>//HeadTypeDef[defName="Furskin_Narrow1" or defName="Furskin_Narrow2" or defName="Furskin_Narrow3"]</xpath>
-						</li>
-						<!--extremely destructive removal of all narrow forcedHeadTypes with case insensitive querying-->
+						<!--extremely destructive removal of all narrow forcedHeadTypes-->
 						<li Class="PatchOperationConditional">
-							<xpath>//GeneDef/forcedHeadTypes/li[contains(translate(., "N", "n"), "narrow")]</xpath>
+							<xpath>//GeneDef/forcedHeadTypes/li[contains(translate(., "NAROW", "narow"), "narrow")]</xpath>
 							<match Class="PatchOperationRemove">
-								<xpath>//GeneDef/forcedHeadTypes/li[contains(translate(., "N", "n"), "narrow")]</xpath>
+								<xpath>//GeneDef/forcedHeadTypes/li[contains(translate(., "NAROW", "narow"), "narrow")]</xpath>
 							</match>
 						</li>
 					</operations>
+				</match>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Races Expanded - Android</li>
+				</mods>
+				<match Class="PatchOperationRemove">
+					<xpath>//*[name()="VREAndroids.AndroidGeneDef"]/forcedHeadTypes/li[contains(translate(., "NAROW", "narow"), "narrow")]</xpath>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>//MutantDef</xpath>
+				<match Class="PatchOperationRemove">
+					<xpath>//MutantDef/forcedHeadTypes/li[contains(translate(., "NAROW", "narow"), "narrow")]</xpath>
 				</match>
 			</li>
 		</operations>
