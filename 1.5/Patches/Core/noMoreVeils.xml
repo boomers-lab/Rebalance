@@ -1,0 +1,11 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>remove veils from world pawn generation</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[defName="Apparel_WarVeil"]/apparel/defaultOutfitTags/li</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

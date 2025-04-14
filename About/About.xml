@@ -1,6 +1,6 @@
 ﻿<ModMetaData>
 	<packageId>coreplus.rebalance</packageId>
-	<name>[Core+] Rebalance</name>
+	<name>Rebalance</name>
 	<author>boomer</author>
 	<description />
 	<supportedVersions>
@@ -28,6 +28,7 @@
 		<li>regrowth.botr.core</li>
 		<li>sarg.alphagenes</li>
 		<li>sarg.alphamemes</li>
+		<li>yy.capesandarmor</li>
 	</loadAfter>
 	<incompatibleWith />
 </ModMetaData>
