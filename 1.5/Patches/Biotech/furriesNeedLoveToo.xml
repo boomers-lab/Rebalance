@@ -1,0 +1,11 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>remove romance debuff for furskins and piggers</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//GeneDef[defName="Furskin" or defName="Nose_Pig"]/missingGeneRomanceChanceFactor</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
