@@ -61,7 +61,6 @@ All patches are toggable.
 - Reduce spike trap cost
 - Reduce work to build spike traps
 - Buff spouse opinion
-- Remove skillgains from traits
 - Remove work disabler for slaves
 
 ### Royalty
