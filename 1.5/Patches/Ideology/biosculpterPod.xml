@@ -4,10 +4,8 @@
 		<label>decrease biosculpter age reversal cycle time</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays</xpath>
-				<value>
-					<durationDays>5</durationDays>
-				</value>
+				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays/text()</xpath>
+				<value>5</value>
 			</li>
 		</operations>
 	</Operation>
@@ -16,10 +14,8 @@
 		<label>decrease biosculpter regeneration cycle time</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_RegenerationCycle"]/durationDays</xpath>
-				<value>
-					<durationDays>10</durationDays>
-				</value>
+				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_RegenerationCycle"]/durationDays/text()</xpath>
+				<value>10</value>
 			</li>
 		</operations>
 	</Operation>
@@ -28,10 +24,8 @@
 		<label>decrease biosculpter medic cycle time</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_MedicCycle"]/durationDays</xpath>
-				<value>
-					<durationDays>2</durationDays>
-				</value>
+				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_MedicCycle"]/durationDays/text()</xpath>
+				<value>2</value>
 			</li>
 		</operations>
 	</Operation>
@@ -40,10 +34,8 @@
 		<label>decrease biosculpter pleasure cycle time</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_PleasureCycle"]/durationDays</xpath>
-				<value>
-					<durationDays>1</durationDays>
-				</value>
+				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_PleasureCycle"]/durationDays/text()</xpath>
+				<value>1</value>
 			</li>
 		</operations>
 	</Operation>

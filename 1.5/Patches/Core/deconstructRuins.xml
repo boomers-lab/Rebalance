@@ -5,10 +5,8 @@
 		<operations>
 			<!--allow deconstruction of ancient ruins-->
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/deconstructible</xpath>
-				<value>
-					<deconstructible>true</deconstructible>
-				</value>
+				<xpath>//ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/deconstructible/text()</xpath>
+				<value>true</value>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>//ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/statBases</xpath>
@@ -17,10 +15,8 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/claimable</xpath>
-				<value>
-					<claimable>true</claimable>
-				</value>
+				<xpath>//ThingDef[@Name="NonDeconstructibleAncientBuildingBase"]/building/claimable/text()</xpath>
+				<value>true</value>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>//ThingDef[defName="AncientExostriderHead" or defName="AncientMechGestator" or defName="AncientBasicRecharger" or defName="AncientStandardRecharger" or defName="AncientBandNode"]</xpath>

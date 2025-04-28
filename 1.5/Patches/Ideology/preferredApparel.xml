@@ -4,10 +4,8 @@
 		<label>disable preferred apparel when ideologions are generated</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//MemeDef/selectOneOrNone/noneChance</xpath>
-				<value>
-					<noneChance>1</noneChance>
-				</value>
+				<xpath>//MemeDef/selectOneOrNone/noneChance/text()</xpath>
+				<value>1</value>
 			</li>
 		</operations>
 	</Operation>

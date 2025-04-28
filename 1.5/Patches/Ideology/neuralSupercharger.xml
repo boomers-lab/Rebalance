@@ -4,10 +4,8 @@
 		<label>reduce neural supercharger recharge time</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="NeuralSupercharger"]/comps/li[@Class="CompProperties_NeuralSupercharger"]/ticksToRecharge</xpath>
-				<value>
-					<ticksToRecharge>20000</ticksToRecharge>
-				</value>
+				<xpath>//ThingDef[defName="NeuralSupercharger"]/comps/li[@Class="CompProperties_NeuralSupercharger"]/ticksToRecharge/text()</xpath>
+				<value>20000</value>
 			</li>
 		</operations>
 	</Operation>

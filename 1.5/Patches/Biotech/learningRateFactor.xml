@@ -4,10 +4,8 @@
 		<label>double child learning rate factor</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//StatDef[defName="LearningRateFactor"]/defaultBaseValue</xpath>
-				<value>
-					<defaultBaseValue>2</defaultBaseValue>
-				</value>
+				<xpath>//StatDef[defName="LearningRateFactor"]/defaultBaseValue/text()</xpath>
+				<value>2</value>
 			</li>
 		</operations>
 	</Operation>

@@ -4,10 +4,8 @@
 		<label>rename industrial components</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="ComponentIndustrial"]/label</xpath>
-				<value>
-					<label>industrial component</label>
-				</value>
+				<xpath>//ThingDef[defName="ComponentIndustrial"]/label/text()</xpath>
+				<value>industrial component</value>
 			</li>
 		</operations>
 	</Operation>
@@ -16,10 +14,8 @@
 		<label>rename spacer components</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="ComponentSpacer"]/label</xpath>
-				<value>
-					<label>spacer component</label>
-				</value>
+				<xpath>//ThingDef[defName="ComponentSpacer"]/label/text()</xpath>
+				<value>spacer component</value>
 			</li>
 		</operations>
 	</Operation>
@@ -28,16 +24,12 @@
 		<label>rename xerigium</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="Plant_Healroot"]/label</xpath>
-				<value>
-					<label>Xerigium</label>
-				</value>
+				<xpath>//ThingDef[defName="Plant_Healroot"]/label/text()</xpath>
+				<value>Xerigium</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="Plant_HealrootWild"]/label</xpath>
-				<value>
-					<label>Wild Xerigium</label>
-				</value>
+				<xpath>//ThingDef[defName="Plant_HealrootWild"]/label/text()</xpath>
+				<value>Wild Xerigium</value>
 			</li>
 		</operations>
 	</Operation>
@@ -46,34 +38,24 @@
 		<label>rename megatherium</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="Megasloth"]/label</xpath>
-				<value>
-					<label>megatherium</label>
-				</value>
+				<xpath>//ThingDef[defName="Megasloth"]/label/text()</xpath>
+				<value>megatherium</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="WoolMegasloth"]/label</xpath>
-				<value>
-					<label>megatherium wool</label>
-				</value>
+				<xpath>//ThingDef[defName="WoolMegasloth"]/label/text()</xpath>
+				<value>megatherium wool</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="WoolMegasloth"]/description</xpath>
-				<value>
-					<description>While somewhat coarse, megatherium wool's long fibers make it very strong. It is exceptionally warm.</description>
-				</value>
+				<xpath>//ThingDef[defName="WoolMegasloth"]/description/text()</xpath>
+				<value>While somewhat coarse, megatherium wool's long fibers make it very strong. It is exceptionally warm.</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="Megasloth"]/description</xpath>
-				<value>
-					<description>A giant, solitary herbivore with two giant claws for warding off threats. Long extinct after being wiped out by the natives of Earth's American continent, the megatherium was later brought back using advanced cloning and artificial gestators. Its thick hide is exceptionally strong and insulating, and makes a great leather for cold-weather clothing. It is peaceful if left alone, but will shred anyone who disturbs it with its giant claws.</description>
-				</value>
+				<xpath>//ThingDef[defName="Megasloth"]/description/text()</xpath>
+				<value>A giant, solitary herbivore with two giant claws for warding off threats. Long extinct after being wiped out by the natives of Earth's American continent, the megatherium was later brought back using advanced cloning and artificial gestators. Its thick hide is exceptionally strong and insulating, and makes a great leather for cold-weather clothing. It is peaceful if left alone, but will shred anyone who disturbs it with its giant claws.</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>//PawnKindDef[defName="Megasloth"]/label</xpath>
-				<value>
-					<label>megatherium</label>
-				</value>
+				<xpath>//PawnKindDef[defName="Megasloth"]/label/text()</xpath>
+				<value>megatherium</value>
 			</li>
 		</operations>
 	</Operation>

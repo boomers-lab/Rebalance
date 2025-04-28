@@ -4,10 +4,8 @@
 		<label>reduce spike trap cost</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="TrapSpike"]/costStuffCount</xpath>
-				<value>
-					<costStuffCount>15</costStuffCount>
-				</value>
+				<xpath>//ThingDef[defName="TrapSpike"]/costStuffCount/text()</xpath>
+				<value>15</value>
 			</li>
 		</operations>
 	</Operation>
@@ -16,10 +14,8 @@
 		<label>reduce work to build spike traps</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="TrapSpike"]/statBases/WorkToBuild</xpath>
-				<value>
-					<WorkToBuild>2400</WorkToBuild>
-				</value>
+				<xpath>//ThingDef[defName="TrapSpike"]/statBases/WorkToBuild/text()</xpath>
+				<value>2400</value>
 			</li>
 		</operations>
 	</Operation>

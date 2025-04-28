@@ -4,10 +4,8 @@
 		<label>longer human pregnancy duration</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="Human"]/race/gestationPeriodDays</xpath>
-				<value>
-					<gestationPeriodDays>45</gestationPeriodDays>
-				</value>
+				<xpath>//ThingDef[defName="Human"]/race/gestationPeriodDays/text()</xpath>
+				<value>45</value>
 			</li>
 		</operations>
 	</Operation>

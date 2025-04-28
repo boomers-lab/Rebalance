@@ -19,10 +19,8 @@
             </li>
             <!--replace marketvalue if it does exist-->
             <li Class="PatchOperationReplace">
-                <xpath>//TerrainDef/statBases/MarketValue | //TerrainTemplateDef/statBases/MarketValue</xpath>
-                <value>
-                    <MarketValue>1</MarketValue>
-                </value>
+                <xpath>//TerrainDef/statBases/MarketValue/text() | //TerrainTemplateDef/statBases/MarketValue/text()</xpath>
+                <value>1</value>
             </li>
         </operations>
     </Operation>
