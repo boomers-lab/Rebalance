@@ -90,6 +90,10 @@ All patches are toggable.
 - Remove forced recluse trait from mechanitor
 - Reduce wastepacks per mechanoid recharge
 
+### Investigating
+[Perspective: Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=2567126933) (likely needs to be a seperate mod because it retextures doors)\
+[Perspective: Trees](https://steamcommunity.com/sharedfiles/filedetails/?id=2572022990)
+
 ## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.
 
