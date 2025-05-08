@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>allow nutrient paste to be eaten with almost any meme</label>
 		<operations>
 			<li Class="PatchOperationConditional">

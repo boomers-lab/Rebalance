@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>True</enabled>
+        <enabled>true</enabled>
         <label>render hair above apparel</label>
         <operations>
             <!--exceptions are made for apparels that are intended to cover the pawn's hair-->

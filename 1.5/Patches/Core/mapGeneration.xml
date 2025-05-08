@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>make boreal forests less marshy</label>
 		<operations>
 			<li Class="PatchOperationReplace">

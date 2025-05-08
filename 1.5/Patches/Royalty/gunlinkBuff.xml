@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>True</enabled>
+        <enabled>true</enabled>
         <label>buff aiming speed with gunlink</label>
         <operations>
             <li Class="PatchOperationAdd">

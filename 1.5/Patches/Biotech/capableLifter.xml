@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>True</enabled>
+        <enabled>true</enabled>
         <label>allow lifters to do more hauling jobs</label>
         <operations>
             <li Class="PatchOperationReplace">

@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>white melanin only</label>
 		<operations>
 			<li Class="PatchOperationRemove">
@@ -9,7 +9,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>remove fat bodies</label>
 		<operations>
 			<li Class="PatchOperationRemove">
@@ -24,7 +24,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>remove female hulks</label>
 		<operations>
 			<li Class="PatchOperationRemove">
@@ -33,7 +33,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>remove narrow heads</label>
 		<operations>
 			<li Class="PatchOperationRemove">
@@ -72,7 +72,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>remove wide female heads</label>
 		<operations>
 			<li Class="PatchOperationRemove">

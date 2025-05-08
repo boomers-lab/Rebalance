@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>reduce spike trap cost</label>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -10,7 +10,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>reduce work to build spike traps</label>
 		<operations>
 			<li Class="PatchOperationReplace">

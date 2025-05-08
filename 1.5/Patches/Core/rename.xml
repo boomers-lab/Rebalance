@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>rename industrial components</label>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -10,7 +10,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>rename spacer components</label>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -20,7 +20,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>rename xerigium</label>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -34,7 +34,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>rename megatherium</label>
 		<operations>
 			<li Class="PatchOperationReplace">

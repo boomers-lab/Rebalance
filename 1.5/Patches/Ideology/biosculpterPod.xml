@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>decrease biosculpter age reversal cycle time</label>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -10,7 +10,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>decrease biosculpter regeneration cycle time</label>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -20,7 +20,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>decrease biosculpter medic cycle time</label>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -30,7 +30,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>decrease biosculpter pleasure cycle time</label>
 		<operations>
 			<li Class="PatchOperationReplace">

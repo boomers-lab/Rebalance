@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>allow corn in hydroponics basin</label>
 		<operations>
 			<li Class="PatchOperationAdd">
@@ -12,7 +12,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>allow devilstrand in hydroponics basin</label>
 		<operations>
 			<li Class="PatchOperationAdd">
@@ -24,7 +24,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>allow haygrass in hydroponics basin</label>
 		<operations>
 			<li Class="PatchOperationAdd">

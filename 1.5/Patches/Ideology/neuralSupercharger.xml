@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>reduce neural supercharger recharge time</label>
 		<operations>
 			<li Class="PatchOperationReplace">

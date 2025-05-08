@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>add highmates to the empire</label>
 		<operations>
 			<li Class="PatchOperationAdd">
