@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <label>remove veils from world pawn generation</label>
         <operations>
             <li Class="PatchOperationRemove">

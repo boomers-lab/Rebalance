@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <label>flatten floor market value</label>
         <operations>
             <!--prepatching: ensure all buildable floors have statbases-->

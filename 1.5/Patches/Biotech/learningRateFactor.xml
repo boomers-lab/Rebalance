@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>true</enabled>
+		<enabled>false</enabled>
 		<label>double child learning rate factor</label>
 		<operations>
 			<li Class="PatchOperationReplace">

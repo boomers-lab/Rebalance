@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <label>most armwear covers hands</label>
         <operations>
             <li Class="PatchOperationAdd">
@@ -17,7 +17,7 @@
         </operations>
     </Operation>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <label>most legwear covers feet</label>
         <operations>
             <li Class="PatchOperationAdd">

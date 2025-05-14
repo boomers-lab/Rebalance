@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <label>always disable exostrider remains</label>
         <operations>
             <li Class="PatchOperationAdd">

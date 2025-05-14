@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <label>transhumanist meme grants medical specialist</label>
         <operations>
             <li Class="PatchOperationConditional">
