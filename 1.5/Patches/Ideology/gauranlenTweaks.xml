@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>double gauranlen pruning speed</label>
+		<label>Double gauranlen pruning speed</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/connectionStrengthGainPerHourPruningBase/text()</xpath>

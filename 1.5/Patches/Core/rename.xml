@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>rename industrial components</label>
+		<label>Rename industrial components</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="ComponentIndustrial"]/label/text()</xpath>
@@ -11,7 +11,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>rename spacer components</label>
+		<label>Rename spacer components</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="ComponentSpacer"]/label/text()</xpath>
@@ -21,7 +21,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>rename xerigium</label>
+		<label>Rename xerigium</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="Plant_Healroot"]/label/text()</xpath>
@@ -35,7 +35,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>rename megatherium</label>
+		<label>Rename megatherium</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="Megasloth"]/label/text()</xpath>

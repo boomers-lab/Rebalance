@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>remove faction requirement from crafting recipes</label>
+		<label>Remove faction requirement from crafting recipes</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<!--this is probably too aggressive, might break other mods-->

@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>remove work disabler for slaves</label>
+		<label>Remove work disabler for slaves</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//WorkTypeDef[disabledForSlaves="true" and not(defName="Warden")]/disabledForSlaves</xpath>

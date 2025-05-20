@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>remove forced recluse trait from mechanitor</label>
+		<label>Remove forced recluse trait from mechanitor</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//PawnKindDef[defName="Mechanitor"]/forcedTraits/Recluse</xpath>

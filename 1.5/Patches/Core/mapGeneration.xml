@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>make boreal forests less marshy</label>
+		<label>Boreal forests are not marshes</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//BiomeDef[defName="BorealForest"]/terrainPatchMakers</xpath>

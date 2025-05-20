@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>reduce fat body commonality</label>
+		<label>Reduce fat body commonality</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//BackstoryDef[bodyTypeFemale="Fat"]/bodyTypeFemale | //BackstoryDef[bodyTypeGlobal="Fat"]/bodyTypeGlobal | //BackstoryDef[bodyTypeMale="Fat"]/bodyTypeMale | //XenotypeDef[genes/li[text()="Body_Fat"]]/genes/li[text()="Body_Fat"]</xpath>
@@ -10,7 +10,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>reduce hulk body commonality</label>
+		<label>Reduce hulk body commonality</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//BackstoryDef[bodyTypeFemale="Hulk"]/bodyTypeFemale | //BackstoryDef[bodyTypeGlobal="Hulk"]/bodyTypeGlobal | //BackstoryDef[bodyTypeMale="Hulk"]/bodyTypeMale | //XenotypeDef[genes/li[text()="Body_Hulk"]]/genes/li[text()="Body_Hulk"]</xpath>
@@ -19,7 +19,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>reduce thin body commonality</label>
+		<label>Reduce thin body commonality</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//BackstoryDef[bodyTypeFemale="Thin"]/bodyTypeFemale | //BackstoryDef[bodyTypeGlobal="Thin"]/bodyTypeGlobal | //BackstoryDef[bodyTypeMale="Thin"]/bodyTypeMale | //XenotypeDef[genes/li[text()="Body_Thin"]]/genes/li[text()="Body_Thin"]</xpath>
@@ -28,16 +28,16 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>remove narrow heads</label>
+		<label>Remove narrow heads</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>//HeadTypeDef[contains(translate(., "NAROW", "narow"), "narrow")] | //GeneDef/forcedHeadTypes/li[contains(translate(., "NAROW", "narow"), "narrow")] | //*[name()="VREAndroids.AndroidGeneDef"]/forcedHeadTypes/li[contains(translate(., "NAROW", "narow"), "narrow")] | //MutantDef/forcedHeadTypes/li[contains(translate(., "NAROW", "narow"), "narrow")]</xpath>
+				<xpath>//HeadTypeDef[contains(translate(., "NAROW", "narow"), "narrow")] | //forcedHeadTypes/li[contains(translate(., "NAROW", "narow"), "narrow")]</xpath>
 			</li>
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>remove wide female heads</label>
+		<label>Remove wide female heads</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//HeadTypeDef[defName="Female_AverageWide"]</xpath>
@@ -46,7 +46,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>white melanin only</label>
+		<label>White melanin only</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//GeneDef[defName="Skin_Melanin4" or defName="Skin_Melanin5" or defName="Skin_Melanin6" or defName="Skin_Melanin7" or defName="Skin_Melanin8" or defName="Skin_Melanin9"]</xpath>

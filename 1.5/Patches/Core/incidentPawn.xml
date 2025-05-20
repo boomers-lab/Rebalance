@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>make incident pawn stats visible</label>
+		<label>Visible incident pawn stats</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//QuestScriptDef/root/nodes/li[@Class="QuestNode_AddPawnReward"]/rewardDetailsHidden/text()</xpath>

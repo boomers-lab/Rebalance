@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>make ancient ruins deconstructible</label>
+		<label>Deconstructible ancient ruins</label>
 		<operations>
 			<!--allow deconstruction of ancient ruins-->
 			<li Class="PatchOperationReplace">

@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>decrease biosculpter age reversal cycle time</label>
+		<label>Decrease biosculpter age reversal cycle time to 5 days</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays/text()</xpath>
@@ -11,7 +11,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>decrease biosculpter regeneration cycle time</label>
+		<label>Decrease biosculpter regeneration cycle time to 10 days</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_RegenerationCycle"]/durationDays/text()</xpath>
@@ -21,7 +21,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>decrease biosculpter medic cycle time</label>
+		<label>Decrease biosculpter medic cycle time to 2 days</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_MedicCycle"]/durationDays/text()</xpath>
@@ -31,7 +31,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>decrease biosculpter pleasure cycle time</label>
+		<label>Decrease biosculpter pleasure cycle time to 1 day</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_PleasureCycle"]/durationDays/text()</xpath>

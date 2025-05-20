@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>disable electrical breakdowns</label>
+		<label>Disable electrical breakdowns</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThingDef/comps/li[@Class="CompProperties_Breakdownable"]</xpath>

@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>reduce wastepacks per mechanoid recharge</label>
+		<label>Reduce wastepacks per mechanoid recharge</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[@Name="BaseMechanoid"]/statBases/WastepacksPerRecharge/text()</xpath>

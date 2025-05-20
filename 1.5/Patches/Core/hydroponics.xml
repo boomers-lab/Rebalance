@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>allow corn in hydroponics basin</label>
+		<label>Allow corn in hydroponics basin</label>
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>//ThingDef[defName="Plant_Corn"]/plant/sowTags</xpath>
@@ -13,7 +13,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>allow devilstrand in hydroponics basin</label>
+		<label>Allow devilstrand in hydroponics basin</label>
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>//ThingDef[defName="Plant_Devilstrand"]/plant/sowTags</xpath>
@@ -25,7 +25,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>allow haygrass in hydroponics basin</label>
+		<label>Allow haygrass in hydroponics basin</label>
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>//ThingDef[defName="Plant_Haygrass"]/plant/sowTags</xpath>

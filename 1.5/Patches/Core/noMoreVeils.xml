@@ -1,10 +1,10 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>false</enabled>
-        <label>remove veils from world pawn generation</label>
+        <label>Stop spawning tribals with war veils</label>
         <operations>
             <li Class="PatchOperationRemove">
-                <xpath>//ThingDef[defName="Apparel_WarVeil"]/apparel/defaultOutfitTags/li</xpath>
+                <xpath>//ThingDef[defName="Apparel_WarVeil"]/apparel/defaultOutfitTags | //PawnKindDef/apparelRequired/li[text()="Apparel_WarVeil"]</xpath>
             </li>
         </operations>
     </Operation>

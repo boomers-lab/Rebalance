@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>reduce neural supercharger recharge time</label>
+		<label>Reduce neural supercharger recharge time to 8 hours</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="NeuralSupercharger"]/comps/li[@Class="CompProperties_NeuralSupercharger"]/ticksToRecharge/text()</xpath>

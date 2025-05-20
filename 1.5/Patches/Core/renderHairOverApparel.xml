@@ -3,7 +3,7 @@
     <!--cape has a special tag that renders it below the head (looks bad on other apparel)-->
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>render hair above apparel</label>
+        <label>Render hair above apparel</label>
         <operations>
             <!--add renderskipflags to shell apparel defs if they do not already have one-->
             <li Class="PatchOperationAdd">

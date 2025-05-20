@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>natural enemies do not flee</label>
+		<label>Natural enemies do not flee</label>
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>//FactionDef[naturalEnemy="true" and not(autoFlee="false")]</xpath>
@@ -13,7 +13,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>permanent enemies do not flee</label>
+		<label>Permanent enemies do not flee</label>
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>//FactionDef[permanentEnemy="true" and not(autoFlee="false")]</xpath>
@@ -25,7 +25,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>no breacher raids</label>
+		<label>No breacher raids</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//RaidStrategyDef[@Name="BreachingBase"]/selectionWeightPerPointsCurve/points</xpath>
@@ -56,7 +56,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>no drop pod raids</label>
+		<label>No drop pod raids</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//RaidStrategyDef/arriveModes/li[text()="EdgeDrop" or text()="CenterDrop" or text()="RandomDrop" or text()="EdgeDropGroups"]</xpath>
@@ -65,7 +65,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>no sapper raids</label>
+		<label>No sapper raids</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//RaidStrategyDef[defName="ImmediateAttackSappers"]/selectionWeightPerPointsCurve/points</xpath>
@@ -80,7 +80,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>no siege raids</label>
+		<label>No siege raids</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//RaidStrategyDef[defName="Siege"]/selectionWeightPerPointsCurve/points</xpath>

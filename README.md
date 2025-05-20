@@ -73,15 +73,8 @@ All patches are toggable.
 - Decrease biosculpter medic cycle time
 - Decrease biosculpter pleasure cycle time
 - Double gauranlen pruning speed
-- Add drug cooking speed buff to high life meme
-- Remove tribal faction requirement for ideology apparel
 - Reduce neural supercharger recharge time
-- Allow nutrient paste to be eaten with almost any meme
-- Disable preferred apparel when ideologions are generated
 - Drums provide recreation
-- Remove forced styles from memes and cultures
-- Specialists can do dumb labor
-- Transhumanist meme grants medical specialist
 
 ### Biotech
 - Allow lifters to do more hauling jobs

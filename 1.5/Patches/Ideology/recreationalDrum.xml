@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>drums provide recreation</label>
+        <label>Drums provide recreation</label>
         <operations>
             <!--add SoundDef for drums-->
             <li Class="PatchOperationAdd">

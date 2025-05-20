@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>double child learning rate factor</label>
+		<label>Double child learning rate factor</label>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//StatDef[defName="LearningRateFactor"]/defaultBaseValue/text()</xpath>

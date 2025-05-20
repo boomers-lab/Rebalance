@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>minify cryptosleep caskets</label>
+        <label>Minify cryptosleep caskets</label>
         <operations>
             <li Class="PatchOperationInsert">
                 <xpath>//ThingDef[defName="CryptosleepCasket"]/statBases</xpath>
