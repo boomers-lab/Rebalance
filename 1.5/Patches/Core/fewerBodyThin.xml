@@ -4,7 +4,7 @@
         <label>Reduce thin body commonality</label>
         <operations>
             <li Class="PatchOperationRemove">
-                <xpath>//BackstoryDef[bodyTypeFemale="Thin"]/bodyTypeFemale | //BackstoryDef[bodyTypeGlobal="Thin"]/bodyTypeGlobal | //BackstoryDef[bodyTypeMale="Thin"]/bodyTypeMale | //XenotypeDef[genes/li[text()="Body_Thin"]]/genes/li[text()="Body_Thin"]</xpath>
+                <xpath>//BackstoryDef[bodyTypeFemale="Thin"]/bodyTypeFemale | //BackstoryDef[bodyTypeGlobal="Thin"]/bodyTypeGlobal | //BackstoryDef[bodyTypeMale="Thin"]/bodyTypeMale</xpath>
             </li>
         </operations>
     </Operation>
