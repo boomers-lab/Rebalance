@@ -2,14 +2,10 @@
 	<packageId>boomer.rebalance</packageId>
 	<name>Rebalance</name>
 	<author>boomer</author>
-	<description />
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<modVersion />
-	<modIconPath IgnoreIfNoMatchingField="True" />
 	<url>https://github.com/RimCorePlus/Rebalance</url>
-	<descriptionsByVersion />
 	<modDependencies>
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
@@ -18,10 +14,6 @@
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
 	</modDependencies>
-	<modDependenciesByVersion />
-	<loadBefore />
-	<loadBeforeByVersion />
-	<forceLoadBefore />
 	<loadAfter>
 		<li>ceteam.combatextended</li>
 		<li>ludeon.rimworld.anomaly</li>
@@ -32,8 +24,4 @@
 		<li>regrowth.botr.core</li>
 		<li>yy.capesandarmor</li>
 	</loadAfter>
-	<loadAfterByVersion />
-	<forceLoadAfter />
-	<incompatibleWith />
-	<incompatibleWithByVersion />
 </ModMetaData>
