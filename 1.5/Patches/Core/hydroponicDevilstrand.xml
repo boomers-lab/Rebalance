@@ -1,0 +1,14 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Allow devilstrand in hydroponics basin</label>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="Plant_Devilstrand"]/plant/sowTags</xpath>
+                <value>
+                    <li>Hydroponic</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

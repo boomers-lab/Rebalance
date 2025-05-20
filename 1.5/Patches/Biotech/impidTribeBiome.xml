@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>Impid settlements only appear in desert biomes</label>
+        <enabled>false</enabled>
+        <label>Impid settlements only spawn in desert biomes</label>
         <operations>
             <!--search for modExtensions, add everything if not-->
             <li Class="PatchOperationConditional">

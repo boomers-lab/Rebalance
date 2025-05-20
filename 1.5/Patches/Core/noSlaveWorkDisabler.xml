@@ -1,10 +1,10 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>No forced recluse trait from mechanitor</label>
+		<label>No disabled work for slaves</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>//PawnKindDef[defName="Mechanitor"]/forcedTraits/Recluse</xpath>
+				<xpath>//WorkTypeDef[disabledForSlaves="true" and not(defName="Warden")]/disabledForSlaves</xpath>
 			</li>
 		</operations>
 	</Operation>

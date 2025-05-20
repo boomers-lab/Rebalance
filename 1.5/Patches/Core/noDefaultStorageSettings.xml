@@ -1,0 +1,19 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>No default storage settings for buildings</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef/building/defaultStorageSettings</xpath>
+                <value>
+                    <defaultStorageSettings>
+                        <priority>Normal</priority>
+                        <filter>
+                            <categories />
+                        </filter>
+                    </defaultStorageSettings>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

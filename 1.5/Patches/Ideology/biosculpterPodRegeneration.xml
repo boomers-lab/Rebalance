@@ -1,0 +1,12 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Decrease biosculpter regeneration cycle time to 10 days</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_RegenerationCycle"]/durationDays/text()</xpath>
+                <value>10</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

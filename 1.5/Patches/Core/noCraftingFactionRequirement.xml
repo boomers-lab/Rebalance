@@ -1,10 +1,11 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>No forced recluse trait from mechanitor</label>
+		<label>No faction requirement for crafting recipes</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>//PawnKindDef[defName="Mechanitor"]/forcedTraits/Recluse</xpath>
+				<!--this is probably too aggressive, might break other mods-->
+				<xpath>//ThingDef/recipeMaker/factionPrerequisiteTags</xpath>
 			</li>
 		</operations>
 	</Operation>

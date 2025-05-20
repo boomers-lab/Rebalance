@@ -1,0 +1,11 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Reduce hulk body commonality</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//BackstoryDef[bodyTypeFemale="Hulk"]/bodyTypeFemale | //BackstoryDef[bodyTypeGlobal="Hulk"]/bodyTypeGlobal | //BackstoryDef[bodyTypeMale="Hulk"]/bodyTypeMale | //XenotypeDef[genes/li[text()="Body_Hulk"]]/genes/li[text()="Body_Hulk"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

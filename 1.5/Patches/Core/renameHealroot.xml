@@ -1,0 +1,16 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Rename healroot to xerigium</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="Plant_Healroot"]/label/text()</xpath>
+                <value>Xerigium</value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="Plant_HealrootWild"]/label/text()</xpath>
+                <value>Wild Xerigium</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

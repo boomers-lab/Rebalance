@@ -1,0 +1,12 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Filth disappears faster</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[number(substring-before(filth/disappearsInDays,"~"))>=15]/filth/disappearsInDays/text()</xpath>
+                <value>10~15</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

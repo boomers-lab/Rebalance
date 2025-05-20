@@ -1,10 +1,10 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>No forced recluse trait from mechanitor</label>
+		<label>No default faction replacers</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>//PawnKindDef[defName="Mechanitor"]/forcedTraits/Recluse</xpath>
+				<xpath>//FactionDef/replacesFaction</xpath>
 			</li>
 		</operations>
 	</Operation>

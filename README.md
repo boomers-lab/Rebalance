@@ -13,79 +13,84 @@
 ![](About/Preview.png)\
 [![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Royalty][badge-dlc-royalty] ![Supports Ideology][badge-dlc-ideology] ![Supports Biotech][badge-dlc-biotech]
 
-Scope of this mod:
-- Prepatching for my mods
-- Compatibility patches
-- (re)Balance patches
-
-This mod will **never** add new content to the game. If it goes in a `Defs` folder, it belongs in a different mod. Changes to external mods should be done in [mods debloated](https://github.com/RimCorePlus/Mods-Debloated).
-
 > [!IMPORTANT]
 > Requires [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013).
 
 ## Changes
-All patches are toggable.
+All patches are disabled by default. Some of these patches overlap with (or are copied from) FrozenSnowFox Tweaks and/or Tweaks Galore.
 
 ### Core
-- Boomalopes bleed chemfuel
-- Allow deconstruction of ancient ruins
-- Disable exostrider remains in all scenarios
-- No more electrical breakdowns
-- Remove faction requirement from crafting recipes
+- Add ancient dangers to encounter maps
+- Most legwear covers feet
+- Most armwear covers hands
+- Boomalopes and boomrats bleed chemfuel
+- Wild canines are dogs
+- Ancient ruins are deconstructible
+- Always disable exostrider remains
+- Animals don't mine to escape
+- Natural enemies do not flee
+- Permanent enemies do not flee
+- No default faction replacers
+- Reduce fat body commonality
+- Reduce hulk body commonality
+- Reduce thin body commonality
+- No narrow heads
+- No wide female heads
+- Stop spawning tribals with war veils
+- Filth disappears faster
+- Rain cleans most filth
 - Flatten floor market value
-- Remove consciousness debuff from food poisoning hediff
 - Allow corn in hydroponics basin
 - Allow devilstrand in hydroponics basin
 - Allow haygrass in hydroponics basin
-- Make some incident pawn stats visible
-- Make boreal forests less marshy
+- Boreal forests are not marshes
+- Insect jelly is less preferable
 - Minify cryptosleep caskets
-- Remove beards (disabled by default)
-- White melanin only
-- Remove fat bodies
-- Remove female hulks
-- Remove narrow heads
-- Remove wide female heads
-- Longer human pregnancy duration
-- Natural enemies do not flee
-- Permanent enemies do not flee
+- No mood debuff for banishing colonists
+- No beards
+- No faction requirement for crafting recipes
+- No default storage settings for buildings
+- No electrical breakdowns
+- No consciousness debuff from food poisoning hediff
+- No food poisoning from gluttonous and tasty foods
 - No breacher raids
 - No drop pod raids
 - No sapper raids
 - No siege raids
+- No disabled work for slaves
+- 45 day human pregnancy
 - Rename industrial components
 - Rename spacer components
-- Rename xerigium
-- Rename megatherium
+- Rename healroot to xerigium
+- Rename megasloth to megatherium
 - Render hair above apparel
 - Reduce spike trap cost
 - Reduce work to build spike traps
-- Buff spouse opinion
-- Remove work disabler for slaves
+- Increase spouse opinion
+- Vanometric power cell is also a battery
+- Visible incident pawn stats
+- White melanin only
 
 ### Royalty
 - Add highmates to the empire
-- Buff aiming speed with gunlink
+- Increase aiming speed with gunlink
 
 ### Ideology
-- Decrease biosculpter age reversal cycle time
-- Decrease biosculpter regeneration cycle time
-- Decrease biosculpter medic cycle time
-- Decrease biosculpter pleasure cycle time
+- Decrease biosculpter age reversal cycle time to 5 days
+- Decrease biosculpter medic cycle time to 2 days
+- Decrease biosculpter pleasure cycle time to 1 day
+- Decrease biosculpter regeneration cycle time to 10 days
 - Double gauranlen pruning speed
-- Reduce neural supercharger recharge time
+- Reduce neural supercharger recharge time to 8 hours
 - Drums provide recreation
 
 ### Biotech
-- Allow lifters to do more hauling jobs
-- Impid settlements only appear in desert biomes
+- Impid settlements only spawn in desert biomes
 - Double child learning rate factor
-- Remove forced recluse trait from mechanitor
+- No forced recluse trait from mechanitor
+- No romance debuff for furskins and piggers
+- Allow lifter mechanoid to do more hauling jobs
 - Reduce wastepacks per mechanoid recharge
-
-### Investigating
-[Perspective: Doors](https://steamcommunity.com/sharedfiles/filedetails/?id=2567126933) (likely needs to be a seperate mod because it retextures doors)\
-[Perspective: Trees](https://steamcommunity.com/sharedfiles/filedetails/?id=2572022990)
 
 ## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.

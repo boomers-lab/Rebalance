@@ -1,0 +1,12 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Decrease biosculpter pleasure cycle time to 1 day</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_PleasureCycle"]/durationDays/text()</xpath>
+                <value>1</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

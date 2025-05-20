@@ -1,0 +1,12 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Decrease biosculpter medic cycle time to 2 days</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_MedicCycle"]/durationDays/text()</xpath>
+                <value>2</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

@@ -1,0 +1,12 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Rename spacer components</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="ComponentSpacer"]/label/text()</xpath>
+                <value>spacer component</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

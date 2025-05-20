@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <label>Minify cryptosleep caskets</label>
         <operations>
             <li Class="PatchOperationInsert">

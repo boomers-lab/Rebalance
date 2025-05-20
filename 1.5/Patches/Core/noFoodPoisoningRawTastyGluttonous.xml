@@ -1,0 +1,17 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>No food poisoning from gluttonous and tasty foods</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[(ingestible/preferability="RawTasty") or ((ingestible/joyKind="Gluttonous") and @ParentName="OrganicProductBase")]/statBases/FoodPoisonChanceFixedHuman</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>//ThingDef[(ingestible/preferability="RawTasty") or ((ingestible/joyKind="Gluttonous") and @ParentName="OrganicProductBase")]/statBases</xpath>
+                <value>
+                    <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

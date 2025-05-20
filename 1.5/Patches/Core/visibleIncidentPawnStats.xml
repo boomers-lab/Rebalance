@@ -1,13 +1,12 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>Increase spouse opinion</label>
+		<label>Visible incident pawn stats</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//PawnRelationDef[defName="Spouse"]/opinionOffset/text()</xpath>
-				<value>100</value>
+				<xpath>//QuestScriptDef/root/nodes/li[@Class="QuestNode_AddPawnReward"]/rewardDetailsHidden/text()</xpath>
+				<value>false</value>
 			</li>
-			<!--should be -100 am I right boys?-->
 		</operations>
 	</Operation>
 </Patch>

@@ -1,0 +1,11 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
+		<label>Reduce fat body commonality</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//BackstoryDef[bodyTypeFemale="Fat"]/bodyTypeFemale | //BackstoryDef[bodyTypeGlobal="Fat"]/bodyTypeGlobal | //BackstoryDef[bodyTypeMale="Fat"]/bodyTypeMale | //XenotypeDef[genes/li[text()="Body_Fat"]]/genes/li[text()="Body_Fat"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

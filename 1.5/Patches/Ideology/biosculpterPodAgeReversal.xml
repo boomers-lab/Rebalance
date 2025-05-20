@@ -1,0 +1,12 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
+		<label>Decrease biosculpter age reversal cycle time to 5 days</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays/text()</xpath>
+				<value>5</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,13 +1,12 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>Increase spouse opinion</label>
+		<label>Rename industrial components</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//PawnRelationDef[defName="Spouse"]/opinionOffset/text()</xpath>
-				<value>100</value>
+				<xpath>//ThingDef[defName="ComponentIndustrial"]/label/text()</xpath>
+				<value>industrial component</value>
 			</li>
-			<!--should be -100 am I right boys?-->
 		</operations>
 	</Operation>
 </Patch>

@@ -1,0 +1,11 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>White melanin only</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//GeneDef[defName="Skin_Melanin4" or defName="Skin_Melanin5" or defName="Skin_Melanin6" or defName="Skin_Melanin7" or defName="Skin_Melanin8" or defName="Skin_Melanin9"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

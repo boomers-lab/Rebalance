@@ -1,0 +1,12 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Reduce work to build spike traps</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="TrapSpike"]/statBases/WorkToBuild/text()</xpath>
+                <value>2400</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

@@ -1,0 +1,14 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Rain cleans most filth</label>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>//ThingDef[not(@Name="BaseFilth")]/filth[not(rainWashes)]</xpath>
+                <value>
+                    <rainWashes>true</rainWashes>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

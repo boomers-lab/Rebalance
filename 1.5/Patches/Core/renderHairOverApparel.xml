@@ -2,7 +2,7 @@
     <!--exceptions are made for apparels that are intended to cover the pawn's hair-->
     <!--cape has a special tag that renders it below the head (looks bad on other apparel)-->
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <label>Render hair above apparel</label>
         <operations>
             <!--add renderskipflags to shell apparel defs if they do not already have one-->

@@ -1,10 +1,10 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>false</enabled>
-		<label>No forced recluse trait from mechanitor</label>
+		<label>No electrical breakdowns</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>//PawnKindDef[defName="Mechanitor"]/forcedTraits/Recluse</xpath>
+				<xpath>//ThingDef/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
 			</li>
 		</operations>
 	</Operation>
