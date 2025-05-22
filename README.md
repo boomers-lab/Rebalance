@@ -72,7 +72,6 @@ All patches are disabled by default. Some of these patches overlap with (or are 
 - White melanin only
 
 ### Royalty
-- Add highmates to the empire
 - Increase aiming speed with gunlink
 
 ### Ideology
