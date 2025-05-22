@@ -14,6 +14,16 @@
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
 	</modDependencies>
+	<loadBefore>
+		<li>boomer.recycle</li>
+		<li>coreplus.genes.bloodfeeders</li>
+		<li>coreplus.genes.elves</li>
+		<li>coreplus.genes.foxkin</li>
+		<li>coreplus.genes</li>
+		<li>coreplus.ideology</li>
+		<li>coreplus.industry</li>
+		<li>coreplus.scenarios</li>
+	</loadBefore>
 	<loadAfter>
 		<li>ceteam.combatextended</li>
 		<li>ludeon.rimworld.anomaly</li>
