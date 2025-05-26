@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>No breacher raids</label>
+        <id>BL_RebalanceNoBreacherRaids</id>
+        <category>BL_RebalanceCoreRaids</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//RaidStrategyDef[@Name="BreachingBase"]/selectionWeightPerPointsCurve/points</xpath>

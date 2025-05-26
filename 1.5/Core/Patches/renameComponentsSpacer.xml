@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>Rename spacer components</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
+        <label>Rename advanced components to spacer components</label>
+        <id>BL_RebalanceRenameAdvComponents</id>
+        <category>BL_RebalanceCoreRenamers</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="ComponentSpacer"]/label/text()</xpath>

@@ -1,12 +1,11 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
-		<label>45 day human pregnancy</label>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="Human"]/race/gestationPeriodDays/text()</xpath>
-				<value>45</value>
-			</li>
-		</operations>
+	<Operation Class="ModSettingsFramework.PatchOperationSliderInt">
+		<label>Human pregnancy duration</label>
+		<tooltip>I set this to 45 to simulate a 9 month pregnancy. (Vanilla: 18)</tooltip>
+		<id>BL_RebalancePregnancyDuration</id>
+		<category>BL_RebalanceCoreAdjustments</category>
+		<xpath>//ThingDef[defName="Human"]/race/gestationPeriodDays</xpath>
+		<defaultValue>18</defaultValue>
+		<range>1~60</range>
 	</Operation>
 </Patch>

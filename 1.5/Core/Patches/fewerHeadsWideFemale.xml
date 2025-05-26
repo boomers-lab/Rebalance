@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>No wide female heads</label>
+        <id>BL_RebalanceApparelNoWideFemaleHeads</id>
+        <category>BL_RebalanceCorePawnGen</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//HeadTypeDef[defName="Female_AverageWide"]</xpath>

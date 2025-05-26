@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Add ancient dangers to encounter maps</label>
+        <id>BL_RebalanceAncientDangerEncounter</id>
+        <category>BL_RebalanceCoreMapGen</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//MapGeneratorDef[defName="Encounter"]/genSteps</xpath>

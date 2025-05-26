@@ -1,12 +1,12 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>Decrease biosculpter pleasure cycle time to 1 day</label>
-        <operations>
-            <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_PleasureCycle"]/durationDays/text()</xpath>
-                <value>1</value>
-            </li>
-        </operations>
+    <Operation Class="ModSettingsFramework.PatchOperationSliderInt">
+        <label>Biosculpter biosculpter pleasure cycle duration</label>
+		<tooltip>(Vanilla: 4)</tooltip>
+        <id>BL_RebalanceBiosculpterPleasureCycle</id>
+        <category>BL_RebalanceIdeology</category>
+        <order>20</order>
+        <xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_PleasureCycle"]/durationDays</xpath>
+        <defaultValue>4</defaultValue>
+        <range>1~8</range>
     </Operation>
 </Patch>

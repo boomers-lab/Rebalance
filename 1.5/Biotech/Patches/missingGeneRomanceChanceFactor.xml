@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>No romance debuff for furskins and piggers</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
+        <label>Remove romance debuff for furskins and piggers</label>
+        <id>BL_RebalancePiggerLove</id>
+        <category>BL_RebalanceBiotech</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//GeneDef[defName="Furskin" or defName="Nose_Pig"]/missingGeneRomanceChanceFactor</xpath>

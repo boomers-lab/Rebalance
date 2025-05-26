@@ -1,7 +1,10 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <!--WHY THE FUCK ARE THE BIOTECH OPTIONS NOT SHOWING UP WHAT THE FUCK I HAVE QUINTUPLE CHECKED EVERYTHING GOD FUCKING DAMNIT-->
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Impid settlements only spawn in desert biomes</label>
+        <id>BL_RebalanceImpidBiome</id>
+        <category>BL_RebalanceBiotech</category>
         <operations>
             <!--search for modExtensions, add everything if not-->
             <li Class="PatchOperationConditional">

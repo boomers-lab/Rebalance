@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Rename healroot to xerigium</label>
+        <id>BL_RebalanceRenameHealroot</id>
+        <category>BL_RebalanceCoreRenamers</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="Plant_Healroot"]/label/text()</xpath>

@@ -1,7 +1,10 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
         <label>Reduce hulk body commonality</label>
+		<tooltip>Removes the forced hulk bodytype from backstories, drastically reducing the number of hulk pawns (essentially none) without breaking compatibility for mods or xenotypes that use the body.</tooltip>
+		<id>BL_RebalanceApparelNoHulkBodies</id>
+		<category>BL_RebalanceCorePawnGen</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//BackstoryDef[bodyTypeFemale="Hulk"]/bodyTypeFemale | //BackstoryDef[bodyTypeGlobal="Hulk"]/bodyTypeGlobal | //BackstoryDef[bodyTypeMale="Hulk"]/bodyTypeMale</xpath>

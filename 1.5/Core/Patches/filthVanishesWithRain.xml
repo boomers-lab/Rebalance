@@ -1,7 +1,10 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Rain cleans most filth</label>
+        <tooltip>Filth that persists in rain now disappears in rain. Excludes a special Anomaly filth.</tooltip>
+        <id>BL_RebalanceFilthDisappearsRain</id>
+        <category>BL_RebalanceCoreAdjustments</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//ThingDef[not(@Name="BaseFilth")]/filth[not(rainWashes)]</xpath>

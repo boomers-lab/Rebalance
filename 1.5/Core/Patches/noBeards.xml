@@ -1,7 +1,10 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
 		<label>No beards</label>
+		<tooltip>Removes all beardDefs from the game.</tooltip>
+		<id>BL_RebalanceApparelNoBeards</id>
+		<category>BL_RebalanceCorePawnGen</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//BeardDef[not(defName="NoBeard")]</xpath>

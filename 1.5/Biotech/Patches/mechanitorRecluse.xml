@@ -1,7 +1,9 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
-		<label>No forced recluse trait from mechanitor</label>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
+		<label>Remove forced recluse trait from mechanitor</label>
+		<id>BL_RebalanceMechanitorRecluse</id>
+		<category>BL_RebalanceBiotech</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//PawnKindDef[defName="Mechanitor"]/forcedTraits/Recluse</xpath>

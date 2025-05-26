@@ -1,7 +1,9 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
 		<label>Double child learning rate factor</label>
+		<id>BL_RebalanceChildLearningFactor</id>
+		<category>BL_RebalanceBiotech</category>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//StatDef[defName="LearningRateFactor"]/defaultBaseValue/text()</xpath>

@@ -1,7 +1,10 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
 		<label>Natural enemies do not flee</label>
+		<tooltip>Rough factions.</tooltip>
+		<id>BL_RebalanceEnemiesDoNotFleeNatural</id>
+		<category>BL_RebalanceCoreRaids</category>
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>//FactionDef[naturalEnemy="true" and not(autoFlee="false")]</xpath>

@@ -1,7 +1,10 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
 		<label>No faction requirement for crafting recipes</label>
+		<tooltip>Removes the factionPrerequisiteTags node that restricts items like the war mask to tribal factions.</tooltip>
+		<id>BL_RebalanceNoFactionRequirementsForCrafting</id>
+		<category>BL_RebalanceCoreAdjustments</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<!--this is probably too aggressive, might break other mods-->

@@ -1,12 +1,10 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
-		<label>Reduce wastepacks per mechanoid recharge</label>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[@Name="BaseMechanoid"]/statBases/WastepacksPerRecharge/text()</xpath>
-				<value>1</value>
-			</li>
-		</operations>
+	<Operation Class="ModSettingsFramework.PatchOperationSliderInt">
+		<label>Wastepacks per mechanoid recharge (Vanilla: 5)</label>
+		<id>BL_RebalanceWastepackPerRecharge</id>
+		<category>BL_RebalanceBiotech</category>
+		<xpath>//ThingDef[@Name="BaseMechanoid"]/statBases/WastepacksPerRecharge</xpath>
+		<defaultValue>1</defaultValue>
+		<range>0~10</range>
 	</Operation>
 </Patch>

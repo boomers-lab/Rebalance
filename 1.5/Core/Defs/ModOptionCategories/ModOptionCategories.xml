@@ -1,0 +1,61 @@
+<Defs>
+    <ModSettingsFramework.ModOptionCategoryDef Name="BL_RebalanceModOptionsBase" Abstract="True">
+        <modSettingsName>[BL] Rebalance</modSettingsName>
+        <modPackageSettingsID>boomer.Rebalance</modPackageSettingsID>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
+        <defName>BL_RebalanceCoreAdjustments</defName>
+        <label>Core: Adjustments</label>
+        <order>0</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
+        <defName>BL_RebalanceCoreAnimals</defName>
+        <label>Core: Animals</label>
+        <order>10</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
+        <defName>BL_RebalanceCoreCheats</defName>
+        <label>Core: Cheats</label>
+        <order>20</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
+        <defName>BL_RebalanceCoreMapGen</defName>
+        <label>Core: MapGen</label>
+        <order>30</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
+        <defName>BL_RebalanceCorePawnGen</defName>
+        <label>Core: PawnGen</label>
+        <order>40</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
+        <defName>BL_RebalanceCoreRaids</defName>
+        <label>Core: Raids</label>
+        <order>50</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
+        <defName>BL_RebalanceCoreRenamers</defName>
+        <label>Core: Renamers</label>
+        <order>60</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
+        <defName>BL_RebalanceRoyalty</defName>
+        <label>Royalty</label>
+        <order>100</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
+        <defName>BL_RebalanceIdeology</defName>
+        <label>Ideology</label>
+        <order>110</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
+        <defName>BL_RebalanceBiotech</defName>
+        <label>Biotech</label>
+        <order>120</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
+        <defName>BL_RebalanceAnomaly</defName>
+        <label>Anomaly</label>
+        <order>130</order>
+    </ModSettingsFramework.ModOptionCategoryDef>
+</Defs>

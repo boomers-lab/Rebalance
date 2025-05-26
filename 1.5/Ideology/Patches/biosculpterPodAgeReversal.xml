@@ -1,12 +1,12 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
-		<label>Decrease biosculpter age reversal cycle time to 5 days</label>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays/text()</xpath>
-				<value>5</value>
-			</li>
-		</operations>
+	<Operation Class="ModSettingsFramework.PatchOperationSliderInt">
+		<label>Biosculpter age reversal cycle duration</label>
+		<tooltip>(Vanilla: 8)</tooltip>
+		<id>BL_RebalanceBiosculpterAgeReversalCycle</id>
+		<category>BL_RebalanceIdeology</category>
+		<order>0</order>
+		<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays</xpath>
+		<defaultValue>8</defaultValue>
+		<range>1~16</range>
 	</Operation>
 </Patch>

@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Most armwear covers hands</label>
+        <id>BL_RebalanceApparelCoversHands</id>
+        <category>BL_RebalanceCoreCheats</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//ThingDef[@Name="ApparelArmorCataphractBase" or @Name="ApparelArmorPowerBase" or @Name="ApparelArmorReconBase" or defName="Apparel_Burka" or defName="Apparel_CollarShirt" or defName="Apparel_Duster" or defName="Apparel_FlakJacket" or defName="Apparel_Jacket" or defName="Apparel_KidParka" or defName="Apparel_KidRomper" or defName="Apparel_Parka" or defName="Apparel_PlateArmor" or defName="Apparel_ShirtRuffle"]/apparel/bodyPartGroups</xpath>

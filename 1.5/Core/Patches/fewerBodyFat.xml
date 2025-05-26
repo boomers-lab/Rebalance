@@ -1,7 +1,10 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
 		<label>Reduce fat body commonality</label>
+		<tooltip>Removes the forced fat bodytype from backstories, drastically reducing the number of fat pawns (essentially none) without breaking compatibility for mods or xenotypes that use the body.</tooltip>
+		<id>BL_RebalanceApparelNoFatBodies</id>
+		<category>BL_RebalanceCorePawnGen</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//BackstoryDef[bodyTypeFemale="Fat"]/bodyTypeFemale | //BackstoryDef[bodyTypeGlobal="Fat"]/bodyTypeGlobal | //BackstoryDef[bodyTypeMale="Fat"]/bodyTypeMale</xpath>

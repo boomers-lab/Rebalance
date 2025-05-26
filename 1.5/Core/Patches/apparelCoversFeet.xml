@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Most legwear covers feet</label>
+        <id>BL_RebalanceApparelCoversFeet</id>
+        <category>BL_RebalanceCoreCheats</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//ThingDef[@Name="ApparelArmorCataphractBase" or @Name="ApparelArmorPowerBase" or @Name="ApparelArmorReconBase" or defName="Apparel_Burka" or defName="Apparel_FlakPants" or defName="Apparel_KidPants" or defName="Apparel_KidRomper" or defName="Apparel_Pants" or defName="Apparel_PlateArmor"]/apparel/bodyPartGroups</xpath>

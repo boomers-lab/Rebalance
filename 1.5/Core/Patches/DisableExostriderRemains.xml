@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>Always disable exostrider remains</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
+        <label>Disable exostrider remains for every scenario</label>
+        <id>BL_RebalanceDisableExostrider</id>
+        <category>BL_RebalanceCoreMapGen</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//ScenarioDef[not(scenario/parts/li/def[text()="DisableExostriderRemains"])]/scenario/parts</xpath>

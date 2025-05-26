@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>No mood debuff for banishing colonists</label>
+        <id>BL_RebalanceNoBanishDebuff</id>
+        <category>BL_RebalanceCoreCheats</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThoughtDef[defName="DeniedJoining" or defName="ColonistBanished" or defName="ColonistBanishedToDie" or defName="PrisonerBanishedToDie" or defName="ColonyPrisonerEscaped" or defName="BondedAnimalBanished"]/stages/li/baseMoodEffect/text()</xpath>

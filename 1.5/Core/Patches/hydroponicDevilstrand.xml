@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
         <label>Allow devilstrand in hydroponics basin</label>
+		<id>BL_RebalanceHydroDevilstrand</id>
+		<category>BL_RebalanceCoreCheats</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//ThingDef[defName="Plant_Devilstrand"]/plant/sowTags</xpath>

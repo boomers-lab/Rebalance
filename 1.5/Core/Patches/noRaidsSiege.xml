@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>No siege raids</label>
+        <id>BL_RebalanceNoSiegeRaids</id>
+        <category>BL_RebalanceCoreRaids</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//RaidStrategyDef[defName="Siege"]/selectionWeightPerPointsCurve/points</xpath>

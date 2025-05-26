@@ -1,7 +1,10 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Insect jelly is less preferable</label>
+        <tooltip>Moves insect jelly to the RawTasty category with foods like berries.</tooltip>
+        <id>BL_RebalanceLessPreferableJelly</id>
+        <category>BL_RebalanceCoreAdjustments</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="InsectJelly"]/ingestible/preferability/text()</xpath>

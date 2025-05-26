@@ -1,7 +1,9 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
-		<label>Rename industrial components</label>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
+		<label>Rename components to industrial components</label>
+		<id>BL_RebalanceRenameComponents</id>
+		<category>BL_RebalanceCoreRenamers</category>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="ComponentIndustrial"]/label/text()</xpath>

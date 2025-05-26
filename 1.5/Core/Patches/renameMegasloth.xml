@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Rename megasloth to megatherium</label>
+        <id>BL_RebalanceRenameMegasloth</id>
+        <category>BL_RebalanceCoreRenamers</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="Megasloth"]/label/text()</xpath>

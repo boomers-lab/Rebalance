@@ -1,7 +1,11 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Increase aiming speed with gunlink</label>
+        <tooltip>Adds an aiming delay offset to the gunlink to make it more useful.</tooltip>
+        <id>BL_RebalanceGunlinkAimingDelay</id>
+        <category>BL_RebalanceRoyalty</category>
+        <order>60</order>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//ThingDef[defName="Apparel_Gunlink"]/equippedStatOffsets</xpath>

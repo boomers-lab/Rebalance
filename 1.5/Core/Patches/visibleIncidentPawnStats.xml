@@ -1,7 +1,10 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
 		<label>Visible incident pawn stats</label>
+		<tooltip>For quests with QuestNode_AddPawnReward where reward details are hidden.</tooltip>
+		<id>BL_RebalanceVisibleIncidentPawnStats</id>
+		<category>BL_RebalanceCoreCheats</category>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//QuestScriptDef/root/nodes/li[@Class="QuestNode_AddPawnReward"]/rewardDetailsHidden/text()</xpath>

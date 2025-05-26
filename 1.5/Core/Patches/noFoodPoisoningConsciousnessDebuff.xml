@@ -1,7 +1,10 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>No consciousness debuff from food poisoning hediff</label>
+        <tooltip>Consciousness is already affected by other factors in the food poisoning hediff. This removes the additional consciousness debuff that causes perfectly healthy pawns to become immobile with food poisoning.</tooltip>
+        <id>BL_RebalanceNoFoodPoisoningDebuff</id>
+        <category>BL_RebalanceCoreCheats</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//HediffDef[defName="FoodPoisoning"]/stages/li/capMods/li[capacity="Consciousness"]</xpath>

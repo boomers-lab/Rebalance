@@ -1,7 +1,10 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>White melanin only</label>
+        <tooltip>Removes all natural melanin genes above Skin_Melanin3.</tooltip>
+        <id>BL_RebalanceWhitePawnsOnly</id>
+        <category>BL_RebalanceCorePawnGen</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//GeneDef[defName="Skin_Melanin4" or defName="Skin_Melanin5" or defName="Skin_Melanin6" or defName="Skin_Melanin7" or defName="Skin_Melanin8" or defName="Skin_Melanin9"]</xpath>

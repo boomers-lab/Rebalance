@@ -1,7 +1,9 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>false</enabled>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>false</defaultValue>
 		<label>Ancient ruins are deconstructible</label>
+		<id>BL_RebalanceDeconstructAncientRuins</id>
+		<category>BL_RebalanceCoreMapGen</category>
 		<operations>
 			<!--allow deconstruction of ancient ruins-->
 			<li Class="PatchOperationReplace">

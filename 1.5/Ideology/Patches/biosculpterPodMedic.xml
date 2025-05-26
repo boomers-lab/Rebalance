@@ -1,12 +1,12 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>Decrease biosculpter medic cycle time to 2 days</label>
-        <operations>
-            <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_MedicCycle"]/durationDays/text()</xpath>
-                <value>2</value>
-            </li>
-        </operations>
-    </Operation>
+	<Operation Class="ModSettingsFramework.PatchOperationSliderInt">
+		<label>Biosculpter medic cycle duration</label>
+		<tooltip>(Vanilla: 6)</tooltip>
+		<id>BL_RebalanceBiosculpterMedicCycle</id>
+		<category>BL_RebalanceIdeology</category>
+		<order>10</order>
+		<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_MedicCycle"]/durationDays</xpath>
+		<defaultValue>6</defaultValue>
+		<range>1~12</range>
+	</Operation>
 </Patch>
