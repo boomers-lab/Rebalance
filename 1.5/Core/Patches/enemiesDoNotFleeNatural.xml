@@ -6,7 +6,7 @@
 		<category>BL_RebalanceCoreRaids</category>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>//FactionDef[(naturalEnemy="true" or permanentEnemy="true) and not(autoFlee="false")]</xpath>
+				<xpath>//FactionDef[(naturalEnemy="true" or permanentEnemy="true") and not(autoFlee="false")]</xpath>
 				<value>
 					<autoFlee>false</autoFlee>
 				</value>
