@@ -1,8 +1,8 @@
 <Patch>
     <Operation Class="ModSettingsFramework.PatchOperationModOption">
         <defaultValue>false</defaultValue>
-        <label>Rain cleans most filth</label>
-        <tooltip>Filth that persists in rain now disappears in rain. Excludes a special Anomaly filth.</tooltip>
+        <label>Filth vanishes with rain and time</label>
+        <tooltip>Excludes a special Anomaly filth.</tooltip>
         <id>BL_RebalanceFilthDisappearsRain</id>
         <category>BL_RebalanceCoreAdjustments</category>
         <operations>
@@ -11,6 +11,10 @@
                 <value>
                     <rainWashes>true</rainWashes>
                 </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[number(substring-before(filth/disappearsInDays,"~"))>=15]/filth/disappearsInDays/text()</xpath>
+                <value>10~15</value>
             </li>
         </operations>
     </Operation>
