@@ -1,9 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
-        <label>Allow lifter mechanoid to do more hauling jobs</label>
-        <id>BL_RebalanceCapableLifter</id>
-        <category>BL_RebalanceBiotech</category>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Biotech] Allow lifter mechanoid to do more hauling jobs</label>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//WorkGiverDef[defName="HaulMechsToCharger" or defName="CarryToGeneExtractor" or defName="CarryToGrowthVat" or defName="FillFermentingBarrel" or defName="TakeBeerOutOfFermentingBarrel" or defName="Strip"]/canBeDoneByMechs/text()</xpath>

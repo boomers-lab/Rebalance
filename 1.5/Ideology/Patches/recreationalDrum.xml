@@ -1,11 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
-        <label>Drums provide recreation</label>
-        <tooltip>Converts drums into a musical instrument like those added by the Royalty DLC.</tooltip>
-        <id>BL_RebalanceDrumRecreation</id>
-        <category>BL_RebalanceIdeology</category>
-        <order>60</order>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Ideology] Drums provide recreation</label>
         <operations>
             <!--add SoundDef for drums-->
             <li Class="PatchOperationAdd">

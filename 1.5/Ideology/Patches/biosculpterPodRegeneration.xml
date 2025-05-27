@@ -3,7 +3,7 @@
         <label>Biosculpter biosculpter regeneration cycle duration</label>
 		<tooltip>(Vanilla: 25)</tooltip>
         <id>BL_RebalanceBiosculpterRegenerationCycle</id>
-        <category>BL_RebalanceIdeology</category>
+        <category>BL_RebalanceDLC</category>
         <order>30</order>
         <xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_RegenerationCycle"]/durationDays</xpath>
         <defaultValue>25</defaultValue>

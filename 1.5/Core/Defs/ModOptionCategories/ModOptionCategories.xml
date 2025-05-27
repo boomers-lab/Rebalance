@@ -19,11 +19,6 @@
         <order>20</order>
     </ModSettingsFramework.ModOptionCategoryDef>
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
-        <defName>BL_RebalanceCoreMapGen</defName>
-        <label>Core: MapGen</label>
-        <order>30</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
         <defName>BL_RebalanceCorePawnGen</defName>
         <label>Core: PawnGen</label>
         <order>40</order>
@@ -34,28 +29,8 @@
         <order>50</order>
     </ModSettingsFramework.ModOptionCategoryDef>
     <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
-        <defName>BL_RebalanceCoreRenamers</defName>
-        <label>Core: Renamers</label>
+        <defName>BL_RebalanceDLC</defName>
+        <label>DLC Sliders (toggles are in Vanilla Expanded Framework settings)</label>
         <order>60</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
-        <defName>BL_RebalanceRoyalty</defName>
-        <label>Royalty</label>
-        <order>100</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
-        <defName>BL_RebalanceIdeology</defName>
-        <label>Ideology</label>
-        <order>110</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
-        <defName>BL_RebalanceBiotech</defName>
-        <label>Biotech</label>
-        <order>120</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RebalanceModOptionsBase">
-        <defName>BL_RebalanceAnomaly</defName>
-        <label>Anomaly</label>
-        <order>130</order>
     </ModSettingsFramework.ModOptionCategoryDef>
 </Defs>

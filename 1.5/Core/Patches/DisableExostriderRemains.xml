@@ -3,7 +3,7 @@
         <defaultValue>false</defaultValue>
         <label>Disable exostrider remains for every scenario</label>
         <id>BL_RebalanceDisableExostrider</id>
-        <category>BL_RebalanceCoreMapGen</category>
+        <category>BL_RebalanceCoreAdjustments</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//ScenarioDef[not(scenario/parts/li/def[text()="DisableExostriderRemains"])]/scenario/parts</xpath>

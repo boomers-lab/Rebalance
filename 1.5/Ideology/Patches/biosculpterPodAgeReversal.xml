@@ -3,7 +3,7 @@
 		<label>Biosculpter age reversal cycle duration</label>
 		<tooltip>(Vanilla: 8)</tooltip>
 		<id>BL_RebalanceBiosculpterAgeReversalCycle</id>
-		<category>BL_RebalanceIdeology</category>
+		<category>BL_RebalanceDLC</category>
 		<order>0</order>
 		<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays</xpath>
 		<defaultValue>8</defaultValue>

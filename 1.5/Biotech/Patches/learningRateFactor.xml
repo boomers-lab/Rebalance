@@ -1,14 +1,12 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>false</defaultValue>
-		<label>Double child learning rate factor</label>
+	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
+		<label>Child learning rate factor</label>
+		<tooltip>(Vanilla: 1)</tooltip>
 		<id>BL_RebalanceChildLearningFactor</id>
-		<category>BL_RebalanceBiotech</category>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>//StatDef[defName="LearningRateFactor"]/defaultBaseValue/text()</xpath>
-				<value>2</value>
-			</li>
-		</operations>
+		<category>BL_RebalanceDLC</category>
+		<order>0</order>
+		<xpath>//StatDef[defName="LearningRateFactor"]/defaultBaseValue</xpath>
+		<defaultValue>1</defaultValue>
+		<range>0.5~2</range>
 	</Operation>
 </Patch>
