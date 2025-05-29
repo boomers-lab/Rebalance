@@ -6,7 +6,7 @@
         <category>BL_RebalanceCoreAdjustments</category>
         <operations>
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef/building/defaultStorageSettings</xpath>
+                <xpath>//ThingDef[not(comps/li[@Class="PipeSystem.CompProperties_ConvertResourceToThing"])]/building/defaultStorageSettings</xpath>
                 <value>
                     <defaultStorageSettings>
                         <priority>Normal</priority>
