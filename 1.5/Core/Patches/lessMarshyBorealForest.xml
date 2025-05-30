@@ -1,10 +1,7 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>false</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
 		<label>Less marshy boreal forests</label>
-		<tooltip>Reduces the marsh/water thresholds of boreal forests to match temperate forests.</tooltip>
-		<id>BL_RebalanceLessMarshyBorealForest</id>
-		<category>BL_RebalanceCoreAdjustments</category>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//BiomeDef[defName="BorealForest"]/terrainPatchMakers</xpath>

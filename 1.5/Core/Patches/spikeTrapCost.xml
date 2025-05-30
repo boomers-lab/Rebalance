@@ -1,10 +1,7 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>false</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
 		<label>Reduce spike trap cost</label>
-		<tooltip>Reduces the stuff cost for spike traps from 45 to 15.</tooltip>
-		<id>BL_RebalanceSpikeTrapCost</id>
-		<category>BL_RebalanceCoreCheats</category>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="TrapSpike"]/costStuffCount/text()</xpath>

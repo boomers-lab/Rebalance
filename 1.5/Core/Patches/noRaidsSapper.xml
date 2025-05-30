@@ -1,9 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
         <label>No sapper raids</label>
-        <id>BL_RebalanceNoSapperRaids</id>
-        <category>BL_RebalanceCoreRaids</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//RaidStrategyDef[defName="ImmediateAttackSappers"]/selectionWeightPerPointsCurve/points</xpath>

@@ -1,10 +1,7 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>false</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
         <label>Reduce thin body commonality</label>
-		<tooltip>Removes the forced thin bodytype from backstories, slightly reducing the number of thin pawns without breaking compatibility for mods or xenotypes that use the body. This isn't as effective as the other body removers.</tooltip>
-		<id>BL_RebalanceApparelNoThinBodies</id>
-		<category>BL_RebalanceCorePawnGen</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//BackstoryDef[bodyTypeFemale="Thin"]/bodyTypeFemale | //BackstoryDef[bodyTypeGlobal="Thin"]/bodyTypeGlobal | //BackstoryDef[bodyTypeMale="Thin"]/bodyTypeMale</xpath>

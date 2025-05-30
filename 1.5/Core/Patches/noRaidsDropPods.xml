@@ -1,9 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
         <label>No drop pod raids</label>
-        <id>BL_RebalanceNoDropPodRaids</id>
-        <category>BL_RebalanceCoreRaids</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//RaidStrategyDef/arriveModes/li[text()="EdgeDrop" or text()="CenterDrop" or text()="RandomDrop" or text()="EdgeDropGroups"]</xpath>

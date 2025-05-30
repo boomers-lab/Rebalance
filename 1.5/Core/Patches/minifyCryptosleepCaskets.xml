@@ -1,10 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
         <label>Minify cryptosleep caskets</label>
-        <tooltip>Does funny (safe) things if a pawn is inside.</tooltip>
-        <id>BL_RebalanceMinifyCryptosleepCaskets</id>
-        <category>BL_RebalanceCoreCheats</category>
         <operations>
             <li Class="PatchOperationInsert">
                 <xpath>//ThingDef[defName="CryptosleepCasket"]/statBases</xpath>

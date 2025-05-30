@@ -1,10 +1,7 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>false</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
 		<label>No electrical breakdowns</label>
-		<tooltip>Completely removes CompProperties_Breakdownable from all buildings loaded before this mod.</tooltip>
-		<id>BL_RebalanceNoBreakdowns</id>
-		<category>BL_RebalanceCoreCheats</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThingDef/comps/li[@Class="CompProperties_Breakdownable"]</xpath>

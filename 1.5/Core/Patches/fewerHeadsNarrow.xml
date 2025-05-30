@@ -1,10 +1,7 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>false</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
         <label>No narrow heads</label>
-		<tooltip>Removes narrow heads from the game. Mods that add genes which have a forcedHeadType with the word "narrow" in it will also be affected. For example, some VE race mods have custom narrow and normal forced head types, these would only use the normal head types.</tooltip>
-		<id>BL_RebalanceApparelNoNarrowHeads</id>
-		<category>BL_RebalanceCorePawnGen</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//HeadTypeDef[contains(translate(., "NAROW", "narow"), "narrow")] | //forcedHeadTypes/li[contains(translate(., "NAROW", "narow"), "narrow")]</xpath>

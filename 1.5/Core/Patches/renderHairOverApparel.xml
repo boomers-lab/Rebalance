@@ -1,9 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
         <label>Render hair above apparel</label>
-        <id>BL_RebalanceHairRenderFix</id>
-        <category>BL_RebalanceCoreAdjustments</category>
         <operations>
             <!--exceptions are made for apparels that are intended to cover the pawn's hair-->
             <!--cape has a special tag that renders it below the head (looks bad on other apparel)-->

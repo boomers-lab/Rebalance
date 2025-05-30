@@ -1,9 +1,7 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>false</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
 		<label>Boomalopes and boomrats bleed chemfuel</label>
-		<id>BL_RebalanceBoomChemfuelBlood</id>
-		<category>BL_RebalanceCoreAnimals</category>
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>//ThingDef[defName="Boomalope" or defName="Boomrat"]/race</xpath>

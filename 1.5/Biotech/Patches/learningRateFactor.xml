@@ -3,7 +3,7 @@
 		<label>Child learning rate factor</label>
 		<tooltip>(Vanilla: 1)</tooltip>
 		<id>BL_RebalanceChildLearningFactor</id>
-		<category>BL_RebalanceDLC</category>
+		<category>BL_Rebalance</category>
 		<order>0</order>
 		<xpath>//StatDef[defName="LearningRateFactor"]/defaultBaseValue</xpath>
 		<defaultValue>1</defaultValue>

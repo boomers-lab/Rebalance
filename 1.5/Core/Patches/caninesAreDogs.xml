@@ -1,10 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
         <label>Wild canines are dogs</label>
-        <tooltip>Wargs and wolves produce the same amount of filth as dogs, and nuzzle like dogs.</tooltip>
-        <id>BL_RebalanceCaninePets</id>
-        <category>BL_RebalanceCoreAnimals</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[@Name="ThingBaseWolf" or defName="Warg"]/statBases/FilthRate/text()</xpath>

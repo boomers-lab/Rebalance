@@ -3,7 +3,7 @@
 		<label>Neural supercharger recharge time</label>
 		<id>BL_RebalanceSuperchargeRechargeTime</id>
 		<tooltip>Pawns are hardcoded to wait 24 hours before using a neural supercharger again. If you lower this setting, you will need to manually order pawns to use the supercharger before 24 hours has passed. (Vanilla: 60000/24 hours)</tooltip>
-		<category>BL_RebalanceDLC</category>
+		<category>BL_Rebalance</category>
 		<order>50</order>
 		<xpath>//ThingDef[defName="NeuralSupercharger"]/comps/li[@Class="CompProperties_NeuralSupercharger"]/ticksToRecharge</xpath>
 		<defaultValue>60000</defaultValue>

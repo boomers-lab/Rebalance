@@ -1,10 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
         <label>Vanometric power cell is also a battery</label>
-        <tooltip>In addition to providing power, the vanometric power cell also has a 1000Wd capacity with 100% efficiency.</tooltip>
-        <id>BL_RebalanceVanometricBattery</id>
-        <category>BL_RebalanceCoreCheats</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//ThingDef[defName="VanometricPowerCell"]/comps</xpath>

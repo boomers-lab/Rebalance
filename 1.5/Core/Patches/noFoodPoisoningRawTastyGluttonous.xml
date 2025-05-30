@@ -1,10 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
         <label>No food poisoning from gluttonous and tasty foods</label>
-        <tooltip>Affects things like berries and insect jelly.</tooltip>
-        <id>BL_RebalanceNoFoodPoisoningGluttonous</id>
-        <category>BL_RebalanceCoreCheats</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//ThingDef[(ingestible/preferability="RawTasty") or ((ingestible/joyKind="Gluttonous") and @ParentName="OrganicProductBase")]/statBases/FoodPoisonChanceFixedHuman</xpath>

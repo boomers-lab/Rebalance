@@ -1,9 +1,7 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>false</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
 		<label>Animals don't mine to escape</label>
-		<id>BL_RebalanceAnimalsDontMine</id>
-		<category>BL_RebalanceCoreAnimals</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThinkTreeDef[defName!="AA_AnimalDigger"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalHasFaction"][subNodes/li[@Class="ThinkNode_ConditionalStarving"]/subNodes/li[@Class="ThinkNode_ConditionalBodySize"]/subNodes/li[@Class="ThinkNode_Subtree"]/treeDef[text()="DigOutIfCannotReachMapEdge"]]</xpath>

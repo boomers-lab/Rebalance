@@ -1,9 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
         <label>No default storage settings for buildings</label>
-        <id>BL_RebalanceNoDefaultStorageSettings</id>
-        <category>BL_RebalanceCoreAdjustments</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[not(comps/li[@Class="PipeSystem.CompProperties_ConvertResourceToThing"])]/building/defaultStorageSettings</xpath>

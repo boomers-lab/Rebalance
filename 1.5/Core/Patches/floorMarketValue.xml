@@ -1,10 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
         <label>Flatten floor market value</label>
-        <tooltip>Flattens all floor values to 1, drastically reducing the increased colony wealth gain with nice floors.</tooltip>
-        <id>BL_RebalanceFlattenFloorValue</id>
-        <category>BL_RebalanceCoreCheats</category>
         <operations>
             <!--prepatching: ensure all buildable floors have statbases-->
             <li Class="PatchOperationAdd">

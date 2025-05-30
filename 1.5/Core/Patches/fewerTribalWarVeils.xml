@@ -1,10 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
         <label>Stop spawning tribals with war veils</label>
-        <tooltip>Removes the defaultOutfitTags from the war veil. Also removes it as a required apparel from all pawnkinds. Doesn't prevent it from spawning on raiders in maps with high pollution.</tooltip>
-        <id>BL_RebalanceApparelFewerWarVeils</id>
-        <category>BL_RebalanceCoreAdjustments</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//ThingDef[defName="Apparel_WarVeil"]/apparel/defaultOutfitTags | //PawnKindDef/apparelRequired/li[text()="Apparel_WarVeil"]</xpath>

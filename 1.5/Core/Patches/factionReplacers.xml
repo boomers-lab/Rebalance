@@ -1,10 +1,7 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>false</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
 		<label>Remove default faction replacers</label>
-		<tooltip>Removes the replacesFaction node that causes factions like rough pig union to replace rough outlander union. With this enabled, both factions will be enabled by default.</tooltip>
-		<id>BL_RebalanceApparelNoFactionReplacers</id>
-		<category>BL_RebalanceCoreAdjustments</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//FactionDef/replacesFaction</xpath>

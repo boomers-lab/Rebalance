@@ -1,10 +1,7 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>false</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
 		<label>Increase spouse opinion</label>
-		<tooltip>Significantly reduces the number of divorces in the game by increasing the spouse opinion buff from 30 to 100. (Should be -100 am I right boys?)</tooltip>
-		<id>BL_RebalanceSpouseOpinion</id>
-		<category>BL_RebalanceCoreCheats</category>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>//PawnRelationDef[defName="Spouse"]/opinionOffset/text()</xpath>

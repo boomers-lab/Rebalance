@@ -1,9 +1,7 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>false</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>false</enabled>
 		<label>No disabled work for slaves</label>
-		<id>BL_RebalanceNoSlaveWorkDisabler</id>
-		<category>BL_RebalanceCoreCheats</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//WorkTypeDef[disabledForSlaves="true" and not(defName="Warden")]/disabledForSlaves</xpath>
