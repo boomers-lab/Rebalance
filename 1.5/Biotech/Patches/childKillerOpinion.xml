@@ -1,0 +1,12 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Reduce opinion offset for killing children</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThoughtDef[defName="KilledChild_Opinion"]/stages/li/baseOpinionOffset/text()</xpath>
+                <value>-5</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
