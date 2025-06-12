@@ -1,0 +1,9 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//FactionDef/replacesFaction</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

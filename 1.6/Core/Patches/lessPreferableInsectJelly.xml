@@ -1,0 +1,10 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="InsectJelly"]/ingestible/preferability/text()</xpath>
+                <value>RawTasty</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

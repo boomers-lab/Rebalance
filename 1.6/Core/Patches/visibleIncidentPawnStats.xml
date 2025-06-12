@@ -1,0 +1,10 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>//QuestScriptDef/root/nodes/li[@Class="QuestNode_AddPawnReward"]/rewardDetailsHidden/text()</xpath>
+				<value>false</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

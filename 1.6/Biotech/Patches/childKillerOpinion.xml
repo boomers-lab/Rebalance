@@ -1,0 +1,10 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThoughtDef[defName="KilledChild_Opinion"]/stages/li/baseOpinionOffset/text()</xpath>
+                <value>-5</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

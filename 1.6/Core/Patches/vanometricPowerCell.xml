@@ -1,0 +1,16 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="VanometricPowerCell"]/comps</xpath>
+                <value>
+                    <li Class="CompProperties_Battery">
+                        <storedEnergyMax>1000</storedEnergyMax>
+                        <efficiency>1</efficiency>
+                        <transmitsPower>true</transmitsPower>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

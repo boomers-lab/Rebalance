@@ -1,0 +1,10 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>//PawnRelationDef[defName="Spouse"]/opinionOffset/text()</xpath>
+				<value>100</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,12 @@
+<Patch><!--
+	<Operation Class="ModSettingsFramework.PatchOperationSliderInt">
+		<label>Biosculpter medic cycle duration</label>
+		<tooltip>(Vanilla: 6)</tooltip>
+		<id>BL_RebalanceBiosculpterMedicCycle</id>
+		<category>BL_Rebalance</category>
+		<order>10</order>
+		<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_MedicCycle"]/durationDays</xpath>
+		<defaultValue>6</defaultValue>
+		<range>1~12</range>
+	</Operation>-->
+</Patch>

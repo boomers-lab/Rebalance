@@ -1,0 +1,10 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThoughtDef[defName="DeniedJoining" or defName="ColonistBanished" or defName="ColonistBanishedToDie" or defName="PrisonerBanishedToDie" or defName="ColonyPrisonerEscaped" or defName="BondedAnimalBanished"]/stages/li/baseMoodEffect/text()</xpath>
+                <value>0</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

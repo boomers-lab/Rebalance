@@ -1,0 +1,17 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//BackstoryDef[bodyTypeGlobal="Thin"]/bodyTypeGlobal/text()</xpath>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//BackstoryDef[bodyTypeFemale="Thin"]/bodyTypeFemale/text()</xpath>
+                <value>Female</value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//BackstoryDef[bodyTypeMale="Thin"]/bodyTypeMale/text()</xpath>
+                <value>Male</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

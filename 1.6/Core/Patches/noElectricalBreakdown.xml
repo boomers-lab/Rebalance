@@ -1,0 +1,9 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//ThingDef/comps/li[@Class="CompProperties_Breakdownable"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

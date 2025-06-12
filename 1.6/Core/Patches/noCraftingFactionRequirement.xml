@@ -1,0 +1,10 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<!--this is probably too aggressive, might break other mods-->
+				<xpath>//ThingDef/recipeMaker/factionPrerequisiteTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

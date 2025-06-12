@@ -1,0 +1,36 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationInsert">
+                <xpath>//ThingDef[defName="CryptosleepCasket"]/statBases</xpath>
+                <value>
+                    <minifiedDef>MinifiedThing</minifiedDef>
+                    <thingCategories>
+                        <li>BuildingsMisc</li>
+                    </thingCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationInsert">
+                <xpath>//ThingDef[defName="CryptosleepCasket"]/statBases/Flammability</xpath>
+                <value>
+                    <Mass>75</Mass>
+                </value>
+            </li>
+            <li Class="PatchOperationInsert">
+                <xpath>//ThingDef[defName="AncientCryptosleepCasket"]/statBases</xpath>
+                <value>
+                    <minifiedDef>MinifiedThing</minifiedDef>
+                    <thingCategories>
+                        <li>BuildingsMisc</li>
+                    </thingCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationInsert">
+                <xpath>//ThingDef[defName="AncientCryptosleepCasket"]/statBases/Flammability</xpath>
+                <value>
+                    <Mass>75</Mass>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

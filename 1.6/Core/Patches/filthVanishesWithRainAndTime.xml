@@ -1,0 +1,16 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>//ThingDef[not(@Name="BaseFilth")]/filth[not(rainWashes)]</xpath>
+                <value>
+                    <rainWashes>true</rainWashes>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[number(substring-before(filth/disappearsInDays,"~"))>=15]/filth/disappearsInDays/text()</xpath>
+                <value>10~15</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

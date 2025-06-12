@@ -1,0 +1,9 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//WorkTypeDef[disabledForSlaves="true" and not(defName="Warden")]/disabledForSlaves</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

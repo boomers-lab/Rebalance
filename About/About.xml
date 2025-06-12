@@ -4,16 +4,19 @@
 	<author>boomer</author>
 	<supportedVersions>
 		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<url>https://github.com/RimCorePlus/Rebalance</url>
-	<modDependencies>
-		<li>
-			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
-			<displayName>Vanilla Expanded Framework</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
-			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
-		</li>
-	</modDependencies>
+	<modDependenciesByVersion>
+		<v1.5>
+			<li>
+				<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+				<displayName>Vanilla Expanded Framework</displayName>
+				<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+				<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+			</li>
+		</v1.5>
+	</modDependenciesByVersion>
 	<loadBefore>
 		<li>boomer.Recycle</li>
 		<li>RCP.Empire</li>

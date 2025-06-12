@@ -1,0 +1,9 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//HediffDef[defName="FoodPoisoning"]/stages/li/capMods/li[capacity="Consciousness"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

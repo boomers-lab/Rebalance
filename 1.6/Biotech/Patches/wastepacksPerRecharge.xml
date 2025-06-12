@@ -1,0 +1,11 @@
+<Patch><!--
+	<Operation Class="ModSettingsFramework.PatchOperationSliderInt">
+		<label>Wastepacks per mechanoid recharge</label>
+		<tooltip>(Vanilla: 5)</tooltip>
+		<id>BL_RebalanceWastepackPerRecharge</id>
+		<category>BL_Rebalance</category>
+		<xpath>//ThingDef[@Name="BaseMechanoid"]/statBases/WastepacksPerRecharge</xpath>
+		<defaultValue>1</defaultValue>
+		<range>0~10</range>
+	</Operation>-->
+</Patch>

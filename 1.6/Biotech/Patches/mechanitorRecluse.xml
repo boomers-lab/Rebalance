@@ -1,0 +1,9 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//PawnKindDef[defName="Mechanitor"]/forcedTraits/Recluse</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

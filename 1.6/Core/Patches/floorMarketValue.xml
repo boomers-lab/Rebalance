@@ -1,0 +1,25 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!--prepatching: ensure all buildable floors have statbases-->
+            <li Class="PatchOperationAdd">
+                <xpath>//TerrainDef[not(boolean(statBases))] | //TerrainTemplateDef[not(boolean(statBases))]</xpath>
+                <value>
+                    <statBases />
+                </value>
+            </li>
+            <!--add marketvalue if it doesn't exist-->
+            <li Class="PatchOperationAdd">
+                <xpath>//TerrainDef/statBases[not(boolean(MarketValue))] | //TerrainTemplateDef/statBases[not(boolean(MarketValue))]</xpath>
+                <value>
+                    <MarketValue>1</MarketValue>
+                </value>
+            </li>
+            <!--replace marketvalue if it does exist-->
+            <li Class="PatchOperationReplace">
+                <xpath>//TerrainDef/statBases/MarketValue/text() | //TerrainTemplateDef/statBases/MarketValue/text()</xpath>
+                <value>1</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

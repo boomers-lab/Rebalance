@@ -1,0 +1,11 @@
+<Patch>    <!--
+    <Operation Class="ModSettingsFramework.PatchOperationSliderInt">
+        <label>Work to build spike traps</label>
+        <tooltip>(Vanilla: 3200)</tooltip>
+        <id>BL_RebalanceSpikeTrapWork</id>
+        <category>BL_Rebalance</category>
+        <xpath>//ThingDef[defName="TrapSpike"]/statBases/WorkToBuild</xpath>
+        <defaultValue>3200</defaultValue>
+        <range>1600~4800</range>
+    </Operation>-->
+</Patch>
