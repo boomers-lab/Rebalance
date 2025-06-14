@@ -1,9 +1,0 @@
-<Patch>
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="PatchOperationRemove">
-                <xpath>//GeneDef[defName="Furskin" or defName="Nose_Pig"]/missingGeneRomanceChanceFactor</xpath>
-            </li>
-        </operations>
-    </Operation>
-</Patch>

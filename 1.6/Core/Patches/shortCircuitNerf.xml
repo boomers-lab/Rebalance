@@ -1,0 +1,14 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//IncidentDef[defName="ShortCircuit"]/minRefireDays/text()</xpath>
+                <value>30</value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//IncidentDef[defName="ShortCircuit"]/baseChance/text()</xpath>
+                <value>0.3</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

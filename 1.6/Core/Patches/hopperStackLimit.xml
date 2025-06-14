@@ -2,9 +2,9 @@
     <Operation Class="PatchOperationSequence">
         <operations>
             <li Class="PatchOperationAdd">
-                <xpath>//ThingDef[defName="Plant_Haygrass"]/plant/sowTags</xpath>
+                <xpath>//ThingDef[defName="Hopper"]/building</xpath>
                 <value>
-                    <li>Hydroponic</li>
+                    <maxItemsInCell>3</maxItemsInCell>
                 </value>
             </li>
         </operations>

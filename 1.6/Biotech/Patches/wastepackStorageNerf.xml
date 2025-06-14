@@ -1,0 +1,14 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="Wastepack"]/stackLimit/text()</xpath>
+                <value>75</value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="Wastepack"]/statBases/Mass/text()</xpath>
+                <value>0.4</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

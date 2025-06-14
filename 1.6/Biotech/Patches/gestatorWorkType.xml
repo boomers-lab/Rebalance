@@ -1,0 +1,10 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//WorkGiverDef[defName="DoBillsMechGestator"]/workType/text()</xpath>
+                <value>BasicWorker</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

@@ -17,7 +17,7 @@
 > Requires [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013).
 
 ## Changes
-All patches are disabled by default. Some of these patches overlap with (or are copied from) FrozenSnowFox Tweaks and/or Tweaks Galore.
+All patches are disabled by default. Some of these patches overlap with (and/or are inspired by) FrozenSnowFox Tweaks and/or Tweaks Galore.
 
 ### Core
 - Add ancient dangers to encounter maps

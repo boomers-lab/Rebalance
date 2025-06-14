@@ -1,9 +1,0 @@
-<Patch>
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="PatchOperationRemove">
-                <xpath>//RaidStrategyDef/arriveModes/li[text()="EdgeDrop" or text()="CenterDrop" or text()="RandomDrop" or text()="EdgeDropGroups"]</xpath>
-            </li>
-        </operations>
-    </Operation>
-</Patch>

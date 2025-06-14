@@ -1,9 +1,0 @@
-<Patch>
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="PatchOperationRemove">
-                <xpath>//ThingDef[defName="Apparel_WarVeil"]/apparel/defaultOutfitTags | //PawnKindDef/apparelRequired/li[text()="Apparel_WarVeil"]</xpath>
-            </li>
-        </operations>
-    </Operation>
-</Patch>
