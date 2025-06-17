@@ -1,0 +1,21 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="SignalChip" or defName="PowerfocusChip" or defName="NanostructuringChip"]</xpath>
+                <value>
+                    <useHitPoints>false</useHitPoints>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="SignalChip" or defName="PowerfocusChip" or defName="NanostructuringChip"]/statBases</xpath>
+                <value>
+                    <statBases Inherit="False">
+                        <MarketValue>500</MarketValue>
+                        <Mass>1</Mass>
+                    </statBases>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

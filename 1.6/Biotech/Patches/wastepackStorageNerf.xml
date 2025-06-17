@@ -9,6 +9,13 @@
                 <xpath>//ThingDef[defName="Wastepack"]/statBases/Mass/text()</xpath>
                 <value>0.4</value>
             </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="WastepackAtomizer"]/comps/li[@Class="CompProperties_Atomizer"]/stackLimit/text()</xpath>
+                <value>150</value>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[@Name="StorageShelfBase"]/building/fixedStorageSettings/filter/disallowedThingDefs/li[text()="Wastepack"]</xpath>
+            </li>
         </operations>
     </Operation>
 </Patch>

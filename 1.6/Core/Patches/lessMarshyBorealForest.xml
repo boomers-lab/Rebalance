@@ -2,35 +2,25 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//BiomeDef[defName="BorealForest"]/terrainPatchMakers</xpath>
+				<xpath>//BiomeDef[defName="BorealForest"]/terrainPatchMakers/li/thresholds</xpath>
 				<value>
-					<terrainPatchMakers>
+					<thresholds>
 						<li>
-							<perlinFrequency>0.015</perlinFrequency>
-							<thresholds>
-								<li>
-									<terrain>MossyTerrain</terrain>
-									<min>0.0</min>
-									<max>0.64</max>
-								</li>
-								<li>
-									<terrain>Marsh</terrain>
-									<min>0.64</min>
-									<max>0.88</max>
-								</li>
-								<li>
-									<terrain>WaterShallow</terrain>
-									<min>0.88</min>
-									<max>0.98</max>
-								</li>
-								<li>
-									<terrain>WaterDeep</terrain>
-									<min>0.98</min>
-									<max>999</max>
-								</li>
-							</thresholds>
+							<terrain>MossyTerrain</terrain>
+							<min>0.73</min>
+							<max>0.80</max>
 						</li>
-					</terrainPatchMakers>
+						<li>
+							<terrain>Marsh</terrain>
+							<min>0.80</min>
+							<max>0.93</max>
+						</li>
+						<li>
+							<terrain>WaterShallow</terrain>
+							<min>0.93</min>
+							<max>999</max>
+						</li>
+					</thresholds>
 				</value>
 			</li>
 		</operations>
