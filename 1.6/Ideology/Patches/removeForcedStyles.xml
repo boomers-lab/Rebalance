@@ -1,0 +1,12 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>//thingStyleCategories</xpath>
+				<value>
+					<thingStyleCategories />
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

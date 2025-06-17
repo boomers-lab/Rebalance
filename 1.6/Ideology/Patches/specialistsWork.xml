@@ -1,0 +1,9 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//PreceptDef/roleDisabledWorkTags/li[text()="ManualDumb"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

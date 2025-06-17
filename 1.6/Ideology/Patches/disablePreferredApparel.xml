@@ -1,0 +1,10 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>//MemeDef/selectOneOrNone/noneChance/text()</xpath>
+				<value>1</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
