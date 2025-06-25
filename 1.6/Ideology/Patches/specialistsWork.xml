@@ -1,5 +1,7 @@
 <Patch>
-	<Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Ideology] Specialists can do more work</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//PreceptDef/roleDisabledWorkTags/li[text()="ManualDumb"]</xpath>

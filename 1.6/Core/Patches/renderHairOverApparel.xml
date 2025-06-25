@@ -1,5 +1,7 @@
 <Patch>
-    <Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Core] Render hair over apparel</label>
         <operations>
             <!--exceptions are made for apparels that are intended to cover the pawn's hair-->
             <!--cape has a special tag that renders it below the head (looks bad on other apparel)-->

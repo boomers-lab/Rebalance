@@ -1,5 +1,7 @@
 <Patch>
-    <Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Biotech] Increase wastepack stack size</label>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="Wastepack"]/stackLimit/text()</xpath>

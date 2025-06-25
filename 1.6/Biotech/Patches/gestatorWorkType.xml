@@ -1,5 +1,7 @@
 <Patch>
-    <Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Biotech] Reprioritize mech gestator bills</label>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//WorkGiverDef[defName="DoBillsMechGestator"]/workType/text()</xpath>

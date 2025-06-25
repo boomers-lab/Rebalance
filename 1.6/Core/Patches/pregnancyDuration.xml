@@ -1,4 +1,4 @@
-<Patch>	<!--
+<Patch>
 	<Operation Class="ModSettingsFramework.PatchOperationSliderInt">
 		<label>Human pregnancy duration</label>
 		<tooltip>I set this to 45 to simulate a 9 month pregnancy. (Vanilla: 18)</tooltip>
@@ -7,5 +7,5 @@
 		<xpath>//ThingDef[defName="Human"]/race/gestationPeriodDays</xpath>
 		<defaultValue>18</defaultValue>
 		<range>1~60</range>
-	</Operation>-->
+	</Operation>
 </Patch>

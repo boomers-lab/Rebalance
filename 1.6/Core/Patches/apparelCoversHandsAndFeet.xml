@@ -1,5 +1,7 @@
 <Patch>
-    <Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Core] Apparel covers hands and feet</label>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//ThingDef[@Name="ApparelArmorCataphractBase" or @Name="ApparelArmorPowerBase" or @Name="ApparelArmorReconBase" or defName="Apparel_Burka" or defName="Apparel_FlakPants" or defName="Apparel_KidPants" or defName="Apparel_KidRomper" or defName="Apparel_Pants" or defName="Apparel_PlateArmor"]/apparel/bodyPartGroups</xpath>

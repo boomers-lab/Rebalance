@@ -1,5 +1,7 @@
 <Patch>
-    <Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Core] Increase hopper stack limit from 1 to 3</label>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//ThingDef[defName="Hopper"]/building</xpath>

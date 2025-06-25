@@ -1,8 +1,10 @@
 <Patch>
-	<Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Core] Permanent enemies do not flee</label>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>//FactionDef[(naturalEnemy="true" or permanentEnemy="true") and not(autoFlee="false")]</xpath>
+				<xpath>//FactionDef[permanentEnemy="true" and not(autoFlee="false")]</xpath>
 				<value>
 					<autoFlee>false</autoFlee>
 				</value>

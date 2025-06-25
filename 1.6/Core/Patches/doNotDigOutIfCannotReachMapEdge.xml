@@ -1,5 +1,7 @@
 <Patch>
-	<Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Core] Animals do not mine to escape</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThinkTreeDef[defName!="AA_AnimalDigger"]/thinkRoot/subNodes/li[@Class="ThinkNode_ConditionalHasFaction"][subNodes/li[@Class="ThinkNode_ConditionalStarving"]/subNodes/li[@Class="ThinkNode_ConditionalBodySize"]/subNodes/li[@Class="ThinkNode_Subtree"]/treeDef[text()="DigOutIfCannotReachMapEdge"]]</xpath>

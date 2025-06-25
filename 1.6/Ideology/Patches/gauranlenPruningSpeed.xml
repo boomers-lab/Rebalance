@@ -1,4 +1,4 @@
-<Patch><!--
+<Patch>
 	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
 		<label>Gauranlen pruning speed</label>
 		<tooltip>(Vanilla: 0.1)</tooltip>
@@ -8,5 +8,5 @@
 		<xpath>//ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/connectionStrengthGainPerHourPruningBase</xpath>
 		<defaultValue>0.1</defaultValue>
 		<range>0.1~1</range>
-	</Operation>-->
+	</Operation>
 </Patch>

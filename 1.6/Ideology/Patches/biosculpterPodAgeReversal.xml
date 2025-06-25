@@ -1,4 +1,4 @@
-<Patch><!--
+<Patch>
 	<Operation Class="ModSettingsFramework.PatchOperationSliderInt">
 		<label>Biosculpter age reversal cycle duration</label>
 		<tooltip>(Vanilla: 8)</tooltip>
@@ -8,5 +8,5 @@
 		<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays</xpath>
 		<defaultValue>8</defaultValue>
 		<range>1~16</range>
-	</Operation>-->
+	</Operation>
 </Patch>

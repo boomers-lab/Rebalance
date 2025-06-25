@@ -1,22 +1,16 @@
 <Patch>
-    <Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Ideology] Double gauranlen output</label>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="Dryad_Woodmaker"]/comps/li/spawnCount/text()</xpath>
                 <value>64</value>
             </li>
-        </operations>
-    </Operation>
-    <Operation Class="PatchOperationSequence">
-        <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="Dryad_Berrymaker"]/comps/li/spawnCount/text()</xpath>
                 <value>80</value>
             </li>
-        </operations>
-    </Operation>
-    <Operation Class="PatchOperationSequence">
-        <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="Dryad_Medicinemaker"]/comps/li/spawnCount/text()</xpath>
                 <value>8</value>

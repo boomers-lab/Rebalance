@@ -1,5 +1,7 @@
 <Patch>
-	<Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Core] Reduce commonality of fat bodytypes</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//BackstoryDef[bodyTypeGlobal="Fat"]/bodyTypeGlobal/text()</xpath>

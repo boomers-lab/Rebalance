@@ -1,5 +1,7 @@
 <Patch>
-    <Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Core] Reduce commonality of thin bodytypes</label>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//BackstoryDef[bodyTypeGlobal="Thin"]/bodyTypeGlobal/text()</xpath>

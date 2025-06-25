@@ -1,5 +1,7 @@
 <Patch>
-    <Operation Class="PatchOperationSequence">
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Core] No mood debuff for banishing colonists</label>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThoughtDef[defName="DeniedJoining" or defName="ColonistBanished" or defName="ColonistBanishedToDie" or defName="PrisonerBanishedToDie" or defName="ColonyPrisonerEscaped" or defName="BondedAnimalBanished"]/stages/li/baseMoodEffect/text()</xpath>
