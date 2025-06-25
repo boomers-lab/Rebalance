@@ -1,0 +1,11 @@
+<Defs>
+    <ModSettingsFramework.ModOptionCategoryDef>
+        <defName>BL_Rebalance</defName>
+        <label>Sliders (Toggles are in Vanilla Expanded Framework > Toggleable Patches)</label>
+        <modSettingsName>[BL] Rebalance</modSettingsName>
+        <modPackageSettingsID>boomer.Rebalance</modPackageSettingsID>
+    </ModSettingsFramework.ModOptionCategoryDef>
+    <!--ModSettingsFramework fails to render all settings when too many are present.
+    Lowest-ordered settings get truncated past an unknown limit.
+    Toggable settings have been moved back to the VEF toggles section for now.-->
+</Defs>

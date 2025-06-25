@@ -1,0 +1,16 @@
+<Patch>
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Biotech] Disable exostrider remains on all scenarios</label>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>//ScenarioDef[not(scenario/parts/li/def[text()="DisableExostriderRemains"])]/scenario/parts</xpath>
+                <value>
+                    <li Class="ScenPart_DisableMapGen">
+                        <def>DisableExostriderRemains</def>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

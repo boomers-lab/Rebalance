@@ -1,0 +1,19 @@
+<Patch>
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Core] No default settings for storage buildings</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[not(comps/li[@Class="PipeSystem.CompProperties_ConvertResourceToThing"])]/building/defaultStorageSettings</xpath>
+                <value>
+                    <defaultStorageSettings>
+                        <priority>Normal</priority>
+                        <filter>
+                            <categories />
+                        </filter>
+                    </defaultStorageSettings>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

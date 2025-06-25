@@ -1,0 +1,11 @@
+<Patch>
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Core] Disable faction replacers</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//FactionDef/replacesFaction</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

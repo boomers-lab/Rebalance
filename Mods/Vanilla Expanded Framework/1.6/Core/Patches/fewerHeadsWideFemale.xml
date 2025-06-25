@@ -1,0 +1,11 @@
+<Patch>
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[Core] Remove wide female heads</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//HeadTypeDef[defName="Female_AverageWide"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
