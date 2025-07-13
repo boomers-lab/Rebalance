@@ -1,14 +1,15 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Core] Permanent enemies do not flee</label>
-		<operations>
-			<li Class="PatchOperationAdd">
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>boomer.Rebalance</modId>
+		<key>enemiesDoNotFlee</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
 				<xpath>//FactionDef[permanentEnemy="true" and not(autoFlee="false")]</xpath>
 				<value>
 					<autoFlee>false</autoFlee>
 				</value>
-			</li>
-		</operations>
+			</Operation>
+		</caseTrue>
 	</Operation>
 </Patch>

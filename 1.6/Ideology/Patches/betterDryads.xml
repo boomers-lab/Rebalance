@@ -1,8 +1,9 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Ideology] Double gauranlen output</label>
-        <operations>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>boomer.Rebalance</modId>
+		<key>betterDryads</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="Dryad_Woodmaker"]/comps/li/spawnCount/text()</xpath>
                 <value>64</value>
@@ -15,6 +16,6 @@
                 <xpath>//ThingDef[defName="Dryad_Medicinemaker"]/comps/li/spawnCount/text()</xpath>
                 <value>8</value>
             </li>
-        </operations>
+        </caseTrue>
     </Operation>
 </Patch>

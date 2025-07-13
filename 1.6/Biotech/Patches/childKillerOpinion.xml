@@ -1,12 +1,13 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Biotech] Reduce opinion offset for killing children</label>
-        <operations>
-            <li Class="PatchOperationReplace">
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>childKillerOpinion</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationReplace">
                 <xpath>//ThoughtDef[defName="KilledChild_Opinion"]/stages/li/baseOpinionOffset/text()</xpath>
                 <value>-5</value>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
 </Patch>

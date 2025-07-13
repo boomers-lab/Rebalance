@@ -1,12 +1,13 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationSliderInt">
-        <label>Biosculpter biosculpter regeneration cycle duration</label>
-		<tooltip>(Vanilla: 25)</tooltip>
-        <id>BL_RebalanceBiosculpterRegenerationCycle</id>
-        <category>BL_Rebalance</category>
-        <order>30</order>
-        <xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_RegenerationCycle"]/durationDays</xpath>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>biosculpterPodRegeneration</key>
         <defaultValue>25</defaultValue>
-        <range>1~25</range>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[compClass="CompBiosculpterPod_RegenerationCycle"]/durationDays/text()</xpath>
+                <value>{biosculpterPodRegeneration}</value>
+            </Operation>
+        </apply>
     </Operation>
 </Patch>

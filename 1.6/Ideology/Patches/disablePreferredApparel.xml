@@ -1,12 +1,13 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Ideology] Disable preferred apparel for new ideologies</label>
-		<operations>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>boomer.Rebalance</modId>
+		<key>disablePreferredApparel</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
 			<li Class="PatchOperationReplace">
 				<xpath>//MemeDef/selectOneOrNone/noneChance/text()</xpath>
 				<value>1</value>
 			</li>
-		</operations>
+		</caseTrue>
 	</Operation>
 </Patch>

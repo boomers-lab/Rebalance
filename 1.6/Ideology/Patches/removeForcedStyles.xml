@@ -1,14 +1,15 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Ideology] Remove forced styles for new ideologies</label>
-		<operations>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>boomer.Rebalance</modId>
+		<key>removeForcedStyles</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
 			<li Class="PatchOperationReplace">
 				<xpath>//thingStyleCategories</xpath>
 				<value>
 					<thingStyleCategories />
 				</value>
 			</li>
-		</operations>
+		</caseTrue>
 	</Operation>
 </Patch>

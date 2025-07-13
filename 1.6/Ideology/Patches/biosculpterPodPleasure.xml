@@ -1,12 +1,13 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationSliderInt">
-        <label>Biosculpter biosculpter pleasure cycle duration</label>
-		<tooltip>(Vanilla: 4)</tooltip>
-        <id>BL_RebalanceBiosculpterPleasureCycle</id>
-        <category>BL_Rebalance</category>
-        <order>20</order>
-        <xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_PleasureCycle"]/durationDays</xpath>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>biosculpterPodPleasure</key>
         <defaultValue>4</defaultValue>
-        <range>1~8</range>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_PleasureCycle"]/durationDays/text()</xpath>
+                <value>{biosculpterPodPleasure}</value>
+            </Operation>
+        </apply>
     </Operation>
 </Patch>

@@ -1,12 +1,13 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
-		<label>Gauranlen pruning speed</label>
-		<tooltip>(Vanilla: 0.1)</tooltip>
-		<id>BL_RebalanceGauranlenPruningSpeed</id>
-		<category>BL_Rebalance</category>
-		<order>40</order>
-		<xpath>//ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/connectionStrengthGainPerHourPruningBase</xpath>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>boomer.Rebalance</modId>
+		<key>gauranlenPruningSpeed</key>
 		<defaultValue>0.1</defaultValue>
-		<range>0.1~1</range>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>//ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/connectionStrengthGainPerHourPruningBase/text()</xpath>
+				<value>{gauranlenPruningSpeed}</value>
+			</Operation>
+		</apply>
 	</Operation>
 </Patch>

@@ -1,14 +1,15 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Core] Increase hopper stack limit from 1 to 3</label>
-        <operations>
-            <li Class="PatchOperationAdd">
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>hopperStackLimit</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
                 <xpath>//ThingDef[defName="Hopper"]/building</xpath>
                 <value>
                     <maxItemsInCell>3</maxItemsInCell>
                 </value>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
 </Patch>

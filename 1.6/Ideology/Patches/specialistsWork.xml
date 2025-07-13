@@ -1,11 +1,12 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Ideology] Specialists can do more work</label>
-		<operations>
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>boomer.Rebalance</modId>
+		<key>specialistsWork</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
 			<li Class="PatchOperationRemove">
 				<xpath>//PreceptDef/roleDisabledWorkTags/li[text()="ManualDumb"]</xpath>
 			</li>
-		</operations>
+		</caseTrue>
 	</Operation>
 </Patch>

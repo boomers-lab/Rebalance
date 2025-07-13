@@ -1,12 +1,13 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationSliderInt">
-		<label>Biosculpter age reversal cycle duration</label>
-		<tooltip>(Vanilla: 8)</tooltip>
-		<id>BL_RebalanceBiosculpterAgeReversalCycle</id>
-		<category>BL_Rebalance</category>
-		<order>0</order>
-		<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays</xpath>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>boomer.Rebalance</modId>
+		<key>biosculpterPodAgeReversal</key>
 		<defaultValue>8</defaultValue>
-		<range>1~16</range>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays/text()</xpath>
+				<value>{biosculpterPodAgeReversal}</value>
+			</Operation>
+		</apply>
 	</Operation>
 </Patch>

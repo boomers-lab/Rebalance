@@ -1,11 +1,12 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Core] Remove beards</label>
-		<operations>
-			<li Class="PatchOperationRemove">
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>boomer.Rebalance</modId>
+		<key>noBeards</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationRemove">
 				<xpath>//BeardDef[not(defName="NoBeard")]</xpath>
-			</li>
-		</operations>
+			</Operation>
+		</caseTrue>
 	</Operation>
 </Patch>

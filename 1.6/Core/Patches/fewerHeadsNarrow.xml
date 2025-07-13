@@ -1,11 +1,12 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Core] Remove narrow heads</label>
-        <operations>
-            <li Class="PatchOperationRemove">
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>fewerHeadsNarrow</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationRemove">
                 <xpath>//HeadTypeDef[contains(translate(., "NAROW", "narow"), "narrow")] | //forcedHeadTypes/li[contains(translate(., "NAROW", "narow"), "narrow")]</xpath>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
 </Patch>

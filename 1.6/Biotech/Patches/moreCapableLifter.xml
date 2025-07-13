@@ -1,12 +1,13 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Biotech] Allow lifter mechanoid to do more hauling jobs</label>
-        <operations>
-            <li Class="PatchOperationReplace">
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>moreCapableLifter</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationReplace">
                 <xpath>//WorkGiverDef[defName="HaulMechsToCharger" or defName="CarryToGeneExtractor" or defName="CarryToGrowthVat" or defName="FillFermentingBarrel" or defName="TakeBeerOutOfFermentingBarrel" or defName="Strip"]/canBeDoneByMechs/text()</xpath>
                 <value>true</value>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
 </Patch>

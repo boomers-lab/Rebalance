@@ -1,23 +1,24 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Biotech] Increase wastepack stack size</label>
-        <operations>
-            <li Class="PatchOperationReplace">
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>wastepackStorageNerf</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="Wastepack"]/stackLimit/text()</xpath>
                 <value>75</value>
-            </li>
-            <li Class="PatchOperationReplace">
+            </Operation>
+            <Operation Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="Wastepack"]/statBases/Mass/text()</xpath>
                 <value>0.4</value>
-            </li>
-            <li Class="PatchOperationReplace">
+            </Operation>
+            <Operation Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="WastepackAtomizer"]/comps/li[@Class="CompProperties_Atomizer"]/stackLimit/text()</xpath>
                 <value>150</value>
-            </li>
-            <li Class="PatchOperationRemove">
+            </Operation>
+            <Operation Class="PatchOperationRemove">
                 <xpath>//ThingDef[@Name="StorageShelfBase"]/building/fixedStorageSettings/filter/disallowedThingDefs/li[text()="Wastepack"]</xpath>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
 </Patch>

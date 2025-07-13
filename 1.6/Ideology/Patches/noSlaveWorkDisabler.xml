@@ -1,12 +1,11 @@
 <Patch>
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>boomer.Rebalance</modId>
-		<key>spouseOpinion</key>
+		<key>noSlaveWorkDisabler</key>
 		<defaultValue>false</defaultValue>
 		<caseTrue>
-			<Operation Class="PatchOperationReplace">
-				<xpath>//PawnRelationDef[defName="Spouse"]/opinionOffset/text()</xpath>
-				<value>100</value>
+			<Operation Class="PatchOperationRemove">
+				<xpath>//WorkTypeDef[disabledForSlaves="true" and not(defName="Warden")]/disabledForSlaves</xpath>
 			</Operation>
 		</caseTrue>
 	</Operation>

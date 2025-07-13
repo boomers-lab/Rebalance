@@ -1,12 +1,13 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Core] Less preferable insect jelly</label>
-        <operations>
-            <li Class="PatchOperationReplace">
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>lessPreferableInsectJelly</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="InsectJelly"]/ingestible/preferability/text()</xpath>
                 <value>RawTasty</value>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
 </Patch>

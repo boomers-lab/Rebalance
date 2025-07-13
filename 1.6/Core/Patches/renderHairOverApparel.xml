@@ -1,21 +1,22 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Core] Render hair over apparel</label>
-        <operations>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>renderHairOverApparel</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
             <!--exceptions are made for apparels that are intended to cover the pawn's hair-->
             <!--cape has a special tag that renders it below the head (looks bad on other apparel)-->
             <!--add renderskipflags to shell apparel defs if they do not already have one-->
-            <li Class="PatchOperationAdd">
+            <Operation Class="PatchOperationAdd">
                 <xpath>//ThingDef[apparel/layers/li[text()="Shell"] and not(apparel/renderSkipFlags) and not(defName="Apparel_Bandolier") and not(defName="Apparel_Cape") and not(defName="Apparel_Burka")]/apparel</xpath>
                 <value>
                     <renderSkipFlags>
                         <li>None</li>
                     </renderSkipFlags>
                 </value>
-            </li>
+            </Operation>
             <!--add drawData to shell apparel defs if they do not already have one-->
-            <li Class="PatchOperationAdd">
+            <Operation Class="PatchOperationAdd">
                 <xpath>//ThingDef[apparel/layers/li[text()="Shell"] and not(apparel/drawData) and not(defName="Apparel_Bandolier") and not(defName="Apparel_Cape") and not(defName="Apparel_Burka")]/apparel</xpath>
                 <value>
                     <drawData>
@@ -24,7 +25,7 @@
                         </dataNorth>
                     </drawData>
                 </value>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
 </Patch>

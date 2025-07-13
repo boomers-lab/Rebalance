@@ -1,12 +1,13 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
-		<label>Child learning rate factor</label>
-		<tooltip>(Vanilla: 1)</tooltip>
-		<id>BL_RebalanceChildLearningFactor</id>
-		<category>BL_Rebalance</category>
-		<order>0</order>
-		<xpath>//StatDef[defName="LearningRateFactor"]/defaultBaseValue</xpath>
+	<Operation Class="XmlExtensions.UseSetting">
+		<modId>boomer.Rebalance</modId>
+		<key>learningRateFactor</key>
 		<defaultValue>1</defaultValue>
-		<range>0.5~2</range>
+		<apply>
+			<Operation Class="PatchOperationReplace">
+				<xpath>//StatDef[defName="LearningRateFactor"]/defaultBaseValue/text()</xpath>
+				<value>{learningRateFactor}</value>
+			</Operation>
+		</apply>
 	</Operation>
 </Patch>

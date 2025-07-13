@@ -1,9 +1,10 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Core] Boreal forests are less marshy</label>
-		<operations>
-			<li Class="PatchOperationReplace">
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>boomer.Rebalance</modId>
+		<key>lessMarshyBorealForest</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationReplace">
 				<xpath>//BiomeDef[defName="BorealForest"]/terrainPatchMakers/li/thresholds</xpath>
 				<value>
 					<thresholds>
@@ -24,7 +25,7 @@
 						</li>
 					</thresholds>
 				</value>
-			</li>
-		</operations>
+			</Operation>
+		</caseTrue>
 	</Operation>
 </Patch>

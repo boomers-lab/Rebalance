@@ -1,9 +1,10 @@
 <Patch>
-    <Operation Class="VEF.PatchOperationToggableSequence">
-        <enabled>false</enabled>
-        <label>[Core] Vanometric power cells are batteries</label>
-        <operations>
-            <li Class="PatchOperationAdd">
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>vanometricPowerCell</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
                 <xpath>//ThingDef[defName="VanometricPowerCell"]/comps</xpath>
                 <value>
                     <li Class="CompProperties_Battery">
@@ -12,7 +13,7 @@
                         <transmitsPower>true</transmitsPower>
                     </li>
                 </value>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
 </Patch>
