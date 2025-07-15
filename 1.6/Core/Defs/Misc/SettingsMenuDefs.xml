@@ -295,6 +295,19 @@
             </li>
             <!--Anomaly-->
             <!--Odyssey-->
+            <li MayRequire="Ludeon.Rimworld.Odyssey" Class="XmlExtensions.Setting.Text">
+                <anchor>Middle</anchor>
+                <font>Medium</font>
+                <text>Odyssey</text>
+                <tKey>BLRebalanceOdyssey</tKey>
+            </li>
+            <li MayRequire="Ludeon.Rimworld.Odyssey" Class="XmlExtensions.Setting.GapLine" />
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>fishingWorkType</key>
+                <label>Move Fishing to Its Own Work Type</label>
+                <tooltip>Moves fishing from the hunting work type to its own work type, between crafting and hauling.</tooltip>
+                <defaultValue>false</defaultValue>
+            </li>
         </settings>
     </XmlExtensions.SettingsMenuDef>
 </Defs>

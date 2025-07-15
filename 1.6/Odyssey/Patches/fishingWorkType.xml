@@ -1,0 +1,40 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>fishingWorkType</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <WorkTypeDef>
+                        <defName>Fishing</defName>
+                        <labelShort>fish</labelShort>
+                        <pawnLabel>Fisher</pawnLabel>
+                        <gerundLabel>fishing</gerundLabel>
+                        <description>Catch fish.</description>
+                        <verb>Hunt</verb>
+                        <naturalPriority>350</naturalPriority>
+                        <disabledForSlaves>false</disabledForSlaves>
+                        <relevantSkills>
+                            <li>Animals</li>
+                        </relevantSkills>
+                        <workTags>
+                            <li>Hunting</li>
+                            <li>Commoner</li>
+                            <li>AllWork</li>
+                        </workTags>
+                    </WorkTypeDef>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//WorkGiverDef[defName="Fish"]/workType/text()</xpath>
+                <value>Fishing</value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//WorkTypeDef[defName="Hunting"]/description/text()</xpath>
+                <value>Kill animals which are designated to be hunted.</value>
+            </li>
+        </caseTrue>
+    </Operation>
+</Patch>
