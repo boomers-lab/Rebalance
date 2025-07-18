@@ -279,15 +279,15 @@
             </li>
             <li Class="XmlExtensions.Setting.Slider">
                 <key>learningRateFactor</key>
-                <label>Child Learning Rate Factor: {learningRateFactor}</label>
-                <min>0.5</min>
-                <max>2</max>
+                <label>Child Learning Rate Factor: {learningRateFactor} (Default: 1)</label>
+                <min>0.1</min>
+                <max>5</max>
                 <decimals>1</decimals>
                 <defaultValue>1</defaultValue>
             </li>
             <li Class="XmlExtensions.Setting.Slider">
                 <key>pregnancyDuration</key>
-                <label>Pregnancy Duration: {pregnancyDuration} days</label>
+                <label>Pregnancy Duration: {pregnancyDuration} days (Default: 18)</label>
                 <min>1</min>
                 <max>60</max>
                 <decimals>0</decimals>
