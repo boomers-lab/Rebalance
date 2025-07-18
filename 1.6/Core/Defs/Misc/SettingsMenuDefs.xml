@@ -303,6 +303,12 @@
             </li>
             <li MayRequire="Ludeon.Rimworld.Odyssey" Class="XmlExtensions.Setting.GapLine" />
             <li Class="XmlExtensions.Setting.Checkbox">
+                <key>fishingResearchNerf</key>
+                <label>Reduce Fishing Research Cost to 200</label>
+                <tooltip>Because researching fishing poles should be easier than researching gravtech.</tooltip>
+                <defaultValue>false</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
                 <key>fishingWorkType</key>
                 <label>Move Fishing to Its Own Work Type</label>
                 <tooltip>Moves fishing from the hunting work type to its own work type, between crafting and hauling.</tooltip>

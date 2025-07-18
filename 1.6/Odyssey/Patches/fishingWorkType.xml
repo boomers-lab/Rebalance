@@ -12,7 +12,7 @@
                         <labelShort>fish</labelShort>
                         <pawnLabel>Fisher</pawnLabel>
                         <gerundLabel>fishing</gerundLabel>
-                        <description>Catch fish.</description>
+                        <description>Catch fish in fishing zones.</description>
                         <verb>Hunt</verb>
                         <naturalPriority>350</naturalPriority>
                         <disabledForSlaves>false</disabledForSlaves>
@@ -20,7 +20,6 @@
                             <li>Animals</li>
                         </relevantSkills>
                         <workTags>
-                            <li>Hunting</li>
                             <li>Commoner</li>
                             <li>AllWork</li>
                         </workTags>

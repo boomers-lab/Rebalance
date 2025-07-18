@@ -1,0 +1,13 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>fishingResearchNerf</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <li Class="PatchOperationReplace">
+                <xpath>//ResearchProjectDef[defName="Fishing"]/baseCost/text()</xpath>
+                <value>200</value>
+            </li>
+        </caseTrue>
+    </Operation>
+</Patch>
