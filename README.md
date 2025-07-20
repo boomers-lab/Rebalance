@@ -13,7 +13,7 @@
 
 # [RCP] Rebalance
 ![](About/Preview.png)\
-[![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Royalty][badge-dlc-royalty] ![Supports Ideology][badge-dlc-ideology] ![Supports Biotech][badge-dlc-biotech]
+[![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Ideology][badge-dlc-ideology] ![Supports Biotech][badge-dlc-biotech] ![Supports Odyssey][badge-dlc-odyssey]
 
 > [!IMPORTANT]
 > Requires [XML Extensions](https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206).
