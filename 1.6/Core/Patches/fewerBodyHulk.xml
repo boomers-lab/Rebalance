@@ -4,8 +4,9 @@
         <key>fewerBodyHulk</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
-            <Operation Class="PatchOperationRemove">
+            <Operation Class="PatchOperationReplace">
                 <xpath>//BackstoryDef[bodyTypeGlobal="Hulk"]/bodyTypeGlobal/text()</xpath>
+                <value>Male</value>
             </Operation>
             <Operation Class="PatchOperationReplace">
                 <xpath>//BackstoryDef[bodyTypeFemale="Hulk"]/bodyTypeFemale/text()</xpath>
