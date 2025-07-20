@@ -30,7 +30,7 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>enemiesDoNotFlee</key>
                                 <label>Permanent Enemies Do Not Flee</label>
-                                <tooltip></tooltip>
+                                <tooltip>Raiders from permanently hostile factions like pirates won't flee when they're losing the fight.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <!--Colonist-->
@@ -90,7 +90,7 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>fewerHeadsWideFemale</key>
                                 <label>Remove Wide Female Heads</label>
-                                <tooltip>Removes the wide female head from the game.</tooltip>
+                                <tooltip>Removes the wide female head from the game. Probably not a good idea to enable mid-save.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <!--Tweaks-->
@@ -114,7 +114,7 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>noFoodPoisoningConsciousnessDebuff</key>
                                 <label>Remove Consciousness Debuff for Food Poisoning</label>
-                                <tooltip>Removes the consciousness debuff from food poisoning because consciousness is already affected by the blood filtration debuff4 and pain.</tooltip>
+                                <tooltip>Removes the consciousness debuff from food poisoning because consciousness is already affected by the blood filtration debuff and pain.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">

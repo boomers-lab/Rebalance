@@ -6,7 +6,7 @@
         <caseTrue>
             <Operation Class="PatchOperationReplace">
                 <xpath>//ThoughtDef[defName="KilledChild_Opinion"]/stages/li/baseOpinionOffset/text()</xpath>
-                <value>-5</value>
+                <value>-6</value>
             </Operation>
         </caseTrue>
     </Operation>
