@@ -18,13 +18,13 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>doNotDigOutIfCannotReachMapEdge</key>
                                 <label>Animals Do Not Mine to Escape</label>
-                                <tooltip></tooltip>
+                                <tooltip>Animals will no longer break through walls when they are hungry.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>lessPreferableInsectJelly</key>
                                 <label>Less Preferable Insect Jelly</label>
-                                <tooltip></tooltip>
+                                <tooltip>Moves insect jelly to the rawTasty preferability alongide berries.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
@@ -42,13 +42,13 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>spouseOpinion</key>
                                 <label>Buff Spouse Opinion</label>
-                                <tooltip></tooltip>
+                                <tooltip>Increases the spouse opinion moodlet to +100 to lower the likelihood of divorce. Ought to be -100 though.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>noBanishedMoodDebuff</key>
                                 <label>Remove Mood Debuff for Banishing Colonists</label>
-                                <tooltip></tooltip>
+                                <tooltip>Removes all moodlets related to banishing colonists/prisoners/animals and rejecting joiners.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <!--Pawn Generation-->
@@ -60,37 +60,37 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>fewerBodyFat</key>
                                 <label>Fewer Fat Bodies</label>
-                                <tooltip></tooltip>
+                                <tooltip>Replaces fat bodies in backstories with normal bodies, significantly lowering their chances of appearing without removing the body outright. Doesn't affect xenotypes with the fat gene.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>fewerBodyHulk</key>
                                 <label>Fewer Hulk Bodies</label>
-                                <tooltip></tooltip>
+                                <tooltip>Replaces hulk bodies in backstories with normal bodies, significantly lowering their chances of appearing without removing the body outright. Doesn't affect xenotypes with the hulk gene.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>fewerBodyThin</key>
                                 <label>Fewer Thin Bodies</label>
-                                <tooltip></tooltip>
+                                <tooltip>Replaces thin bodies in backstories with normal bodies, significantly lowering their chances of appearing without removing the body outright. Doesn't affect xenotypes with the thin gene.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>noBeards</key>
                                 <label>Remove Beards</label>
-                                <tooltip></tooltip>
+                                <tooltip>Removes all beards from the game. Probably not a good idea to enable mid-save.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>fewerHeadsNarrow</key>
                                 <label>Remove Narrow Heads</label>
-                                <tooltip></tooltip>
+                                <tooltip>Aggressively removes narrow heads from the game. Patching logic works for every mod I've tested. Probably not a good idea to enable mid-save.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>fewerHeadsWideFemale</key>
                                 <label>Remove Wide Female Heads</label>
-                                <tooltip></tooltip>
+                                <tooltip>Removes the wide female head from the game.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <!--Tweaks-->
@@ -102,55 +102,37 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>hopperStackLimit</key>
                                 <label>Increase Hopper Stack Limit</label>
-                                <tooltip></tooltip>
+                                <tooltip>Increases the hopper stack limit from 1 to 3.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>apparelCoversHandsAndFeet</key>
                                 <label>Most Apparel Covers Hands and Feet</label>
-                                <tooltip></tooltip>
+                                <tooltip>Adds foot coverage to vanilla apparel that covers the full leg. Adds hand coverage to vanilla apparel to apparel that covers the full arm. In each case, a note is appended to the description of the apparel.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>noFoodPoisoningConsciousnessDebuff</key>
                                 <label>Remove Consciousness Debuff for Food Poisoning</label>
-                                <tooltip></tooltip>
+                                <tooltip>Removes the consciousness debuff from food poisoning because consciousness is already affected by the blood filtration debuff4 and pain.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>noDefaultStorageSettings</key>
                                 <label>Remove Default Settings for Storage Buildings</label>
-                                <tooltip></tooltip>
+                                <tooltip>Newly built storage buildings will not store any items by default.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>renderHairOverApparel</key>
                                 <label>Render Hair Over Apparel</label>
-                                <tooltip></tooltip>
+                                <tooltip>Tells the game to render hair over apparel like armor and coats.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>vanometricPowerCell</key>
                                 <label>Vanometric Power Cells Are Batteries Too</label>
-                                <tooltip></tooltip>
-                                <defaultValue>false</defaultValue>
-                            </li>
-                            <!--World Generation-->
-                            <li Class="XmlExtensions.Setting.Text">
-                                <anchor>Middle</anchor>
-                                <text>World Generation</text>
-                                <tKey>BLRebalanceWorldGen</tKey>
-                            </li>
-                            <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>factionReplacers</key>
-                                <label>Do Not Replace Core Factions</label>
-                                <tooltip></tooltip>
-                                <defaultValue>false</defaultValue>
-                            </li>
-                            <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>lessMarshyBorealForest</key>
-                                <label>Less Marshy Boreal Forests</label>
-                                <tooltip></tooltip>
+                                <tooltip>Adds 1000W of 100% efficiency power storage to vanometric power cells.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <!--Royalty-->
@@ -164,31 +146,31 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>betterDryads</key>
                                 <label>Double Gauranlen Output</label>
-                                <tooltip></tooltip>
+                                <tooltip>Doubles the yield for gauranlens like the medicine maker to make them less terrible.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>removeForcedStyles</key>
                                 <label>Remove Forced Styles for New Ideologies</label>
-                                <tooltip></tooltip>
+                                <tooltip>Newly generated ideologies will not have styles based on their memes or structures. You can still pick styles manually.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>disablePreferredApparel</key>
                                 <label>Remove Preferred Apparel for New Ideologies</label>
-                                <tooltip></tooltip>
+                                <tooltip>Newly generated ideologies will not have preferred apparel. You can still pick preferred apparel manually.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>noSlaveWorkDisabler</key>
                                 <label>Remove Slave Work Disabler</label>
-                                <tooltip></tooltip>
+                                <tooltip>Allows slaves to do every work type except for wardening.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>specialistsWork</key>
                                 <label>Specialists Can Do More Work</label>
-                                <tooltip>Allows everything with the ManualDumb work tag.</tooltip>
+                                <tooltip>Allows specialists to ddo everything with the ManualDumb work tag.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
@@ -247,13 +229,19 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>moreCapableLifter</key>
                                 <label>Allow Lifter Mechanoid To Do More Hauling Jobs</label>
-                                <tooltip></tooltip>
+                                <tooltip>Brings lifter mechanoids more in line with human pawns, allowing them to do more hauling and hauling-related like carrying other mechs to a recharger.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>disableExostriderRemains</key>
                                 <label>Disable Exostrider Remains on All Scenarios</label>
-                                <tooltip></tooltip>
+                                <tooltip>Does exactly what the title says. For some reason it adds the part twice which is harmless but annoying.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>factionReplacers</key>
+                                <label>Do Not Replace Core Factions</label>
+                                <tooltip>Factions like the impid tribe will no longer replace the fierce tribe by default. Both will appear by default until they are disabled manually.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
@@ -265,13 +253,13 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>durableMechChips</key>
                                 <label>Mech Chips Are Invincible</label>
-                                <tooltip></tooltip>
+                                <tooltip>Mechanoid chips dropped by war machines in command of massive mechanoid armies, created by the machine gods of the universe capable of bending time and reality, whose sole purpose in this world is to engage in combat and defeat the its strongest enemies, now won't be destroyed by a stray bolt action rifle round.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>childKillerOpinion</key>
                                 <label>Reduce Opinion Offset For Killing Children</label>
-                                <tooltip></tooltip>
+                                <tooltip>Reduces the -20 "killed a child" opinion debuff to -6, because sometimes these kids are asking for it.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
