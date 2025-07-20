@@ -3,316 +3,316 @@
         <modId>boomer.Rebalance</modId>
         <label>(BL) Rebalance</label>
         <settings>
-            <li Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <font>Medium</font>
-                <text>Core</text>
-                <tKey>BLRebalanceCore</tKey>
-            </li>
-            <li Class="XmlExtensions.Setting.GapLine" />
-            <!--Behavior-->
-            <li Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <text>Behavior</text>
-                <tKey>BLRebalanceBehavior</tKey>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>doNotDigOutIfCannotReachMapEdge</key>
-                <label>Animals Do Not Mine to Escape</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>lessPreferableInsectJelly</key>
-                <label>Less Preferable Insect Jelly</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>enemiesDoNotFlee</key>
-                <label>Permanent Enemies Do Not Flee</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <!--Colonist-->
-            <li Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <text>Colonist</text>
-                <tKey>BLRebalanceWorldGen</tKey>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>spouseOpinion</key>
-                <label>Buff Spouse Opinion</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>noBanishedMoodDebuff</key>
-                <label>Remove Mood Debuff for Banishing Colonists</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <!--Pawn Generation-->
-            <li Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <text>Pawn Generation</text>
-                <tKey>BLRebalancePawnGeneration</tKey>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>fewerBodyFat</key>
-                <label>Fewer Fat Bodies</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>fewerBodyHulk</key>
-                <label>Fewer Hulk Bodies</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>fewerBodyThin</key>
-                <label>Fewer Thin Bodies</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>noBeards</key>
-                <label>Remove Beards</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>fewerHeadsNarrow</key>
-                <label>Remove Narrow Heads</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>fewerHeadsWideFemale</key>
-                <label>Remove Wide Female Heads</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <!--Tweaks-->
-            <li Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <text>Tweaks</text>
-                <tKey>BLRebalanceTweaks</tKey>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>hopperStackLimit</key>
-                <label>Increase Hopper Stack Limit</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>apparelCoversHandsAndFeet</key>
-                <label>Most Apparel Covers Hands and Feet</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>noFoodPoisoningConsciousnessDebuff</key>
-                <label>Remove Consciousness Debuff for Food Poisoning</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>noDefaultStorageSettings</key>
-                <label>Remove Default Settings for Storage Buildings</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>renderHairOverApparel</key>
-                <label>Render Hair Over Apparel</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>vanometricPowerCell</key>
-                <label>Vanometric Power Cells Are Batteries Too</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <!--World Generation-->
-            <li Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <text>World Generation</text>
-                <tKey>BLRebalanceWorldGen</tKey>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>factionReplacers</key>
-                <label>Do Not Replace Core Factions</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>lessMarshyBorealForest</key>
-                <label>Less Marshy Boreal Forests</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <!--Royalty-->
-            <!--Ideology-->
-            <li MayRequire="Ludeon.Rimworld.Ideology" Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <font>Medium</font>
-                <text>Ideology</text>
-                <tKey>BLRebalanceIdeology</tKey>
-            </li>
-            <li MayRequire="Ludeon.Rimworld.Ideology" Class="XmlExtensions.Setting.GapLine" />
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>betterDryads</key>
-                <label>Double Gauranlen Output</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>removeForcedStyles</key>
-                <label>Remove Forced Styles for New Ideologies</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>disablePreferredApparel</key>
-                <label>Remove Preferred Apparel for New Ideologies</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>noSlaveWorkDisabler</key>
-                <label>Remove Slave Work Disabler</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>specialistsWork</key>
-                <label>Specialists Can Do More Work</label>
-                <tooltip>Allows everything with the ManualDumb work tag.</tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Slider">
-                <key>gauranlenPruningSpeed</key>
-                <label>Gauranlen Tree Pruning Speed: {gauranlenPruningSpeed} (Default: 0.1)</label>
-                <min>0.1</min>
-                <max>1</max>
-                <decimals>1</decimals>
-                <defaultValue>0.1</defaultValue>
-            </li>
-            <!--Biosculpter Sliders-->
-            <li Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <text>Biosculpter</text>
-                <tKey>BLRebalanceBiosculpter</tKey>
-            </li>
-            <li Class="XmlExtensions.Setting.Slider">
-                <key>biosculpterPodAgeReversal</key>
-                <label>Age Reversal Cycle: {biosculpterPodAgeReversal} days (Default: 8)</label>
-                <min>1</min>
-                <max>16</max>
-                <decimals>0</decimals>
-                <defaultValue>8</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Slider">
-                <key>biosculpterPodMedic</key>
-                <label>Medic Cycle: {biosculpterPodMedic} days (Default: 6)</label>
-                <min>1</min>
-                <max>12</max>
-                <decimals>0</decimals>
-                <defaultValue>6</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Slider">
-                <key>biosculpterPodPleasure</key>
-                <label>Pleasure Cycle: {biosculpterPodPleasure} days (Default: 4)</label>
-                <min>1</min>
-                <max>8</max>
-                <decimals>0</decimals>
-                <defaultValue>4</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Slider">
-                <key>biosculpterPodRegeneration</key>
-                <label>Bioregeneration Cycle: {biosculpterPodRegeneration} days (Default: 25)</label>
-                <min>1</min>
-                <max>50</max>
-                <decimals>0</decimals>
-                <defaultValue>25</defaultValue>
-            </li>
-            <!--Biotech-->
-            <li MayRequire="Ludeon.Rimworld.Biotech" Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <font>Medium</font>
-                <text>Biotech</text>
-                <tKey>BLRebalanceBiotech</tKey>
-            </li>
-            <li MayRequire="Ludeon.Rimworld.Biotech" Class="XmlExtensions.Setting.GapLine" />
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>moreCapableLifter</key>
-                <label>Allow Lifter Mechanoid To Do More Hauling Jobs</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>disableExostriderRemains</key>
-                <label>Disable Exostrider Remains on All Scenarios</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>wastepackStorageNerf</key>
-                <label>Increase Wastepack Stack Size</label>
-                <tooltip>Also allows wastepacks to be stored on shelves.</tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>durableMechChips</key>
-                <label>Mech Chips Are Invincible</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>childKillerOpinion</key>
-                <label>Reduce Opinion Offset For Killing Children</label>
-                <tooltip></tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Slider">
-                <key>learningRateFactor</key>
-                <label>Child Learning Rate Factor: {learningRateFactor} (Default: 1)</label>
-                <min>0.1</min>
-                <max>5</max>
-                <decimals>1</decimals>
-                <defaultValue>1</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Slider">
-                <key>pregnancyDuration</key>
-                <label>Pregnancy Duration: {pregnancyDuration} days (Default: 18)</label>
-                <min>1</min>
-                <max>60</max>
-                <decimals>0</decimals>
-                <defaultValue>18</defaultValue>
-            </li>
-            <!--Anomaly-->
-            <!--Odyssey-->
-            <li MayRequire="Ludeon.Rimworld.Odyssey" Class="XmlExtensions.Setting.Text">
-                <anchor>Middle</anchor>
-                <font>Medium</font>
-                <text>Odyssey</text>
-                <tKey>BLRebalanceOdyssey</tKey>
-            </li>
-            <li MayRequire="Ludeon.Rimworld.Odyssey" Class="XmlExtensions.Setting.GapLine" />
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>fishingResearchNerf</key>
-                <label>Reduce Fishing Research Cost to 200</label>
-                <tooltip>Because researching fishing poles should be easier than researching gravtech.</tooltip>
-                <defaultValue>false</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Checkbox">
-                <key>fishingWorkType</key>
-                <label>Move Fishing to Its Own Work Type</label>
-                <tooltip>Moves fishing from the hunting work type to its own work type, between crafting and hauling.</tooltip>
-                <defaultValue>false</defaultValue>
+            <li Class="XmlExtensions.Setting.TabView">
+                <tabs>
+                    <li>
+                        <label>Core</label>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <!--Behavior-->
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>Behavior</text>
+                                <tKey>BLRebalanceBehavior</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>doNotDigOutIfCannotReachMapEdge</key>
+                                <label>Animals Do Not Mine to Escape</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>lessPreferableInsectJelly</key>
+                                <label>Less Preferable Insect Jelly</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>enemiesDoNotFlee</key>
+                                <label>Permanent Enemies Do Not Flee</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <!--Colonist-->
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>Colonist</text>
+                                <tKey>BLRebalanceWorldGen</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>spouseOpinion</key>
+                                <label>Buff Spouse Opinion</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>noBanishedMoodDebuff</key>
+                                <label>Remove Mood Debuff for Banishing Colonists</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <!--Pawn Generation-->
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>Pawn Generation</text>
+                                <tKey>BLRebalancePawnGeneration</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>fewerBodyFat</key>
+                                <label>Fewer Fat Bodies</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>fewerBodyHulk</key>
+                                <label>Fewer Hulk Bodies</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>fewerBodyThin</key>
+                                <label>Fewer Thin Bodies</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>noBeards</key>
+                                <label>Remove Beards</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>fewerHeadsNarrow</key>
+                                <label>Remove Narrow Heads</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>fewerHeadsWideFemale</key>
+                                <label>Remove Wide Female Heads</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <!--Tweaks-->
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>Tweaks</text>
+                                <tKey>BLRebalanceTweaks</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>hopperStackLimit</key>
+                                <label>Increase Hopper Stack Limit</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>apparelCoversHandsAndFeet</key>
+                                <label>Most Apparel Covers Hands and Feet</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>noFoodPoisoningConsciousnessDebuff</key>
+                                <label>Remove Consciousness Debuff for Food Poisoning</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>noDefaultStorageSettings</key>
+                                <label>Remove Default Settings for Storage Buildings</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>renderHairOverApparel</key>
+                                <label>Render Hair Over Apparel</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>vanometricPowerCell</key>
+                                <label>Vanometric Power Cells Are Batteries Too</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <!--World Generation-->
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>World Generation</text>
+                                <tKey>BLRebalanceWorldGen</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>factionReplacers</key>
+                                <label>Do Not Replace Core Factions</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>lessMarshyBorealForest</key>
+                                <label>Less Marshy Boreal Forests</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <!--Royalty-->
+                            <!--Ideology-->
+                        </settings>
+                    </li>
+                    <li MayRequire="Ludeon.Rimworld.Ideology">
+                        <label>Ideology</label>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>betterDryads</key>
+                                <label>Double Gauranlen Output</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>removeForcedStyles</key>
+                                <label>Remove Forced Styles for New Ideologies</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>disablePreferredApparel</key>
+                                <label>Remove Preferred Apparel for New Ideologies</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>noSlaveWorkDisabler</key>
+                                <label>Remove Slave Work Disabler</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>specialistsWork</key>
+                                <label>Specialists Can Do More Work</label>
+                                <tooltip>Allows everything with the ManualDumb work tag.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Slider">
+                                <key>gauranlenPruningSpeed</key>
+                                <label>Gauranlen Tree Pruning Speed: {gauranlenPruningSpeed} (Default: 0.1)</label>
+                                <min>0.1</min>
+                                <max>1</max>
+                                <decimals>1</decimals>
+                                <defaultValue>0.1</defaultValue>
+                            </li>
+                            <!--Biosculpter Sliders-->
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>Biosculpter</text>
+                                <tKey>BLRebalanceBiosculpter</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Slider">
+                                <key>biosculpterPodAgeReversal</key>
+                                <label>Age Reversal Cycle: {biosculpterPodAgeReversal} days (Default: 8)</label>
+                                <min>1</min>
+                                <max>16</max>
+                                <decimals>0</decimals>
+                                <defaultValue>8</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Slider">
+                                <key>biosculpterPodMedic</key>
+                                <label>Medic Cycle: {biosculpterPodMedic} days (Default: 6)</label>
+                                <min>1</min>
+                                <max>12</max>
+                                <decimals>0</decimals>
+                                <defaultValue>6</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Slider">
+                                <key>biosculpterPodPleasure</key>
+                                <label>Pleasure Cycle: {biosculpterPodPleasure} days (Default: 4)</label>
+                                <min>1</min>
+                                <max>8</max>
+                                <decimals>0</decimals>
+                                <defaultValue>4</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Slider">
+                                <key>biosculpterPodRegeneration</key>
+                                <label>Bioregeneration Cycle: {biosculpterPodRegeneration} days (Default: 25)</label>
+                                <min>1</min>
+                                <max>50</max>
+                                <decimals>0</decimals>
+                                <defaultValue>25</defaultValue>
+                            </li>
+                        </settings>
+                    </li>
+                    <!--Biotech-->
+                    <li MayRequire="Ludeon.Rimworld.Biotech">
+                        <label>Biotech</label>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>moreCapableLifter</key>
+                                <label>Allow Lifter Mechanoid To Do More Hauling Jobs</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>disableExostriderRemains</key>
+                                <label>Disable Exostrider Remains on All Scenarios</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>wastepackStorageNerf</key>
+                                <label>Increase Wastepack Stack Size</label>
+                                <tooltip>Also allows wastepacks to be stored on shelves.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>durableMechChips</key>
+                                <label>Mech Chips Are Invincible</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>childKillerOpinion</key>
+                                <label>Reduce Opinion Offset For Killing Children</label>
+                                <tooltip></tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Slider">
+                                <key>learningRateFactor</key>
+                                <label>Child Learning Rate Factor: {learningRateFactor} (Default: 1)</label>
+                                <min>0.1</min>
+                                <max>5</max>
+                                <decimals>1</decimals>
+                                <defaultValue>1</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Slider">
+                                <key>pregnancyDuration</key>
+                                <label>Pregnancy Duration: {pregnancyDuration} days (Default: 18)</label>
+                                <min>1</min>
+                                <max>60</max>
+                                <decimals>0</decimals>
+                                <defaultValue>18</defaultValue>
+                            </li>
+                        </settings>
+                    </li>
+                    <!--Anomaly-->
+                    <!--Odyssey-->
+                    <li MayRequire="Ludeon.Rimworld.Odyssey">
+                        <label>Odyssey</label>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>fishingResearchNerf</key>
+                                <label>Reduce Fishing Research Cost to 200</label>
+                                <tooltip>Because researching fishing poles should be easier than researching gravtech.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>fishingWorkType</key>
+                                <label>Move Fishing to Its Own Work Type</label>
+                                <tooltip>Moves fishing from the hunting work type to its own work type, between crafting and hauling.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                        </settings>
+                    </li>
+                </tabs>
             </li>
         </settings>
     </XmlExtensions.SettingsMenuDef>

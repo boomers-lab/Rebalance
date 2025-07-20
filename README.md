@@ -8,88 +8,75 @@
 [badge-dlc-biotech]: https://img.shields.io/badge/DLC-Biotech-mediumturquoise
 <!--![Supports Anomaly][badge-dlc-anomaly] supports Anomaly DLC-->
 [badge-dlc-anomaly]: https://img.shields.io/badge/DLC-Anomaly-darkseagreen
+<!--![Supports Odyssey][badge-dlc-odyssey] supports Odyssey DLC-->
+[badge-dlc-odyssey]: https://img.shields.io/badge/DLC-Odyssey-mediumpurple
 
 # [RCP] Rebalance
 ![](About/Preview.png)\
 [![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Royalty][badge-dlc-royalty] ![Supports Ideology][badge-dlc-ideology] ![Supports Biotech][badge-dlc-biotech]
 
 > [!IMPORTANT]
-> Requires [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013).
+> Requires [XML Extensions](https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206).
 
 ## Changes
 All patches are disabled by default. Some of these patches overlap with (and/or are inspired by) FrozenSnowFox Tweaks and/or Tweaks Galore.
 
 ### Core
-- Add ancient dangers to encounter maps
-- Most legwear covers feet
-- Most armwear covers hands
-- Boomalopes and boomrats bleed chemfuel
-- Wild canines are dogs
-- Ancient ruins are deconstructible
-- Always disable exostrider remains
-- Animals don't mine to escape
-- Natural enemies do not flee
-- Permanent enemies do not flee
-- No default faction replacers
-- Reduce fat body commonality
-- Reduce hulk body commonality
-- Reduce thin body commonality
-- No narrow heads
-- No wide female heads
-- Stop spawning tribals with war veils
-- Filth disappears faster
-- Rain cleans most filth
-- Flatten floor market value
-- Allow corn in hydroponics basin
-- Allow devilstrand in hydroponics basin
-- Allow haygrass in hydroponics basin
-- Boreal forests are not marshes
-- Insect jelly is less preferable
-- Minify cryptosleep caskets
-- No mood debuff for banishing colonists
-- No beards
-- No faction requirement for crafting recipes
-- No default storage settings for buildings
-- No electrical breakdowns
-- No consciousness debuff from food poisoning hediff
-- No food poisoning from gluttonous and tasty foods
-- No breacher raids
-- No drop pod raids
-- No sapper raids
-- No siege raids
-- No disabled work for slaves
-- 45 day human pregnancy
-- Rename industrial components
-- Rename spacer components
-- Rename healroot to xerigium
-- Rename megasloth to megatherium
-- Render hair above apparel
-- Reduce spike trap cost
-- Reduce work to build spike traps
-- Increase spouse opinion
-- Vanometric power cell is also a battery
-- Visible incident pawn stats
-- White melanin only
 
-### Royalty
-- Increase aiming speed with gunlink
+#### Behavior
+- Animals Do Not Mine to Escape
+- Less Preferable Insect Jelly
+- Permanent Enemies Do Not Flee
+
+#### Colonist
+- Buff Spouse Opinion
+- Remove Mood Debuff for Banishing Colonists
+- Pawn Generation
+- Fewer Fat Bodies
+- Fewer Hulk Bodies
+- Fewer Thin Bodies
+- Remove Beards
+- Remove Narrow Heads
+- Remove Wide Female Heads
+
+#### Tweaks
+- Increase Hopper Stack Limit
+- Most Apparel Covers Hands and Feet
+- Remove Consciousness Debuff for Food Poisoning
+- Remove Default Settings for Storage Buildings
+- Render Hair Over Apparel
+- Vanometric Power Cells Are Batteries Too
+
+#### World Generation
+- Do Not Replace Core Factions
+- Less Marshy Boreal Forests
 
 ### Ideology
-- Decrease biosculpter age reversal cycle time to 5 days
-- Decrease biosculpter medic cycle time to 2 days
-- Decrease biosculpter pleasure cycle time to 1 day
-- Decrease biosculpter regeneration cycle time to 10 days
-- Double gauranlen pruning speed
-- Reduce neural supercharger recharge time to 8 hours
-- Drums provide recreation
+- Double Gauranlen Output
+- Remove Forced Styles for New Ideologies
+- Remove Preferred Apparel for New Ideologies
+- Remove Slave Work Disabler
+- Specialists Can Do More Work
+- Gauranlen Tree Pruning Speed [slider]
+
+#### Biosculpter
+- Age Reversal Cycle [slider]
+- Medic Cycle [slider]
+- Pleasure Cycle [slider]
+- Bioregeneration Cycle [slider]
 
 ### Biotech
-- Impid settlements only spawn in desert biomes
-- Double child learning rate factor
-- No forced recluse trait from mechanitor
-- No romance debuff for furskins and piggers
-- Allow lifter mechanoid to do more hauling jobs
-- Reduce wastepacks per mechanoid recharge
+- Allow Lifter Mechanoid To Do More Hauling Jobs
+- Disable Exostrider Remains on All Scenarios
+- Increase Wastepack Stack Size
+- Mech Chips Are Invincible
+- Reduce Opinion Offset For Killing Children
+- Child Learning Rate Factor [slider]
+- Pregnancy Duration [slider]
+
+### Odyssey
+- Reduce Fishing Research Cost to 200
+- Move Fishing to Its Own Work Type
 
 ## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.
