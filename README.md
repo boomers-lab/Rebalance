@@ -47,10 +47,6 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 - Render Hair Over Apparel
 - Vanometric Power Cells Are Batteries Too
 
-#### World Generation
-- Do Not Replace Core Factions
-- Less Marshy Boreal Forests
-
 ### Ideology
 - Double Gauranlen Output
 - Remove Forced Styles for New Ideologies
@@ -68,6 +64,7 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 ### Biotech
 - Allow Lifter Mechanoid To Do More Hauling Jobs
 - Disable Exostrider Remains on All Scenarios
+- Do Not Replace Core Factions
 - Increase Wastepack Stack Size
 - Mech Chips Are Invincible
 - Reduce Opinion Offset For Killing Children
