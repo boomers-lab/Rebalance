@@ -22,7 +22,6 @@
 All patches are disabled by default. Some of these patches overlap with (and/or are inspired by) FrozenSnowFox Tweaks and/or Tweaks Galore.
 
 ### Core
-
 #### Behavior
 - Animals Do Not Mine to Escape
 - Less Preferable Insect Jelly
@@ -49,18 +48,20 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 - Vanometric Power Cells Are Batteries Too
 
 ### Ideology
-- Double Gauranlen Output
 - Remove Forced Styles for New Ideologies
 - Remove Preferred Apparel for New Ideologies
 - Remove Slave Work Disabler
 - Specialists Can Do More Work
-- Gauranlen Tree Pruning Speed [slider]
 
 #### Biosculpter
-- Age Reversal Cycle [slider]
-- Medic Cycle [slider]
-- Pleasure Cycle [slider]
-- Bioregeneration Cycle [slider]
+- Age Reversal Cycle Days
+- Medic Cycle Days
+- Pleasure Cycle Days
+- Bioregeneration Cycle Days
+
+#### Gauranlen
+- Double Gauranlen Output
+- Gauranlen Tree Pruning Speed
 
 ### Biotech
 - Allow Lifter Mechanoid To Do More Hauling Jobs
@@ -69,8 +70,14 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 - Increase Wastepack Stack Size
 - Mech Chips Are Invincible
 - Reduce Opinion Offset For Killing Children
-- Child Learning Rate Factor [slider]
-- Pregnancy Duration [slider]
+- Child Learning Rate Factor
+- Pregnancy Duration
+
+#### Mechanitor
+- Better Mechanitor
+- Set Mechanitor Gender
+- Mechanitor Minumum Age
+- Mechanitor Maximum Age
 
 ### Odyssey
 - Reduce Fishing Research Cost to 200

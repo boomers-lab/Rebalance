@@ -309,6 +309,59 @@
                                 <decimals>0</decimals>
                                 <defaultValue>18</defaultValue>
                             </li>
+                            <!--Better Mechanitor-->
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>Mechanitor</text>
+                                <tKey>BLRebalanceMechanitor</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>All of these settings work with or without Better Mechanitor.</text>
+                                <tKey>BLRebalanceMechanitorText</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>betterMechanitor</key>
+                                <label>Better Mechanitor</label>
+                                <tooltip>Arms mechanitor starting pawns with a biocoded heavy SMG. Ensures they are capable of crafting, doctoring (for self tending), intellectual (vanilla), and violence. Adds a few negative traits to the disallowed traits list to make single-pawn colonies more viable. Guarantees their crafting and intellectual skills are between 6 and 12.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.RadioButtons">
+                                <key>genderedMechanitor</key>
+                                <defaultValue>noGenderedMechanitor</defaultValue>
+                                <buttons>
+                                    <li>
+                                        <value>noGenderedMechanitor</value>
+                                        <label>No Fixed Gender</label>
+                                        <tooltip>Mechanitors will be male and female.</tooltip>
+                                    </li>
+                                    <li>
+                                        <value>maleGenderedMechanitor</value>
+                                        <label>Always Male Mechanitor</label>
+                                    </li>
+                                    <li>
+                                        <value>femaleGenderedMechanitor</value>
+                                        <label>Always Female Mechanitor</label>
+                                    </li>
+                                </buttons>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Slider">
+                                <key>minAgeMechanitor</key>
+                                <decimals>0</decimals>
+                                <defaultValue>15</defaultValue>
+                                <min>15</min>
+                                <max>80</max>
+                                <label>Mechanitor Minumum Age: {minAgeMechanitor}</label>
+                                <padAbove>4</padAbove>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Slider">
+                                <key>maxAgeMechanitor</key>
+                                <decimals>0</decimals>
+                                <defaultValue>80</defaultValue>
+                                <min>15</min>
+                                <max>80</max>
+                                <label>Mechanitor Maximum Age: {maxAgeMechanitor} (must be greater than minimum age)</label>
+                            </li>
                         </settings>
                     </li>
                     <!--Anomaly-->

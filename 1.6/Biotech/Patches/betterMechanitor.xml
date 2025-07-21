@@ -1,0 +1,157 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>betterMechanitor</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <!--Prepatch SMG-->
+            <Operation Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags</xpath>
+                <value>
+                    <li>RCP_HeavySMG</li>
+                </value>
+            </Operation>
+            <!--Add new mechanitor using the base to prevent conflicts-->
+            <Operation Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <PawnKindDef ParentName="MechanitorBase">
+                        <defName>RCP_Mechanitor</defName>
+                        <weaponTags Inherit="False">
+                            <li>RCP_HeavySMG</li>
+                        </weaponTags>
+                        <weaponMoney>355~900</weaponMoney>
+                        <requiredWorkTags>
+                            <li>Caring</li>
+                            <li>Crafting</li>
+                            <li>Intellectual</li>
+                            <li>Violent</li>
+                        </requiredWorkTags>
+                        <disallowedTraits>
+                            <li>BodyPurist</li>
+                            <li>SlowLearner</li>
+                            <li>Wimp</li>
+                        </disallowedTraits>
+                        <disallowedTraitsWithDegree>
+                            <Immunity>-1</Immunity>
+                            <Industriousness>-1</Industriousness>
+                            <Industriousness>-2</Industriousness>
+                            <PsychicSensitivity>-1</PsychicSensitivity>
+                            <PsychicSensitivity>-2</PsychicSensitivity>
+                        </disallowedTraitsWithDegree>
+                        <skills>
+                            <li>
+                                <skill>Crafting</skill>
+                                <range>6~12</range>
+                            </li>
+                            <li>
+                                <skill>Intellectual</skill>
+                                <range>6~12</range>
+                            </li>
+                        </skills>
+                    </PawnKindDef>
+                </value>
+            </Operation>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//ScenarioDef[defName="Mechanitor"]/scenario/parts/li[def="ConfigurePawnsKindDefs"]/kindCounts/li/kindDef[text()="Mechanitor"]/text()</xpath>
+                <value>RCP_Mechanitor</value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>genderedMechanitor</key>
+        <defaultValue>noGenderedMechanitor</defaultValue>
+        <apply>
+            <Operation Class="XmlExtensions.PatchByCase">
+                <value>{genderedMechanitor}</value>
+                <cases>
+                    <li>
+                        <value>maleGenderedMechanitor</value>
+                        <apply>
+                            <Operation Class="PatchOperationConditional">
+                                <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
+                                <nomatch Class="PatchOperationAdd">
+                                    <xpath>//PawnKindDef[defName="Mechanitor"]</xpath>
+                                    <value>
+                                        <fixedGender>Male</fixedGender>
+                                    </value>
+                                </nomatch>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
+                                    <value>
+                                        <fixedGender>Male</fixedGender>
+                                    </value>
+                                </match>
+                            </Operation>
+                        </apply>
+                    </li>
+                    <li>
+                        <value>femaleGenderedMechanitor</value>
+                        <apply>
+                            <Operation Class="PatchOperationConditional">
+                                <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
+                                <nomatch Class="PatchOperationAdd">
+                                    <xpath>//PawnKindDef[defName="Mechanitor"]</xpath>
+                                    <value>
+                                        <fixedGender>Female</fixedGender>
+                                    </value>
+                                </nomatch>
+                                <match Class="PatchOperationAdd">
+                                    <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
+                                    <value>
+                                        <fixedGender>Female</fixedGender>
+                                    </value>
+                                </match>
+                            </Operation>
+                        </apply>
+                    </li>
+                </cases>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>minAgeMechanitor</key>
+        <defaultValue>15</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationConditional">
+                <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>//PawnKindDef[defName="Mechanitor"]</xpath>
+                    <value>
+                        <minGenerationAge>{minAgeMechanitor}</minGenerationAge>
+                    </value>
+                </nomatch>
+                <match Class="PatchOperationAdd">
+                    <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
+                    <value>
+                        <minGenerationAge>{minAgeMechanitor}</minGenerationAge>
+                    </value>
+                </match>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>maxAgeMechanitor</key>
+        <defaultValue>80</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationConditional">
+                <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>//PawnKindDef[defName="Mechanitor"]</xpath>
+                    <value>
+                        <maxGenerationAge>{maxAgeMechanitor}</maxGenerationAge>
+                    </value>
+                </nomatch>
+                <match Class="PatchOperationAdd">
+                    <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
+                    <value>
+                        <maxGenerationAge>{maxAgeMechanitor}</maxGenerationAge>
+                    </value>
+                </match>
+            </Operation>
+        </apply>
+    </Operation>
+</Patch>
