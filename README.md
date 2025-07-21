@@ -74,6 +74,8 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 ### Odyssey
 - Reduce Fishing Research Cost to 200
 - Move Fishing to Its Own Work Type
+- Gravship Hulls Are Conduits
+- Gravship Hulls Cost 9 Steel
 
 ## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.
