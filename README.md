@@ -31,7 +31,8 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 #### Colonist
 - Buff Spouse Opinion
 - Remove Mood Debuff for Banishing Colonists
-- Pawn Generation
+
+#### Pawn Generation
 - Fewer Fat Bodies
 - Fewer Hulk Bodies
 - Fewer Thin Bodies

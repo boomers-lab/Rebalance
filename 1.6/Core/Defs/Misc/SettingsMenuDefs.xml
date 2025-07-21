@@ -9,6 +9,12 @@
                         <label>Core</label>
                         <settings>
                             <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>All settings require a restart.</text>
+                                <tKey>BLRebalanceRestartWarningCore</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Gap" />
                             <!--Behavior-->
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
@@ -132,7 +138,7 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>vanometricPowerCell</key>
                                 <label>Vanometric Power Cells Are Batteries Too</label>
-                                <tooltip>Adds 1000W of 100% efficiency power storage to vanometric power cells.</tooltip>
+                                <tooltip>Adds 1000 Wd of 100% efficiency power storage to vanometric power cells.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <!--Royalty-->
@@ -143,12 +149,12 @@
                         <label>Ideology</label>
                         <settings>
                             <li Class="XmlExtensions.Setting.Gap" />
-                            <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>betterDryads</key>
-                                <label>Double Gauranlen Output</label>
-                                <tooltip>Doubles the yield for gauranlens like the medicine maker to make them less terrible.</tooltip>
-                                <defaultValue>false</defaultValue>
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>All settings require a restart.</text>
+                                <tKey>BLRebalanceRestartWarningIdeology</tKey>
                             </li>
+                            <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>removeForcedStyles</key>
                                 <label>Remove Forced Styles for New Ideologies</label>
@@ -170,22 +176,18 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>specialistsWork</key>
                                 <label>Specialists Can Do More Work</label>
-                                <tooltip>Allows specialists to ddo everything with the ManualDumb work tag.</tooltip>
+                                <tooltip>Allows specialists to do everything with the ManualDumb work tag.</tooltip>
                                 <defaultValue>false</defaultValue>
-                            </li>
-                            <li Class="XmlExtensions.Setting.Slider">
-                                <key>gauranlenPruningSpeed</key>
-                                <label>Gauranlen Tree Pruning Speed: {gauranlenPruningSpeed} (Default: 0.1)</label>
-                                <min>0.1</min>
-                                <max>1</max>
-                                <decimals>1</decimals>
-                                <defaultValue>0.1</defaultValue>
                             </li>
                             <!--Biosculpter Sliders-->
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Biosculpter</text>
                                 <tKey>BLRebalanceBiosculpter</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Text">
+                                <text>These sliders affect the base values before the accelerated biosculpting precept, attuned, and sterile room multipliers are applied.</text>
+                                <tKey>BLRebalanceBiosculpterNote</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
                                 <key>biosculpterPodAgeReversal</key>
@@ -194,6 +196,7 @@
                                 <max>16</max>
                                 <decimals>0</decimals>
                                 <defaultValue>8</defaultValue>
+                                <padAbove>4</padAbove>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
                                 <key>biosculpterPodMedic</key>
@@ -219,12 +222,39 @@
                                 <decimals>0</decimals>
                                 <defaultValue>25</defaultValue>
                             </li>
+                            <!--Gauranlen Tweaks-->
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>Gauranlen</text>
+                                <tKey>BLRebalanceGauranlen</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>betterDryads</key>
+                                <label>Double Gauranlen Output</label>
+                                <tooltip>Doubles the yield for gauranlens like the medicine maker to make them less terrible.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Slider">
+                                <key>gauranlenPruningSpeed</key>
+                                <label>Gauranlen Tree Pruning Speed: {gauranlenPruningSpeed} (Default: 0.1)</label>
+                                <min>0.1</min>
+                                <max>1</max>
+                                <decimals>1</decimals>
+                                <defaultValue>0.1</defaultValue>
+                                <padAbove>4</padAbove>
+                            </li>
                         </settings>
                     </li>
                     <!--Biotech-->
                     <li MayRequire="Ludeon.Rimworld.Biotech">
                         <label>Biotech</label>
                         <settings>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>All settings require a restart.</text>
+                                <tKey>BLRebalanceRestartWarningBiotech</tKey>
+                            </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>moreCapableLifter</key>
@@ -241,7 +271,7 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>factionReplacers</key>
                                 <label>Do Not Replace Core Factions</label>
-                                <tooltip>Factions like the impid tribe will no longer replace the fierce tribe by default. Both will appear by default until they are disabled manually.</tooltip>
+                                <tooltip>Factions like the impid tribe will no longer replace their vanilla counterpart. Both will appear by default and can be disabled manually in world creation.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
@@ -269,6 +299,7 @@
                                 <max>5</max>
                                 <decimals>1</decimals>
                                 <defaultValue>1</defaultValue>
+                                <padAbove>4</padAbove>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
                                 <key>pregnancyDuration</key>
@@ -285,6 +316,12 @@
                     <li MayRequire="Ludeon.Rimworld.Odyssey">
                         <label>Odyssey</label>
                         <settings>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>All settings require a restart.</text>
+                                <tKey>BLRebalanceRestartWarningOdyssey</tKey>
+                            </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>fishingResearchNerf</key>
@@ -304,17 +341,12 @@
                                 <tooltip>Add the CompPowerTransmitter comp to gravship hulls so that they carry power.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
-                            <li Class="XmlExtensions.Setting.ToggleableSettings">
-                                <key>gravshipConduit</key>
-                                <caseTrue>
-                                    <li Class="XmlExtensions.Setting.Checkbox">
-                                        <key>gravshipConduitNerf</key>
-                                        <label>Gravship Hulls Cost 9 Steel</label>
-                                        <tooltip>Increases the steel cost of gravship hulls from 7 to 9 to compensate.</tooltip>
-                                        <defaultValue>false</defaultValue>
-                                        <padLeft>8</padLeft>
-                                    </li>
-                                </caseTrue>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>gravshipConduitNerf</key>
+                                <label>Gravship Hulls Cost 9 Steel</label>
+                                <tooltip>Increases the steel cost of gravship hulls from 7 to 9 to compensate for added functionality.</tooltip>
+                                <defaultValue>false</defaultValue>
+                                <padLeft>8</padLeft>
                             </li>
                         </settings>
                     </li>
