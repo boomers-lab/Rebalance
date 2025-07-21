@@ -5,24 +5,24 @@
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationAdd">
-                <xpath>//ThingDef[@Name="ApparelArmorCataphractBase" or @Name="ApparelArmorPowerBase" or @Name="ApparelArmorReconBase" or defName="Apparel_Burka" or defName="Apparel_FlakPants" or defName="Apparel_KidPants" or defName="Apparel_KidRomper" or defName="Apparel_Pants" or defName="Apparel_PlateArmor"]/apparel/bodyPartGroups</xpath>
+                <xpath>//ThingDef[@Name="ApparelArmorCataphractBase" or @Name="ApparelArmorPowerBase" or @Name="ApparelArmorReconBase" or defName="Apparel_Burka" or defName="Apparel_FlakPants" or defName="Apparel_KidPants" or defName="Apparel_KidRomper" or defName="Apparel_Pants" or defName="Apparel_PlateArmor" or defName="Apparel_Vacsuit" or defName="Apparel_VacsuitChildren"]/apparel/bodyPartGroups</xpath>
                 <value>
                     <li>Feet</li>
                 </value>
             </Operation>
             <Operation Class="PatchOperationInsert">
-                <xpath>//ThingDef[defName="Apparel_Burka" or defName="Apparel_FlakPants" or defName="Apparel_KidPants" or defName="Apparel_KidRomper" or defName="Apparel_Pants" or defName="Apparel_PlateArmor"]/description/text()</xpath>
+                <xpath>//ThingDef[defName="Apparel_Burka" or defName="Apparel_FlakPants" or defName="Apparel_KidPants" or defName="Apparel_KidRomper" or defName="Apparel_Pants" or defName="Apparel_PlateArmor" or defName="Apparel_Vacsuit" or defName="Apparel_VacsuitChildren"]/description/text()</xpath>
                 <order>Append</order>
                 <value>\n\nA pair of boots is included.</value>
             </Operation>
             <Operation Class="PatchOperationAdd">
-                <xpath>//ThingDef[@Name="ApparelArmorCataphractBase" or @Name="ApparelArmorPowerBase" or @Name="ApparelArmorReconBase" or defName="Apparel_Burka" or defName="Apparel_CollarShirt" or defName="Apparel_Duster" or defName="Apparel_FlakJacket" or defName="Apparel_Jacket" or defName="Apparel_KidParka" or defName="Apparel_KidRomper" or defName="Apparel_Parka" or defName="Apparel_PlateArmor" or defName="Apparel_ShirtRuffle"]/apparel/bodyPartGroups</xpath>
+                <xpath>//ThingDef[@Name="ApparelArmorCataphractBase" or @Name="ApparelArmorPowerBase" or @Name="ApparelArmorReconBase" or defName="Apparel_Burka" or defName="Apparel_CollarShirt" or defName="Apparel_Duster" or defName="Apparel_FlakJacket" or defName="Apparel_Jacket" or defName="Apparel_KidParka" or defName="Apparel_KidRomper" or defName="Apparel_Parka" or defName="Apparel_PlateArmor" or defName="Apparel_ShirtRuffle" or defName="Apparel_Vacsuit" or defName="Apparel_VacsuitChildren"]/apparel/bodyPartGroups</xpath>
                 <value>
                     <li>Hands</li>
                 </value>
             </Operation>
             <Operation Class="PatchOperationInsert">
-                <xpath>//ThingDef[defName="Apparel_Burka" or defName="Apparel_CollarShirt" or defName="Apparel_Duster" or defName="Apparel_FlakJacket" or defName="Apparel_Jacket" or defName="Apparel_KidParka" or defName="Apparel_KidRomper" or defName="Apparel_Parka" or defName="Apparel_PlateArmor" or defName="Apparel_ShirtRuffle"]/description/text()</xpath>
+                <xpath>//ThingDef[defName="Apparel_Burka" or defName="Apparel_CollarShirt" or defName="Apparel_Duster" or defName="Apparel_FlakJacket" or defName="Apparel_Jacket" or defName="Apparel_KidParka" or defName="Apparel_KidRomper" or defName="Apparel_Parka" or defName="Apparel_PlateArmor" or defName="Apparel_ShirtRuffle" or defName="Apparel_Vacsuit" or defName="Apparel_VacsuitChildren"]/description/text()</xpath>
                 <order>Append</order>
                 <value>\n\nA pair of gloves is included.</value>
             </Operation>

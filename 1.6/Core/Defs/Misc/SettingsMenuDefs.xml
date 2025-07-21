@@ -298,6 +298,24 @@
                                 <tooltip>Moves fishing from the hunting work type to its own work type, between crafting and hauling.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>gravshipConduit</key>
+                                <label>Gravship Hulls Are Conduits</label>
+                                <tooltip>Add the CompPowerTransmitter comp to gravship hulls so that they carry power.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.ToggleableSettings">
+                                <key>gravshipConduit</key>
+                                <caseTrue>
+                                    <li Class="XmlExtensions.Setting.Checkbox">
+                                        <key>gravshipConduitNerf</key>
+                                        <label>Gravship Hulls Cost 9 Steel</label>
+                                        <tooltip>Increases the steel cost of gravship hulls from 7 to 9 to compensate.</tooltip>
+                                        <defaultValue>false</defaultValue>
+                                        <padLeft>8</padLeft>
+                                    </li>
+                                </caseTrue>
+                            </li>
                         </settings>
                     </li>
                 </tabs>
