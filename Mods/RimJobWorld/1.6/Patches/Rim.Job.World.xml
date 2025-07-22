@@ -1,0 +1,62 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>RJWRebalance</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <!--make used condoms not ingestible-->
+            <li Class="PatchOperationAttributeSet">
+                <xpath>//ThingDef[defName="UsedCondom"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>ResourceBase</value>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[defName="UsedCondom"]/ingestible | //ThingDef[defName="UsedCondom"]/statBases/Nutrition</xpath>
+            </li>
+            <!--change used condom category to waste if DBH is installed-->
+            <li Class="PatchOperationConditional">
+                <xpath>//ThingCategoryDef[defName="Waste"]</xpath>
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[defName="UsedCondom"]/thingCategories/li[text()="AnimalProductRaw"]/text()</xpath>
+                    <value>Waste</value>
+                </match>
+                <!--otherwise change category to manufactured-->
+                <nomatch Class="PatchOperationReplace">
+                    <xpath>//ThingDef[defName="UsedCondom"]/thingCategories/li[text()="AnimalProductRaw"]/text()</xpath>
+                    <value>Manufactured</value>
+                </nomatch>
+            </li>
+            <!--increase used condom stack limit-->
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="Condom" or defName="UsedCondom"]/stackLimit/text()</xpath>
+                <value>500</value>
+            </li>
+            <!--change cringe used condom description-->
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="UsedCondom"]/description/text()</xpath>
+                <value>A used condom.</value>
+            </li>
+            <!--humpshroom doesn't refill psyfocus-->
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[defName="HumpShroom"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_OffsetPsyfocus"]</xpath>
+            </li>
+            <!--updates hump shroom description-->
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="HumpShroom" or defName="PlantHumpShroom"]/description/text()</xpath>
+                <value>A mushshroom with tough flesh, thick juice and smooth soft skin. Exhibits aphrodisiac effects when consumed.</value>
+            </li>
+        </caseTrue>
+    </Operation>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>RJWTraits</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <!--make used condoms not ingestible-->
+            <li Class="PatchOperationReplace">
+                <xpath>//TraitDef[defName="FootSlut" or defName="CumSlut" or defName="ButtSlut"]/commonality/text()</xpath>
+                <value>0</value>
+            </li>
+        </caseTrue>
+    </Operation>
+</Patch>

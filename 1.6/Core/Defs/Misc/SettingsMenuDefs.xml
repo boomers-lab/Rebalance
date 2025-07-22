@@ -403,6 +403,36 @@
                             </li>
                         </settings>
                     </li>
+                    <!--Odyssey-->
+                    <li>
+                        <label>Mods</label>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>All settings require a restart.</text>
+                                <tKey>BLRebalanceRestartWarningMods</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>RimJobWorld</text>
+                                <tKey>BLRebalanceRimJobWorld</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>RJWRebalance</key>
+                                <label>Debloat and Rebalance</label>
+                                <tooltip>Removes the cum eating fetish. Increases condom stack limit to 500. Humpshroom doesn't increase psyfocus.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>RJWTraits</key>
+                                <label>Remove Traits</label>
+                                <tooltip>Sets commonality to 0 so pawns don't spawn with them.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                        </settings>
+                    </li>
                 </tabs>
             </li>
         </settings>
