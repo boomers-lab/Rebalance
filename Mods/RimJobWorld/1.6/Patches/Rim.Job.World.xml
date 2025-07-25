@@ -47,16 +47,4 @@
             </li>
         </caseTrue>
     </Operation>
-    <Operation Class="XmlExtensions.OptionalPatch">
-        <modId>boomer.Rebalance</modId>
-        <key>RJWTraits</key>
-        <defaultValue>false</defaultValue>
-        <caseTrue>
-            <!--make used condoms not ingestible-->
-            <li Class="PatchOperationReplace">
-                <xpath>//TraitDef[defName="FootSlut" or defName="CumSlut" or defName="ButtSlut"]/commonality/text()</xpath>
-                <value>0</value>
-            </li>
-        </caseTrue>
-    </Operation>
 </Patch>

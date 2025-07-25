@@ -7,5 +7,7 @@
         <li IfModActive="Ludeon.Rimworld.Biotech">1.6/Biotech</li>
         <li IfModActive="Ludeon.Rimworld.Anomaly">1.6/Anomaly</li>
         <li IfModActive="Ludeon.Rimworld.Odyssey">1.6/Odyssey</li>
+        <!-- Mods -->
+        <li IfModActive="Rim.Job.World">Mods/RimJobWorld/1.6</li>
     </v1.6>
 </loadFolders>
