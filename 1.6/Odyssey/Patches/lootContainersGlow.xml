@@ -1,0 +1,18 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>lootContainersGlow</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <li Class="PatchOperationAdd">
+                <xpath>//ThingDef[comps/li[@Class="CompProperties_LootSpawn"] and not(comps/li[@Class="CompProperties_Glower"])]/comps</xpath>
+                <value>
+                    <li Class="CompProperties_Glower">
+                        <glowRadius>1.5</glowRadius>
+                        <glowColor>(239,133,50,0)</glowColor>
+                    </li>
+                </value>
+            </li>
+        </caseTrue>
+    </Operation>
+</Patch>

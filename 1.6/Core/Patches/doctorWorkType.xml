@@ -1,0 +1,68 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>doctorWorkTypeNursing</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <WorkTypeDef>
+                        <defName>RCP_Surgery</defName>
+                        <labelShort>surgeon</labelShort>
+                        <pawnLabel>Surgeon</pawnLabel>
+                        <gerundLabel>surgery</gerundLabel>
+                        <description>Perform assigned surgeries.</description>
+                        <verb>Operate on</verb>
+                        <naturalPriority>1280</naturalPriority>
+                        <relevantSkills>
+                            <li>Medicine</li>
+                        </relevantSkills>
+                        <workTags>
+                            <li>Caring</li>
+                            <li>Commoner</li>
+                            <li>AllWork</li>
+                        </workTags>
+                    </WorkTypeDef>
+                </value>
+            </Operation>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//WorkGiverDef[defName="DoBillsMedicalHumanOperation" or defName="DoBillsMedicalAnimalOperation"]/workType/text()</xpath>
+                <value>RCP_Surgery</value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>doctorWorkTypeSurgery</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <WorkTypeDef>
+                        <defName>RCP_Surgery</defName>
+                        <labelShort>surgery</labelShort>
+                        <pawnLabel>Surgery</pawnLabel>
+                        <gerundLabel>surgery</gerundLabel>
+                        <description>Perform assigned surgeries.</description>
+                        <verb>Operate on</verb>
+                        <naturalPriority>1280</naturalPriority>
+                        <relevantSkills>
+                            <li>Medicine</li>
+                        </relevantSkills>
+                        <workTags>
+                            <li>Caring</li>
+                            <li>Commoner</li>
+                            <li>AllWork</li>
+                        </workTags>
+                    </WorkTypeDef>
+                </value>
+            </Operation>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//WorkGiverDef[defName="DoBillsMedicalHumanOperation" or defName="DoBillsMedicalAnimalOperation"]/workType/text()</xpath>
+                <value>RCP_Surgery</value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>

@@ -15,7 +15,7 @@
                                 <tKey>BLRebalanceRestartWarningCore</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
-                            <!--Behavior-->
+                            <!-- Behavior -->
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Behavior</text>
@@ -39,7 +39,7 @@
                                 <tooltip>Raiders from permanently hostile factions like pirates won't flee when they're losing the fight.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
-                            <!--Colonist-->
+                            <!-- Colonist -->
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Colonist</text>
@@ -57,7 +57,7 @@
                                 <tooltip>Removes all moodlets related to banishing colonists/prisoners/animals and rejecting joiners.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
-                            <!--Pawn Generation-->
+                            <!-- Pawn Generation -->
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Pawn Generation</text>
@@ -90,16 +90,16 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>fewerHeadsNarrow</key>
                                 <label>Remove Narrow Heads</label>
-                                <tooltip>Aggressively removes narrow heads from the game. Patching logic works for every mod I've tested. Probably not a good idea to enable mid-save.</tooltip>
+                                <tooltip>Aggressively removes narrow heads from the game. Patching logic works for every mod I've tested. Probably not a good idea to enable mid-save. Has no effect on Facial Animation.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>fewerHeadsWideFemale</key>
                                 <label>Remove Wide Female Heads</label>
-                                <tooltip>Removes the wide female head from the game. Probably not a good idea to enable mid-save.</tooltip>
+                                <tooltip>Removes the wide female head from the game. Probably not a good idea to enable mid-save. Has no effect on Facial Animation.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
-                            <!--Tweaks-->
+                            <!-- Tweaks -->
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Tweaks</text>
@@ -115,6 +115,12 @@
                                 <key>apparelCoversHandsAndFeet</key>
                                 <label>Most Apparel Covers Hands and Feet</label>
                                 <tooltip>Adds foot coverage to vanilla apparel that covers the full leg. Adds hand coverage to vanilla apparel to apparel that covers the full arm. In each case, a note is appended to the description of the apparel.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>doctorWorkTypeSurgery</key>
+                                <label>Separate Surgery From Doctor Worktype</label>
+                                <tooltip>Separate the harvest workgiver from the grower workgiver.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
@@ -141,8 +147,8 @@
                                 <tooltip>Adds 1000 Wd of 100% efficiency power storage to vanometric power cells.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
-                            <!--Royalty-->
-                            <!--Ideology-->
+                            <!-- Royalty -->
+                            <!-- Ideology -->
                         </settings>
                     </li>
                     <li MayRequire="Ludeon.Rimworld.Ideology">
@@ -179,7 +185,7 @@
                                 <tooltip>Allows specialists to do everything with the ManualDumb work tag.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
-                            <!--Biosculpter Sliders-->
+                            <!-- Biosculpter Sliders -->
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Biosculpter</text>
@@ -222,7 +228,7 @@
                                 <decimals>0</decimals>
                                 <defaultValue>25</defaultValue>
                             </li>
-                            <!--Gauranlen Tweaks-->
+                            <!-- Gauranlen Tweaks -->
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Gauranlen</text>
@@ -245,7 +251,7 @@
                             </li>
                         </settings>
                     </li>
-                    <!--Biotech-->
+                    <!-- Biotech -->
                     <li MayRequire="Ludeon.Rimworld.Biotech">
                         <label>Biotech</label>
                         <settings>
@@ -309,7 +315,7 @@
                                 <decimals>0</decimals>
                                 <defaultValue>18</defaultValue>
                             </li>
-                            <!--Better Mechanitor-->
+                            <!-- Better Mechanitor -->
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Mechanitor</text>
@@ -364,8 +370,8 @@
                             </li>
                         </settings>
                     </li>
-                    <!--Anomaly-->
-                    <!--Odyssey-->
+                    <!-- Anomaly -->
+                    <!-- Odyssey -->
                     <li MayRequire="Ludeon.Rimworld.Odyssey">
                         <label>Odyssey</label>
                         <settings>
@@ -376,6 +382,12 @@
                                 <tKey>BLRebalanceRestartWarningOdyssey</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>lootContainersGlow</key>
+                                <label>All Lootable Containers Glow</label>
+                                <tooltip>Add the CompProperties_Glower comp to to every ThingDef with CompProperties_LootSpawn if it doesn't already have it.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>fishingResearchNerf</key>
                                 <label>Reduce Fishing Research Cost to 200</label>
@@ -403,7 +415,7 @@
                             </li>
                         </settings>
                     </li>
-                    <!--Odyssey-->
+                    <!-- Mods -->
                     <li>
                         <label>Mods</label>
                         <settings>
