@@ -1,0 +1,101 @@
+<Patch>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>Skin_Melanin1</key>
+        <defaultValue>(242, 237, 224)</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//GeneDef[defName="Skin_Melanin1"]/skinColorBase/text()</xpath>
+                <value>{Skin_Melanin1}</value>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>Skin_Melanin2</key>
+        <defaultValue>(255, 239, 213)</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//GeneDef[defName="Skin_Melanin2"]/skinColorBase/text()</xpath>
+                <value>{Skin_Melanin2}</value>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>Skin_Melanin3</key>
+        <defaultValue>(255, 239, 201)</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//GeneDef[defName="Skin_Melanin3"]/skinColorBase/text()</xpath>
+                <value>{Skin_Melanin3}</value>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>Skin_Melanin4</key>
+        <defaultValue>(255, 239, 189)</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//GeneDef[defName="Skin_Melanin4"]/skinColorBase/text()</xpath>
+                <value>{Skin_Melanin4}</value>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>Skin_Melanin5</key>
+        <defaultValue>(249, 219, 165)</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//GeneDef[defName="Skin_Melanin5"]/skinColorBase/text()</xpath>
+                <value>{Skin_Melanin5}</value>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>Skin_Melanin6</key>
+        <defaultValue>(242, 199, 140)</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//GeneDef[defName="Skin_Melanin6"]/skinColorBase/text()</xpath>
+                <value>{Skin_Melanin6}</value>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>Skin_Melanin7</key>
+        <defaultValue>(228, 158, 90)</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//GeneDef[defName="Skin_Melanin7"]/skinColorBase/text()</xpath>
+                <value>{Skin_Melanin7}</value>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>Skin_Melanin8</key>
+        <defaultValue>(130, 91, 48)</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//GeneDef[defName="Skin_Melanin8"]/skinColorBase/text()</xpath>
+                <value>{Skin_Melanin8}</value>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>Skin_Melanin9</key>
+        <defaultValue>(99, 70, 36)</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//GeneDef[defName="Skin_Melanin9"]/skinColorBase/text()</xpath>
+                <value>{Skin_Melanin9}</value>
+            </Operation>
+        </apply>
+    </Operation>
+</Patch>

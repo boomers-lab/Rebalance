@@ -12,14 +12,12 @@
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>All settings require a restart.</text>
-                                <tKey>BLRebalanceRestartWarningCore</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <!-- Behavior -->
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Behavior</text>
-                                <tKey>BLRebalanceBehavior</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>doNotDigOutIfCannotReachMapEdge</key>
@@ -43,7 +41,6 @@
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Colonist</text>
-                                <tKey>BLRebalanceWorldGen</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>spouseOpinion</key>
@@ -61,7 +58,6 @@
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Pawn Generation</text>
-                                <tKey>BLRebalancePawnGeneration</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>fewerBodyFat</key>
@@ -99,11 +95,687 @@
                                 <tooltip>Removes the wide female head from the game. Probably not a good idea to enable mid-save. Has no effect on Facial Animation.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>showMelanin</key>
+                                <label>Show Melanin Palette</label>
+                                <tooltip>Change the melanin endogenes colors to a custom value.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.ToggleableSettings">
+                                <key>showMelanin</key>
+                                <caseTrue>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <anchor>Middle</anchor>
+                                        <padLeft>8</padLeft>
+                                        <text>Skin_Melanin1</text>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.SplitColumns">
+                                        <gapSize>24</gapSize>
+                                        <drawLine>true</drawLine>
+                                        <widths>
+                                            <li>75</li>
+                                            <li>160</li>
+                                        </widths>
+                                        <anchors>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                        </anchors>
+                                        <settings>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorEntry">
+                                                    <key>Skin_Melanin1</key>
+                                                    <defaultValue>(242, 237, 224)</defaultValue>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.Gap">
+                                                    <spacing>8</spacing>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.DrawColor">
+                                                    <key>Skin_Melanin1</key>
+                                                    <tooltip>Selected Color</tooltip>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorWheel">
+                                                    <key>Skin_Melanin1</key>
+                                                    <defaultValue>(242, 237, 224)</defaultValue>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorPalette">
+                                                    <key>Skin_Melanin1</key>
+                                                    <anchor>Left</anchor>
+                                                    <defaultValue>(242, 237, 224)</defaultValue>
+                                                    <colors>
+                                                        <li>
+                                                            <li>(242, 237, 224)</li>
+                                                            <li>(255, 239, 213)</li>
+                                                            <li>(255, 239, 201)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(255, 239, 189)</li>
+                                                            <li>(249, 219, 165)</li>
+                                                            <li>(242, 199, 140)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(228, 158, 90)</li>
+                                                            <li>(130, 91, 48)</li>
+                                                            <li>(99, 70, 36)</li>
+                                                        </li>
+                                                    </colors>
+                                                </li>
+                                            </li>
+                                        </settings>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings">
+                                        <padAbove>4</padAbove>
+                                        <padBelow>4</padBelow>
+                                        <padLeft>256</padLeft>
+                                        <padRight>256</padRight>
+                                        <label>Reset</label>
+                                        <confirm>false</confirm>
+                                        <keys>
+                                            <li>Skin_Melanin1</li>
+                                        </keys>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <anchor>Middle</anchor>
+                                        <padLeft>8</padLeft>
+                                        <text>Skin_Melanin2</text>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.SplitColumns">
+                                        <gapSize>24</gapSize>
+                                        <drawLine>true</drawLine>
+                                        <widths>
+                                            <li>75</li>
+                                            <li>160</li>
+                                        </widths>
+                                        <anchors>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                        </anchors>
+                                        <settings>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorEntry">
+                                                    <key>Skin_Melanin2</key>
+                                                    <defaultValue>(255, 239, 213)</defaultValue>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.Gap">
+                                                    <spacing>8</spacing>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.DrawColor">
+                                                    <key>Skin_Melanin2</key>
+                                                    <tooltip>Selected Color</tooltip>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorWheel">
+                                                    <key>Skin_Melanin2</key>
+                                                    <defaultValue>(255, 239, 213)</defaultValue>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorPalette">
+                                                    <key>Skin_Melanin2</key>
+                                                    <anchor>Left</anchor>
+                                                    <defaultValue>(255, 239, 213)</defaultValue>
+                                                    <colors>
+                                                        <li>
+                                                            <li>(242, 237, 224)</li>
+                                                            <li>(255, 239, 213)</li>
+                                                            <li>(255, 239, 201)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(255, 239, 189)</li>
+                                                            <li>(249, 219, 165)</li>
+                                                            <li>(242, 199, 140)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(228, 158, 90)</li>
+                                                            <li>(130, 91, 48)</li>
+                                                            <li>(99, 70, 36)</li>
+                                                        </li>
+                                                    </colors>
+                                                </li>
+                                            </li>
+                                        </settings>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings">
+                                        <padAbove>4</padAbove>
+                                        <padBelow>4</padBelow>
+                                        <padLeft>256</padLeft>
+                                        <padRight>256</padRight>
+                                        <label>Reset</label>
+                                        <confirm>false</confirm>
+                                        <keys>
+                                            <li>Skin_Melanin2</li>
+                                        </keys>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <anchor>Middle</anchor>
+                                        <padLeft>8</padLeft>
+                                        <text>Skin_Melanin3</text>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.SplitColumns">
+                                        <gapSize>24</gapSize>
+                                        <drawLine>true</drawLine>
+                                        <widths>
+                                            <li>75</li>
+                                            <li>160</li>
+                                        </widths>
+                                        <anchors>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                        </anchors>
+                                        <settings>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorEntry">
+                                                    <key>Skin_Melanin3</key>
+                                                    <defaultValue>(255, 239, 201)</defaultValue>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.Gap">
+                                                    <spacing>8</spacing>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.DrawColor">
+                                                    <key>Skin_Melanin3</key>
+                                                    <tooltip>Selected Color</tooltip>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorWheel">
+                                                    <key>Skin_Melanin3</key>
+                                                    <defaultValue>(255, 239, 201)</defaultValue>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorPalette">
+                                                    <key>Skin_Melanin3</key>
+                                                    <anchor>Left</anchor>
+                                                    <defaultValue>(255, 239, 201)</defaultValue>
+                                                    <colors>
+                                                        <li>
+                                                            <li>(242, 237, 224)</li>
+                                                            <li>(255, 239, 213)</li>
+                                                            <li>(255, 239, 201)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(255, 239, 189)</li>
+                                                            <li>(249, 219, 165)</li>
+                                                            <li>(242, 199, 140)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(228, 158, 90)</li>
+                                                            <li>(130, 91, 48)</li>
+                                                            <li>(99, 70, 36)</li>
+                                                        </li>
+                                                    </colors>
+                                                </li>
+                                            </li>
+                                        </settings>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings">
+                                        <padAbove>4</padAbove>
+                                        <padBelow>4</padBelow>
+                                        <padLeft>256</padLeft>
+                                        <padRight>256</padRight>
+                                        <label>Reset</label>
+                                        <confirm>false</confirm>
+                                        <keys>
+                                            <li>Skin_Melanin3</li>
+                                        </keys>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <anchor>Middle</anchor>
+                                        <padLeft>8</padLeft>
+                                        <text>Skin_Melanin4</text>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.SplitColumns">
+                                        <gapSize>24</gapSize>
+                                        <drawLine>true</drawLine>
+                                        <widths>
+                                            <li>75</li>
+                                            <li>160</li>
+                                        </widths>
+                                        <anchors>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                        </anchors>
+                                        <settings>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorEntry">
+                                                    <key>Skin_Melanin4</key>
+                                                    <defaultValue>(255, 239, 189)</defaultValue>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.Gap">
+                                                    <spacing>8</spacing>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.DrawColor">
+                                                    <key>Skin_Melanin4</key>
+                                                    <tooltip>Selected Color</tooltip>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorWheel">
+                                                    <key>Skin_Melanin4</key>
+                                                    <defaultValue>(255, 239, 189)</defaultValue>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorPalette">
+                                                    <key>Skin_Melanin4</key>
+                                                    <anchor>Left</anchor>
+                                                    <defaultValue>(255, 239, 189)</defaultValue>
+                                                    <colors>
+                                                        <li>
+                                                            <li>(242, 237, 224)</li>
+                                                            <li>(255, 239, 213)</li>
+                                                            <li>(255, 239, 201)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(255, 239, 189)</li>
+                                                            <li>(249, 219, 165)</li>
+                                                            <li>(242, 199, 140)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(228, 158, 90)</li>
+                                                            <li>(130, 91, 48)</li>
+                                                            <li>(99, 70, 36)</li>
+                                                        </li>
+                                                    </colors>
+                                                </li>
+                                            </li>
+                                        </settings>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings">
+                                        <padAbove>4</padAbove>
+                                        <padBelow>4</padBelow>
+                                        <padLeft>256</padLeft>
+                                        <padRight>256</padRight>
+                                        <label>Reset</label>
+                                        <confirm>false</confirm>
+                                        <keys>
+                                            <li>Skin_Melanin4</li>
+                                        </keys>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <anchor>Middle</anchor>
+                                        <padLeft>8</padLeft>
+                                        <text>Skin_Melanin5</text>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.SplitColumns">
+                                        <gapSize>24</gapSize>
+                                        <drawLine>true</drawLine>
+                                        <widths>
+                                            <li>75</li>
+                                            <li>160</li>
+                                        </widths>
+                                        <anchors>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                        </anchors>
+                                        <settings>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorEntry">
+                                                    <key>Skin_Melanin5</key>
+                                                    <defaultValue>(249, 219, 165)</defaultValue>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.Gap">
+                                                    <spacing>8</spacing>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.DrawColor">
+                                                    <key>Skin_Melanin5</key>
+                                                    <tooltip>Selected Color</tooltip>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorWheel">
+                                                    <key>Skin_Melanin5</key>
+                                                    <defaultValue>(249, 219, 165)</defaultValue>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorPalette">
+                                                    <key>Skin_Melanin5</key>
+                                                    <anchor>Left</anchor>
+                                                    <defaultValue>(249, 219, 165)</defaultValue>
+                                                    <colors>
+                                                        <li>
+                                                            <li>(242, 237, 224)</li>
+                                                            <li>(255, 239, 213)</li>
+                                                            <li>(255, 239, 201)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(255, 239, 189)</li>
+                                                            <li>(249, 219, 165)</li>
+                                                            <li>(242, 199, 140)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(228, 158, 90)</li>
+                                                            <li>(130, 91, 48)</li>
+                                                            <li>(99, 70, 36)</li>
+                                                        </li>
+                                                    </colors>
+                                                </li>
+                                            </li>
+                                        </settings>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings">
+                                        <padAbove>4</padAbove>
+                                        <padBelow>4</padBelow>
+                                        <padLeft>256</padLeft>
+                                        <padRight>256</padRight>
+                                        <label>Reset</label>
+                                        <confirm>false</confirm>
+                                        <keys>
+                                            <li>Skin_Melanin5</li>
+                                        </keys>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <anchor>Middle</anchor>
+                                        <padLeft>8</padLeft>
+                                        <text>Skin_Melanin6</text>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.SplitColumns">
+                                        <gapSize>24</gapSize>
+                                        <drawLine>true</drawLine>
+                                        <widths>
+                                            <li>75</li>
+                                            <li>160</li>
+                                        </widths>
+                                        <anchors>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                        </anchors>
+                                        <settings>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorEntry">
+                                                    <key>Skin_Melanin6</key>
+                                                    <defaultValue>(242, 199, 140)</defaultValue>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.Gap">
+                                                    <spacing>8</spacing>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.DrawColor">
+                                                    <key>Skin_Melanin6</key>
+                                                    <tooltip>Selected Color</tooltip>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorWheel">
+                                                    <key>Skin_Melanin6</key>
+                                                    <defaultValue>(242, 199, 140)</defaultValue>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorPalette">
+                                                    <key>Skin_Melanin6</key>
+                                                    <anchor>Left</anchor>
+                                                    <defaultValue>(242, 199, 140)</defaultValue>
+                                                    <colors>
+                                                        <li>
+                                                            <li>(242, 237, 224)</li>
+                                                            <li>(255, 239, 213)</li>
+                                                            <li>(255, 239, 201)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(255, 239, 189)</li>
+                                                            <li>(249, 219, 165)</li>
+                                                            <li>(242, 199, 140)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(228, 158, 90)</li>
+                                                            <li>(130, 91, 48)</li>
+                                                            <li>(99, 70, 36)</li>
+                                                        </li>
+                                                    </colors>
+                                                </li>
+                                            </li>
+                                        </settings>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings">
+                                        <padAbove>4</padAbove>
+                                        <padBelow>4</padBelow>
+                                        <padLeft>256</padLeft>
+                                        <padRight>256</padRight>
+                                        <label>Reset</label>
+                                        <confirm>false</confirm>
+                                        <keys>
+                                            <li>Skin_Melanin6</li>
+                                        </keys>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <anchor>Middle</anchor>
+                                        <padLeft>8</padLeft>
+                                        <text>Skin_Melanin7</text>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.SplitColumns">
+                                        <gapSize>24</gapSize>
+                                        <drawLine>true</drawLine>
+                                        <widths>
+                                            <li>75</li>
+                                            <li>160</li>
+                                        </widths>
+                                        <anchors>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                        </anchors>
+                                        <settings>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorEntry">
+                                                    <key>Skin_Melanin7</key>
+                                                    <defaultValue>(228, 158, 90)</defaultValue>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.Gap">
+                                                    <spacing>8</spacing>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.DrawColor">
+                                                    <key>Skin_Melanin7</key>
+                                                    <tooltip>Selected Color</tooltip>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorWheel">
+                                                    <key>Skin_Melanin7</key>
+                                                    <defaultValue>(228, 158, 90)</defaultValue>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorPalette">
+                                                    <key>Skin_Melanin7</key>
+                                                    <anchor>Left</anchor>
+                                                    <defaultValue>(228, 158, 90)</defaultValue>
+                                                    <colors>
+                                                        <li>
+                                                            <li>(242, 237, 224)</li>
+                                                            <li>(255, 239, 213)</li>
+                                                            <li>(255, 239, 201)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(255, 239, 189)</li>
+                                                            <li>(249, 219, 165)</li>
+                                                            <li>(242, 199, 140)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(228, 158, 90)</li>
+                                                            <li>(130, 91, 48)</li>
+                                                            <li>(99, 70, 36)</li>
+                                                        </li>
+                                                    </colors>
+                                                </li>
+                                            </li>
+                                        </settings>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings">
+                                        <padAbove>4</padAbove>
+                                        <padBelow>4</padBelow>
+                                        <padLeft>256</padLeft>
+                                        <padRight>256</padRight>
+                                        <label>Reset</label>
+                                        <confirm>false</confirm>
+                                        <keys>
+                                            <li>Skin_Melanin7</li>
+                                        </keys>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <anchor>Middle</anchor>
+                                        <padLeft>8</padLeft>
+                                        <text>Skin_Melanin8</text>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.SplitColumns">
+                                        <gapSize>24</gapSize>
+                                        <drawLine>true</drawLine>
+                                        <widths>
+                                            <li>75</li>
+                                            <li>160</li>
+                                        </widths>
+                                        <anchors>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                        </anchors>
+                                        <settings>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorEntry">
+                                                    <key>Skin_Melanin8</key>
+                                                    <defaultValue>(130, 91, 48)</defaultValue>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.Gap">
+                                                    <spacing>8</spacing>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.DrawColor">
+                                                    <key>Skin_Melanin8</key>
+                                                    <tooltip>Selected Color</tooltip>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorWheel">
+                                                    <key>Skin_Melanin8</key>
+                                                    <defaultValue>(130, 91, 48)</defaultValue>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorPalette">
+                                                    <key>Skin_Melanin8</key>
+                                                    <anchor>Left</anchor>
+                                                    <defaultValue>(130, 91, 48)</defaultValue>
+                                                    <colors>
+                                                        <li>
+                                                            <li>(242, 237, 224)</li>
+                                                            <li>(255, 239, 213)</li>
+                                                            <li>(255, 239, 201)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(255, 239, 189)</li>
+                                                            <li>(249, 219, 165)</li>
+                                                            <li>(242, 199, 140)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(228, 158, 90)</li>
+                                                            <li>(130, 91, 48)</li>
+                                                            <li>(99, 70, 36)</li>
+                                                        </li>
+                                                    </colors>
+                                                </li>
+                                            </li>
+                                        </settings>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings">
+                                        <padAbove>4</padAbove>
+                                        <padBelow>4</padBelow>
+                                        <padLeft>256</padLeft>
+                                        <padRight>256</padRight>
+                                        <label>Reset</label>
+                                        <confirm>false</confirm>
+                                        <keys>
+                                            <li>Skin_Melanin8</li>
+                                        </keys>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.Text">
+                                        <anchor>Middle</anchor>
+                                        <padLeft>8</padLeft>
+                                        <text>Skin_Melanin9</text>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.SplitColumns">
+                                        <gapSize>24</gapSize>
+                                        <drawLine>true</drawLine>
+                                        <widths>
+                                            <li>75</li>
+                                            <li>160</li>
+                                        </widths>
+                                        <anchors>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                            <li>Middle</li>
+                                        </anchors>
+                                        <settings>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorEntry">
+                                                    <key>Skin_Melanin9</key>
+                                                    <defaultValue>(99, 70, 36)</defaultValue>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.Gap">
+                                                    <spacing>8</spacing>
+                                                </li>
+                                                <li Class="XmlExtensions.Setting.DrawColor">
+                                                    <key>Skin_Melanin9</key>
+                                                    <tooltip>Selected Color</tooltip>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorWheel">
+                                                    <key>Skin_Melanin9</key>
+                                                    <defaultValue>(99, 70, 36)</defaultValue>
+                                                </li>
+                                            </li>
+                                            <li>
+                                                <li Class="XmlExtensions.Setting.ColorPalette">
+                                                    <key>Skin_Melanin9</key>
+                                                    <anchor>Left</anchor>
+                                                    <defaultValue>(99, 70, 36)</defaultValue>
+                                                    <colors>
+                                                        <li>
+                                                            <li>(242, 237, 224)</li>
+                                                            <li>(255, 239, 213)</li>
+                                                            <li>(255, 239, 201)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(255, 239, 189)</li>
+                                                            <li>(249, 219, 165)</li>
+                                                            <li>(242, 199, 140)</li>
+                                                        </li>
+                                                        <li>
+                                                            <li>(228, 158, 90)</li>
+                                                            <li>(130, 91, 48)</li>
+                                                            <li>(99, 70, 36)</li>
+                                                        </li>
+                                                    </colors>
+                                                </li>
+                                            </li>
+                                        </settings>
+                                    </li>
+                                    <li Class="XmlExtensions.Setting.ResetSettings">
+                                        <padAbove>4</padAbove>
+                                        <padBelow>4</padBelow>
+                                        <padLeft>256</padLeft>
+                                        <padRight>256</padRight>
+                                        <label>Reset</label>
+                                        <confirm>false</confirm>
+                                        <keys>
+                                            <li>Skin_Melanin9</li>
+                                        </keys>
+                                    </li>
+                                </caseTrue>
+                            </li>
                             <!-- Tweaks -->
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Tweaks</text>
-                                <tKey>BLRebalanceTweaks</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>hopperStackLimit</key>
@@ -147,6 +819,15 @@
                                 <tooltip>Tells the game to render hair over apparel like armor and coats.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.ResetSettings">
+                                <padLeft>256</padLeft>
+                                <padRight>256</padRight>
+                                <label>Reset All</label>
+                                <confirm>true</confirm>
+                                <message>Are you sure? This will reset every tab.</message>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Gap" />
                         </settings>
                     </li>
                     <!-- Royalty -->
@@ -157,7 +838,6 @@
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>All settings require a restart.</text>
-                                <tKey>BLRebalanceRestartWarningRoyalty</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
@@ -176,7 +856,6 @@
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>All settings require a restart.</text>
-                                <tKey>BLRebalanceRestartWarningIdeology</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
@@ -207,11 +886,9 @@
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Biosculpter</text>
-                                <tKey>BLRebalanceBiosculpter</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Text">
                                 <text>These sliders affect the base values before the accelerated biosculpting precept, attuned, and sterile room multipliers are applied.</text>
-                                <tKey>BLRebalanceBiosculpterNote</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
                                 <key>biosculpterPodAgeReversal</key>
@@ -250,7 +927,6 @@
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Gauranlen</text>
-                                <tKey>BLRebalanceGauranlen</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>betterDryads</key>
@@ -277,7 +953,6 @@
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>All settings require a restart.</text>
-                                <tKey>BLRebalanceRestartWarningBiotech</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
@@ -337,12 +1012,6 @@
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>Mechanitor</text>
-                                <tKey>BLRebalanceMechanitor</tKey>
-                            </li>
-                            <li Class="XmlExtensions.Setting.Text">
-                                <anchor>Middle</anchor>
-                                <text>All of these settings work with or without Better Mechanitor.</text>
-                                <tKey>BLRebalanceMechanitorText</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>betterMechanitor</key>
@@ -397,7 +1066,6 @@
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>All settings require a restart.</text>
-                                <tKey>BLRebalanceRestartWarningOdyssey</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
@@ -441,13 +1109,11 @@
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>All settings require a restart.</text>
-                                <tKey>BLRebalanceRestartWarningMods</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>RimJobWorld</text>
-                                <tKey>BLRebalanceRimJobWorld</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>RJWRebalance</key>
