@@ -38,14 +38,19 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 - Remove Beards
 - Remove Narrow Heads
 - Remove Wide Female Heads
+- Edit Endogene Melanin Palette
 
 #### Tweaks
 - Increase Hopper Stack Limit
 - Most Apparel Covers Hands and Feet
+- Move All Storage Buildings to Their Own Tab
+- Separate Surgery From Doctor Worktype
 - Remove Consciousness Debuff for Food Poisoning
 - Remove Default Settings for Storage Buildings
 - Render Hair Over Apparel
-- Vanometric Power Cells Are Batteries Too
+
+### Royalty
+- Add Royalty Tab to Architect Menu
 
 ### Ideology
 - Remove Forced Styles for New Ideologies
@@ -80,10 +85,15 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 - Mechanitor Maximum Age
 
 ### Odyssey
+- All Lootable Containers Glow
 - Reduce Fishing Research Cost to 200
 - Move Fishing to Its Own Work Type
 - Gravship Hulls Are Conduits
 - Gravship Hulls Cost 9 Steel
+
+### Mods
+#### RimJobWorld
+- Debloat and Rebalance
 
 ## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.
