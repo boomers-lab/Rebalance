@@ -1121,12 +1121,6 @@
                                 <tooltip>Removes the cum eating fetish. Increases condom stack limit to 500. Humpshroom doesn't increase psyfocus.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
-                            <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>RJWTraits</key>
-                                <label>Remove Traits</label>
-                                <tooltip>Sets commonality to 0 so pawns don't spawn with them.</tooltip>
-                                <defaultValue>false</defaultValue>
-                            </li>
                         </settings>
                     </li>
                 </tabs>
