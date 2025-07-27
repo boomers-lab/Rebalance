@@ -1,0 +1,33 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>storageTab</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <DesignationCategoryDef>
+                        <defName>RCP_Storage</defName>
+                        <label>storage</label>
+                        <order>499</order>
+                        <specialDesignatorClasses>
+                            <li>Designator_Cancel</li>
+                            <li>Designator_Deconstruct</li>
+                        </specialDesignatorClasses>
+                    </DesignationCategoryDef>
+                </value>
+            </Operation>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//ThingDef[not(designationCategory) and (building/fixedStorageSettings or building/defaultStorageSettings or building/maxItemsInCell)]</xpath>
+                <value>
+                    <designationCategory>RCP_Storage</designationCategory>
+                </value>
+            </Operation>
+            <Operation Class="PatchOperationReplace">
+                <xpath>//ThingDef[not(defName="BiosculpterPod" or defName="GibbetCage" or defName="GrowthVat") and (building/fixedStorageSettings or building/defaultStorageSettings or building/maxItemsInCell)]/designationCategory/text()</xpath>
+                <value>RCP_Storage</value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>

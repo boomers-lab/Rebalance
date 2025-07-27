@@ -118,6 +118,12 @@
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>storageTab</key>
+                                <label>Move All Storage Buildings to Their Own Tab</label>
+                                <tooltip>Moves every buildable thingDef with storage settings to a new tab in the architect menu.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>doctorWorkTypeSurgery</key>
                                 <label>Separate Surgery From Doctor Worktype</label>
                                 <tooltip>Separate the harvest workgiver from the grower workgiver.</tooltip>
@@ -141,16 +147,28 @@
                                 <tooltip>Tells the game to render hair over apparel like armor and coats.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
-                            <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>vanometricPowerCell</key>
-                                <label>Vanometric Power Cells Are Batteries Too</label>
-                                <tooltip>Adds 1000 Wd of 100% efficiency power storage to vanometric power cells.</tooltip>
-                                <defaultValue>false</defaultValue>
-                            </li>
-                            <!-- Royalty -->
-                            <!-- Ideology -->
                         </settings>
                     </li>
+                    <!-- Royalty -->
+                    <li MayRequire="Ludeon.Rimworld.Royalty">
+                        <label>Royalty</label>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>All settings require a restart.</text>
+                                <tKey>BLRebalanceRestartWarningRoyalty</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Gap" />
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>royaltyTab</key>
+                                <label>Add Royalty Tab to Architect Menu</label>
+                                <tooltip>Moves Royalty-related buildables like the royal bed and meditation spots to their own tab.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                        </settings>
+                    </li>
+                    <!-- Ideology -->
                     <li MayRequire="Ludeon.Rimworld.Ideology">
                         <label>Ideology</label>
                         <settings>

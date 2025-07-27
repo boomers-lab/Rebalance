@@ -1,0 +1,35 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>royaltyTab</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <DesignationCategoryDef>
+                        <defName>RCP_Royalty</defName>
+                        <label>royalty</label>
+                        <order>14</order>
+                        <specialDesignatorClasses>
+                            <li>Designator_Cancel</li>
+                            <li>Designator_Deconstruct</li>
+                        </specialDesignatorClasses>
+                    </DesignationCategoryDef>
+                </value>
+            </Operation>
+            <Operation Class="PatchOperationReplace">
+                <success>Always</success>
+                <xpath>//ThingDef[defName="Drape" or @Name="Brazier" or defName="MeditationSpot" or @Name="NatureShrineBase"]/designationCategory/text()</xpath>
+                <value>RCP_Royalty</value>
+            </Operation>
+            <Operation Class="PatchOperationAdd">
+                <success>Always</success>
+                <xpath>//ThingDef[@Name="ThroneBase" or defName="RoyalBed"]</xpath>
+                <value>
+                    <designationCategory>RCP_Royalty</designationCategory>
+                </value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
