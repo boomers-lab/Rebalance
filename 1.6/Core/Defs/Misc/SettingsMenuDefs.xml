@@ -859,6 +859,18 @@
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>fungalGravel</key>
+                                <label>Darkness Meme Grants Fungal Gravel</label>
+                                <tooltip>Allows fungal gravel to be built with the darkness meme.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>fungalGravelLocation</key>
+                                <label>Fungal Gravel Can Be Placed Anywhere</label>
+                                <tooltip>Removes the overhead mountain requirement for fungal gravel.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>removeForcedStyles</key>
                                 <label>Remove Forced Styles for New Ideologies</label>
                                 <tooltip>Newly generated ideologies will not have styles based on their memes or structures. You can still pick styles manually.</tooltip>

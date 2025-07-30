@@ -1,0 +1,27 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>fungalGravel</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <li Class="PatchOperationAdd">
+                <xpath>//MemeDef[defName="Darkness"]</xpath>
+                <value>
+                    <addDesignators>
+                        <li>FungalGravel</li>
+                    </addDesignators>
+                </value>
+            </li>
+        </caseTrue>
+    </Operation>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>fungalGravelLocation</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <li Class="PatchOperationRemove">
+                <xpath>//TerrainDef[defName="FungalGravel"]/placeWorkers</xpath>
+            </li>
+        </caseTrue>
+    </Operation>
+</Patch>
