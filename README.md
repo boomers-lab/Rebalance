@@ -1,19 +1,11 @@
-<!--[![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) -->
-[badge-license]: https://img.shields.io/badge/License-GPLv3-lightgray
-<!--![Supports Royalty][badge-dlc-royalty] supports Royalty DLC-->
-[badge-dlc-royalty]: https://img.shields.io/badge/DLC-Royalty-gold
-<!--![Supports Ideology][badge-dlc-ideology] supports Ideology DLC-->
-[badge-dlc-ideology]: https://img.shields.io/badge/DLC-Ideology-indianred
-<!--![Supports Biotech][badge-dlc-biotech] supports Biotech DLC-->
-[badge-dlc-biotech]: https://img.shields.io/badge/DLC-Biotech-mediumturquoise
-<!--![Supports Anomaly][badge-dlc-anomaly] supports Anomaly DLC-->
-[badge-dlc-anomaly]: https://img.shields.io/badge/DLC-Anomaly-darkseagreen
-<!--![Supports Odyssey][badge-dlc-odyssey] supports Odyssey DLC-->
-[badge-dlc-odyssey]: https://img.shields.io/badge/DLC-Odyssey-mediumpurple
+<!-- ![requirements](https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fboomers-lab%2FRebalance%2Frefs%2Fheads%2Fmain%2FAbout%2FAbout.xml&query=%2F%2FdisplayName&style=for-the-badge&label=Requires&color=mediumpurple) -->
+[requirements]: https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fboomers-lab%2FRebalance%2Frefs%2Fheads%2Fmain%2FAbout%2FAbout.xml&query=%2F%2FdisplayName&style=for-the-badge&label=Requires&color=mediumpurple
+<!-- [![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) -->
+[badge-license]: https://img.shields.io/badge/License-GPLv3-lightgray?style=for-the-badge
 
 # [RCP] Rebalance
 ![](About/Preview.png)\
-[![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0)![Supports Royalty][badge-dlc-royalty]![Supports Ideology][badge-dlc-ideology]![Supports Biotech][badge-dlc-biotech]![Supports Odyssey][badge-dlc-odyssey]
+![Requirements][requirements] [![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0)
 
 > [!IMPORTANT]
 > Requires [XML Extensions](https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206).
@@ -53,6 +45,8 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 - Add Royalty Tab to Architect Menu
 
 ### Ideology
+- Darkness Meme Grants Fungal Gravel
+- Fungal Gravel Can Be Placed Anywhere
 - Remove Forced Styles for New Ideologies
 - Remove Preferred Apparel for New Ideologies
 - Remove Slave Work Disabler

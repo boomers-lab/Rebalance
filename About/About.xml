@@ -6,16 +6,14 @@
 		<li>1.6</li>
 	</supportedVersions>
 	<url>https://github.com/RimCorePlus/Rebalance</url>
-	<modDependenciesByVersion>
-		<v1.6>
-			<li>
-				<packageId>imranfish.xmlextensions</packageId>
-				<displayName>XML Extensions</displayName>
-				<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
-				<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
-			</li>
-		</v1.6>
-	</modDependenciesByVersion>
+	<modDependencies>
+		<li>
+			<packageId>imranfish.xmlextensions</packageId>
+			<displayName>XML Extensions</displayName>
+			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+		</li>
+	</modDependencies>
 	<loadBefore>
 		<li>boomer.Recycle</li>
 		<li>RCP.Empire</li>
