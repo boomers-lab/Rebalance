@@ -1,0 +1,223 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>odysseyMechanitorScenario</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <!-- Prepatch SMG -->
+            <li Class="PatchOperationConditional">
+                <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags/li[text()="RCP_HeavySMG"]</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags</xpath>
+                    <value>
+                        <li>RCP_HeavySMG</li>
+                    </value>
+                </nomatch>
+            </li>
+            <!-- Add new mechanitor with vacsuit  -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <PawnKindDef ParentName="MechanitorBase">
+                        <defName>RCP_GravshipMechanitor</defName>
+                        <apparelColor>(0.2,0.2,0.2)</apparelColor>
+                        <minApparelQuality>Normal</minApparelQuality>
+                        <apparelRequired Inherit="False">
+                            <li>Apparel_CollarShirt</li>
+                            <li>Apparel_Pants</li>
+                            <li>Apparel_Vacsuit</li>
+                            <li>Apparel_VacsuitHelmet</li>
+                        </apparelRequired>
+                        <weaponTags Inherit="False">
+                            <li>RCP_HeavySMG</li>
+                        </weaponTags>
+                        <weaponMoney>355~900</weaponMoney>
+                        <requiredWorkTags>
+                            <li>Caring</li>
+                            <li>Crafting</li>
+                            <li>Intellectual</li>
+                            <li>Violent</li>
+                        </requiredWorkTags>
+                        <disallowedTraits>
+                            <li>BodyPurist</li>
+                            <li>SlowLearner</li>
+                            <li>Wimp</li>
+                        </disallowedTraits>
+                        <disallowedTraitsWithDegree>
+                            <Immunity>-1</Immunity>
+                            <Industriousness>-1</Industriousness>
+                            <Industriousness>-2</Industriousness>
+                            <PsychicSensitivity>-1</PsychicSensitivity>
+                            <PsychicSensitivity>-2</PsychicSensitivity>
+                        </disallowedTraitsWithDegree>
+                        <skills>
+                            <li>
+                                <skill>Crafting</skill>
+                                <range>6~12</range>
+                            </li>
+                            <li>
+                                <skill>Intellectual</skill>
+                                <range>6~12</range>
+                            </li>
+                        </skills>
+                    </PawnKindDef>
+                    <!-- Scenario -->
+                    <ScenarioDef ParentName="ScenarioBase">
+                        <defName>RCP_MechanitorGravship</defName>
+                        <label>Mechanitor Gravship</label>
+                        <description>Your gravship sits docked at the orbital relay. As your mechs begin to salvage the equipment, you realize that this isn't ancient human tech - it's a mechanoid beacon. The relay crackles to life and broadcasts its war alert to a distant mechhive. They're hunting you now, and they will eventually find you wherever you go.\n\nNote: This is a difficult scenario and is not recommended for new players.</description>
+                        <scenario>
+                            <summary>One mechanitor and a few servant mechanoids aboard a gravship.</summary>
+                            <playerFaction>
+                                <factionDef>GravshipCrew</factionDef>
+                            </playerFaction>
+                            <parts Inherit="False">
+                                <!-- Layers -->
+                                <li Class="ScenPart_PlanetLayer">
+                                    <def>PlanetLayerFixed</def>
+                                    <tag>Orbit</tag>
+                                    <layer>Orbit</layer>
+                                    <settingsDef>Orbit</settingsDef>
+                                    <hide>true</hide>
+                                    <connections>
+                                        <Surface>
+                                            <zoomMode>ZoomIn</zoomMode>
+                                        </Surface>
+                                    </connections>
+                                </li>
+                                <!-- Game start dialog -->
+                                <li Class="ScenPart_GameStartDialog">
+                                    <def>GameStartDialog</def>
+                                    <text>You screwed up, and now the mechhive wants you dead. Its terrifying murder machines will arrive soon. Gather the valuable gravlite panels, then use your gravship to flee to a safe location on the planet below.\n\nTo launch the gravship, select the pilot console, then select the launch command.\n\nOn the world map, select ‘view planet' to choose a landing spot on the planet.\n\nFrom now on, wherever you go, the mechanoids will eventually find you. To stop them, you must find and defeat the mechhive itself.</text>
+                                    <closeSound>GameStartSting</closeSound>
+                                </li>
+                                <!-- Config pages -->
+                                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+                                    <def>ConfigurePawnsKindDefs</def>
+                                    <pawnChoiceCount>1</pawnChoiceCount>
+                                    <leftBehindPawnKind>RCP_GravshipMechanitor</leftBehindPawnKind>
+                                    <kindCounts>
+                                        <li>
+                                            <kindDef>RCP_GravshipMechanitor</kindDef>
+                                            <count>1</count>
+                                            <requiredAtStart>true</requiredAtStart>
+                                        </li>
+                                    </kindCounts>
+                                </li>
+                                <li Class="ScenPart_ForcedMap">
+                                    <def>ForcedMap</def>
+                                    <mapGenerator>OrbitalRelay</mapGenerator>
+                                    <layerDef>Orbit</layerDef>
+                                </li>
+                                <!-- Player starting stuff spawn method-->
+                                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                                    <def>PlayerPawnsArriveMethod</def>
+                                    <method>Gravship</method>
+                                </li>
+                                <li Class="ScenPart_PursuingMechanoids">
+                                    <def>PursuingMechanoids</def>
+                                </li>
+                                <li Class="ScenPart_DisableQuest">
+                                    <def>DisableQuest</def>
+                                    <questDef>MechanoidSignal</questDef>
+                                </li>
+                                <!-- Starting research -->
+                                <li Class="ScenPart_StartingResearch">
+                                    <def>StartingResearch</def>
+                                    <project>BasicGravtech</project>
+                                </li>
+                                <li Class="ScenPart_StartingResearch">
+                                    <def>StartingResearch</def>
+                                    <project>BasicMechtech</project>
+                                </li>
+                                <li Class="ScenPart_StartingResearch">
+                                    <def>StartingResearch</def>
+                                    <project>Batteries</project>
+                                </li>
+                                <li Class="ScenPart_StartingResearch">
+                                    <def>StartingResearch</def>
+                                    <project>MicroelectronicsBasics</project>
+                                </li>
+                                <!-- Starting mechs -->
+                                <li Class="ScenPart_StartingMech">
+                                    <def>StartingMech</def>
+                                    <mechKind>Mech_Lifter</mechKind>
+                                    <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+                                </li>
+                                <li Class="ScenPart_StartingMech">
+                                    <def>StartingMech</def>
+                                    <mechKind>Mech_Constructoid</mechKind>
+                                    <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+                                </li>
+                                <!-- Player starting things -->
+                                <li Class="ScenPart_StartingThing_Defined">
+                                    <def>StartingThing_Defined</def>
+                                    <thingDef>Chemfuel</thingDef>
+                                    <count>100</count>
+                                </li>
+                                <li Class="ScenPart_StartingThing_Defined">
+                                    <def>StartingThing_Defined</def>
+                                    <thingDef>WoodLog</thingDef>
+                                    <count>300</count>
+                                </li>
+                                <li Class="ScenPart_StartingThing_Defined">
+                                    <def>StartingThing_Defined</def>
+                                    <thingDef>MealSurvivalPack</thingDef>
+                                    <count>40</count>
+                                </li>
+                                <li Class="ScenPart_StartingThing_Defined">
+                                    <def>StartingThing_Defined</def>
+                                    <thingDef>MedicineIndustrial</thingDef>
+                                    <count>10</count>
+                                </li>
+                                <li Class="ScenPart_StartingThing_Defined">
+                                    <def>StartingThing_Defined</def>
+                                    <thingDef>ComponentIndustrial</thingDef>
+                                    <count>50</count>
+                                </li>
+                                <li Class="ScenPart_StartingThing_Defined">
+                                    <def>StartingThing_Defined</def>
+                                    <thingDef>Steel</thingDef>
+                                    <count>600</count>
+                                </li>
+                                <li Class="ScenPart_StartingThing_Defined">
+                                    <def>StartingThing_Defined</def>
+                                    <thingDef>Plasteel</thingDef>
+                                    <count>100</count>
+                                </li>
+                                <li Class="ScenPart_StartingThing_Defined">
+                                    <def>StartingThing_Defined</def>
+                                    <thingDef>SubcoreBasic</thingDef>
+                                    <count>5</count>
+                                </li>
+                                <!-- Scatter some things near player start -->
+                                <li Class="ScenPart_ScatterThingsAnywhere">
+                                    <def>ScatterThingsNearPlayerStart</def>
+                                    <thingDef>Silver</thingDef>
+                                    <count>500</count>
+                                    <allowRoofed>false</allowRoofed>
+                                </li>
+                                <li Class="ScenPart_ScatterThingsAnywhere">
+                                    <def>ScatterThingsNearPlayerStart</def>
+                                    <thingDef>Steel</thingDef>
+                                    <count>300</count>
+                                    <allowRoofed>false</allowRoofed>
+                                </li>
+                                <li Class="ScenPart_ScatterThingsAnywhere">
+                                    <def>ScatterThingsNearPlayerStart</def>
+                                    <thingDef>GravlitePanel</thingDef>
+                                    <count>400</count>
+                                    <allowRoofed>false</allowRoofed>
+                                </li>
+                                <!-- Disable exostrider remains -->
+                                <li Class="ScenPart_DisableMapGen">
+                                    <def>DisableExostriderRemains</def>
+                                </li>
+                            </parts>
+                        </scenario>
+                    </ScenarioDef>
+                </value>
+            </li>
+        </caseTrue>
+    </Operation>
+</Patch>

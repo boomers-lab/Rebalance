@@ -1087,18 +1087,6 @@
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>fishingResearchNerf</key>
-                                <label>Reduce Fishing Research Cost to 200</label>
-                                <tooltip>Because researching fishing poles should be easier than researching gravtech.</tooltip>
-                                <defaultValue>false</defaultValue>
-                            </li>
-                            <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>fishingWorkType</key>
-                                <label>Move Fishing to Its Own Work Type</label>
-                                <tooltip>Moves fishing from the hunting work type to its own work type, between crafting and hauling.</tooltip>
-                                <defaultValue>false</defaultValue>
-                            </li>
-                            <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>gravshipConduit</key>
                                 <label>Gravship Hulls Are Conduits</label>
                                 <tooltip>Add the CompPowerTransmitter comp to gravship hulls so that they carry power.</tooltip>
@@ -1110,6 +1098,24 @@
                                 <tooltip>Increases the steel cost of gravship hulls from 7 to 9 to compensate for added functionality.</tooltip>
                                 <defaultValue>false</defaultValue>
                                 <padLeft>8</padLeft>
+                            </li>
+                            <li MayRequire="Ludeon.Rimworld.Biotech" Class="XmlExtensions.Setting.Checkbox">
+                                <key>odysseyMechanitorScenario</key>
+                                <label>Mechanitor Gravship Scenario</label>
+                                <tooltip>Adds a starting scenario with a mechanitor on a gravship.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>fishingWorkType</key>
+                                <label>Move Fishing to Its Own Work Type</label>
+                                <tooltip>Moves fishing from the hunting work type to its own work type, between crafting and hauling.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>fishingResearchNerf</key>
+                                <label>Reduce Fishing Research Cost to 200</label>
+                                <tooltip>Because researching fishing poles should be easier than researching gravtech.</tooltip>
+                                <defaultValue>false</defaultValue>
                             </li>
                         </settings>
                     </li>

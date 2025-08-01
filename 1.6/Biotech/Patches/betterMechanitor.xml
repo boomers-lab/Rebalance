@@ -5,11 +5,14 @@
         <defaultValue>false</defaultValue>
         <caseTrue>
             <!--Prepatch SMG-->
-            <Operation Class="PatchOperationAdd">
-                <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags</xpath>
-                <value>
-                    <li>RCP_HeavySMG</li>
-                </value>
+            <Operation Class="PatchOperationConditional">
+                <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags/li[text()="RCP_HeavySMG"]</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags</xpath>
+                    <value>
+                        <li>RCP_HeavySMG</li>
+                    </value>
+                </nomatch>
             </Operation>
             <!--Add new mechanitor using the base to prevent conflicts-->
             <Operation Class="PatchOperationAdd">
