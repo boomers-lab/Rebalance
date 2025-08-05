@@ -5,7 +5,7 @@
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationReplace">
-                <xpath>//BackstoryDef[bodyTypeGlobal="Thin" and not(defName="CosmeticSurgeon36")]/bodyTypeGlobal/text()</xpath>
+                <xpath>//BackstoryDef[bodyTypeGlobal="Thin" and not(defName="CosmeticSurgeon36" or defName="IntimateAssassin35")]/bodyTypeGlobal/text()</xpath>
                 <value>Male</value>
             </Operation>
             <Operation Class="PatchOperationReplace">
@@ -18,7 +18,7 @@
             </Operation>
             <!-- Always female backstories -->
             <Operation Class="PatchOperationReplace">
-                <xpath>//BackstoryDef[defName="CosmeticSurgeon36"]/bodyTypeGlobal/text()</xpath>
+                <xpath>//BackstoryDef[defName="CosmeticSurgeon36" or defName="IntimateAssassin35"]/bodyTypeGlobal/text()</xpath>
                 <value>Female</value>
             </Operation>
         </caseTrue>
