@@ -1,0 +1,15 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>hydroponicDevilstrand</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="Plant_Devilstrand"]/plant/sowTags</xpath>
+                <value>
+                    <li>Hydroponic</li>
+                </value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>

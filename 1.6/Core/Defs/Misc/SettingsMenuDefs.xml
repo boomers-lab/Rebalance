@@ -778,6 +778,12 @@
                                 <text>Tweaks</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>hydroponicDevilstrand</key>
+                                <label>Hydroponic Devilstrand</label>
+                                <tooltip>Devilstrand can be grown in hydroponics basin.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>hopperStackLimit</key>
                                 <label>Increase Hopper Stack Limit</label>
                                 <tooltip>Increases the hopper stack limit from 1 to 3.</tooltip>
@@ -793,6 +799,12 @@
                                 <key>storageTab</key>
                                 <label>Move All Storage Buildings to Their Own Tab</label>
                                 <tooltip>Moves every buildable thingDef with storage settings to a new tab in the architect menu.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>slaveTrader</key>
+                                <label>Send Slave Traders Regardless of Population</label>
+                                <tooltip>Removes the population check from slave traders so they continue to arrive after the colony is populated.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
@@ -998,6 +1010,12 @@
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
+                                <key>craftMechChips</key>
+                                <label>Mech Chips Can Be Crafted</label>
+                                <tooltip>Allows mech chips to be crafted once they've been analyzed.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>childKillerOpinion</key>
                                 <label>Reduce Opinion Offset For Killing Children</label>
                                 <tooltip>Reduces the -20 "killed a child" opinion debuff to -6, because sometimes these kids are asking for it.</tooltip>
@@ -1084,6 +1102,12 @@
                                 <key>lootContainersGlow</key>
                                 <label>All Lootable Containers Glow</label>
                                 <tooltip>Add the CompProperties_Glower comp to to every ThingDef with CompProperties_LootSpawn if it doesn't already have it.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li MayRequire="Ludeon.Rimworld.Biotech" Class="XmlExtensions.Setting.Checkbox">
+                                <key>cerebrexMechChips</key>
+                                <label>Cerebrex Drops Mech Chips</label>
+                                <tooltip>Cerebrex core drops one of each mech chip. Prevents locking mechanitor progression with the mechhive disabled when used alongside "Mech Chips Can Be Crafted" in the Biotech tab.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">

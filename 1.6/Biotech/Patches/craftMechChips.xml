@@ -1,0 +1,303 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>craftMechChips</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <!-- Add Defs -->
+            <Operation Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <!-- Unfinished Things -->
+                    <ThingDef ParentName="UnfinishedBase">
+                        <defName>RCP_UnfinishedSignalChip</defName>
+                        <label>unfinished signal chip</label>
+                        <description>An unfinished signal chip.</description>
+                        <statBases>
+                            <Flammability>0.5</Flammability>
+                        </statBases>
+                        <graphicData>
+                            <texPath>Things/Item/Unfinished/UnfinishedComponent</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <stuffCategories Inherit="false" />
+                    </ThingDef>
+                    <ThingDef ParentName="UnfinishedBase">
+                        <defName>RCP_UnfinishedPowerfocusChip</defName>
+                        <label>unfinished powerfocus chip</label>
+                        <description>An unfinished powerfocus chip.</description>
+                        <statBases>
+                            <Flammability>0.5</Flammability>
+                        </statBases>
+                        <graphicData>
+                            <texPath>Things/Item/Unfinished/UnfinishedComponent</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <stuffCategories Inherit="false" />
+                    </ThingDef>
+                    <ThingDef ParentName="UnfinishedBase">
+                        <defName>RCP_UnfinishedNanostructuringChip</defName>
+                        <label>unfinished nano structuring chip</label>
+                        <description>An unfinished nano structuring chip.</description>
+                        <statBases>
+                            <Flammability>0.5</Flammability>
+                        </statBases>
+                        <graphicData>
+                            <texPath>Things/Item/Unfinished/UnfinishedComponent</texPath>
+                            <graphicClass>Graphic_Single</graphicClass>
+                        </graphicData>
+                        <stuffCategories Inherit="false" />
+                    </ThingDef>
+                    <!-- Recipes -->
+                    <RecipeDef>
+                        <defName>RCP_MakeSignalChip</defName>
+                        <label>make signal chip</label>
+                        <description>Make a signal chip.</description>
+                        <jobString>Making signal chip.</jobString>
+                        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                        <effectWorking>Cook</effectWorking>
+                        <soundWorking>Recipe_Machining</soundWorking>
+                        <workAmount>10000</workAmount>
+                        <unfinishedThingDef>RCP_UnfinishedSignalChip</unfinishedThingDef>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>ComponentSpacer</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>2</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>Gold</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>0.3</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>Plasteel</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>5</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>Steel</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>10</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>SubcoreBasic</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>ComponentIndustrial</li>
+                                <li>Gold</li>
+                                <li>Plasteel</li>
+                                <li>Steel</li>
+                                <li>SubcoreBasic</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <SignalChip>1</SignalChip>
+                        </products>
+                        <researchPrerequisite>StandardMechtech</researchPrerequisite>
+                        <skillRequirements>
+                            <Crafting>10</Crafting>
+                        </skillRequirements>
+                        <workSkill>Crafting</workSkill>
+                        <displayPriority>11</displayPriority>
+                    </RecipeDef>
+                    <RecipeDef>
+                        <defName>RCP_MakePowerfocusChip</defName>
+                        <label>make powerfocus chip</label>
+                        <description>Make a powerfocus chip.</description>
+                        <jobString>Making powerfocus chip.</jobString>
+                        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                        <effectWorking>Cook</effectWorking>
+                        <soundWorking>Recipe_Machining</soundWorking>
+                        <workAmount>12500</workAmount>
+                        <unfinishedThingDef>RCP_UnfinishedPowerfocusChip</unfinishedThingDef>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>ComponentSpacer</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>2</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>Gold</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>0.3</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>Plasteel</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>5</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>Steel</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>10</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>SubcoreRegular</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>ComponentIndustrial</li>
+                                <li>Gold</li>
+                                <li>Plasteel</li>
+                                <li>Steel</li>
+                                <li>SubcoreRegular</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <PowerfocusChip>1</PowerfocusChip>
+                        </products>
+                        <researchPrerequisite>HighMechtech</researchPrerequisite>
+                        <skillRequirements>
+                            <Crafting>10</Crafting>
+                        </skillRequirements>
+                        <workSkill>Crafting</workSkill>
+                        <displayPriority>12</displayPriority>
+                    </RecipeDef>
+                    <RecipeDef>
+                        <defName>RCP_MakeNanostructuringChip</defName>
+                        <label>make nano structuring chip</label>
+                        <description>Make a nano structuring chip.</description>
+                        <jobString>Making nano structuring chip.</jobString>
+                        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                        <effectWorking>Cook</effectWorking>
+                        <soundWorking>Recipe_Machining</soundWorking>
+                        <workAmount>15000</workAmount>
+                        <unfinishedThingDef>RCP_UnfinishedNanostructuringChip</unfinishedThingDef>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>ComponentSpacer</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>2</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>Gold</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>0.3</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>Plasteel</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>5</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>Steel</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>10</count>
+                            </li>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>SubcoreHigh</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>1</count>
+                            </li>
+                        </ingredients>
+                        <fixedIngredientFilter>
+                            <thingDefs>
+                                <li>ComponentIndustrial</li>
+                                <li>Gold</li>
+                                <li>Plasteel</li>
+                                <li>Steel</li>
+                                <li>SubcoreHigh</li>
+                            </thingDefs>
+                        </fixedIngredientFilter>
+                        <products>
+                            <NanostructuringChip>1</NanostructuringChip>
+                        </products>
+                        <researchPrerequisite>UltraMechtech</researchPrerequisite>
+                        <skillRequirements>
+                            <Crafting>10</Crafting>
+                        </skillRequirements>
+                        <workSkill>Crafting</workSkill>
+                        <displayPriority>13</displayPriority>
+                    </RecipeDef>
+                </value>
+            </Operation>
+            <!-- Add recipes to fabrication bench -->
+            <Operation Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="FabricationBench"]/recipes</xpath>
+                <value>
+                    <li>RCP_MakeSignalChip</li>
+                    <li>RCP_MakePowerfocusChip</li>
+                    <li>RCP_MakeNanostructuringChip</li>
+                </value>
+            </Operation>
+            <!-- Add hyperlinks to chips -->
+            <Operation Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="SignalChip"]</xpath>
+                <value>
+                    <descriptionHyperlinks>
+                        <RecipeDef>RCP_MakeSignalChip</RecipeDef>
+                    </descriptionHyperlinks>
+                </value>
+            </Operation>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="PowerfocusChip"]</xpath>
+                <value>
+                    <descriptionHyperlinks>
+                        <RecipeDef>RCP_MakePowerfocusChip</RecipeDef>
+                    </descriptionHyperlinks>
+                </value>
+            </Operation>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="NanostructuringChip"]</xpath>
+                <value>
+                    <descriptionHyperlinks>
+                        <RecipeDef>RCP_MakeNanostructuringChip</RecipeDef>
+                    </descriptionHyperlinks>
+                </value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>

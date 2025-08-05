@@ -1,0 +1,12 @@
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>slaveTrader</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationRemove">
+                <xpath>//TraderKindDef[defName="Caravan_Neolithic_Slaver" or defName="Caravan_Outlander_PirateMerchant" or defName="Orbital_PirateMerchant"]/commonalityMultFromPopulationIntent</xpath>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>

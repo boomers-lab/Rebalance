@@ -1,0 +1,17 @@
+<Patch>
+    <Operation MayRequire="Ludeon.Rimworld.Biotech" Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>cerebrexMechChips</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="CerebrexCore_Destroyed"]/killedLeavings</xpath>
+                <value>
+                    <SignalChip>1</SignalChip>
+                    <PowerfocusChip>1</PowerfocusChip>
+                    <NanostructuringChip>1</NanostructuringChip>
+                </value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
