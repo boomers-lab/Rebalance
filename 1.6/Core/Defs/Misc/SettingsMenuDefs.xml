@@ -843,7 +843,7 @@
                         </settings>
                     </li>
                     <!-- Royalty -->
-                    <li MayRequire="Ludeon.Rimworld.Royalty">
+                    <li MayRequire="Ludeon.RimWorld.Royalty">
                         <label>Royalty</label>
                         <settings>
                             <li Class="XmlExtensions.Setting.Gap" />
@@ -861,7 +861,7 @@
                         </settings>
                     </li>
                     <!-- Ideology -->
-                    <li MayRequire="Ludeon.Rimworld.Ideology">
+                    <li MayRequire="Ludeon.RimWorld.Ideology">
                         <label>Ideology</label>
                         <settings>
                             <li Class="XmlExtensions.Setting.Gap" />
@@ -970,7 +970,7 @@
                         </settings>
                     </li>
                     <!-- Biotech -->
-                    <li MayRequire="Ludeon.Rimworld.Biotech">
+                    <li MayRequire="Ludeon.RimWorld.Biotech">
                         <label>Biotech</label>
                         <settings>
                             <li Class="XmlExtensions.Setting.Gap" />
@@ -983,6 +983,12 @@
                                 <key>moreCapableLifter</key>
                                 <label>Allow Lifter Mechanoid To Do More Hauling Jobs</label>
                                 <tooltip>Brings lifter mechanoids more in line with human pawns, allowing them to do more hauling and hauling-related like carrying other mechs to a recharger.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology" Class="XmlExtensions.Setting.Checkbox">
+                                <key>bloodfeederCorpses</key>
+                                <label>Bloodfeeders Tolerate Corpses</label>
+                                <tooltip>Allows ideologies with the bloodfeeder meme (which requires some type of pro-cannibalism precept) to set the corpses precept to don't care.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
@@ -1089,7 +1095,7 @@
                     </li>
                     <!-- Anomaly -->
                     <!-- Odyssey -->
-                    <li MayRequire="Ludeon.Rimworld.Odyssey">
+                    <li MayRequire="Ludeon.RimWorld.Odyssey">
                         <label>Odyssey</label>
                         <settings>
                             <li Class="XmlExtensions.Setting.Gap" />
@@ -1104,7 +1110,7 @@
                                 <tooltip>Add the CompProperties_Glower comp to to every ThingDef with CompProperties_LootSpawn if it doesn't already have it.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
-                            <li MayRequire="Ludeon.Rimworld.Biotech" Class="XmlExtensions.Setting.Checkbox">
+                            <li MayRequire="Ludeon.RimWorld.Biotech" Class="XmlExtensions.Setting.Checkbox">
                                 <key>cerebrexMechChips</key>
                                 <label>Cerebrex Drops Mech Chips</label>
                                 <tooltip>Cerebrex core drops one of each mech chip. Prevents locking mechanitor progression with the mechhive disabled when used alongside "Mech Chips Can Be Crafted" in the Biotech tab.</tooltip>
@@ -1113,17 +1119,10 @@
                             <li Class="XmlExtensions.Setting.Checkbox">
                                 <key>gravshipConduit</key>
                                 <label>Gravship Hulls Are Conduits</label>
-                                <tooltip>Add the CompPowerTransmitter comp to gravship hulls so that they carry power.</tooltip>
+                                <tooltip>Add the CompPowerTransmitter comp to gravship hulls. Increases steel cost from 7 to 9 to compensate.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
-                            <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>gravshipConduitNerf</key>
-                                <label>Gravship Hulls Cost 9 Steel</label>
-                                <tooltip>Increases the steel cost of gravship hulls from 7 to 9 to compensate for added functionality.</tooltip>
-                                <defaultValue>false</defaultValue>
-                                <padLeft>8</padLeft>
-                            </li>
-                            <li MayRequire="Ludeon.Rimworld.Biotech" Class="XmlExtensions.Setting.Checkbox">
+                            <li MayRequire="Ludeon.RimWorld.Biotech" Class="XmlExtensions.Setting.Checkbox">
                                 <key>odysseyMechanitorScenario</key>
                                 <label>Mechanitor Gravship Scenario</label>
                                 <tooltip>Adds a starting scenario with a mechanitor on a gravship.</tooltip>
@@ -1153,11 +1152,21 @@
                                 <text>All settings require a restart.</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
-                            <li Class="XmlExtensions.Setting.Text">
+                            <li MayRequire="cat.imperial.attires" Class="XmlExtensions.Setting.Text">
+                                <anchor>Middle</anchor>
+                                <text>Imperial Attires</text>
+                            </li>
+                            <li MayRequire="cat.imperial.attires" Class="XmlExtensions.Setting.Checkbox">
+                                <key>ImperialAttiresVEF</key>
+                                <label>Remove VEF Requirement</label>
+                                <tooltip>Removes every comp requiring VEF. Replaces the VEF-powered stellic armor shield with a less OP version using the vanilla methods. Helmets can no longer be opened.</tooltip>
+                                <defaultValue>false</defaultValue>
+                            </li>
+                            <li MayRequire="Rim.Job.World" Class="XmlExtensions.Setting.Text">
                                 <anchor>Middle</anchor>
                                 <text>RimJobWorld</text>
                             </li>
-                            <li Class="XmlExtensions.Setting.Checkbox">
+                            <li MayRequire="Rim.Job.World" Class="XmlExtensions.Setting.Checkbox">
                                 <key>RJWRebalance</key>
                                 <label>Debloat and Rebalance</label>
                                 <tooltip>Removes the cum eating fetish. Increases condom stack limit to 500. Humpshroom doesn't increase psyfocus.</tooltip>

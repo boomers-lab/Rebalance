@@ -8,7 +8,7 @@
                 <xpath>Defs</xpath>
                 <value>
                     <WorkTypeDef>
-                        <defName>Fishing</defName>
+                        <defName>RCP_Fishing</defName>
                         <labelShort>fish</labelShort>
                         <pawnLabel>Fisher</pawnLabel>
                         <gerundLabel>fishing</gerundLabel>
@@ -28,7 +28,7 @@
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>//WorkGiverDef[defName="Fish"]/workType/text()</xpath>
-                <value>Fishing</value>
+                <value>RCP_Fishing</value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>//WorkTypeDef[defName="Hunting"]/description/text()</xpath>

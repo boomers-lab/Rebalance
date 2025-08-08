@@ -4,7 +4,7 @@
         <key>gravshipConduit</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
-            <li Class="PatchOperationConditional">
+            <Operation Class="PatchOperationConditional">
                 <xpath>//ThingDef[defName="GravshipHull"]/comps/li/compClass[text()="CompPowerTransmitter"]</xpath>
                 <nomatch Class="PatchOperationAdd">
                     <xpath>//ThingDef[defName="GravshipHull"]/comps</xpath>
@@ -15,18 +15,11 @@
                         </li>
                     </value>
                 </nomatch>
-            </li>
-        </caseTrue>
-    </Operation>
-    <Operation Class="XmlExtensions.OptionalPatch">
-        <modId>boomer.Rebalance</modId>
-        <key>gravshipConduitNerf</key>
-        <defaultValue>false</defaultValue>
-        <caseTrue>
-            <li Class="PatchOperationReplace">
+            </Operation>
+            <Operation Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="GravshipHull"]/costStuffCount/text()</xpath>
                 <value>9</value>
-            </li>
+            </Operation>
         </caseTrue>
     </Operation>
 </Patch>

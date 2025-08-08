@@ -32,6 +32,7 @@
 		<li>RCP.Utilities</li>
 	</loadBefore>
 	<loadAfter>
+		<li>cat.imperial.attires</li>
 		<li>ceteam.combatextended</li>
 		<li>imranfish.xmlextensions</li>
 		<li>regrowth.botr.core</li>

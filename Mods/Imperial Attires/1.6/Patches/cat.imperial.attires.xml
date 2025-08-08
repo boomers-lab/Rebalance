@@ -1,0 +1,25 @@
+<Patch>
+    <Operation MayRequire="cat.imperial.attires" Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>ImperialAttiresVEF</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationRemove">
+                <xpath>//ThingDef[defName="CAT_MagusHood" or defName="CAT_PrestigeStellicKnightArmor" or defName="CAT_PrestigeStellicKnightHelmet"]/comps/li[starts-with(@Class,"VEF.")] | //ThingDef[defName="CAT_MagusHoodOpen" or defName="CAT_PrestigeStellicKnightHelmetOpen"] | //HediffDef[defName="CAT_AegisShield"] | //VEF.Abilities.AbilityDef[defName="CAT_AegisMatrix"]</xpath>
+            </Operation>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="CAT_PrestigeStellicKnightArmor"]/comps</xpath>
+                <value>
+                    <li Class="CompProperties_Shield">
+                        <startingTicksToReset>36000</startingTicksToReset>
+                        <minDrawSize>2.5</minDrawSize>
+                        <maxDrawSize>2.8</maxDrawSize>
+                        <energyLossPerDamage>0.01</energyLossPerDamage>
+                        <energyOnReset>4.0</energyOnReset>
+                        <blocksRangedWeapons>false</blocksRangedWeapons>
+                    </li>
+                </value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>

@@ -1,5 +1,5 @@
 <Patch>
-    <Operation Class="XmlExtensions.OptionalPatch">
+    <Operation MayRequire="Rim.Job.World" Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
         <key>RJWRebalance</key>
         <defaultValue>false</defaultValue>
