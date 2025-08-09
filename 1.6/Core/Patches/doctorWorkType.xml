@@ -8,7 +8,7 @@
                 <xpath>Defs</xpath>
                 <value>
                     <WorkTypeDef>
-                        <defName>RCP_Surgery</defName>
+                        <defName>BL_Surgery</defName>
                         <labelShort>surgery</labelShort>
                         <pawnLabel>Surgery</pawnLabel>
                         <gerundLabel>surgery</gerundLabel>
@@ -28,7 +28,7 @@
             </Operation>
             <Operation Class="PatchOperationReplace">
                 <xpath>//WorkGiverDef[defName="DoBillsMedicalHumanOperation" or defName="DoBillsMedicalAnimalOperation"]/workType/text()</xpath>
-                <value>RCP_Surgery</value>
+                <value>BL_Surgery</value>
             </Operation>
         </caseTrue>
     </Operation>

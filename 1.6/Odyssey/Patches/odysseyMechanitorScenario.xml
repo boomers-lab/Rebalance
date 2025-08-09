@@ -6,11 +6,11 @@
         <caseTrue>
             <!-- Prepatch SMG -->
             <li Class="PatchOperationConditional">
-                <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags/li[text()="RCP_HeavySMG"]</xpath>
+                <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags/li[text()="BL_HeavySMG"]</xpath>
                 <nomatch Class="PatchOperationAdd">
                     <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags</xpath>
                     <value>
-                        <li>RCP_HeavySMG</li>
+                        <li>BL_HeavySMG</li>
                     </value>
                 </nomatch>
             </li>
@@ -19,7 +19,7 @@
                 <xpath>Defs</xpath>
                 <value>
                     <PawnKindDef ParentName="MechanitorBase">
-                        <defName>RCP_GravshipMechanitor</defName>
+                        <defName>BL_GravshipMechanitor</defName>
                         <apparelColor>(0.2,0.2,0.2)</apparelColor>
                         <minApparelQuality>Normal</minApparelQuality>
                         <apparelRequired Inherit="False">
@@ -29,7 +29,7 @@
                             <li>Apparel_VacsuitHelmet</li>
                         </apparelRequired>
                         <weaponTags Inherit="False">
-                            <li>RCP_HeavySMG</li>
+                            <li>BL_HeavySMG</li>
                         </weaponTags>
                         <weaponMoney>355~900</weaponMoney>
                         <requiredWorkTags>
@@ -53,17 +53,17 @@
                         <skills>
                             <li>
                                 <skill>Crafting</skill>
-                                <range>6~12</range>
+                                <range>6~10</range>
                             </li>
                             <li>
                                 <skill>Intellectual</skill>
-                                <range>6~12</range>
+                                <range>6~10</range>
                             </li>
                         </skills>
                     </PawnKindDef>
                     <!-- Scenario -->
                     <ScenarioDef ParentName="ScenarioBase">
-                        <defName>RCP_MechanitorGravship</defName>
+                        <defName>BL_MechanitorGravship</defName>
                         <label>Mechanitor Gravship</label>
                         <description>Your gravship sits docked at the orbital relay. As your mechs begin to salvage the equipment, you realize that this isn't ancient human tech - it's a mechanoid beacon. The relay crackles to life and broadcasts its war alert to a distant mechhive. They're hunting you now, and they will eventually find you wherever you go.\n\nNote: This is a difficult scenario and is not recommended for new players.</description>
                         <scenario>
@@ -95,10 +95,10 @@
                                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
                                     <def>ConfigurePawnsKindDefs</def>
                                     <pawnChoiceCount>1</pawnChoiceCount>
-                                    <leftBehindPawnKind>RCP_GravshipMechanitor</leftBehindPawnKind>
+                                    <leftBehindPawnKind>BL_GravshipMechanitor</leftBehindPawnKind>
                                     <kindCounts>
                                         <li>
-                                            <kindDef>RCP_GravshipMechanitor</kindDef>
+                                            <kindDef>BL_GravshipMechanitor</kindDef>
                                             <count>1</count>
                                             <requiredAtStart>true</requiredAtStart>
                                         </li>

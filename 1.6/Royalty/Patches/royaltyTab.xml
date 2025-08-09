@@ -8,7 +8,7 @@
                 <xpath>Defs</xpath>
                 <value>
                     <DesignationCategoryDef>
-                        <defName>RCP_Royalty</defName>
+                        <defName>BL_Royalty</defName>
                         <label>royalty</label>
                         <order>14</order>
                         <specialDesignatorClasses>
@@ -21,13 +21,13 @@
             <Operation Class="PatchOperationReplace">
                 <success>Always</success>
                 <xpath>//ThingDef[defName="Drape" or @Name="Brazier" or defName="MeditationSpot" or @Name="NatureShrineBase"]/designationCategory/text()</xpath>
-                <value>RCP_Royalty</value>
+                <value>BL_Royalty</value>
             </Operation>
             <Operation Class="PatchOperationAdd">
                 <success>Always</success>
                 <xpath>//ThingDef[@Name="ThroneBase" or defName="RoyalBed"]</xpath>
                 <value>
-                    <designationCategory>RCP_Royalty</designationCategory>
+                    <designationCategory>BL_Royalty</designationCategory>
                 </value>
             </Operation>
         </caseTrue>

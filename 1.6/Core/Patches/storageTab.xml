@@ -8,7 +8,7 @@
                 <xpath>Defs</xpath>
                 <value>
                     <DesignationCategoryDef>
-                        <defName>RCP_Storage</defName>
+                        <defName>BL_Storage</defName>
                         <label>storage</label>
                         <order>499</order>
                         <specialDesignatorClasses>
@@ -21,12 +21,12 @@
             <Operation Class="PatchOperationAdd">
                 <xpath>//ThingDef[not(designationCategory) and (building/fixedStorageSettings or building/defaultStorageSettings or building/maxItemsInCell)]</xpath>
                 <value>
-                    <designationCategory>RCP_Storage</designationCategory>
+                    <designationCategory>BL_Storage</designationCategory>
                 </value>
             </Operation>
             <Operation Class="PatchOperationReplace">
                 <xpath>//ThingDef[not(defName="BiosculpterPod" or defName="GibbetCage" or defName="GrowthVat") and (building/fixedStorageSettings or building/defaultStorageSettings or building/maxItemsInCell)]/designationCategory/text()</xpath>
-                <value>RCP_Storage</value>
+                <value>BL_Storage</value>
             </Operation>
         </caseTrue>
     </Operation>

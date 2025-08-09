@@ -10,7 +10,7 @@
                 <value>
                     <!-- Unfinished Things -->
                     <ThingDef ParentName="UnfinishedBase">
-                        <defName>RCP_UnfinishedSignalChip</defName>
+                        <defName>BL_UnfinishedSignalChip</defName>
                         <label>unfinished signal chip</label>
                         <description>An unfinished signal chip.</description>
                         <statBases>
@@ -23,7 +23,7 @@
                         <stuffCategories Inherit="false" />
                     </ThingDef>
                     <ThingDef ParentName="UnfinishedBase">
-                        <defName>RCP_UnfinishedPowerfocusChip</defName>
+                        <defName>BL_UnfinishedPowerfocusChip</defName>
                         <label>unfinished powerfocus chip</label>
                         <description>An unfinished powerfocus chip.</description>
                         <statBases>
@@ -36,7 +36,7 @@
                         <stuffCategories Inherit="false" />
                     </ThingDef>
                     <ThingDef ParentName="UnfinishedBase">
-                        <defName>RCP_UnfinishedNanostructuringChip</defName>
+                        <defName>BL_UnfinishedNanostructuringChip</defName>
                         <label>unfinished nano structuring chip</label>
                         <description>An unfinished nano structuring chip.</description>
                         <statBases>
@@ -50,7 +50,7 @@
                     </ThingDef>
                     <!-- Recipes -->
                     <RecipeDef>
-                        <defName>RCP_MakeSignalChip</defName>
+                        <defName>BL_MakeSignalChip</defName>
                         <label>make signal chip</label>
                         <description>Make a signal chip.</description>
                         <jobString>Making signal chip.</jobString>
@@ -58,7 +58,7 @@
                         <effectWorking>Cook</effectWorking>
                         <soundWorking>Recipe_Machining</soundWorking>
                         <workAmount>10000</workAmount>
-                        <unfinishedThingDef>RCP_UnfinishedSignalChip</unfinishedThingDef>
+                        <unfinishedThingDef>BL_UnfinishedSignalChip</unfinishedThingDef>
                         <ingredients>
                             <li>
                                 <filter>
@@ -121,7 +121,7 @@
                         <displayPriority>11</displayPriority>
                     </RecipeDef>
                     <RecipeDef>
-                        <defName>RCP_MakePowerfocusChip</defName>
+                        <defName>BL_MakePowerfocusChip</defName>
                         <label>make powerfocus chip</label>
                         <description>Make a powerfocus chip.</description>
                         <jobString>Making powerfocus chip.</jobString>
@@ -129,7 +129,7 @@
                         <effectWorking>Cook</effectWorking>
                         <soundWorking>Recipe_Machining</soundWorking>
                         <workAmount>12500</workAmount>
-                        <unfinishedThingDef>RCP_UnfinishedPowerfocusChip</unfinishedThingDef>
+                        <unfinishedThingDef>BL_UnfinishedPowerfocusChip</unfinishedThingDef>
                         <ingredients>
                             <li>
                                 <filter>
@@ -192,7 +192,7 @@
                         <displayPriority>12</displayPriority>
                     </RecipeDef>
                     <RecipeDef>
-                        <defName>RCP_MakeNanostructuringChip</defName>
+                        <defName>BL_MakeNanostructuringChip</defName>
                         <label>make nano structuring chip</label>
                         <description>Make a nano structuring chip.</description>
                         <jobString>Making nano structuring chip.</jobString>
@@ -200,7 +200,7 @@
                         <effectWorking>Cook</effectWorking>
                         <soundWorking>Recipe_Machining</soundWorking>
                         <workAmount>15000</workAmount>
-                        <unfinishedThingDef>RCP_UnfinishedNanostructuringChip</unfinishedThingDef>
+                        <unfinishedThingDef>BL_UnfinishedNanostructuringChip</unfinishedThingDef>
                         <ingredients>
                             <li>
                                 <filter>
@@ -268,9 +268,9 @@
             <Operation Class="PatchOperationAdd">
                 <xpath>//ThingDef[defName="FabricationBench"]/recipes</xpath>
                 <value>
-                    <li>RCP_MakeSignalChip</li>
-                    <li>RCP_MakePowerfocusChip</li>
-                    <li>RCP_MakeNanostructuringChip</li>
+                    <li>BL_MakeSignalChip</li>
+                    <li>BL_MakePowerfocusChip</li>
+                    <li>BL_MakeNanostructuringChip</li>
                 </value>
             </Operation>
             <!-- Add hyperlinks to chips -->
@@ -278,7 +278,7 @@
                 <xpath>//ThingDef[defName="SignalChip"]</xpath>
                 <value>
                     <descriptionHyperlinks>
-                        <RecipeDef>RCP_MakeSignalChip</RecipeDef>
+                        <RecipeDef>BL_MakeSignalChip</RecipeDef>
                     </descriptionHyperlinks>
                 </value>
             </Operation>
@@ -286,7 +286,7 @@
                 <xpath>//ThingDef[defName="PowerfocusChip"]</xpath>
                 <value>
                     <descriptionHyperlinks>
-                        <RecipeDef>RCP_MakePowerfocusChip</RecipeDef>
+                        <RecipeDef>BL_MakePowerfocusChip</RecipeDef>
                     </descriptionHyperlinks>
                 </value>
             </Operation>
@@ -294,7 +294,7 @@
                 <xpath>//ThingDef[defName="NanostructuringChip"]</xpath>
                 <value>
                     <descriptionHyperlinks>
-                        <RecipeDef>RCP_MakeNanostructuringChip</RecipeDef>
+                        <RecipeDef>BL_MakeNanostructuringChip</RecipeDef>
                     </descriptionHyperlinks>
                 </value>
             </Operation>

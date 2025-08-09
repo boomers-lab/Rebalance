@@ -1,0 +1,18 @@
+<Patch>
+    <Operation MayRequire="sov.nephilim,botchjob.divineorder" Class="PatchOperationAdd">
+        <xpath>//PawnKindDef[defName="BotchJob_DivineOrderCrusader"]</xpath>
+        <value>
+            <xenotypeSet>
+                <xenotypeChances>
+                    <GS_Nephilim>999</GS_Nephilim>
+                </xenotypeChances>
+            </xenotypeSet>
+        </value>
+    </Operation>
+    <Operation MayRequire="sov.nephilim,Ludeon.RimWorld.Royalty" Class="PatchOperationAdd">
+        <xpath>//FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+            <GS_Nephilim>0.025</GS_Nephilim>
+        </value>
+    </Operation>
+</Patch>
