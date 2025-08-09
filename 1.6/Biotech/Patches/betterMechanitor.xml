@@ -1,66 +1,74 @@
 <Patch>
+    <!-- Add new player mechanitor def -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+            <PawnKindDef ParentName="MechanitorBase">
+                <defName>BL_Mechanitor</defName>
+            </PawnKindDef>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>//ScenarioDef[defName="Mechanitor"]/scenario/parts/li[def="ConfigurePawnsKindDefs"]/kindCounts/li/kindDef[text()="Mechanitor"]/text() | //ScenarioDef[defName="Mechanitor"]/scenario/parts/li[def="ConfigurePawnsKindDefs"]/leftBehindPawnKind/text()</xpath>
+        <value>BL_Mechanitor</value>
+    </Operation>
+    <!-- Better mechanitor -->
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
         <key>betterMechanitor</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
-            <!--Prepatch SMG-->
+            <!-- Prepatch SMG -->
             <Operation Class="PatchOperationConditional">
-                <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags/li[text()="RCP_HeavySMG"]</xpath>
+                <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags/li[text()="BL_HeavySMG"]</xpath>
                 <nomatch Class="PatchOperationAdd">
                     <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags</xpath>
                     <value>
-                        <li>RCP_HeavySMG</li>
+                        <li>BL_HeavySMG</li>
                     </value>
                 </nomatch>
             </Operation>
-            <!--Add new mechanitor using the base to prevent conflicts-->
+            <!-- Skills, traits, weapon, and work -->
             <Operation Class="PatchOperationAdd">
-                <xpath>Defs</xpath>
+                <xpath>//PawnKindDef[defName="BL_Mechanitor"]</xpath>
                 <value>
-                    <PawnKindDef ParentName="MechanitorBase">
-                        <defName>RCP_Mechanitor</defName>
-                        <weaponTags Inherit="False">
-                            <li>RCP_HeavySMG</li>
-                        </weaponTags>
-                        <weaponMoney>355~900</weaponMoney>
-                        <requiredWorkTags>
-                            <li>Caring</li>
-                            <li>Crafting</li>
-                            <li>Intellectual</li>
-                            <li>Violent</li>
-                        </requiredWorkTags>
-                        <disallowedTraits>
-                            <li>BodyPurist</li>
-                            <li>SlowLearner</li>
-                            <li>Wimp</li>
-                        </disallowedTraits>
-                        <disallowedTraitsWithDegree>
-                            <Immunity>-1</Immunity>
-                            <Industriousness>-1</Industriousness>
-                            <Industriousness>-2</Industriousness>
-                            <PsychicSensitivity>-1</PsychicSensitivity>
-                            <PsychicSensitivity>-2</PsychicSensitivity>
-                        </disallowedTraitsWithDegree>
-                        <skills>
-                            <li>
-                                <skill>Crafting</skill>
-                                <range>6~12</range>
-                            </li>
-                            <li>
-                                <skill>Intellectual</skill>
-                                <range>6~12</range>
-                            </li>
-                        </skills>
-                    </PawnKindDef>
+                    <weaponTags Inherit="False">
+                        <li>BL_HeavySMG</li>
+                    </weaponTags>
+                    <weaponMoney>355~900</weaponMoney>
+                    <requiredWorkTags>
+                        <li>Caring</li>
+                        <li>Crafting</li>
+                        <li>Intellectual</li>
+                        <li>Violent</li>
+                    </requiredWorkTags>
+                    <disallowedTraits>
+                        <li>BodyPurist</li>
+                        <li>SlowLearner</li>
+                        <li>Wimp</li>
+                    </disallowedTraits>
+                    <disallowedTraitsWithDegree>
+                        <Immunity>-1</Immunity>
+                        <Industriousness>-1</Industriousness>
+                        <Industriousness>-2</Industriousness>
+                        <PsychicSensitivity>-1</PsychicSensitivity>
+                        <PsychicSensitivity>-2</PsychicSensitivity>
+                    </disallowedTraitsWithDegree>
+                    <skills>
+                        <li>
+                            <skill>Crafting</skill>
+                            <range>6~10</range>
+                        </li>
+                        <li>
+                            <skill>Intellectual</skill>
+                            <range>6~10</range>
+                        </li>
+                    </skills>
                 </value>
-            </Operation>
-            <Operation Class="PatchOperationReplace">
-                <xpath>//ScenarioDef[defName="Mechanitor"]/scenario/parts/li[def="ConfigurePawnsKindDefs"]/kindCounts/li/kindDef[text()="Mechanitor"]/text()</xpath>
-                <value>RCP_Mechanitor</value>
             </Operation>
         </caseTrue>
     </Operation>
+    <!-- Gender -->
     <Operation Class="XmlExtensions.UseSetting">
         <modId>boomer.Rebalance</modId>
         <key>genderedMechanitor</key>
@@ -72,40 +80,22 @@
                     <li>
                         <value>maleGenderedMechanitor</value>
                         <apply>
-                            <Operation Class="PatchOperationConditional">
-                                <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
-                                <nomatch Class="PatchOperationAdd">
-                                    <xpath>//PawnKindDef[defName="Mechanitor"]</xpath>
-                                    <value>
-                                        <fixedGender>Male</fixedGender>
-                                    </value>
-                                </nomatch>
-                                <match Class="PatchOperationAdd">
-                                    <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
-                                    <value>
-                                        <fixedGender>Male</fixedGender>
-                                    </value>
-                                </match>
+                            <Operation Class="PatchOperationAdd">
+                                <xpath>//PawnKindDef[defName="BL_Mechanitor"]</xpath>
+                                <value>
+                                    <fixedGender>Male</fixedGender>
+                                </value>
                             </Operation>
                         </apply>
                     </li>
                     <li>
                         <value>femaleGenderedMechanitor</value>
                         <apply>
-                            <Operation Class="PatchOperationConditional">
-                                <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
-                                <nomatch Class="PatchOperationAdd">
-                                    <xpath>//PawnKindDef[defName="Mechanitor"]</xpath>
-                                    <value>
-                                        <fixedGender>Female</fixedGender>
-                                    </value>
-                                </nomatch>
-                                <match Class="PatchOperationAdd">
-                                    <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
-                                    <value>
-                                        <fixedGender>Female</fixedGender>
-                                    </value>
-                                </match>
+                            <Operation Class="PatchOperationAdd">
+                                <xpath>//PawnKindDef[defName="BL_Mechanitor"]</xpath>
+                                <value>
+                                    <fixedGender>Female</fixedGender>
+                                </value>
                             </Operation>
                         </apply>
                     </li>
@@ -113,47 +103,32 @@
             </Operation>
         </apply>
     </Operation>
+    <!-- Age -->
     <Operation Class="XmlExtensions.UseSetting">
         <modId>boomer.Rebalance</modId>
         <key>minAgeMechanitor</key>
+        <!-- Vanilla: undefined (defaults to 15) -->
         <defaultValue>15</defaultValue>
         <apply>
-            <Operation Class="PatchOperationConditional">
-                <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
-                <nomatch Class="PatchOperationAdd">
-                    <xpath>//PawnKindDef[defName="Mechanitor"]</xpath>
-                    <value>
-                        <minGenerationAge>{minAgeMechanitor}</minGenerationAge>
-                    </value>
-                </nomatch>
-                <match Class="PatchOperationAdd">
-                    <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
-                    <value>
-                        <minGenerationAge>{minAgeMechanitor}</minGenerationAge>
-                    </value>
-                </match>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//PawnKindDef[defName="BL_Mechanitor"]</xpath>
+                <value>
+                    <minGenerationAge>{minAgeMechanitor}</minGenerationAge>
+                </value>
             </Operation>
         </apply>
     </Operation>
     <Operation Class="XmlExtensions.UseSetting">
         <modId>boomer.Rebalance</modId>
         <key>maxAgeMechanitor</key>
+        <!-- Vanilla: undefined (I think it defaults to 80) -->
         <defaultValue>80</defaultValue>
         <apply>
-            <Operation Class="PatchOperationConditional">
-                <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
-                <nomatch Class="PatchOperationAdd">
-                    <xpath>//PawnKindDef[defName="Mechanitor"]</xpath>
-                    <value>
-                        <maxGenerationAge>{maxAgeMechanitor}</maxGenerationAge>
-                    </value>
-                </nomatch>
-                <match Class="PatchOperationAdd">
-                    <xpath>//PawnKindDef[defName="RCP_Mechanitor"]</xpath>
-                    <value>
-                        <maxGenerationAge>{maxAgeMechanitor}</maxGenerationAge>
-                    </value>
-                </match>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//PawnKindDef[defName="BL_Mechanitor"]</xpath>
+                <value>
+                    <maxGenerationAge>{maxAgeMechanitor}</maxGenerationAge>
+                </value>
             </Operation>
         </apply>
     </Operation>

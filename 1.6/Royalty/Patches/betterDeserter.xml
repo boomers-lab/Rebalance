@@ -1,0 +1,136 @@
+<Patch>
+    <!-- Create new deserter def -->
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>//PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
+        <attribute>Name</attribute>
+        <value>BL_ImperialTrooper</value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+            <PawnKindDef ParentName="BL_ImperialTrooper">
+                <defName>BL_Deserter</defName>
+            </PawnKindDef>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>//QuestScriptDef[defName="Intro_Deserter"]/root/nodes/li[storeAs[text()="asker"]]/kindDef/text()</xpath>
+        <value>BL_Deserter</value>
+    </Operation>
+    <!-- Xenotype -->
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>baselinerDeserter</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//PawnKindDef[defName="BL_Deserter"]</xpath>
+                <value>
+                    <xenotypeSet Inherit="False" />
+                </value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+    <!-- Skills, traits, and work -->
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>boomer.Rebalance</modId>
+        <key>betterDeserter</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//PawnKindDef[defName="BL_Deserter"]</xpath>
+                <value>
+                    <disallowedTraits>
+                        <li>Brawler</li>
+                        <!-- I wanted to keep teetotaler but it completely ignored DrugDesire in disallowedTraitsWithDegree -->
+                        <li>DrugDesire</li>
+                        <li>Jealous</li>
+                        <!-- I think this disables genies -->
+                        <li>Wimp</li>
+                    </disallowedTraits>
+                    <disallowedTraitsWithDegree>
+                        <Immunity>-1</Immunity>
+                        <NaturalMood>-1</NaturalMood>
+                        <NaturalMood>-2</NaturalMood>
+                        <SpeedOffset>-1</SpeedOffset>
+                    </disallowedTraitsWithDegree>
+                    <requiredWorkTags>
+                        <li>Caring</li>
+                        <li>ManualSkilled</li>
+                    </requiredWorkTags>
+                    <skills>
+                        <li>
+                            <skill>Shooting</skill>
+                            <!-- Vanilla: 4~10 -->
+                            <range>6~10</range>
+                        </li>
+                    </skills>
+                </value>
+            </Operation>
+        </caseTrue>
+    </Operation>
+    <!-- Gender -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>genderedDeserter</key>
+        <defaultValue>noGenderedDeserter</defaultValue>
+        <apply>
+            <Operation Class="XmlExtensions.PatchByCase">
+                <value>{genderedDeserter}</value>
+                <cases>
+                    <li>
+                        <value>maleGenderedDeserter</value>
+                        <apply>
+                            <Operation Class="PatchOperationAdd">
+                                <xpath>//PawnKindDef[defName="BL_Deserter"]</xpath>
+                                <value>
+                                    <fixedGender>Male</fixedGender>
+                                </value>
+                            </Operation>
+                        </apply>
+                    </li>
+                    <li>
+                        <value>femaleGenderedDeserter</value>
+                        <apply>
+                            <Operation Class="PatchOperationAdd">
+                                <xpath>//PawnKindDef[defName="BL_Deserter"]</xpath>
+                                <value>
+                                    <fixedGender>Female</fixedGender>
+                                </value>
+                            </Operation>
+                        </apply>
+                    </li>
+                </cases>
+            </Operation>
+        </apply>
+    </Operation>
+    <!-- Age -->
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>minAgeDeserter</key>
+        <!-- Vanilla: undefined (defaults to 15) -->
+        <defaultValue>15</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//PawnKindDef[defName="BL_Deserter"]</xpath>
+                <value>
+                    <minGenerationAge>{minAgeDeserter}</minGenerationAge>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>boomer.Rebalance</modId>
+        <key>maxAgeDeserter</key>
+        <!-- Vanilla: 55 -->
+        <defaultValue>55</defaultValue>
+        <apply>
+            <Operation Class="PatchOperationAdd">
+                <xpath>//PawnKindDef[defName="BL_Deserter"]</xpath>
+                <value>
+                    <maxGenerationAge>{maxAgeDeserter}</maxGenerationAge>
+                </value>
+            </Operation>
+        </apply>
+    </Operation>
+</Patch>
