@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>wastepackStorageNerf</key>
+        <key>BL_WastepackStorageNerf</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationReplace">

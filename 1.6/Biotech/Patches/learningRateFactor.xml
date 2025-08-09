@@ -1,12 +1,12 @@
 <Patch>
 	<Operation Class="XmlExtensions.UseSetting">
 		<modId>boomer.Rebalance</modId>
-		<key>learningRateFactor</key>
+		<key>BL_LearningRateFactor</key>
 		<defaultValue>1</defaultValue>
 		<apply>
 			<Operation Class="PatchOperationReplace">
 				<xpath>//StatDef[defName="LearningRateFactor"]/defaultBaseValue/text()</xpath>
-				<value>{learningRateFactor}</value>
+				<value>{BL_LearningRateFactor}</value>
 			</Operation>
 		</apply>
 	</Operation>

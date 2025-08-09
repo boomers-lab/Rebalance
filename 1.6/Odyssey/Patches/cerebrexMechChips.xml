@@ -1,7 +1,7 @@
 <Patch>
     <Operation MayRequire="Ludeon.RimWorld.Biotech" Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>cerebrexMechChips</key>
+        <key>BL_CerebrexMechChips</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationAdd">

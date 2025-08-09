@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>fungalGravel</key>
+        <key>BL_FungalGravel</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <li Class="PatchOperationAdd">
@@ -16,7 +16,7 @@
     </Operation>
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>fungalGravelLocation</key>
+        <key>BL_FungalGravelLocation</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <li Class="PatchOperationRemove">

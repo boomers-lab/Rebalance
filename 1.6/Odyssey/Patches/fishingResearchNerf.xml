@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>fishingResearchNerf</key>
+        <key>BL_FishingResearchNerf</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <li Class="PatchOperationReplace">

@@ -3,7 +3,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs</xpath>
         <value>
-            <PawnKindDef ParentName="MechanitorBase">
+            <PawnKindDef ParentName="MechanitorBase" Name="BL_MechanitorBase">
                 <defName>BL_Mechanitor</defName>
             </PawnKindDef>
         </value>
@@ -15,7 +15,7 @@
     <!-- Better mechanitor -->
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>betterMechanitor</key>
+        <key>BL_BetterMechanitor</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <!-- Prepatch SMG -->
@@ -71,11 +71,11 @@
     <!-- Gender -->
     <Operation Class="XmlExtensions.UseSetting">
         <modId>boomer.Rebalance</modId>
-        <key>genderedMechanitor</key>
+        <key>BL_GenderedMechanitor</key>
         <defaultValue>noGenderedMechanitor</defaultValue>
         <apply>
             <Operation Class="XmlExtensions.PatchByCase">
-                <value>{genderedMechanitor}</value>
+                <value>{BL_GenderedMechanitor}</value>
                 <cases>
                     <li>
                         <value>maleGenderedMechanitor</value>
@@ -106,28 +106,28 @@
     <!-- Age -->
     <Operation Class="XmlExtensions.UseSetting">
         <modId>boomer.Rebalance</modId>
-        <key>minAgeMechanitor</key>
+        <key>BL_MinAgeMechanitor</key>
         <!-- Vanilla: undefined (defaults to 15) -->
         <defaultValue>15</defaultValue>
         <apply>
             <Operation Class="PatchOperationAdd">
                 <xpath>//PawnKindDef[defName="BL_Mechanitor"]</xpath>
                 <value>
-                    <minGenerationAge>{minAgeMechanitor}</minGenerationAge>
+                    <minGenerationAge>{BL_MinAgeMechanitor}</minGenerationAge>
                 </value>
             </Operation>
         </apply>
     </Operation>
     <Operation Class="XmlExtensions.UseSetting">
         <modId>boomer.Rebalance</modId>
-        <key>maxAgeMechanitor</key>
+        <key>BL_MaxAgeMechanitor</key>
         <!-- Vanilla: undefined (I think it defaults to 80) -->
         <defaultValue>80</defaultValue>
         <apply>
             <Operation Class="PatchOperationAdd">
                 <xpath>//PawnKindDef[defName="BL_Mechanitor"]</xpath>
                 <value>
-                    <maxGenerationAge>{maxAgeMechanitor}</maxGenerationAge>
+                    <maxGenerationAge>{BL_MaxAgeMechanitor}</maxGenerationAge>
                 </value>
             </Operation>
         </apply>

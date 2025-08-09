@@ -1,12 +1,12 @@
 <Patch>
 	<Operation Class="XmlExtensions.UseSetting">
 		<modId>boomer.Rebalance</modId>
-		<key>gauranlenPruningSpeed</key>
+		<key>BL_GauranlenPruningSpeed</key>
 		<defaultValue>0.1</defaultValue>
 		<apply>
 			<Operation Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/connectionStrengthGainPerHourPruningBase/text()</xpath>
-				<value>{gauranlenPruningSpeed}</value>
+				<value>{BL_GauranlenPruningSpeed}</value>
 			</Operation>
 		</apply>
 	</Operation>

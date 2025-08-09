@@ -1,7 +1,7 @@
 <Patch>
     <Operation MayRequire="cat.imperial.attires" Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>ImperialAttiresVEF</key>
+        <key>BL_ImperialAttiresVEF</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationRemove">

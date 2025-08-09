@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>noDefaultStorageSettings</key>
+        <key>BL_NoDefaultStorageSettings</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationReplace">

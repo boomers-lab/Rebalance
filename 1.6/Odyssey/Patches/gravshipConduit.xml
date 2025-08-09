@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>gravshipConduit</key>
+        <key>BL_GravshipConduit</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationConditional">
@@ -18,6 +18,7 @@
             </Operation>
             <Operation Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="GravshipHull"]/costStuffCount/text()</xpath>
+                <!-- Vanilla: 7 -->
                 <value>9</value>
             </Operation>
         </caseTrue>

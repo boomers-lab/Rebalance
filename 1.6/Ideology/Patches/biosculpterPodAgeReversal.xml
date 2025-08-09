@@ -1,12 +1,12 @@
 <Patch>
 	<Operation Class="XmlExtensions.UseSetting">
 		<modId>boomer.Rebalance</modId>
-		<key>biosculpterPodAgeReversal</key>
+		<key>BL_BiosculpterPodAgeReversal</key>
 		<defaultValue>8</defaultValue>
 		<apply>
 			<Operation Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="BiosculpterPod"]/comps/li[@Class="CompProperties_BiosculpterPod_AgeReversalCycle"]/durationDays/text()</xpath>
-				<value>{biosculpterPodAgeReversal}</value>
+				<value>{BL_BiosculpterPodAgeReversal}</value>
 			</Operation>
 		</apply>
 	</Operation>

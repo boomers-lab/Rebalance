@@ -20,7 +20,7 @@
     <!-- Xenotype -->
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>baselinerDeserter</key>
+        <key>BL_BaselinerDeserter</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationAdd">
@@ -34,7 +34,7 @@
     <!-- Skills, traits, and work -->
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>betterDeserter</key>
+        <key>BL_BetterDeserter</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationAdd">
@@ -72,11 +72,11 @@
     <!-- Gender -->
     <Operation Class="XmlExtensions.UseSetting">
         <modId>boomer.Rebalance</modId>
-        <key>genderedDeserter</key>
+        <key>BL_GenderedDeserter</key>
         <defaultValue>noGenderedDeserter</defaultValue>
         <apply>
             <Operation Class="XmlExtensions.PatchByCase">
-                <value>{genderedDeserter}</value>
+                <value>{BL_GenderedDeserter}</value>
                 <cases>
                     <li>
                         <value>maleGenderedDeserter</value>
@@ -107,28 +107,28 @@
     <!-- Age -->
     <Operation Class="XmlExtensions.UseSetting">
         <modId>boomer.Rebalance</modId>
-        <key>minAgeDeserter</key>
+        <key>BL_MinAgeDeserter</key>
         <!-- Vanilla: undefined (defaults to 15) -->
         <defaultValue>15</defaultValue>
         <apply>
             <Operation Class="PatchOperationAdd">
                 <xpath>//PawnKindDef[defName="BL_Deserter"]</xpath>
                 <value>
-                    <minGenerationAge>{minAgeDeserter}</minGenerationAge>
+                    <minGenerationAge>{BL_MinAgeDeserter}</minGenerationAge>
                 </value>
             </Operation>
         </apply>
     </Operation>
     <Operation Class="XmlExtensions.UseSetting">
         <modId>boomer.Rebalance</modId>
-        <key>maxAgeDeserter</key>
+        <key>BL_MaxAgeDeserter</key>
         <!-- Vanilla: 55 -->
         <defaultValue>55</defaultValue>
         <apply>
             <Operation Class="PatchOperationAdd">
                 <xpath>//PawnKindDef[defName="BL_Deserter"]</xpath>
                 <value>
-                    <maxGenerationAge>{maxAgeDeserter}</maxGenerationAge>
+                    <maxGenerationAge>{BL_MaxAgeDeserter}</maxGenerationAge>
                 </value>
             </Operation>
         </apply>

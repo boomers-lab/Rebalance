@@ -1,65 +1,21 @@
 <Patch>
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>odysseyMechanitorScenario</key>
+        <key>BL_OdysseyMechanitorScenario</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
-            <!-- Prepatch SMG -->
-            <li Class="PatchOperationConditional">
-                <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags/li[text()="BL_HeavySMG"]</xpath>
-                <nomatch Class="PatchOperationAdd">
-                    <xpath>//ThingDef[defName="Gun_HeavySMG"]/weaponTags</xpath>
-                    <value>
-                        <li>BL_HeavySMG</li>
-                    </value>
-                </nomatch>
-            </li>
             <!-- Add new mechanitor with vacsuit  -->
             <li Class="PatchOperationAdd">
                 <xpath>Defs</xpath>
                 <value>
-                    <PawnKindDef ParentName="MechanitorBase">
+                    <PawnKindDef ParentName="BL_MechanitorBase">
                         <defName>BL_GravshipMechanitor</defName>
-                        <apparelColor>(0.2,0.2,0.2)</apparelColor>
-                        <minApparelQuality>Normal</minApparelQuality>
                         <apparelRequired Inherit="False">
                             <li>Apparel_CollarShirt</li>
                             <li>Apparel_Pants</li>
                             <li>Apparel_Vacsuit</li>
                             <li>Apparel_VacsuitHelmet</li>
                         </apparelRequired>
-                        <weaponTags Inherit="False">
-                            <li>BL_HeavySMG</li>
-                        </weaponTags>
-                        <weaponMoney>355~900</weaponMoney>
-                        <requiredWorkTags>
-                            <li>Caring</li>
-                            <li>Crafting</li>
-                            <li>Intellectual</li>
-                            <li>Violent</li>
-                        </requiredWorkTags>
-                        <disallowedTraits>
-                            <li>BodyPurist</li>
-                            <li>SlowLearner</li>
-                            <li>Wimp</li>
-                        </disallowedTraits>
-                        <disallowedTraitsWithDegree>
-                            <Immunity>-1</Immunity>
-                            <Industriousness>-1</Industriousness>
-                            <Industriousness>-2</Industriousness>
-                            <PsychicSensitivity>-1</PsychicSensitivity>
-                            <PsychicSensitivity>-2</PsychicSensitivity>
-                        </disallowedTraitsWithDegree>
-                        <skills>
-                            <li>
-                                <skill>Crafting</skill>
-                                <range>6~10</range>
-                            </li>
-                            <li>
-                                <skill>Intellectual</skill>
-                                <range>6~10</range>
-                            </li>
-                        </skills>
                     </PawnKindDef>
                     <!-- Scenario -->
                     <ScenarioDef ParentName="ScenarioBase">

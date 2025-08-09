@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>boomer.Rebalance</modId>
-		<key>fewerBodyFat</key>
+		<key>BL_FewerBodyFat</key>
 		<defaultValue>false</defaultValue>
 		<caseTrue>
 			<Operation Class="PatchOperationReplace">

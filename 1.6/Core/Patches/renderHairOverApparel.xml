@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>renderHairOverApparel</key>
+        <key>BL_RenderHairOverApparel</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <!--exceptions are made for apparels that are intended to cover the pawn's hair-->

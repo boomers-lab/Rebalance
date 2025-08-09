@@ -20,19 +20,19 @@
                                 <text>Behavior</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>doNotDigOutIfCannotReachMapEdge</key>
+                                <key>BL_DoNotDigOutIfCannotReachMapEdge</key>
                                 <label>Animals Do Not Mine to Escape</label>
                                 <tooltip>Animals will no longer break through walls when they are hungry.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>lessPreferableInsectJelly</key>
+                                <key>BL_LessPreferableInsectJelly</key>
                                 <label>Less Preferable Insect Jelly</label>
                                 <tooltip>Moves insect jelly to the rawTasty preferability alongide berries.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>enemiesDoNotFlee</key>
+                                <key>BL_EnemiesDoNotFlee</key>
                                 <label>Permanent Enemies Do Not Flee</label>
                                 <tooltip>Raiders from permanently hostile factions like pirates won't flee when they're losing the fight.</tooltip>
                                 <defaultValue>false</defaultValue>
@@ -43,13 +43,13 @@
                                 <text>Colonist</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>spouseOpinion</key>
+                                <key>BL_SpouseOpinion</key>
                                 <label>Buff Spouse Opinion</label>
                                 <tooltip>Increases the spouse opinion moodlet to +100 to lower the likelihood of divorce. Ought to be -100 though.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>noBanishedMoodDebuff</key>
+                                <key>BL_NoBanishedMoodDebuff</key>
                                 <label>Remove Mood Debuff for Banishing Colonists</label>
                                 <tooltip>Removes all moodlets related to banishing colonists/prisoners/animals and rejecting joiners.</tooltip>
                                 <defaultValue>false</defaultValue>
@@ -60,49 +60,49 @@
                                 <text>Pawn Generation</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>fewerBodyFat</key>
+                                <key>BL_FewerBodyFat</key>
                                 <label>Fewer Fat Bodies</label>
                                 <tooltip>Replaces fat bodies in backstories with normal bodies, significantly lowering their chances of appearing without removing the body outright. Doesn't affect xenotypes with the fat gene.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>fewerBodyHulk</key>
+                                <key>BL_FewerBodyHulk</key>
                                 <label>Fewer Hulk Bodies</label>
                                 <tooltip>Replaces hulk bodies in backstories with normal bodies, significantly lowering their chances of appearing without removing the body outright. Doesn't affect xenotypes with the hulk gene.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>fewerBodyThin</key>
+                                <key>BL_FewerBodyThin</key>
                                 <label>Fewer Thin Bodies</label>
                                 <tooltip>Replaces thin bodies in backstories with normal bodies, significantly lowering their chances of appearing without removing the body outright. Doesn't affect xenotypes with the thin gene.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>noBeards</key>
+                                <key>BL_NoBeards</key>
                                 <label>Remove Beards</label>
                                 <tooltip>Removes all beards from the game. Probably not a good idea to enable mid-save.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>fewerHeadsNarrow</key>
+                                <key>BL_FewerHeadsNarrow</key>
                                 <label>Remove Narrow Heads</label>
                                 <tooltip>Aggressively removes narrow heads from the game. Patching logic works for every mod I've tested. Probably not a good idea to enable mid-save. Has no effect on Facial Animation.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>fewerHeadsWideFemale</key>
+                                <key>BL_FewerHeadsWideFemale</key>
                                 <label>Remove Wide Female Heads</label>
                                 <tooltip>Removes the wide female head from the game. Probably not a good idea to enable mid-save. Has no effect on Facial Animation.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>showMelanin</key>
+                                <key>BL_ShowMelanin</key>
                                 <label>Show Melanin Palette</label>
                                 <tooltip>Change the melanin endogenes colors to a custom value.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.ToggleableSettings">
-                                <key>showMelanin</key>
+                                <key>BL_ShowMelanin</key>
                                 <caseTrue>
                                     <li Class="XmlExtensions.Setting.Text">
                                         <anchor>Middle</anchor>
@@ -124,26 +124,26 @@
                                         <settings>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorEntry">
-                                                    <key>Skin_Melanin1</key>
+                                                    <key>BL_Skin_Melanin1</key>
                                                     <defaultValue>(242, 237, 224)</defaultValue>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.Gap">
                                                     <spacing>8</spacing>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.DrawColor">
-                                                    <key>Skin_Melanin1</key>
+                                                    <key>BL_Skin_Melanin1</key>
                                                     <tooltip>Selected Color</tooltip>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorWheel">
-                                                    <key>Skin_Melanin1</key>
+                                                    <key>BL_Skin_Melanin1</key>
                                                     <defaultValue>(242, 237, 224)</defaultValue>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorPalette">
-                                                    <key>Skin_Melanin1</key>
+                                                    <key>BL_Skin_Melanin1</key>
                                                     <anchor>Left</anchor>
                                                     <defaultValue>(242, 237, 224)</defaultValue>
                                                     <colors>
@@ -198,26 +198,26 @@
                                         <settings>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorEntry">
-                                                    <key>Skin_Melanin2</key>
+                                                    <key>BL_Skin_Melanin2</key>
                                                     <defaultValue>(255, 239, 213)</defaultValue>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.Gap">
                                                     <spacing>8</spacing>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.DrawColor">
-                                                    <key>Skin_Melanin2</key>
+                                                    <key>BL_Skin_Melanin2</key>
                                                     <tooltip>Selected Color</tooltip>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorWheel">
-                                                    <key>Skin_Melanin2</key>
+                                                    <key>BL_Skin_Melanin2</key>
                                                     <defaultValue>(255, 239, 213)</defaultValue>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorPalette">
-                                                    <key>Skin_Melanin2</key>
+                                                    <key>BL_Skin_Melanin2</key>
                                                     <anchor>Left</anchor>
                                                     <defaultValue>(255, 239, 213)</defaultValue>
                                                     <colors>
@@ -272,26 +272,26 @@
                                         <settings>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorEntry">
-                                                    <key>Skin_Melanin3</key>
+                                                    <key>BL_Skin_Melanin3</key>
                                                     <defaultValue>(255, 239, 201)</defaultValue>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.Gap">
                                                     <spacing>8</spacing>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.DrawColor">
-                                                    <key>Skin_Melanin3</key>
+                                                    <key>BL_Skin_Melanin3</key>
                                                     <tooltip>Selected Color</tooltip>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorWheel">
-                                                    <key>Skin_Melanin3</key>
+                                                    <key>BL_Skin_Melanin3</key>
                                                     <defaultValue>(255, 239, 201)</defaultValue>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorPalette">
-                                                    <key>Skin_Melanin3</key>
+                                                    <key>BL_Skin_Melanin3</key>
                                                     <anchor>Left</anchor>
                                                     <defaultValue>(255, 239, 201)</defaultValue>
                                                     <colors>
@@ -346,26 +346,26 @@
                                         <settings>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorEntry">
-                                                    <key>Skin_Melanin4</key>
+                                                    <key>BL_Skin_Melanin4</key>
                                                     <defaultValue>(255, 239, 189)</defaultValue>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.Gap">
                                                     <spacing>8</spacing>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.DrawColor">
-                                                    <key>Skin_Melanin4</key>
+                                                    <key>BL_Skin_Melanin4</key>
                                                     <tooltip>Selected Color</tooltip>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorWheel">
-                                                    <key>Skin_Melanin4</key>
+                                                    <key>BL_Skin_Melanin4</key>
                                                     <defaultValue>(255, 239, 189)</defaultValue>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorPalette">
-                                                    <key>Skin_Melanin4</key>
+                                                    <key>BL_Skin_Melanin4</key>
                                                     <anchor>Left</anchor>
                                                     <defaultValue>(255, 239, 189)</defaultValue>
                                                     <colors>
@@ -420,26 +420,26 @@
                                         <settings>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorEntry">
-                                                    <key>Skin_Melanin5</key>
+                                                    <key>BL_Skin_Melanin5</key>
                                                     <defaultValue>(249, 219, 165)</defaultValue>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.Gap">
                                                     <spacing>8</spacing>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.DrawColor">
-                                                    <key>Skin_Melanin5</key>
+                                                    <key>BL_Skin_Melanin5</key>
                                                     <tooltip>Selected Color</tooltip>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorWheel">
-                                                    <key>Skin_Melanin5</key>
+                                                    <key>BL_Skin_Melanin5</key>
                                                     <defaultValue>(249, 219, 165)</defaultValue>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorPalette">
-                                                    <key>Skin_Melanin5</key>
+                                                    <key>BL_Skin_Melanin5</key>
                                                     <anchor>Left</anchor>
                                                     <defaultValue>(249, 219, 165)</defaultValue>
                                                     <colors>
@@ -494,26 +494,26 @@
                                         <settings>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorEntry">
-                                                    <key>Skin_Melanin6</key>
+                                                    <key>BL_Skin_Melanin6</key>
                                                     <defaultValue>(242, 199, 140)</defaultValue>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.Gap">
                                                     <spacing>8</spacing>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.DrawColor">
-                                                    <key>Skin_Melanin6</key>
+                                                    <key>BL_Skin_Melanin6</key>
                                                     <tooltip>Selected Color</tooltip>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorWheel">
-                                                    <key>Skin_Melanin6</key>
+                                                    <key>BL_Skin_Melanin6</key>
                                                     <defaultValue>(242, 199, 140)</defaultValue>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorPalette">
-                                                    <key>Skin_Melanin6</key>
+                                                    <key>BL_Skin_Melanin6</key>
                                                     <anchor>Left</anchor>
                                                     <defaultValue>(242, 199, 140)</defaultValue>
                                                     <colors>
@@ -568,26 +568,26 @@
                                         <settings>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorEntry">
-                                                    <key>Skin_Melanin7</key>
+                                                    <key>BL_Skin_Melanin7</key>
                                                     <defaultValue>(228, 158, 90)</defaultValue>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.Gap">
                                                     <spacing>8</spacing>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.DrawColor">
-                                                    <key>Skin_Melanin7</key>
+                                                    <key>BL_Skin_Melanin7</key>
                                                     <tooltip>Selected Color</tooltip>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorWheel">
-                                                    <key>Skin_Melanin7</key>
+                                                    <key>BL_Skin_Melanin7</key>
                                                     <defaultValue>(228, 158, 90)</defaultValue>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorPalette">
-                                                    <key>Skin_Melanin7</key>
+                                                    <key>BL_Skin_Melanin7</key>
                                                     <anchor>Left</anchor>
                                                     <defaultValue>(228, 158, 90)</defaultValue>
                                                     <colors>
@@ -642,26 +642,26 @@
                                         <settings>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorEntry">
-                                                    <key>Skin_Melanin8</key>
+                                                    <key>BL_Skin_Melanin8</key>
                                                     <defaultValue>(130, 91, 48)</defaultValue>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.Gap">
                                                     <spacing>8</spacing>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.DrawColor">
-                                                    <key>Skin_Melanin8</key>
+                                                    <key>BL_Skin_Melanin8</key>
                                                     <tooltip>Selected Color</tooltip>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorWheel">
-                                                    <key>Skin_Melanin8</key>
+                                                    <key>BL_Skin_Melanin8</key>
                                                     <defaultValue>(130, 91, 48)</defaultValue>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorPalette">
-                                                    <key>Skin_Melanin8</key>
+                                                    <key>BL_Skin_Melanin8</key>
                                                     <anchor>Left</anchor>
                                                     <defaultValue>(130, 91, 48)</defaultValue>
                                                     <colors>
@@ -716,26 +716,26 @@
                                         <settings>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorEntry">
-                                                    <key>Skin_Melanin9</key>
+                                                    <key>BL_Skin_Melanin9</key>
                                                     <defaultValue>(99, 70, 36)</defaultValue>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.Gap">
                                                     <spacing>8</spacing>
                                                 </li>
                                                 <li Class="XmlExtensions.Setting.DrawColor">
-                                                    <key>Skin_Melanin9</key>
+                                                    <key>BL_Skin_Melanin9</key>
                                                     <tooltip>Selected Color</tooltip>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorWheel">
-                                                    <key>Skin_Melanin9</key>
+                                                    <key>BL_Skin_Melanin9</key>
                                                     <defaultValue>(99, 70, 36)</defaultValue>
                                                 </li>
                                             </li>
                                             <li>
                                                 <li Class="XmlExtensions.Setting.ColorPalette">
-                                                    <key>Skin_Melanin9</key>
+                                                    <key>BL_Skin_Melanin9</key>
                                                     <anchor>Left</anchor>
                                                     <defaultValue>(99, 70, 36)</defaultValue>
                                                     <colors>
@@ -778,55 +778,55 @@
                                 <text>Tweaks</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>hydroponicDevilstrand</key>
+                                <key>BL_HydroponicDevilstrand</key>
                                 <label>Hydroponic Devilstrand</label>
                                 <tooltip>Devilstrand can be grown in hydroponics basin.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>hopperStackLimit</key>
+                                <key>BL_HopperStackLimit</key>
                                 <label>Increase Hopper Stack Limit</label>
                                 <tooltip>Increases the hopper stack limit from 1 to 3.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>apparelCoversHandsAndFeet</key>
+                                <key>BL_ApparelCoversHandsAndFeet</key>
                                 <label>Most Apparel Covers Hands and Feet</label>
                                 <tooltip>Adds foot coverage to vanilla apparel that covers the full leg. Adds hand coverage to vanilla apparel to apparel that covers the full arm. In each case, a note is appended to the description of the apparel.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>storageTab</key>
+                                <key>BL_StorageTab</key>
                                 <label>Move All Storage Buildings to Their Own Tab</label>
                                 <tooltip>Moves every buildable thingDef with storage settings to a new tab in the architect menu.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>slaveTrader</key>
+                                <key>BL_SlaveTrader</key>
                                 <label>Send Slave Traders Regardless of Population</label>
                                 <tooltip>Removes the population check from slave traders so they continue to arrive after the colony is populated.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>doctorWorkTypeSurgery</key>
+                                <key>BL_DoctorWorkTypeSurgery</key>
                                 <label>Separate Surgery From Doctor Worktype</label>
                                 <tooltip>Separate the harvest workgiver from the grower workgiver.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>noFoodPoisoningConsciousnessDebuff</key>
+                                <key>BL_NoFoodPoisoningConsciousnessDebuff</key>
                                 <label>Remove Consciousness Debuff for Food Poisoning</label>
                                 <tooltip>Removes the consciousness debuff from food poisoning because consciousness is already affected by the blood filtration debuff and pain.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>noDefaultStorageSettings</key>
+                                <key>BL_NoDefaultStorageSettings</key>
                                 <label>Remove Default Settings for Storage Buildings</label>
                                 <tooltip>Newly built storage buildings will not store any items by default.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>renderHairOverApparel</key>
+                                <key>BL_RenderHairOverApparel</key>
                                 <label>Render Hair Over Apparel</label>
                                 <tooltip>Tells the game to render hair over apparel like armor and coats.</tooltip>
                                 <defaultValue>false</defaultValue>
@@ -853,7 +853,7 @@
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>royaltyTab</key>
+                                <key>BL_RoyaltyTab</key>
                                 <label>Add Royalty Tab to Architect Menu</label>
                                 <tooltip>Moves Royalty-related buildables like the royal bed and meditation spots to their own tab.</tooltip>
                                 <defaultValue>false</defaultValue>
@@ -864,19 +864,19 @@
                                 <text>Deserter</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>baselinerDeserter</key>
+                                <key>BL_BaselinerDeserter</key>
                                 <label>Always Baseliner</label>
                                 <tooltip>Vanilla deserters can be baseliners, genies, hussars, neanderthals, or starjacks.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>betterDeserter</key>
+                                <key>BL_BetterDeserter</key>
                                 <label>Better Deserter</label>
                                 <tooltip>Disallows a few undesireable traits for fighters, increases the minimum shooting skill from 4 to 6, and requires the caring work tag.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.RadioButtons">
-                                <key>genderedDeserter</key>
+                                <key>BL_GenderedDeserter</key>
                                 <defaultValue>noGenderedDeserter</defaultValue>
                                 <buttons>
                                     <li>
@@ -895,21 +895,21 @@
                                 </buttons>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
-                                <key>minAgeDeserter</key>
+                                <key>BL_MinAgeDeserter</key>
                                 <decimals>0</decimals>
                                 <defaultValue>15</defaultValue>
                                 <min>15</min>
                                 <max>79</max>
-                                <label>Deserter Minumum Age: {minAgeDeserter}</label>
+                                <label>Deserter Minumum Age: {BL_MinAgeDeserter}</label>
                                 <padAbove>4</padAbove>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
-                                <key>maxAgeDeserter</key>
+                                <key>BL_MaxAgeDeserter</key>
                                 <decimals>0</decimals>
                                 <defaultValue>55</defaultValue>
                                 <min>16</min>
                                 <max>80</max>
-                                <label>Deserter Maximum Age: {maxAgeDeserter} (must be greater than minimum age)</label>
+                                <label>Deserter Maximum Age: {BL_MaxAgeDeserter} (must be greater than minimum age)</label>
                             </li>
                         </settings>
                     </li>
@@ -924,37 +924,37 @@
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>fungalGravel</key>
+                                <key>BL_FungalGravel</key>
                                 <label>Darkness Meme Grants Fungal Gravel</label>
                                 <tooltip>Allows fungal gravel to be built with the darkness meme.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>fungalGravelLocation</key>
+                                <key>BL_FungalGravelLocation</key>
                                 <label>Fungal Gravel Can Be Placed Anywhere</label>
                                 <tooltip>Removes the overhead mountain requirement for fungal gravel.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>removeForcedStyles</key>
+                                <key>BL_RemoveForcedStyles</key>
                                 <label>Remove Forced Styles for New Ideologies</label>
                                 <tooltip>Newly generated ideologies will not have styles based on their memes or structures. You can still pick styles manually.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>disablePreferredApparel</key>
+                                <key>BL_DisablePreferredApparel</key>
                                 <label>Remove Preferred Apparel for New Ideologies</label>
                                 <tooltip>Newly generated ideologies will not have preferred apparel. You can still pick preferred apparel manually.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>noSlaveWorkDisabler</key>
+                                <key>BL_NoSlaveWorkDisabler</key>
                                 <label>Remove Slave Work Disabler</label>
                                 <tooltip>Allows slaves to do every work type except for wardening.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>specialistsWork</key>
+                                <key>BL_SpecialistsWork</key>
                                 <label>Specialists Can Do More Work</label>
                                 <tooltip>Allows specialists to do everything with the ManualDumb work tag.</tooltip>
                                 <defaultValue>false</defaultValue>
@@ -968,8 +968,8 @@
                                 <text>These sliders affect the base values before the accelerated biosculpting precept, attuned, and sterile room multipliers are applied.</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
-                                <key>biosculpterPodAgeReversal</key>
-                                <label>Age Reversal Cycle: {biosculpterPodAgeReversal} days (Default: 8)</label>
+                                <key>BL_BiosculpterPodAgeReversal</key>
+                                <label>Age Reversal Cycle: {BL_BiosculpterPodAgeReversal} days (Default: 8)</label>
                                 <min>1</min>
                                 <max>16</max>
                                 <decimals>0</decimals>
@@ -977,24 +977,24 @@
                                 <padAbove>4</padAbove>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
-                                <key>biosculpterPodMedic</key>
-                                <label>Medic Cycle: {biosculpterPodMedic} days (Default: 6)</label>
+                                <key>BL_BiosculpterPodMedic</key>
+                                <label>Medic Cycle: {BL_BiosculpterPodMedic} days (Default: 6)</label>
                                 <min>1</min>
                                 <max>12</max>
                                 <decimals>0</decimals>
                                 <defaultValue>6</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
-                                <key>biosculpterPodPleasure</key>
-                                <label>Pleasure Cycle: {biosculpterPodPleasure} days (Default: 4)</label>
+                                <key>BL_BiosculpterPodPleasure</key>
+                                <label>Pleasure Cycle: {BL_BiosculpterPodPleasure} days (Default: 4)</label>
                                 <min>1</min>
                                 <max>8</max>
                                 <decimals>0</decimals>
                                 <defaultValue>4</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
-                                <key>biosculpterPodRegeneration</key>
-                                <label>Bioregeneration Cycle: {biosculpterPodRegeneration} days (Default: 25)</label>
+                                <key>BL_BiosculpterPodRegeneration</key>
+                                <label>Bioregeneration Cycle: {BL_BiosculpterPodRegeneration} days (Default: 25)</label>
                                 <min>1</min>
                                 <max>50</max>
                                 <decimals>0</decimals>
@@ -1006,14 +1006,14 @@
                                 <text>Gauranlen</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>betterDryads</key>
+                                <key>BL_BetterDryads</key>
                                 <label>Double Gauranlen Output</label>
                                 <tooltip>Doubles the yield for gauranlens like the medicine maker to make them less terrible.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
-                                <key>gauranlenPruningSpeed</key>
-                                <label>Gauranlen Tree Pruning Speed: {gauranlenPruningSpeed} (Default: 0.1)</label>
+                                <key>BL_GauranlenPruningSpeed</key>
+                                <label>Gauranlen Tree Pruning Speed: {BL_GauranlenPruningSpeed} (Default: 0.1)</label>
                                 <min>0.1</min>
                                 <max>1</max>
                                 <decimals>1</decimals>
@@ -1033,56 +1033,56 @@
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>moreCapableLifter</key>
+                                <key>BL_MoreCapableLifter</key>
                                 <label>Allow Lifter Mechanoid To Do More Hauling Jobs</label>
                                 <tooltip>Brings lifter mechanoids more in line with human pawns, allowing them to do more hauling and hauling-related like carrying other mechs to a recharger.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li MayRequire="Ludeon.RimWorld.Ideology" Class="XmlExtensions.Setting.Checkbox">
-                                <key>bloodfeederCorpses</key>
+                                <key>BL_BloodfeederCorpses</key>
                                 <label>Bloodfeeders Tolerate Corpses</label>
                                 <tooltip>Allows ideologies with the bloodfeeder meme (which requires some type of pro-cannibalism precept) to set the corpses precept to don't care.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>disableExostriderRemains</key>
+                                <key>BL_DisableExostriderRemains</key>
                                 <label>Disable Exostrider Remains on All Scenarios</label>
                                 <tooltip>Does exactly what the title says. For some reason it adds the part twice which is harmless but annoying.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>factionReplacers</key>
+                                <key>BL_FactionReplacers</key>
                                 <label>Do Not Replace Core Factions</label>
                                 <tooltip>Factions like the impid tribe will no longer replace their vanilla counterpart. Both will appear by default and can be disabled manually in world creation.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>wastepackStorageNerf</key>
+                                <key>BL_WastepackStorageNerf</key>
                                 <label>Increase Wastepack Stack Size</label>
                                 <tooltip>Also allows wastepacks to be stored on shelves.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>durableMechChips</key>
+                                <key>BL_DurableMechChips</key>
                                 <label>Mech Chips Are Invincible</label>
                                 <tooltip>Mechanoid chips dropped by war machines in command of massive mechanoid armies, created by the machine gods of the universe capable of bending time and reality, whose sole purpose in this world is to engage in combat and defeat the its strongest enemies, now won't be destroyed by a stray bolt action rifle round.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>craftMechChips</key>
+                                <key>BL_CraftMechChips</key>
                                 <label>Mech Chips Can Be Crafted</label>
                                 <tooltip>Allows mech chips to be crafted once they've been analyzed.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>childKillerOpinion</key>
+                                <key>BL_ChildKillerOpinion</key>
                                 <label>Reduce Opinion Offset For Killing Children</label>
                                 <tooltip>Reduces the -20 "killed a child" opinion debuff to -6, because sometimes these kids are asking for it.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
-                                <key>learningRateFactor</key>
-                                <label>Child Learning Rate Factor: {learningRateFactor} (Default: 1)</label>
+                                <key>BL_LearningRateFactor</key>
+                                <label>Child Learning Rate Factor: {BL_LearningRateFactor} (Default: 1)</label>
                                 <min>0.1</min>
                                 <max>5</max>
                                 <decimals>1</decimals>
@@ -1090,8 +1090,8 @@
                                 <padAbove>4</padAbove>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
-                                <key>pregnancyDuration</key>
-                                <label>Pregnancy Duration: {pregnancyDuration} days (Default: 18)</label>
+                                <key>BL_PregnancyDuration</key>
+                                <label>Pregnancy Duration: {BL_PregnancyDuration} days (Default: 18)</label>
                                 <min>1</min>
                                 <max>60</max>
                                 <decimals>0</decimals>
@@ -1103,13 +1103,13 @@
                                 <text>Mechanitor</text>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>betterMechanitor</key>
+                                <key>BL_BetterMechanitor</key>
                                 <label>Better Mechanitor</label>
                                 <tooltip>Arms mechanitor starting pawns with a biocoded heavy SMG. Ensures they are capable of crafting, doctoring (for self tending), intellectual (vanilla), and violence. Adds a few negative traits to the disallowed traits list to make single-pawn colonies more viable. Guarantees their crafting and intellectual skills are between 6 and 100.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.RadioButtons">
-                                <key>genderedMechanitor</key>
+                                <key>BL_GenderedMechanitor</key>
                                 <defaultValue>noGenderedMechanitor</defaultValue>
                                 <buttons>
                                     <li>
@@ -1128,21 +1128,21 @@
                                 </buttons>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
-                                <key>minAgeMechanitor</key>
+                                <key>BL_MinAgeMechanitor</key>
                                 <decimals>0</decimals>
                                 <defaultValue>15</defaultValue>
                                 <min>15</min>
                                 <max>79</max>
-                                <label>Mechanitor Minumum Age: {minAgeMechanitor}</label>
+                                <label>Mechanitor Minumum Age: {BL_MinAgeMechanitor}</label>
                                 <padAbove>4</padAbove>
                             </li>
                             <li Class="XmlExtensions.Setting.Slider">
-                                <key>maxAgeMechanitor</key>
+                                <key>BL_MaxAgeMechanitor</key>
                                 <decimals>0</decimals>
                                 <defaultValue>80</defaultValue>
                                 <min>16</min>
                                 <max>80</max>
-                                <label>Mechanitor Maximum Age: {maxAgeMechanitor} (must be greater than minimum age)</label>
+                                <label>Mechanitor Maximum Age: {BL_MaxAgeMechanitor} (must be greater than minimum age)</label>
                             </li>
                         </settings>
                     </li>
@@ -1158,37 +1158,37 @@
                             </li>
                             <li Class="XmlExtensions.Setting.Gap" />
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>lootContainersGlow</key>
+                                <key>BL_LootContainersGlow</key>
                                 <label>All Lootable Containers Glow</label>
                                 <tooltip>Add the CompProperties_Glower comp to to every ThingDef with CompProperties_LootSpawn if it doesn't already have it.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li MayRequire="Ludeon.RimWorld.Biotech" Class="XmlExtensions.Setting.Checkbox">
-                                <key>cerebrexMechChips</key>
+                                <key>BL_CerebrexMechChips</key>
                                 <label>Cerebrex Drops Mech Chips</label>
                                 <tooltip>Cerebrex core drops one of each mech chip. Prevents locking mechanitor progression with the mechhive disabled when used alongside "Mech Chips Can Be Crafted" in the Biotech tab.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>gravshipConduit</key>
+                                <key>BL_GravshipConduit</key>
                                 <label>Gravship Hulls Are Conduits</label>
                                 <tooltip>Add the CompPowerTransmitter comp to gravship hulls. Increases steel cost from 7 to 9 to compensate.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li MayRequire="Ludeon.RimWorld.Biotech" Class="XmlExtensions.Setting.Checkbox">
-                                <key>odysseyMechanitorScenario</key>
+                                <key>BL_OdysseyMechanitorScenario</key>
                                 <label>Mechanitor Gravship Scenario</label>
                                 <tooltip>Adds a starting scenario with a mechanitor on a gravship.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>fishingWorkType</key>
+                                <key>BL_FishingWorkType</key>
                                 <label>Move Fishing to Its Own Work Type</label>
                                 <tooltip>Moves fishing from the hunting work type to its own work type, between crafting and hauling.</tooltip>
                                 <defaultValue>false</defaultValue>
                             </li>
                             <li Class="XmlExtensions.Setting.Checkbox">
-                                <key>fishingResearchNerf</key>
+                                <key>BL_FishingResearchNerf</key>
                                 <label>Reduce Fishing Research Cost to 200</label>
                                 <tooltip>Because researching fishing poles should be easier than researching gravtech.</tooltip>
                                 <defaultValue>false</defaultValue>
@@ -1210,7 +1210,7 @@
                                 <text>Imperial Attires</text>
                             </li>
                             <li MayRequire="cat.imperial.attires" Class="XmlExtensions.Setting.Checkbox">
-                                <key>ImperialAttiresVEF</key>
+                                <key>BL_ImperialAttiresVEF</key>
                                 <label>Remove VEF Requirement</label>
                                 <tooltip>Removes every comp requiring VEF. Replaces the VEF-powered stellic armor shield with a less OP version using the vanilla methods. Helmets can no longer be opened.</tooltip>
                                 <defaultValue>false</defaultValue>
@@ -1220,7 +1220,7 @@
                                 <text>RimJobWorld</text>
                             </li>
                             <li MayRequire="Rim.Job.World" Class="XmlExtensions.Setting.Checkbox">
-                                <key>RJWRebalance</key>
+                                <key>BL_RJWRebalance</key>
                                 <label>Debloat and Rebalance</label>
                                 <tooltip>Removes the cum eating fetish. Increases condom stack limit to 500. Humpshroom doesn't increase psyfocus.</tooltip>
                                 <defaultValue>false</defaultValue>

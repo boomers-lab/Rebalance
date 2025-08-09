@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>boomer.Rebalance</modId>
-        <key>apparelCoversHandsAndFeet</key>
+        <key>BL_ApparelCoversHandsAndFeet</key>
         <defaultValue>false</defaultValue>
         <caseTrue>
             <Operation Class="PatchOperationAdd">

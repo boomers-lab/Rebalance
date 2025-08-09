@@ -30,12 +30,14 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 - Remove Beards
 - Remove Narrow Heads
 - Remove Wide Female Heads
-- Edit Endogene Melanin Palette
+- Edit Melanin Palette
 
 #### Tweaks
+- Hydroponic Devilstrand
 - Increase Hopper Stack Limit
 - Most Apparel Covers Hands and Feet
 - Move All Storage Buildings to Their Own Tab
+- Send Slave Traders Regardless of Population
 - Separate Surgery From Doctor Worktype
 - Remove Consciousness Debuff for Food Poisoning
 - Remove Default Settings for Storage Buildings
@@ -43,6 +45,12 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 
 ### Royalty
 - Add Royalty Tab to Architect Menu
+
+#### Deserter
+- Always Baseliner
+- Better Deserter
+- Set Forced Gender
+- Set Age Range
 
 ### Ideology
 - Darkness Meme Grants Fungal Gravel
@@ -64,28 +72,33 @@ All patches are disabled by default. Some of these patches overlap with (and/or 
 
 ### Biotech
 - Allow Lifter Mechanoid To Do More Hauling Jobs
+- Bloodfeeders Tolerate Corpses
 - Disable Exostrider Remains on All Scenarios
 - Do Not Replace Core Factions
 - Increase Wastepack Stack Size
 - Mech Chips Are Invincible
+- Mech Chips Can Be Crafted
 - Reduce Opinion Offset For Killing Children
 - Child Learning Rate Factor
 - Pregnancy Duration
 
 #### Mechanitor
 - Better Mechanitor
-- Set Mechanitor Gender
-- Mechanitor Minumum Age
-- Mechanitor Maximum Age
+- Set Forced Gender
+- Set Age Range
 
 ### Odyssey
 - All Lootable Containers Glow
-- Reduce Fishing Research Cost to 200
-- Move Fishing to Its Own Work Type
+- Cerebrex Drops Mech Chips
 - Gravship Hulls Are Conduits
-- Gravship Hulls Cost 9 Steel
+- Mechanitor Gravship Scenario
+- Move Fishing to Its Own Work Type
+- Reduce Fishing Research Cost to 200
 
 ### Mods
+#### Imperial Attires
+- Remove VEF Requirement
+
 #### RimJobWorld
 - Debloat and Rebalance
 

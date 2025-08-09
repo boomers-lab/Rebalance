@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>boomer.Rebalance</modId>
-		<key>removeForcedStyles</key>
+		<key>BL_RemoveForcedStyles</key>
 		<defaultValue>false</defaultValue>
 		<caseTrue>
 			<li Class="PatchOperationReplace">
