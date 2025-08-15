@@ -16,10 +16,10 @@
                     </value>
                 </nomatch>
             </Operation>
-            <Operation Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="GravshipHull"]/costStuffCount/text()</xpath>
-                <!-- Vanilla: 7 -->
-                <value>9</value>
+            <Operation Class="XmlExtensions.PatchOperationMath">
+                <xpath>//ThingDef[defName="GravshipHull"]/costStuffCount</xpath>
+                <value>1</value>
+                <operation>+</operation>
             </Operation>
         </caseTrue>
     </Operation>
